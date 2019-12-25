@@ -5,7 +5,8 @@ date: "2017-07-16"
 description:
 image: /assets/images/maryam_mirzakhani.jpg
 author: Umayr Hassan
-tags: Obit
+tags:
+- Obit
 ---
 
 Maryam Mirzakhani [died](http://www.sfgate.com/bayarea/article/Stanford-University-professor-and-mathematician-11291210.php) 

@@ -5,7 +5,8 @@ date: "2017-08-18"
 description:
 image: /assets/images/cathleen-morawetz.jpg
 author: Umayr Hassan
-tags: Obit
+tags:
+- Obit
 ---
 In the mathematics of flows and shocks, [Cathleen Morawetz](https://sinews.siam.org/Details-Page/obituary-cathleen-morawetz), 
 [Olga Ladyzhenskaya](http://www.ams.org/notices/200411/fea-olga.pdf), and Olga Oleinik together form a singular legacy, 
