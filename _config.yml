@@ -64,6 +64,7 @@ markdown: kramdown
 plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
+  - liquid
 compress_html:
   clippings: all
   comments: all
