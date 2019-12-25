@@ -1,7 +1,6 @@
-# Barber
-Barber is a minimal blog theme built for Jekyll. The blog theme features a masonry grid, endless scrolling, and page transitions. 💈 Barber is also available for [Ghost](https://github.com/samesies/barber-ghost).
+# umayrh.github.io 
 
-![Barber](https://raw.githubusercontent.com/samesies/barber-jekyll/master/barber.jpg "Barber")
+Theme: barber-jekyll
 
 ## Initial Setup
 * [Installation](#installation)
@@ -26,75 +25,6 @@ Jekyll requires all dependencies to be saved in the ````Gemfile````. Run ````bun
 
 ### Update Settings
 Almost everything to personalize your site is in the ````_config.yml````. 
-
-```
-# Site/SEO settings
-email: okay@samesies.io
-baseurl: ""
-permalink: /:year/:month/:day/:title/
-google_analytics: 
-
-name: Thomas Vaeth
-title: The Barber Theme
-description: >
-  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
-url: http://barber.samesies.io
-twitter_username: thomasvaeth
-default_img: /assets/images/seo.jpg
-social:
-  - name: twitter
-    url: https://twitter.com/thomasvaeth
-  - name: instagram
-    url: https://www.instagram.com/thomas.vaeth/
-  - name: linkedin
-    url: https://www.linkedin.com/in/thomasvaeth/
-  - name: github
-    url: https://github.com/samesies
-  - name: codepen
-    url: https://codepen.io/thomasvaeth/
-
-# Contact settings
-contact_img: /assets/images/placeholder-28.jpg
-formcarry: https://formcarry.com/s/HkIo0nMb7
-
-# Disqus settings
-disqus: test-apkdzgmqhj
-
-# MailChimp settings
-mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
-mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
-
-# Author settings
-author:
-  - name: Thomas Vaeth
-    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
-    url: http://thomasvaeth.com
-
-# Pagination settings
-pagination:
-  enabled: true
-  debug: false
-  per_page: 12
-  permalink: '/page/:num/'
-  title: ':title'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-autopages:
-  enabled: true
-  categories:
-    enabled: false
-  collections:
-    enabled: false
-  tags:
-    layouts: 
-      - 'tag.html'
-    title: 'The Barber Theme'
-    permalink: '/tag/:tag'
-    slugify:
-      mode: raw
-      cased: true
-```
 
 You can change the URL the [contact form](#contact-form) is sent to, add Google Analytics, change the SEO settings, grow your website with additional authors, and much more.
 
@@ -218,14 +148,3 @@ The source code is broken down to make finding what you need as easy as possible
 ```
 
 The CSS is written in Sass. The JavaScript is written in ES6, so your code is up to date with the newest standards.
-
-### Donations
-Barber has been released for free. Similar themes cost around $29 on [ThemeForest](https://themeforest.net/category/static-site-generators/jekyll). Any donations would be greatly appreciated after the work that went into releasing Barber.
-
-* PayPal – <https://www.paypal.me/samesies>
-* Bitcoin – 1PSzNmcfAFJY1PtBK5u9R5bTGfF7KAuLcq
-* Ethereum – 0x392F7116e4171F1D740397B6000EadD2e4bb9670
-* Litecoin – LSH9AnjcUTV5T7PUxXQuxPqb9W5aSR9GEP
-
-### Support
-Email <okay@samesies.io> if you need any additional support with Barber.

@@ -1,8 +1,14 @@
+# See https://jekyllrb.com/docs/configuration/options/
+
 # Site/SEO settings
 email: umayrh@gmail.com
-baseurl: "/_site"
+baseurl: ""
 permalink: /:year/:month/:day/:title/
-google_analytics: 
+google_analytics:
+
+# the directory where Jekyll will write files
+destination:
+  docs
 
 name: Umayr Hassan
 title: Sketchy Polytopes
