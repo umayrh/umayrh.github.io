@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Dec 2019 02:25:42 -0800</pubDate>
-    <lastBuildDate>Wed, 25 Dec 2019 02:25:42 -0800</lastBuildDate>
+    <pubDate>Wed, 25 Dec 2019 02:37:53 -0800</pubDate>
+    <lastBuildDate>Wed, 25 Dec 2019 02:37:53 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -220,29 +220,17 @@ of a submanifold.&lt;/p&gt;
         <link>http://localhost:4000/2016/12/23/a-fearful-sphere-whose-center-is-everywhere/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/12/23/a-fearful-sphere-whose-center-is-everywhere/</guid>
         
-        <category>Convex</category>
+        <category>Convex geometry</category>
         
-        <category>geometry,</category>
+        <category>Convex optimization</category>
         
-        <category>Convex</category>
+        <category>First-order methods</category>
         
-        <category>optimization,</category>
+        <category>Linear Algebra</category>
         
-        <category>First-order</category>
+        <category>Linear programming</category>
         
-        <category>methods,</category>
-        
-        <category>Linear</category>
-        
-        <category>Algebra,</category>
-        
-        <category>Linear</category>
-        
-        <category>programming,</category>
-        
-        <category>Linear</category>
-        
-        <category>systems,</category>
+        <category>Linear systems</category>
         
         <category>Mathematics</category>
         

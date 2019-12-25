@@ -5,7 +5,14 @@ date: "2016-12-23"
 description:
 image: /assets/images/screen-shot-2016-12-16-at-10-28-14-pm.png
 author: Umayr Hassan
-tags: Convex geometry, Convex optimization, First-order methods, Linear Algebra, Linear programming, Linear systems, Mathematics
+tags: 
+- Convex geometry
+- Convex optimization
+- First-order methods
+- Linear Algebra
+- Linear programming
+- Linear systems
+- Mathematics
 ---
 
 In a beautiful article, _The Mathematics of Doodling_, [Ravi Vakil](http://math.stanford.edu/~vakil/) poses two problems:
