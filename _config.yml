@@ -1,6 +1,6 @@
 # Site/SEO settings
 email: umayrh@gmail.com
-baseurl: ""
+baseurl: "/_site"
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
