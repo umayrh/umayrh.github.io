@@ -4,10 +4,10 @@
     <title>Sketchy Polytopes</title>
     <description>Algorithms, optimization; systems, data, and people 
 </description>
-    <link>http://umayrh.github.io</link>
-    <atom:link href="http://umayrh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Dec 2019 04:40:43 -0800</pubDate>
-    <lastBuildDate>Wed, 25 Dec 2019 04:40:43 -0800</lastBuildDate>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 25 Dec 2019 12:29:26 -0800</pubDate>
+    <lastBuildDate>Wed, 25 Dec 2019 12:29:26 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -23,8 +23,8 @@ One senses a process and procedure of inheritance indifferent to the act of birt
 responded: ”By that mysterious yearning toward the chasm; / Chaotic deeps attract, and whole peoples too”&lt;/p&gt;
 </description>
         <pubDate>Fri, 18 Aug 2017 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2017/08/18/obituaries-cathleen-morawetz-1923-2017/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2017/08/18/obituaries-cathleen-morawetz-1923-2017/</guid>
+        <link>http://localhost:4000/2017/08/18/obituaries-cathleen-morawetz-1923-2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/18/obituaries-cathleen-morawetz-1923-2017/</guid>
         
         <category>Obit</category>
         
@@ -46,8 +46,8 @@ writing about Deleuze (&lt;em&gt;I’ll Have to Wander All Alone&lt;/em&gt;): �
 &lt;p&gt;&lt;a href=&quot;https://www.ias.edu/ideas/dynamics-moduli-spaces-curves-i&quot;&gt;Dynamics of the Moduli Spaces of Curves&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 16 Jul 2017 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2017/07/16/obituaries-maryam-mirzakhani-1977-2017/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2017/07/16/obituaries-maryam-mirzakhani-1977-2017/</guid>
+        <link>http://localhost:4000/2017/07/16/obituaries-maryam-mirzakhani-1977-2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/07/16/obituaries-maryam-mirzakhani-1977-2017/</guid>
         
         <category>Obit</category>
         
@@ -217,8 +217,8 @@ of a submanifold.&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 23 Dec 2016 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2016/12/23/a-fearful-sphere-whose-center-is-everywhere/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2016/12/23/a-fearful-sphere-whose-center-is-everywhere/</guid>
+        <link>http://localhost:4000/2016/12/23/a-fearful-sphere-whose-center-is-everywhere/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/23/a-fearful-sphere-whose-center-is-everywhere/</guid>
         
         <category>Convex geometry</category>
         
@@ -239,53 +239,70 @@ of a submanifold.&lt;/p&gt;
     
       <item>
         <title>2-butterfly derangement</title>
-        <description>&lt;p&gt;The hallmark of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Cooley–Tukey_FFT_algorithm&quot;&gt;Cooley-Tukey algorithm&lt;/a&gt; for  &lt;a href=&quot;https://en.wikipedia.org/wiki/Fast_Fourier_transform&quot;&gt;Fast Fourier Transform&lt;/a&gt; is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Butterfly_network&quot;&gt;butterfly network&lt;/a&gt;, which helps reduce O(N^2) computations to O(N_log_N). Butterflies are very special graphs entangled in routing [Arora], switching [Chung], shuffling [Yang], and mixing [Czumaj].&lt;/p&gt;
+        <description>&lt;p&gt;The hallmark of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Cooley–Tukey_FFT_algorithm&quot;&gt;Cooley-Tukey algorithm&lt;/a&gt; for  
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Fast_Fourier_transform&quot;&gt;Fast Fourier Transform&lt;/a&gt; is the 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Butterfly_network&quot;&gt;butterfly network&lt;/a&gt;, which helps reduce $O(n^2)$ computations to $O(n log n)$. 
+Butterflies are very special graphs entangled in routing [Arora], switching [Chung], shuffling [Yang], and mixing [Czumaj].&lt;/p&gt;
 
-&lt;p&gt;[caption id=”attachment_1761” align=”aligncenter” width=”619”]&lt;img src=&quot;https://umayrh.files.wordpress.com/2016/12/res3.png&quot; alt=&quot;res3&quot; /&gt; Three butterflies - FFT flow graph, shuffling network, and a nonblocking interconnect[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/res3.png&quot; alt=&quot;Three butterflies - FFT flow graph, shuffling network, and a nonblocking interconnect&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The butterfly with 2 inputs and outputs (aka &lt;a href=&quot;https://en.wikipedia.org/wiki/Butterfly_diagram#Radix-2_butterfly_diagram&quot;&gt;radix-2 butterfly&lt;/a&gt;, or the &lt;a href=&quot;http://mathworld.wolfram.com/CompleteBipartiteGraph.html&quot;&gt;bipartite graph&lt;/a&gt; K(2, 2)) is a building block for larger networks [Chung]. It can implement two distinct operations: pass-through and swap.&lt;/p&gt;
+&lt;p&gt;The butterfly with 2 inputs and outputs (aka &lt;a href=&quot;https://en.wikipedia.org/wiki/Butterfly_diagram#Radix-2_butterfly_diagram&quot;&gt;radix-2 butterfly&lt;/a&gt;, 
+or the &lt;a href=&quot;http://mathworld.wolfram.com/CompleteBipartiteGraph.html&quot;&gt;bipartite graph&lt;/a&gt; $K(2, 2)$ is a building block for larger 
+networks [Chung]. It can implement two distinct operations: pass-through and swap.&lt;/p&gt;
 
-&lt;p&gt;[caption id=”attachment_1779” align=”aligncenter” width=”465”]&lt;img src=&quot;https://umayrh.files.wordpress.com/2016/12/screen-shot-2016-12-09-at-1-49-32-pm.png&quot; alt=&quot;screen-shot-2016-12-09-at-1-49-32-pm&quot; /&gt; pass-through, and swap[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/screen-shot-2016-12-09-at-1-49-32-pm.png&quot; alt=&quot;pass-through, and swap&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Problem 1&lt;/strong&gt;: Can an array of size N be &lt;a href=&quot;https://en.wikipedia.org/wiki/Permutation&quot;&gt;permuted&lt;/a&gt; using only swapping 2-butterflies in a single stage? Single stage implies that every element is swapped exactly once.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 1&lt;/strong&gt;: Can an array of size $N$ be &lt;a href=&quot;https://en.wikipedia.org/wiki/Permutation&quot;&gt;permuted&lt;/a&gt; using only swapping 
+2-butterflies in a single stage? Single stage implies that every element is swapped exactly once.&lt;/p&gt;
 
-&lt;p&gt;Clearly, it can be iff N is even (otherwise the mapping is not bijective). Each permutation is also a &lt;a href=&quot;https://en.wikipedia.org/wiki/Matching_(graph_theory)&quot;&gt;maximal matching&lt;/a&gt; on the K(N/2, N/2) spanning N elements.&lt;/p&gt;
+&lt;p&gt;Clearly, it can be iff $N$ is even (otherwise the mapping is not bijective). Each permutation is also a 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Matching_(graph_theory)&quot;&gt;maximal matching&lt;/a&gt; on the $K(N/2, N/2)$ spanning $N$ elements.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Problem 2&lt;/strong&gt;: Can an array be &lt;a href=&quot;https://en.wikipedia.org/wiki/Derangement&quot;&gt;deranged&lt;/a&gt; using only swapping 2-butterflies in a single stage?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 2&lt;/strong&gt;: Can an array be &lt;a href=&quot;https://en.wikipedia.org/wiki/Derangement&quot;&gt;deranged&lt;/a&gt; using only swapping 2-butterflies 
+in a single stage?&lt;/p&gt;
 
-&lt;p&gt;There are always at least two derangements for any even-sized array when N &amp;gt; 2 (only one if N = 2). One can be obtained by swapping N/2 non-overlapping pairs. Another, by swapping the two halves of the array. Here’re two for N = 16:&lt;/p&gt;
+&lt;p&gt;There are always at least two derangements for any even-sized array when $N &amp;gt; 2$ (only one if $N = 2$). One can be obtained 
+by swapping $N/2$ non-overlapping pairs. Another, by swapping the two halves of the array. Here’re two for $N = 16$:&lt;/p&gt;
 
-&lt;p&gt;[caption id=”attachment_1822” align=”alignnone” width=”1191”]&lt;img src=&quot;https://umayrh.files.wordpress.com/2016/12/fft16.png&quot; alt=&quot;fft16&quot; /&gt; Any even N has at least these two derangements[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/fft16.png&quot; alt=&quot;Any even N has at least these two derangements&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem 3&lt;/strong&gt;: How many such derangements are possible?&lt;/p&gt;
 
-&lt;p&gt;Let N = m * 2^k, where m &amp;gt;= 1 is some odd integer, and k &amp;gt; 0. There are at most log(k) - or, log(N), if m = 1 - distinct derangements.&lt;/p&gt;
+&lt;p&gt;Let $N = m * 2^k$, where $m &amp;gt;= 1$ is some odd integer, and $k &amp;gt; 0$. There are at most $log(k)$ - or, $log(N)$, 
+if $m = 1$ - distinct derangements.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Problem 4&lt;/strong&gt;: Is there a permutation of the first N natural numbers, [1..N], such that if a number x is mapped to a number y in the permutation, then&lt;/td&gt;
-      &lt;td&gt;x - y&lt;/td&gt;
-      &lt;td&gt;== K for all x and y, and for a given 0 &amp;lt; K &amp;lt; N?&lt;/td&gt;
-      &lt;td&gt;*&lt;/td&gt;
-      &lt;td&gt;denotes the absolute value. In other words, is there a bijective function f mapping [1..N] to [1..N] such that&lt;/td&gt;
-      &lt;td&gt;x - f(x)&lt;/td&gt;
-      &lt;td&gt;== K?&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Problem 4&lt;/strong&gt;: Is there a permutation of the first $N$ natural numbers, $[1..N]$, such that if a number $x$ is mapped to a 
+number $y$ in the permutation, then $| x - y | == K$ for all x and y, and for a given $0 &amp;lt; K &amp;lt; N$? $|.|$ denotes the absolute 
+value. In other words, is there a bijective function f mapping $[1..N]$ to $[1..N]$ such that $|x - f(x)| == K$?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://umayrh.files.wordpress.com/2016/12/screen-shot-2016-12-09-at-3-14-18-pm.png&quot; alt=&quot;screen-shot-2016-12-09-at-3-14-18-pm&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/screen-shot-2016-12-09-at-3-14-18-pm.png&quot; alt=&quot;screen-shot-2016-12-09-at-3-14-18-pm&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Since K &amp;gt; 0, this permutation must be a derangement. The previous two examples for N = 16 illustrate K = 1 and K = 8. They represent a derangement that swaps N / K groups of K neighbors with each other. If K leaves an even factor to N, and K &amp;lt;= N/2, then such a derangement always exists. Here’s a short program to print them out:&lt;/p&gt;
+&lt;p&gt;Since K &amp;gt; 0, this permutation must be a derangement. The previous two examples for N = 16 illustrate K = 1 and K = 8. 
+They represent a derangement that swaps N / K groups of K neighbors with each other. If K leaves an even factor to N, 
+and K &amp;lt;= N/2, then such a derangement always exists. Here’s a short program to print them out:&lt;/p&gt;
 
 &lt;p&gt;[code language=”java”] public static String permute(int n, int k) { StringBuilder result = new StringBuilder(2 * n); if (n % 2 == 0 &amp;amp;&amp;amp; k &amp;gt; 0 &amp;amp;&amp;amp; k &amp;lt;= (n / 2)) { // any k that leaves an even factor is fine // e.g. k = 4 for n = 12 is not valid but k = 2 is if ((n % k == 0) &amp;amp;&amp;amp; ((n / k) % 2 == 0)) { // groups of k are swapped with neighbors int k2 = k * 2; for (int g = 0; g &amp;lt; n / k2; ++g) { int f = k2 * g; for (int i = k + 1; i &amp;lt;= k2; ++i) { result.append(f + i).append(“ “); } for (int i = 1; i &amp;lt;= k; ++i) { result.append(f + i).append(“ “); } } return result.toString(); } } return “No permutation exists”; } [/code]&lt;/p&gt;
 
-&lt;p&gt;[&lt;a href=&quot;http://www.cs.princeton.edu/~arora/pubs/nonblock.ps&quot;&gt;Arora&lt;/a&gt;] S. Arora, F. T. Leighton, B. M. Maggs. &lt;em&gt;Online algorithms for path selection in a nonblocking network&lt;/em&gt;. [&lt;a href=&quot;http://www.math.ucsd.edu/~fan/mypaps/fanpap/fc15algebraic.pdf&quot;&gt;Chung&lt;/a&gt;] F. R. K. Chung. &lt;em&gt;An algebraic approach to switching networks&lt;/em&gt;. [&lt;a href=&quot;https://arxiv.org/pdf/1204.1958.pdf&quot;&gt;Yang&lt;/a&gt;] Q. Yang, J. Ellis, K. Mamakani, F. Ruskey. &lt;em&gt;In-place permuting and perfect shuffling using involutions&lt;/em&gt;. [&lt;a href=&quot;http://www.dcs.warwick.ac.uk/~czumaj/PUBLICATIONS/CONFERENCES/Czumaj-STOC-2015-703-712.pdf&quot;&gt;Czumaj&lt;/a&gt;] A. Czumaj. &lt;em&gt;Random permutations using __switching networks&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cs.princeton.edu/~arora/pubs/nonblock.ps&quot;&gt;Arora&lt;/a&gt; S. Arora, F. T. Leighton, B. M. Maggs. &lt;em&gt;Online algorithms for path selection in a nonblocking network&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.math.ucsd.edu/~fan/mypaps/fanpap/fc15algebraic.pdf&quot;&gt;Chung&lt;/a&gt; F. R. K. Chung. &lt;em&gt;An algebraic approach to switching networks&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/1204.1958.pdf&quot;&gt;Yang&lt;/a&gt; Q. Yang, J. Ellis, K. Mamakani, F. Ruskey. &lt;em&gt;In-place permuting and perfect shuffling using involutions&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.dcs.warwick.ac.uk/~czumaj/PUBLICATIONS/CONFERENCES/Czumaj-STOC-2015-703-712.pdf&quot;&gt;Czumaj&lt;/a&gt; A. Czumaj. &lt;em&gt;Random permutations using __switching networks&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sat, 10 Dec 2016 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2016/12/10/2-butterfly-derangement/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2016/12/10/2-butterfly-derangement/</guid>
+        <link>http://localhost:4000/2016/12/10/2-butterfly-derangement/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/10/2-butterfly-derangement/</guid>
+        
+        <category>Algorithms</category>
+        
+        <category>Java</category>
+        
+        <category>Mathematics</category>
+        
+        <category>Permutations</category>
+        
+        <category>Switching networks</category>
         
         
       </item>
@@ -330,8 +347,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;-&lt;/p&gt;
 </description>
         <pubDate>Fri, 09 Dec 2016 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2016/12/09/maximum-weighted-independent-set-connected-component/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2016/12/09/maximum-weighted-independent-set-connected-component/</guid>
+        <link>http://localhost:4000/2016/12/09/maximum-weighted-independent-set-connected-component/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/09/maximum-weighted-independent-set-connected-component/</guid>
         
         
       </item>
@@ -426,8 +443,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;Once we’ve accounted for singletons and forest, we need to solve the independent set problem for each connected component. This would the topic of the next post.&lt;/p&gt;
 </description>
         <pubDate>Tue, 06 Dec 2016 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2016/12/06/maximum-weighted-independent-set-singletons-and-forest/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2016/12/06/maximum-weighted-independent-set-singletons-and-forest/</guid>
+        <link>http://localhost:4000/2016/12/06/maximum-weighted-independent-set-singletons-and-forest/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/06/maximum-weighted-independent-set-singletons-and-forest/</guid>
         
         
       </item>
@@ -467,8 +484,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;All rational numbers with prime denominators and even length periods  have the ‘nines property’ i.e. the first and second half-periods of the repeating part add up to 9…9 (Proved in W. G. Leavitt, &lt;em&gt;A Theorem on Repeating Decimals&lt;/em&gt;, 1967 [&lt;a href=&quot;http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1047&amp;amp;context=mathfacpub&quot;&gt;paper&lt;/a&gt;]). Also, an interesting &lt;a href=&quot;http://mathoverflow.net/questions/41736/how-do-you-calculate-prove-the-length-of-n-the-number-of-non-repeating-digits-p&quot;&gt;lemma&lt;/a&gt; on the length of the prepend to the period (it is the number of times the denominator is divisible by either 2 or 5).&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Oct 2016 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2016/10/27/rational-numbers-in-decimal/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2016/10/27/rational-numbers-in-decimal/</guid>
+        <link>http://localhost:4000/2016/10/27/rational-numbers-in-decimal/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/10/27/rational-numbers-in-decimal/</guid>
         
         
       </item>
@@ -484,8 +501,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[&lt;a href=&quot;http://www.akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/02/Atkinson86.pdf&quot;&gt;ASSS86&lt;/a&gt;] M. D. Atkinson, J.-R. Sack, N. Santoro, and T. Strothotte. &lt;em&gt;Min-max Heaps and Generalized Priority Queues&lt;/em&gt;. Communications of the ACM, Vol. 29 No. 10, 1986.&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Oct 2016 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2016/10/27/generalized-heaps/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2016/10/27/generalized-heaps/</guid>
+        <link>http://localhost:4000/2016/10/27/generalized-heaps/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/10/27/generalized-heaps/</guid>
         
         
       </item>
@@ -512,8 +529,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.newschool.edu/nssr/het/profiles/scarf.htm&quot;&gt;The major works of Herbert Scarf&lt;/a&gt; &lt;a href=&quot;http://dido.econ.yale.edu/~hes/pubs.htm&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Dec 2015 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2015/12/06/obituaries-herbert-scarf-1930-2015/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2015/12/06/obituaries-herbert-scarf-1930-2015/</guid>
+        <link>http://localhost:4000/2015/12/06/obituaries-herbert-scarf-1930-2015/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/12/06/obituaries-herbert-scarf-1930-2015/</guid>
         
         
       </item>
@@ -532,8 +549,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;A previous paper by the first author, &lt;a href=&quot;http://people.virginia.edu/~dn4w/&quot;&gt;Denis Nekipelov&lt;/a&gt;, discussed player valuation under the assumption of a static Nash equilibrium where all player respond independently and with their best strategies. That the auctions are already and/or constantly in equilibrium is a strong - if popular - assumption in dynamic environments like online advertising. The current paper instead assumes that player learn over time using “no-regret strategies” (i.e. responses that &lt;em&gt;over time&lt;/em&gt; are close to optimal), and then sets out to estimate the number of data samples required to approximate the &lt;em&gt;rationalizable set&lt;/em&gt; ”consisting of the set of values and error parameters (v, ε) such that with value v the sequence of bid by the player would have at most ε regret.”&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Jul 2015 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2015/07/23/a-terrible-summary-the-risks-of-reporting-on-research/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2015/07/23/a-terrible-summary-the-risks-of-reporting-on-research/</guid>
+        <link>http://localhost:4000/2015/07/23/a-terrible-summary-the-risks-of-reporting-on-research/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/07/23/a-terrible-summary-the-risks-of-reporting-on-research/</guid>
         
         
       </item>
@@ -561,8 +578,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[1] P. Flajolet, B. Vallee, and I. Vardi. Continued fractions from Euclid to present day. Preprint, March 2000. [2] D. Austin. Trees, Teeth, and Time: The mathematics of clock making. AMS Feature Column, December 2008.&lt;/p&gt;
 </description>
         <pubDate>Tue, 26 May 2015 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2015/05/26/continued-fractions/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2015/05/26/continued-fractions/</guid>
+        <link>http://localhost:4000/2015/05/26/continued-fractions/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/05/26/continued-fractions/</guid>
         
         
       </item>
@@ -588,8 +605,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[Borkar08] V. S. Borkar. Stochastic Approximation - A Dynamical Systems Viewpoint. Cambridge University Press, 2008. [&lt;a href=&quot;http://leon.bottou.org/publications/pdf/online-1998.pdf&quot;&gt;Bottou98&lt;/a&gt;] Online Learning and Stochastic Approximation. Online Learning and Neural Networks, ed. D. Saad, Cambridge University Press, 1998. [&lt;a href=&quot;http://castlelab.princeton.edu/ORF569.htm&quot;&gt;CastleLab&lt;/a&gt;] W. B. Powell. Computational Stochastic Optimization. Course Notes. [&lt;a href=&quot;http://lsc.amss.ac.cn/paper-pdf/hfchen-1.pdf&quot;&gt;Chen99&lt;/a&gt;] H. F. Chen, T. E. Duncan, and B. Pasik-Duncan. A Kiefer–Wolfowitz Algorithm with Randomized Differences. IEEE Transactions on Automatic Control, Vol. 44, No. 3, March 1999. [&lt;a href=&quot;http://www.jhuapl.edu/spsa/PDF-SPSA/Hill_TechDig05.pdf&quot;&gt;Hill05&lt;/a&gt;] S. D. Hill. Discrete Stochastic Approximation with Application to Resource Allocation. Johns Hopkins APL Technical Digest, Vol. 26, No. 1, 2005. [Kushner98] H. J. Kushner and G. G. Yin. Stochastic Approximation Algorithms and Applications. Springer-Verlag, 1998. [&lt;a href=&quot;http://projecteuclid.org/download/pdf_1/euclid.aoms/1177729392&quot;&gt;Kiefer52&lt;/a&gt;] J. Kiefer, and J. Wolfowitz. Stochastic Estimation of the Maximum of a Regression Function. The Annals of Mathematical Statistics, 1952. [&lt;a href=&quot;http://bigr.nl/files/publications/296_Kle07%20-%20Evaluation%20of%20optimization%20methods%20for%20nonrigid%20medical%20image%20registration%20using%20mutual%20information%20and%20b-splines.pdf&quot;&gt;Klein07&lt;/a&gt;] S. Klein, M. Staring, and J. P. W. Pluim. Evaluation of Optimization Methods for Nonrigid Medical Image Registration Using Mutual Information and B-Splines. IEEE Transactions on Image Processing, Vol. 16, No. 12, December 2007. [&lt;a href=&quot;http://www.dam.brown.edu/lcds/publications/documents/Kushner_1_000.pdf&quot;&gt;Kushner08&lt;/a&gt;] H. J. Kushner. Stochastic Approximation: A Survey, Nov. 2008. [&lt;a href=&quot;http://www.jhuapl.edu/spsa/PDF-SPSA/Maeda_Extended_Adaptive.pdf&quot;&gt;Maeda94&lt;/a&gt;] Y. Maeda, and Y. Kanata. Extended Adaptive Robbins-Munro Procedure Using Simultaneous Perturbation for a Least-Square Approximation Problem. Proceedings of the Asian Control Conference, July 1994. [&lt;a href=&quot;http://www.jhuapl.edu/spsa/PDF-SPSA/Maryak_Some_Guidelines.PDF&quot;&gt;Maryak97&lt;/a&gt;] J. L. Maryak. Some Guidelines for Using Iterate Averaging in Stochastic Approximation. Conference on Decision and Control, December 1997. [&lt;a href=&quot;http://projecteuclid.org/download/pdfview_1/euclid.aos/1188405629&quot;&gt;Mokkadem07&lt;/a&gt;] A. Mokkadem, and Mariane Pelletier. A Companion for the Kiefer-Wolfowitz-Blum Stochastic Approximation Algorithm. The Annals of Statistics, Vol. 35. No. 4, 2007. [&lt;a href=&quot;http://projecteuclid.org/download/pdf_1/euclid.aoms/1177729586&quot;&gt;Munro51&lt;/a&gt;]  H. Robbins, and S. Monro. A Stochastic Approximation Method. The Annals of Mathematical Statistics, 1951. [&lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/SIOPT_RSA_2009.pdf&quot;&gt;Nemirovski09&lt;/a&gt;]  A. Nemirovski, A. Juditsky, G. Lan, A. Shapiro. Robust Stochastic Approximation Approach to Stochastic Programming. SIAM Journal on Optimization, 2009. [&lt;a href=&quot;http://www.meyn.ece.ufl.edu/archive/spm_files/Courses/ECE555-2011/555media/poljud92.pdf&quot;&gt;Polyak92&lt;/a&gt;] B. T. Polyak, and A. B. Juditsky. Acceleration of Stochastic Approximation By Averaging. SIAM Journal of Control and Optimization, Vol. 30, No. 4, July 1992.[&lt;a href=&quot;http://vserver1.cscs.lsa.umich.edu/~crshalizi/notabene/stochastic-approximation.html&quot;&gt;Shalizi&lt;/a&gt;] C. R. Shalizi. Stochastic Approximation Algorithms. Notes, 2010. [&lt;a href=&quot;http://webee.technion.ac.il/people/shimkin/LCS11/ch5_SA.pdf&quot;&gt;Shimkin11&lt;/a&gt;] N. Shimkim. The Stochastic Approximation Algorithm. Lecture Notes, Learning in Complex Systems, 2011. [&lt;a href=&quot;http://jmlr.csail.mit.edu/proceedings/papers/v28/zhang13e.pdf&quot;&gt;Zhang13&lt;/a&gt;] L. Zhang, T. Yang, R. Jin, and X. He. O(logT) Projections for Stochastic Optimization of Smooth and Strongly Convex Functions. Journal of Machine Learning Research, Vol. 28, 2013. []&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Nov 2014 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2014/11/28/first-order-methods-for-stochastic-optimization/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/11/28/first-order-methods-for-stochastic-optimization/</guid>
+        <link>http://localhost:4000/2014/11/28/first-order-methods-for-stochastic-optimization/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/11/28/first-order-methods-for-stochastic-optimization/</guid>
         
         
       </item>
@@ -612,8 +629,8 @@ of a submanifold.&lt;/p&gt;
 &lt;/table&gt;
 </description>
         <pubDate>Mon, 17 Nov 2014 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2014/11/17/obituaries-alexander-grothendieck-1928-2014/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/11/17/obituaries-alexander-grothendieck-1928-2014/</guid>
+        <link>http://localhost:4000/2014/11/17/obituaries-alexander-grothendieck-1928-2014/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/11/17/obituaries-alexander-grothendieck-1928-2014/</guid>
         
         
       </item>
@@ -799,8 +816,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[&lt;a href=&quot;http://arxiv.org/pdf/1111.0952v1.pdf&quot;&gt;Arora12a&lt;/a&gt;] S. Arora, R. Ge, R. Kannan, and A. Moitra. Computing a Nonnegative Matrix Factorization – Provably. STOC, 2012 [&lt;a href=&quot;http://arxiv.org/abs/1204.1956&quot;&gt;Arora12b&lt;/a&gt;] S. Arora, R. Ge, A. Moitra. Learning Topic Models - Going Beyond SVD. FOCS, 2012 [&lt;a href=&quot;http://www.pnas.org/content/101/12/4164.full.pdf+html&quot;&gt;Brunet04&lt;/a&gt;] J. Brunet, P. Tamayo, T. Golub, and J. Mesirov. Metagenes and molecular pattern discovery using matrix factorization. PNAS, 2004. [&lt;a href=&quot;http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470746661.html&quot;&gt;Cichoki09&lt;/a&gt;] A. Cichoki, R. Zdunek, A. H. Phan, S. Ammari. Nonnegative Matrix and Tensor Factorizations: Applications to exploratory multi-way data analysis and blind source separation, 2009. [&lt;a href=&quot;https://web.stanford.edu/~vcs/papers/NMFCDP.pdf&quot;&gt;Donoho03&lt;/a&gt;] D. Donoho and V. Stodden. When Does Non-Negative Matrix Factorization Give a Correct Decomposition into Parts? NIPS, 2003. [&lt;a href=&quot;http://www.epa.gov/ttnamti1/files/ambient/pm25/workshop/laymen.pdf&quot;&gt;Hopke00&lt;/a&gt;] P. K. Hopke. A guide to positive matrix factorization.Workshop on UNMIX and PMF as Applied to PM2, 2000. [&lt;a href=&quot;http://jmlr.org/papers/volume5/hoyer04a/hoyer04a.pdf&quot;&gt;Hoyer04&lt;/a&gt;] P. O. Hoyer. Non-negative matrix factorization with sparseness constraints. JMLR, 2004. [&lt;a href=&quot;http://www.mrao.cam.ac.uk/yerac/juvela/juvela.html&quot;&gt;Juvela94&lt;/a&gt;] M. Juvela, K. Lehtinen, and P. Paatero. The use of positive matrix factorization in the analysis of molecular line spectra from the thumbprint nebula. D. P. Clemens and R. Barvainis, eds., &lt;em&gt;Clouds, Cores, and Low Mass Stars&lt;/em&gt;, volume 65 of &lt;em&gt;ASP Conference Series&lt;/em&gt;, 1994. [&lt;a href=&quot;http://adsabs.harvard.edu/abs/1996MNRAS.280..616J&quot;&gt;Juvela96&lt;/a&gt;] M. Juvela, K. Lehtinen, and P. Paatero. The use of positive matrix factorization in the analysis of molecular line spectra. &lt;em&gt;MNRAS&lt;/em&gt;, 1996. [&lt;a href=&quot;http://bioinformatics.oxfordjournals.org/content/23/12/1495.full.pdf&quot;&gt;Kim07&lt;/a&gt;] H. Kim and H. Park. Sparse non-negative matrix factorizations via alternating non-negativity-constrained least squares for microarray data analysis. Bioinformatics, 2007. [&lt;a href=&quot;http://www.cc.gatech.edu/~hpark/papers/GT-CSE-08-01.pdf&quot;&gt;Kim08&lt;/a&gt;] J. Kim and H. Park. Sparse Nonnegative Matrix Factorization for Clustering. Georgia Tech Technical Report, GT-CSE-08-01, 2008. [&lt;a href=&quot;https://datajobs.com/data-science-repo/Recommender-Systems-%5BNetflix%5D.pdf&quot;&gt;Koren09&lt;/a&gt;] Y. Koren, R. Bell, and C. Volinsky. Matrix factorization for recommender systems. IEEE Computer Society, 2009. [&lt;a href=&quot;research.yahoo.com/files/korenBellChapterSpringer.pdf&quot;&gt;Koren11&lt;/a&gt;] Y. Koren, and R. Bell. Advances in collaborative filtering. Recommender Systems Handbook, 2011. [&lt;a href=&quot;http://hebb.mit.edu/people/seung/papers/ls-lponm-99.pdf&quot;&gt;Lee99&lt;/a&gt;] D. D. Lee, and H. S. Seung. Learning the parts of objects by non-negative matrix factorization. Nature, 1999. [&lt;a href=&quot;http://hebb.mit.edu/people/seung/papers/nmfconverge.pdf&quot;&gt;Lee01&lt;/a&gt;] D. D. Lee and H. S. Seung. Algorithms for non-negative matrix factorization. NIPS, 2001. [&lt;a href=&quot;http://www.ai.mit.edu/courses/6.899/papers/3B_04.PDF&quot;&gt;Li01&lt;/a&gt;] S. Z. Li, X. Hou, H. Zhang, and Q. Cheng. Learning spatially localized parts-based representations. Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2001. [&lt;a href=&quot;http://www.cs.berkeley.edu/~jordan/papers/li-ding-jordan-icdm07.pdf&quot;&gt;Li07&lt;/a&gt;] T. Li, C. Ding, M. I. Jordan. Solving Consensus and Semi-supervised Clustering Problems Using Nonnegative Matrix Factorization. ICDM, 2007.&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Oct 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/10/07/nonnegative-matrix-factorization-1/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/10/07/nonnegative-matrix-factorization-1/</guid>
+        <link>http://localhost:4000/2014/10/07/nonnegative-matrix-factorization-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/10/07/nonnegative-matrix-factorization-1/</guid>
         
         
       </item>
@@ -816,8 +833,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[embed width=300 height=150]https://www.youtube.com/watch?v=SZ0tzt54Mlc[/embed]&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Oct 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/10/06/obituaries-harold-kuhn-1925-2014/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/10/06/obituaries-harold-kuhn-1925-2014/</guid>
+        <link>http://localhost:4000/2014/10/06/obituaries-harold-kuhn-1925-2014/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/10/06/obituaries-harold-kuhn-1925-2014/</guid>
         
         
       </item>
@@ -831,8 +848,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[embed]https://www.youtube.com/watch?v=ZU_ATH9Vc6I[/embed]&lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Aug 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/08/21/3-manifolds/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/08/21/3-manifolds/</guid>
+        <link>http://localhost:4000/2014/08/21/3-manifolds/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/08/21/3-manifolds/</guid>
         
         
       </item>
@@ -876,8 +893,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[latex]F_n = \frac{1}{\sqrt{5}}\left\{(\frac{1+\sqrt{5}}{2})^{n}-(\frac{1-\sqrt{5}}{2})^n\right\}[/latex]&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Aug 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/</guid>
+        <link>http://localhost:4000/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/</guid>
         
         
       </item>
@@ -891,8 +908,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;http://journals.aps.org/prl/50years/milestones&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Aug 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/08/01/physical-review-of-letters-past/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/08/01/physical-review-of-letters-past/</guid>
+        <link>http://localhost:4000/2014/08/01/physical-review-of-letters-past/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/08/01/physical-review-of-letters-past/</guid>
         
         
       </item>
@@ -1092,8 +1109,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[1] http://web.stanford.edu/~boyd/papers/prox_algs/lasso.html [2] https://github.com/gpeyre/numerical-tours/tree/master/matlab/solutions [3] https://www.ceremade.dauphine.fr/~peyre/numerical-tour/tours/optim_4_fb/#54 [4] http://www.caam.rice.edu/~optimization/disparse/LASSO/FISTA/pFistaLasso.html [5] http://www.mathworks.com/matlabcentral/fileexchange/16204-toolbox-sparse-optmization/content/toolbox_optim/perform_fb.m [6] http://slipguru.disi.unige.it/Software/L1L2Py/algorithms.html [7] http://www.eecs.berkeley.edu/~yang/software/l1benchmark/ [8] http://www.ece.rice.edu/~tag7/Tom_Goldstein/CGIST.html [9] http://users.ece.gatech.edu/%7Esasif/index.html [10] https://www.ceremade.dauphine.fr/~peyre/numerical-tour/ [11] http://www.mit.edu/~dimitrib/PTseng/papers/apg_alg.m [12] http://www.ece.rice.edu/~tag7/Tom_Goldstein/CGIST.html [13] http://www.math.ucla.edu/~wotaoyin/software.html&lt;/p&gt;
 </description>
         <pubDate>Thu, 24 Jul 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/07/24/accelerated-first-order-methods-for-regularization/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/07/24/accelerated-first-order-methods-for-regularization/</guid>
+        <link>http://localhost:4000/2014/07/24/accelerated-first-order-methods-for-regularization/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/24/accelerated-first-order-methods-for-regularization/</guid>
         
         
       </item>
@@ -1325,8 +1342,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[&lt;a href=&quot;http://mechroom.technion.ac.il/~becka/papers/71654.pdf&quot;&gt;Beck09&lt;/a&gt;] A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM Journal of Imaging Sciences, 2009 [&lt;a href=&quot;http://statweb.stanford.edu/~candes/nesta/NESTA.pdf&quot;&gt;Becker09&lt;/a&gt;] S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 [&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;Bubeck14&lt;/a&gt;] S. Bubeck, Theory of Convex Optimization for Machine Learning [&lt;a href=&quot;http://statweb.stanford.edu/~candes/math301/Lectures/fast_proximal_methods.pdf&quot;&gt;Candes11&lt;/a&gt;] E. Candes. Math 301, Lectures Notes. [&lt;a href=&quot;http://statweb.stanford.edu/~candes/math301/Lectures/acc_nesterov.pdf&quot;&gt;Chen11&lt;/a&gt;] H. Chen, X. Ming. Accelerating Nesterov’s Method for Strongly Convex Functions. Course presentation, 2011. [&lt;a href=&quot;http://mrtz.org/blog/the-zen-of-gradient-descent/&quot;&gt;Hardt13&lt;/a&gt;] M. Hardt. The Zen of Gradient Descent. Blog, 2013. [&lt;a href=&quot;http://www.cfm.brown.edu/people/gk/chap7/node21.html&quot;&gt;Karniadakis00&lt;/a&gt;] G. E. Karniadakis. R. M. Kirby. Parallel Scientific Computing in C++ and MPI. 2000 [&lt;a href=&quot;http://ocw.mit.edu/courses/mathematics/18-409-topics-in-theoretical-computer-science-an-algorithmists-toolkit-fall-2009/lecture-notes/MIT18_409F09_scribe22.pdf&quot;&gt;Kelner09&lt;/a&gt;] J. Kelner. Lecture Notes. MIT 18.409, Lecture 22, 2009 [&lt;a href=&quot;http://books.google.com/books?id=x69Q226WR8kC&amp;amp;pg=PA224&amp;amp;lpg=PA224&amp;amp;dq=numerical+analysis+chebyshev+acceleration&amp;amp;source=bl&amp;amp;ots=J7e8egYnwg&amp;amp;sig=gT-vbe7DtdAWvcUkFwHEIwNWiZw&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=iUHPU5K-GobE8AHgtIHQBQ&amp;amp;ved=0CFoQ6AEwBg#v=onepage&amp;amp;q=numerical%20analysis%20chebyshev%20acceleration&amp;amp;f=false&quot;&gt;Kincaid02&lt;/a&gt;] D. R. Kincaid, E. W. Cheney. Numerical Analysis: Mathematics of Scientific Computing. AMS, 2002 [Nesterov83] Y. Nesterov. A method for solving a convex programming problem with convergence rate O(1/k2). Dokaldy AN SSR, 1983 [Nesterov88] Y. Nesterov. On an approach to the construction of optimal methods of minimization of smooth convex functions. Ekonom. i. Mat. Metody, 1988 [Nesterov04] Y. Nesterov. Introductory Lectures On Convex Programming: A Basic Course. Kluwer Academic Publishers, 2004 [&lt;a href=&quot;http://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=10&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0CHkQFjAJ&amp;amp;url=http%3A%2F%2Fwww.ecore.be%2FDPs%2Fdp_1191313936.pdf&amp;amp;ei=2PPNU7nmEoaT8QHOioGwCA&amp;amp;usg=AFQjCNFLHxemWvAoXMH4NdWlKh8d9sQOrw&amp;amp;bvm=bv.71198958,d.b2U&quot;&gt;Nesterov07&lt;/a&gt;] Y. Nesterov. Gradient methods for minimizing composite objective function. Report, CORE, 2007 [&lt;a href=&quot;http://galton.uchicago.edu/~lekheng/courses/31060s13/nesterov.pdf&quot;&gt;Nesterov08&lt;/a&gt;] Y. Nesterov. How to advance in Structural Convex Optimization. Optima, 2008 [&lt;a href=&quot;http://link.springer.com/article/10.1007%2FBF01389971#page-1&quot;&gt;Manteuffel77&lt;/a&gt;] T. A. Manteuffel. The Tchebyshev iteration for nonsymmetric linear systems. Numer. Math, 1977. [&lt;a href=&quot;http://www-users.cs.umn.edu/~saad/eig_book_2ndEd.pdf&quot;&gt;Saad11&lt;/a&gt;] Y. Saad. Numerical Methods for Large Eigenvalue Problems. SIAM, 2011 [&lt;a href=&quot;https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf&quot;&gt;Taboulle10&lt;/a&gt;]. M. Taboulle. First-Order Methods for Optimization. IPAM Optimization Tutorials, 2010 [&lt;a href=&quot;https://www.cs.cmu.edu/~ggordon/10725-F12/slides/09-acceleration.pdf&quot;&gt;Gordon12&lt;/a&gt;] G. Gordon, R. Tibshirani. Course Notes, 10-725 Optimization, Fall 2012 [&lt;a href=&quot;http://www.mit.edu/~dimitrib/PTseng/papers/apgm.pdf&quot;&gt;Tseng08&lt;/a&gt;] P. Tseng. On Accelerated Proximal Gradient Algorithms for Convex-Concave Optimization. SIAM Journal of Optimization, 2008&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Jul 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/07/21/accelerating-first-order-methods/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/07/21/accelerating-first-order-methods/</guid>
+        <link>http://localhost:4000/2014/07/21/accelerating-first-order-methods/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/21/accelerating-first-order-methods/</guid>
         
         
       </item>
@@ -1352,8 +1369,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Subgradient#The_subgradient&quot;&gt;[1]&lt;/a&gt; Wikipedia, Subgradient [2] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 &lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;[3]&lt;/a&gt; S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Jul 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/07/17/subgradient/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/07/17/subgradient/</guid>
+        <link>http://localhost:4000/2014/07/17/subgradient/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/17/subgradient/</guid>
         
         
       </item>
@@ -1655,8 +1672,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://mechroom.technion.ac.il/~becka/papers/71654.pdf&quot;&gt;[1]&lt;/a&gt; A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM J. Imaging Sciences, 2009 &lt;a href=&quot;http://statweb.stanford.edu/~candes/nesta/NESTA.pdf&quot;&gt;[2]&lt;/a&gt; S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 &lt;a href=&quot;http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/&quot;&gt;[3]&lt;/a&gt; http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/ &lt;a href=&quot;https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf&quot;&gt;[4]&lt;/a&gt; M. Teboulle. First-Order Algorithms for Convex Optimization. IPAM, 2010 &lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf&quot;&gt;[5]&lt;/a&gt; A. Ben-Tal, A. Nemirovski. Lectures on Modern Convex Optimization. Lecture Notes, 2013 &lt;a href=&quot;http://en.wikipedia.org/wiki/Subgradient#The_subgradient&quot;&gt;[6]&lt;/a&gt; http://en.wikipedia.org/wiki/Subgradient#The_subgradient &lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;[7]&lt;/a&gt; S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014 [8] T. Hastie, R. Tibshirani, J. Friedman. Elements of Statistical Learning. Second Edition. &lt;a href=&quot;http://www.ecore.be/DPs/dp_1329823186.pdf&quot;&gt;[9]&lt;/a&gt; Y. Nesterov. Subgradient Methods for Huge-Scale Optimization Problems. ECORE Discussion Paper, 2012 &lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf&quot;&gt;[10]&lt;/a&gt; A. Juditsky, A. Nemirovski. First-Order Methods for Non-Smooth Convex Large-Scale Optimization, 1. Optimization for Machine Learning, [11] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 &lt;a href=&quot;https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf&quot;&gt;[12]&lt;/a&gt; A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Framework. SIAM Journal Of Optimization, 2012 &lt;a href=&quot;http://web.stanford.edu/~boyd/papers/prox_algs.html&quot;&gt;[13]&lt;/a&gt; N. Parrikh, S. Boyd. Proximal Algorithms. Foundations and Trends in Optimization, 2014 &lt;a href=&quot;http://www.ljll.math.upmc.fr/~plc/mms1.pdf&quot;&gt;[14]&lt;/a&gt; P. L. Combette, V. R. Wajs. Signal Recovery by Proximal Forward-Backward Splitting. Multiscale Modeling and Simulation, 2005&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Jul 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/07/17/first-order-methods-for-regularization/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/07/17/first-order-methods-for-regularization/</guid>
+        <link>http://localhost:4000/2014/07/17/first-order-methods-for-regularization/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/17/first-order-methods-for-regularization/</guid>
         
         
       </item>
@@ -1816,8 +1833,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;[1]&lt;/a&gt; S. Bubeck, Theory of Convex Optimization for Machine Learning, section 3.4 &lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions&quot;&gt;[2]&lt;/a&gt; Wikipedia, Convex function &lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions&quot;&gt;&lt;/a&gt; &lt;a href=&quot;http://web.stanford.edu/~boyd/cvxbook/&quot;&gt;[3]&lt;/a&gt; S. Boyd and G. Vandenberghe, Convex Optimization, section 9.1.2 &lt;a href=&quot;http://ttic.uchicago.edu/~shai/papers/KakadeShalevTewari09.pdf&quot;&gt;[4]&lt;/a&gt; S. M. Kakade, S. Shalev-Schwartz, A. Tiwari. On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization. Technical Report, 2009&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Jul 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/07/09/strong-convexity/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/07/09/strong-convexity/</guid>
+        <link>http://localhost:4000/2014/07/09/strong-convexity/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/09/strong-convexity/</guid>
         
         
       </item>
@@ -1875,8 +1892,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;More in the paper &lt;a href=&quot;http://sminsker.files.wordpress.com/2013/11/geometric_median_minsker_2.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Jul 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/07/08/geometric-median-robust-estimation/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/07/08/geometric-median-robust-estimation/</guid>
+        <link>http://localhost:4000/2014/07/08/geometric-median-robust-estimation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/08/geometric-median-robust-estimation/</guid>
         
         
       </item>
@@ -1924,8 +1941,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;A complete list of papers is available &lt;a href=&quot;http://www.sigecom.org/ec14/accepted_papers.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Jul 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/07/07/ec14-some-intriguing-papers/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/07/07/ec14-some-intriguing-papers/</guid>
+        <link>http://localhost:4000/2014/07/07/ec14-some-intriguing-papers/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/07/07/ec14-some-intriguing-papers/</guid>
         
         
       </item>
@@ -1968,8 +1985,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[&lt;em&gt;to be concluded&lt;/em&gt;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Jun 2014 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2014/06/24/congestion-control-as-optimization/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2014/06/24/congestion-control-as-optimization/</guid>
+        <link>http://localhost:4000/2014/06/24/congestion-control-as-optimization/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/06/24/congestion-control-as-optimization/</guid>
         
         
       </item>
@@ -1991,8 +2008,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;[1] A. Shukla et al, Storage estimation for multidimensional aggregates in the presence of hierarchies [&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.7924&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;paper&lt;/a&gt;] [2] W. Feller, An introduction to probability theory and its applications, vol. 1, 1957&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Oct 2013 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2013/10/26/estimating-uniques-sampling-with-replacement/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2013/10/26/estimating-uniques-sampling-with-replacement/</guid>
+        <link>http://localhost:4000/2013/10/26/estimating-uniques-sampling-with-replacement/</link>
+        <guid isPermaLink="true">http://localhost:4000/2013/10/26/estimating-uniques-sampling-with-replacement/</guid>
         
         
       </item>
@@ -2030,8 +2047,8 @@ of a submanifold.&lt;/p&gt;
 &lt;p&gt;How do these implementation work? What are their limitations?&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Nov 2012 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2012/11/19/linear-regression-in-r/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2012/11/19/linear-regression-in-r/</guid>
+        <link>http://localhost:4000/2012/11/19/linear-regression-in-r/</link>
+        <guid isPermaLink="true">http://localhost:4000/2012/11/19/linear-regression-in-r/</guid>
         
         
       </item>
@@ -2153,8 +2170,8 @@ n = 12, C = 1&lt;/p&gt;
 &lt;p&gt;[1] &lt;a href=&quot;http://en.wikipedia.org/wiki/Pascal%27s_pyramid&quot;&gt;Pascal’s Pyramid&lt;/a&gt; [2] A &lt;a href=&quot;http://www.fq.math.ca/Scanned/40-1/woan.pdf&quot;&gt;Combinatorial Proof&lt;/a&gt; of a Recursive Relation of the Motzkin Sequence by Lattice Paths&lt;/p&gt;
 </description>
         <pubDate>Thu, 24 May 2012 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2012/05/24/ip-possibilities/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2012/05/24/ip-possibilities/</guid>
+        <link>http://localhost:4000/2012/05/24/ip-possibilities/</link>
+        <guid isPermaLink="true">http://localhost:4000/2012/05/24/ip-possibilities/</guid>
         
         
       </item>
@@ -2242,8 +2259,8 @@ n = 12, C = 1&lt;/p&gt;
 &lt;p&gt;References: [1] &lt;a href=&quot;http://www.stanford.edu/~boyd/cvxbook/&quot;&gt;Convex Optimization&lt;/a&gt; [2] http://math.stackexchange.com/questions/16788/solution-technique-to-optimize-sets-of-constraint-functions-with-objective-funct [3] &lt;a href=&quot;http://www.aimms.com/aimms/download/manuals/aimms3om_integerprogrammingtricks.pdf&quot;&gt;Integer Programming Tricks&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 23 May 2012 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2012/05/23/note-on-minimax-optimization/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2012/05/23/note-on-minimax-optimization/</guid>
+        <link>http://localhost:4000/2012/05/23/note-on-minimax-optimization/</link>
+        <guid isPermaLink="true">http://localhost:4000/2012/05/23/note-on-minimax-optimization/</guid>
         
         
       </item>
@@ -2339,8 +2356,8 @@ n = 12, C = 1&lt;/p&gt;
 &lt;p&gt;[1] http://www.iti.fh-flensburg.de/lang/algorithmen/sortieren/heap/heapen.htm [2] http://www.vogella.com/articles/JavaAlgorithmsMergesort/article.html [3] http://www.augustana.ca/~jmohr/courses/2004.winter/csc310/source/QuickSort.java.html&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 May 2012 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2012/05/20/sorting-primer/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2012/05/20/sorting-primer/</guid>
+        <link>http://localhost:4000/2012/05/20/sorting-primer/</link>
+        <guid isPermaLink="true">http://localhost:4000/2012/05/20/sorting-primer/</guid>
         
         
       </item>
@@ -2407,8 +2424,8 @@ objFunValue: -38.346368
  f_opt: -38.346368    x_opt: [-5.01469912 -5.76690749 -8.52177183]&lt;/p&gt;
 </description>
         <pubDate>Wed, 21 Mar 2012 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2012/03/21/convex-optimization-in-five-easy-steps/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2012/03/21/convex-optimization-in-five-easy-steps/</guid>
+        <link>http://localhost:4000/2012/03/21/convex-optimization-in-five-easy-steps/</link>
+        <guid isPermaLink="true">http://localhost:4000/2012/03/21/convex-optimization-in-five-easy-steps/</guid>
         
         
       </item>
@@ -2467,8 +2484,8 @@ F_{t+m}&amp;amp; = (s_t + mb_t)c_{(t+m) \pmod L},&amp;lt;br /&amp;gt;&amp;lt;br 
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 15 Feb 2012 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2012/02/15/three-forecasting-techniques/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2012/02/15/three-forecasting-techniques/</guid>
+        <link>http://localhost:4000/2012/02/15/three-forecasting-techniques/</link>
+        <guid isPermaLink="true">http://localhost:4000/2012/02/15/three-forecasting-techniques/</guid>
         
         
       </item>
@@ -2559,8 +2576,8 @@ F_{t+m}&amp;amp; = (s_t + mb_t)c_{(t+m) \pmod L},&amp;lt;br /&amp;gt;&amp;lt;br 
 &lt;p&gt;[1] http://www.novell.com/communities/node/8706/check-mysql-database-size-using-sql-query&lt;/p&gt;
 </description>
         <pubDate>Thu, 15 Dec 2011 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2011/12/15/shell-scripts/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2011/12/15/shell-scripts/</guid>
+        <link>http://localhost:4000/2011/12/15/shell-scripts/</link>
+        <guid isPermaLink="true">http://localhost:4000/2011/12/15/shell-scripts/</guid>
         
         
       </item>
@@ -2624,8 +2641,8 @@ param.itlim = -1;&lt;/p&gt;
 % [2] http://mosaic.cnfolio.com/B324CW2010A105&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Aug 2011 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2011/08/17/problem-the-dropbox-diet/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2011/08/17/problem-the-dropbox-diet/</guid>
+        <link>http://localhost:4000/2011/08/17/problem-the-dropbox-diet/</link>
+        <guid isPermaLink="true">http://localhost:4000/2011/08/17/problem-the-dropbox-diet/</guid>
         
         
       </item>
@@ -2637,8 +2654,8 @@ param.itlim = -1;&lt;/p&gt;
 &lt;p&gt;Note that max allowed packet property is distinct from the fetch size property, which limits the number of rows fetched from the database.&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Aug 2011 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2011/08/17/notes-on-database-and-sql/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2011/08/17/notes-on-database-and-sql/</guid>
+        <link>http://localhost:4000/2011/08/17/notes-on-database-and-sql/</link>
+        <guid isPermaLink="true">http://localhost:4000/2011/08/17/notes-on-database-and-sql/</guid>
         
         
       </item>
@@ -2681,8 +2698,8 @@ FOR ALL groups G1, G2 …&lt;/p&gt;
 &lt;p&gt;The first and second passes might incur unnecessary overhead if it is known &lt;em&gt;a priori&lt;/em&gt; that almost all the files are exact replicas of each other.&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Jul 2011 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2011/07/22/fast-file-comparison/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2011/07/22/fast-file-comparison/</guid>
+        <link>http://localhost:4000/2011/07/22/fast-file-comparison/</link>
+        <guid isPermaLink="true">http://localhost:4000/2011/07/22/fast-file-comparison/</guid>
         
         
       </item>
@@ -2708,8 +2725,8 @@ FOR ALL groups G1, G2 …&lt;/p&gt;
 &lt;p&gt;[sourcecode language=”perl”]$str = “$str” . “\n”; my @array = split( /\t/, $str); splice(@array, $#array, 1)[/sourcecode]&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Jan 2011 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2011/01/14/perl-split-tricks/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2011/01/14/perl-split-tricks/</guid>
+        <link>http://localhost:4000/2011/01/14/perl-split-tricks/</link>
+        <guid isPermaLink="true">http://localhost:4000/2011/01/14/perl-split-tricks/</guid>
         
         
       </item>
@@ -2759,8 +2776,8 @@ for (key in arr)
 #&lt;/p&gt;
 </description>
         <pubDate>Mon, 10 Jan 2011 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2011/01/10/awk-comparing-numbers-in-two-files/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2011/01/10/awk-comparing-numbers-in-two-files/</guid>
+        <link>http://localhost:4000/2011/01/10/awk-comparing-numbers-in-two-files/</link>
+        <guid isPermaLink="true">http://localhost:4000/2011/01/10/awk-comparing-numbers-in-two-files/</guid>
         
         
       </item>
@@ -2811,8 +2828,8 @@ for (key in arr)
 &lt;p&gt;&lt;em&gt;Observation 4&lt;/em&gt;: What if one accidentally truncates a table? It seems that that only way to undo truncation is by ensuring that it is carried out within a transaction. More information on code and limitations available &lt;a href=&quot;http://blog.sqlauthority.com/2010/03/04/sql-server-rollback-truncate-command-in-transaction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Aug 2010 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2010/08/26/notes-on-databases-mass-deletion-aggregation-and-migration/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2010/08/26/notes-on-databases-mass-deletion-aggregation-and-migration/</guid>
+        <link>http://localhost:4000/2010/08/26/notes-on-databases-mass-deletion-aggregation-and-migration/</link>
+        <guid isPermaLink="true">http://localhost:4000/2010/08/26/notes-on-databases-mass-deletion-aggregation-and-migration/</guid>
         
         
       </item>
@@ -2848,8 +2865,8 @@ for (key in arr)
 &lt;p&gt;[1] Some simple binary &lt;a href=&quot;http://cslibrary.stanford.edu/110/BinaryTrees.html&quot;&gt;tree problems&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Jul 2010 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2010/07/28/data-structure-problems-binary-trees/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2010/07/28/data-structure-problems-binary-trees/</guid>
+        <link>http://localhost:4000/2010/07/28/data-structure-problems-binary-trees/</link>
+        <guid isPermaLink="true">http://localhost:4000/2010/07/28/data-structure-problems-binary-trees/</guid>
         
         
       </item>
@@ -2886,8 +2903,8 @@ for (key in arr)
 &lt;p&gt;- &lt;a href=&quot;ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf&quot;&gt;William Pugh’s paper&lt;/a&gt; on skip lists&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Jul 2010 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2010/07/27/data-structure-problems-statistics/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2010/07/27/data-structure-problems-statistics/</guid>
+        <link>http://localhost:4000/2010/07/27/data-structure-problems-statistics/</link>
+        <guid isPermaLink="true">http://localhost:4000/2010/07/27/data-structure-problems-statistics/</guid>
         
         
       </item>
@@ -2905,8 +2922,8 @@ for (key in arr)
 &lt;p&gt;- On various priority queue functions: &lt;a href=&quot;http://www.utdallas.edu/~ravip/cs3345/slidesweb/node5.html&quot;&gt;read&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Jul 2010 00:00:00 -0700</pubDate>
-        <link>http://umayrh.github.io/2010/07/24/heaps/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2010/07/24/heaps/</guid>
+        <link>http://localhost:4000/2010/07/24/heaps/</link>
+        <guid isPermaLink="true">http://localhost:4000/2010/07/24/heaps/</guid>
         
         
       </item>
@@ -2971,8 +2988,8 @@ for (key in arr)
 &lt;p&gt;9. How to find the kth node from last in a singly-linked list?&lt;/p&gt;
 </description>
         <pubDate>Tue, 02 Feb 2010 00:00:00 -0800</pubDate>
-        <link>http://umayrh.github.io/2010/02/02/linked-lists/</link>
-        <guid isPermaLink="true">http://umayrh.github.io/2010/02/02/linked-lists/</guid>
+        <link>http://localhost:4000/2010/02/02/linked-lists/</link>
+        <guid isPermaLink="true">http://localhost:4000/2010/02/02/linked-lists/</guid>
         
         
       </item>
