@@ -1,0 +1,43 @@
+<p>The hallmark of the <a href="https://en.wikipedia.org/wiki/Cooley–Tukey_FFT_algorithm">Cooley-Tukey algorithm</a> for  <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Transform</a> is the <a href="https://en.wikipedia.org/wiki/Butterfly_network">butterfly network</a>, which helps reduce O(N^2) computations to O(N_log_N). Butterflies are very special graphs entangled in routing [Arora], switching [Chung], shuffling [Yang], and mixing [Czumaj].</p>
+
+<p>[caption id=”attachment_1761” align=”aligncenter” width=”619”]<img src="https://umayrh.files.wordpress.com/2016/12/res3.png" alt="res3" /> Three butterflies - FFT flow graph, shuffling network, and a nonblocking interconnect[/caption]</p>
+
+<p>The butterfly with 2 inputs and outputs (aka <a href="https://en.wikipedia.org/wiki/Butterfly_diagram#Radix-2_butterfly_diagram">radix-2 butterfly</a>, or the <a href="http://mathworld.wolfram.com/CompleteBipartiteGraph.html">bipartite graph</a> K(2, 2)) is a building block for larger networks [Chung]. It can implement two distinct operations: pass-through and swap.</p>
+
+<p>[caption id=”attachment_1779” align=”aligncenter” width=”465”]<img src="https://umayrh.files.wordpress.com/2016/12/screen-shot-2016-12-09-at-1-49-32-pm.png" alt="screen-shot-2016-12-09-at-1-49-32-pm" /> pass-through, and swap[/caption]</p>
+
+<p><strong>Problem 1</strong>: Can an array of size N be <a href="https://en.wikipedia.org/wiki/Permutation">permuted</a> using only swapping 2-butterflies in a single stage? Single stage implies that every element is swapped exactly once.</p>
+
+<p>Clearly, it can be iff N is even (otherwise the mapping is not bijective). Each permutation is also a <a href="https://en.wikipedia.org/wiki/Matching_(graph_theory)">maximal matching</a> on the K(N/2, N/2) spanning N elements.</p>
+
+<p><strong>Problem 2</strong>: Can an array be <a href="https://en.wikipedia.org/wiki/Derangement">deranged</a> using only swapping 2-butterflies in a single stage?</p>
+
+<p>There are always at least two derangements for any even-sized array when N &gt; 2 (only one if N = 2). One can be obtained by swapping N/2 non-overlapping pairs. Another, by swapping the two halves of the array. Here’re two for N = 16:</p>
+
+<p>[caption id=”attachment_1822” align=”alignnone” width=”1191”]<img src="https://umayrh.files.wordpress.com/2016/12/fft16.png" alt="fft16" /> Any even N has at least these two derangements[/caption]</p>
+
+<p><strong>Problem 3</strong>: How many such derangements are possible?</p>
+
+<p>Let N = m * 2^k, where m &gt;= 1 is some odd integer, and k &gt; 0. There are at most log(k) - or, log(N), if m = 1 - distinct derangements.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Problem 4</strong>: Is there a permutation of the first N natural numbers, [1..N], such that if a number x is mapped to a number y in the permutation, then</td>
+      <td>x - y</td>
+      <td>== K for all x and y, and for a given 0 &lt; K &lt; N?</td>
+      <td>*</td>
+      <td>denotes the absolute value. In other words, is there a bijective function f mapping [1..N] to [1..N] such that</td>
+      <td>x - f(x)</td>
+      <td>== K?</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://umayrh.files.wordpress.com/2016/12/screen-shot-2016-12-09-at-3-14-18-pm.png" alt="screen-shot-2016-12-09-at-3-14-18-pm" /></p>
+
+<p>Since K &gt; 0, this permutation must be a derangement. The previous two examples for N = 16 illustrate K = 1 and K = 8. They represent a derangement that swaps N / K groups of K neighbors with each other. If K leaves an even factor to N, and K &lt;= N/2, then such a derangement always exists. Here’s a short program to print them out:</p>
+
+<p>[code language=”java”] public static String permute(int n, int k) { StringBuilder result = new StringBuilder(2 * n); if (n % 2 == 0 &amp;&amp; k &gt; 0 &amp;&amp; k &lt;= (n / 2)) { // any k that leaves an even factor is fine // e.g. k = 4 for n = 12 is not valid but k = 2 is if ((n % k == 0) &amp;&amp; ((n / k) % 2 == 0)) { // groups of k are swapped with neighbors int k2 = k * 2; for (int g = 0; g &lt; n / k2; ++g) { int f = k2 * g; for (int i = k + 1; i &lt;= k2; ++i) { result.append(f + i).append(“ “); } for (int i = 1; i &lt;= k; ++i) { result.append(f + i).append(“ “); } } return result.toString(); } } return “No permutation exists”; } [/code]</p>
+
+<p>[<a href="http://www.cs.princeton.edu/~arora/pubs/nonblock.ps">Arora</a>] S. Arora, F. T. Leighton, B. M. Maggs. <em>Online algorithms for path selection in a nonblocking network</em>. [<a href="http://www.math.ucsd.edu/~fan/mypaps/fanpap/fc15algebraic.pdf">Chung</a>] F. R. K. Chung. <em>An algebraic approach to switching networks</em>. [<a href="https://arxiv.org/pdf/1204.1958.pdf">Yang</a>] Q. Yang, J. Ellis, K. Mamakani, F. Ruskey. <em>In-place permuting and perfect shuffling using involutions</em>. [<a href="http://www.dcs.warwick.ac.uk/~czumaj/PUBLICATIONS/CONFERENCES/Czumaj-STOC-2015-703-712.pdf">Czumaj</a>] A. Czumaj. <em>Random permutations using __switching networks</em>.</p>

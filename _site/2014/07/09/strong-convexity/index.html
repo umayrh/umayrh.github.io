@@ -1,0 +1,151 @@
+<p>Strong convexity often allows for optimization algorithms that converge very quickly to an ε-optimum (rf. <a href="http://mechroom.technion.ac.il/~becka/papers/71654.pdf">FISTA</a> and <a href="http://statweb.stanford.edu/~candes/nesta/NESTA.pdf">NESTA</a>). This post will cover some fundamentals of strongly convex functions.</p>
+
+<p><strong>Convexity</strong></p>
+
+<p>For a convex function, [latex]f: \mathbf{R} \to \mathbf{R}[/latex] and [latex]\forall \gamma \in [0, 1][/latex],</p>
+
+<p>[latex] f(tx + (1-t)y) \le tf(x) + (1-t)f(y) [/latex]</p>
+
+<p><strong>Strict convexity</strong>:</p>
+
+<p>For a <em>strictly</em> convex function,</p>
+
+<p>[latex] f(tx + (1-t)y) &lt; tf(x) + (1-t)f(y) [/latex]</p>
+
+<p>Geometrically, the definition of convexity implies that all points on any straight line connecting any two points in a convex set also lie in the set. Strict convexity excludes linear and affine functions, or functions with linear/affine subsets in their boundaries. (How would this extend to non-Euclidean geometries?)</p>
+
+<p><strong>α-strong convexity</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A function is α-strongly convex with respect to a norm</td>
+      <td> </td>
+      <td>.</td>
+      <td> </td>
+      <td>if, for α &gt; 0</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]f(tx + (1-t)y) &lt; tf(x) + (1-t)f(y) - \frac{\alpha}{2}</td>
+      <td> </td>
+      <td>x - y</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Alternatively,</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex](\nabla{f(x)} - \nabla{f(y)})(x - y) \ge \alpha</td>
+      <td> </td>
+      <td>x - y</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>or,</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]f(y) \ge f(x)+ \nabla{f(x)}(y - x) + \frac{\alpha}{2}</td>
+      <td> </td>
+      <td>x - y</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Strongly convexity extends strict convexity. For twice-differentiable functions, this implies that [latex]\nabla^2f(x) \ge \alpha[/latex]. As Bubeck explains [1], strongly convex functions speed up convergence of first-order methods. Larger values of α imply larger gradient, and hence step size, when further away from the optimum.</p>
+
+<p>Strong smoothness is another property of certain convex functions:</p>
+
+<p><strong>β-smoothness</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A function is β-smoothly convex with respect to a norm</td>
+      <td> </td>
+      <td>.</td>
+      <td> </td>
+      <td>if, for β &gt; 0, [4]</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]f(y) \le f(x)+ \nabla{f(x)}(y - x) + \frac{\beta}{2}</td>
+      <td> </td>
+      <td>x - y</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This definition gives an lower bound on the improvement in one step of (sub)gradient descent [1]:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]f(x - \frac{1}{\beta}\nabla{f(x)})- f(x) \le \frac{-1}{2 \beta}</td>
+      <td> </td>
+      <td>\nabla{f(x)}</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Alternatively, β-smoothly convex function [lemma 3.3, 1]:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]f(x) - f(y) \le \nabla{f(x)}(y - x) - \frac{1}{2 \beta}</td>
+      <td> </td>
+      <td>\nabla{f(x)} - \nabla{f(y)}</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Strong/smooth duality</strong></p>
+
+<p>Under certain conditions, a-strong convexity and β-smoothness are dual notions. For now, we’ll state the result without discussion.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>If <em>f</em> is a closed and convex function, then f is α-strongly convex function with respect to a norm</td>
+      <td> </td>
+      <td>.</td>
+      <td> </td>
+      <td>if and only if <em>f*</em> is 1/α-strongly smooth with respect to the dual norm</td>
+      <td> </td>
+      <td>.</td>
+      <td> </td>
+      <td>* (corollary 7 in [4]).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>References:</p>
+
+<p><a href="http://www.princeton.edu/~sbubeck/Bubeck14.pdf">[1]</a> S. Bubeck, Theory of Convex Optimization for Machine Learning, section 3.4 <a href="http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions">[2]</a> Wikipedia, Convex function <a href="http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions"></a> <a href="http://web.stanford.edu/~boyd/cvxbook/">[3]</a> S. Boyd and G. Vandenberghe, Convex Optimization, section 9.1.2 <a href="http://ttic.uchicago.edu/~shai/papers/KakadeShalevTewari09.pdf">[4]</a> S. M. Kakade, S. Shalev-Schwartz, A. Tiwari. On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization. Technical Report, 2009</p>

@@ -1,0 +1,82 @@
+<p>1. Sorting du output by human-readable</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[sourcecode language=”bash” wraplines=”false”]du</td>
+      <td>sort -nr</td>
+      <td>cut -f2-</td>
+      <td>xargs du -hs[/sourcecode]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>2. Listing number of tcp connections to servers</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[sourcecode language=”bash” wraplines=”false”]netstat -a</td>
+      <td>grep mysql</td>
+      <td>sort +3 -4</td>
+      <td>tr -s ‘ ‘</td>
+      <td>cut -d’ ‘ -f5</td>
+      <td>cut -d: -f1</td>
+      <td>uniq -c[/sourcecode]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>3. Regex match IP address</p>
+
+<p>[sourcecode language=”bash” wraplines=”false”]egrep -o “[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+” /tmp/temp.txt[/sourcecode]</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>4. Sed for pattern matching - match any starting with “2011” and ending with “INFO</td>
+      <td>”</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[sourcecode language=”bash” wraplines=”false”]cat adproc-diag.log</td>
+      <td>grep “:postprocess:”</td>
+      <td>sed “s/2011.*INFO</td>
+      <td>//”</td>
+      <td>grep “:postprocess:SamplingHandler”</td>
+      <td>awk -F: ‘{print $1,$4}’ &gt; postprocess.sampling.log[/sourcecode]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>5. Find all directories inside a directory</p>
+
+<p>[sourcecode language=”bash” wraplines=”false”]find /market_data/* -type d[/sourcecode]</p>
+
+<p>6. Finding DB sizes</p>
+
+<p>[sourcecode language=”sql” wraplines=”false”]SELECT TABLE_SCHEMA AS ‘database’, TABLE_NAME AS ‘tables’, CONCAT(ROUND(((DATA_LENGTH + INDEX_LENGTH - DATA_FREE) / 1024 / 1024),2),” MB”) AS Size FROM INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA like ‘%bonus_reporting%’;[/sourcecode]</p>
+
+<p>7. Calculate various percentiles given a file containing one numeric observation per line [1]:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[sourcecode language=”bash” wraplines=”false”]cat data.log</td>
+      <td>sort -n</td>
+      <td>awk ‘BEGIN {count=0} {arr[count]=$1;count++;} END{p[0]=0.5;p[1]=0.75;p[2]=0.9;p[3]=0.95;p[4]=0.99; for(i=0;i&lt;=4;i++){v=int((p[i]*count)+0.5);print (p[i]*100) “th percentile: “ arr[v] “\n”}}’[/sourcecode]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>8. Skip downloading existing files</p>
+
+<p>[sourcecode language=”bash” wraplines=”false”]rsync -v –ignore-existing -n /source/ username@remote_machine:/dest/[/sourcecode]</p>
+
+<p>References</p>
+
+<p>[1] http://www.novell.com/communities/node/8706/check-mysql-database-size-using-sql-query</p>

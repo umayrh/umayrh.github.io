@@ -1,0 +1,293 @@
+<p>General first-order methods use only the values of objective/constraints and their subgradients to optimize non-smooth (including constrained) function [5]. Such methods that are oblivious to the structure of the problem are termed <em>black-box optimization</em> techniques.</p>
+
+<p><strong>Why first-order?</strong></p>
+
+<p>Primarily because the computation cost, per iteration, of high-accuracy methods like interior-point generally increases non-linearly, which is prohibitively expensive for very large data-sets (&gt; 100K variables).</p>
+
+<p>Though the cost per iteration of general methods is low, these methods cannot exploit the structure of the problem. This post discusses two first-order optimization techniques for regularization problems that can exploit the structure of the problem to give better convergence rate than general methods.</p>
+
+<p><strong>Regularization</strong></p>
+
+<p>Regularization problems in statistics and machine learning, or denoting problems in signal processing, take one of the following forms:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]\min{(\frac{1}{2}</td>
+      <td> </td>
+      <td>Ax - b</td>
+      <td> </td>
+      <td>^2 + \lambda</td>
+      <td> </td>
+      <td>x</td>
+      <td> </td>
+      <td>)}[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td> [latex]\min{f(x)} \\[/latex] [latex]</td>
+      <td> </td>
+      <td>b - Ax</td>
+      <td> </td>
+      <td>\le \epsilon[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>where</td>
+      <td> </td>
+      <td>.</td>
+      <td> </td>
+      <td>indicates some kind of a norm (or seminorm), e.g. L1 or L2 in statistics and Total Variation norm in imaging, and λ is a real-valued regularization parameter. Optimization of such composite convex functions - often with a smooth component, f(x), and a non-smooth component, g(x) - can be expressed as:</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>[latex]\min_{x \in \mathbb{R}} {f(x) + \lambda g(x)}[/latex]</p>
+
+<p>Regularization imposes a structure, using a specific norm, on the solution. For example, using L1 norm encourages sparsity, which often results in more noise-tolerant solutions. This was the motivation behind ridge regression and LASSO [8] in statistical estimation. Unconstrained regularization problems can be solved using (constrained) linear programming while constrained problems may be solved using second-order cone program. Both programs are variants of interior-points algorithms, and too slow for very large data sets. Various first-order methods may be used to solve regularization problem. In fact, for the specific case of regularization problems, first-order method can be shown to converge to an ε-solution at an optimal rate.</p>
+
+<p><strong>Complexity</strong></p>
+
+<p>The complexity of first-order methods is often measured in terms of the number of calls to a first-order oracle (section 5.1 in [5]) required to reach an ε-solution. Conversely, the convergence rate gives the approximation error after <em>t</em> iterations. Nemirovski and Yudin’s work [5] established a lower bound for the information-based complexity of black-box optimization techniques: O(1/ε2) iterations (alternatively, an O(1/√t)-precise solution after t iterations). Furthermore, in many cases, the complexity is still dependent on the dimension, n, of the problem - O(n), in the worst case. For very large dimensional problems, such black-box schemes would converge too slowly.</p>
+
+<p>Nonetheless, there are large classes of problems - including regularization - for which the complexity is O(1/ε) or, in some cases, O(1/√ε) (theorem 3.8 in [7], section 5.1 in [9] [10, 12]). In such cases, the complexity is also either independent of or only sublinearly dependent on problem dimension, making them feasible for very large dimensional but medium-accuracy problems (such as those in machine learning).</p>
+
+<p>Why not use polynomial-time interior-point methods for convex optimization?</p>
+
+<p>While interior-point methods converge rapidly - Ο(e-Ο(t)) - to an ε-solution, the complexity of each iteration is super-linear - O(nk), k &gt; 1. For very large dimensional problems, these methods are prohibitively expensive.</p>
+
+<p><strong>Proximal algorithms</strong></p>
+
+<p>[latex]\min_{x \in \mathbb{R}} {f(x) + \lambda g(x)}[/latex]</p>
+
+<p>For the composite function optimization problem, we assume that:</p>
+
+<ul>
+  <li>the problem has a unique minimizer</li>
+  <li>f(x) is β-smooth, convex and differentiable</li>
+  <li>g(x) is convex, subdifferentiable and “simple” (to be clarified later)</li>
+</ul>
+
+<p>From the definition of β-smooth convex function, f(x):</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]f(x_{k+1}) \le f(x_k)+ \nabla{f(x_k)}(x_{k+1} - x_k) + \frac{\beta}{2}</td>
+      <td> </td>
+      <td>x_{k+1} - x_k</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For subgradient descent from a given a point xk, we need to find the next point xk+1 such that f(xk+1) is minimized i.e [3].</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} f(x_k)+ \nabla{f(x_k)}(x - x_k) + \frac{\beta}{2}</td>
+      <td> </td>
+      <td>x - x_k</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For the composite function, f(x) + λg(x), this becomes</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} \lambda g(x)+ \nabla{f(x_k)}(x - x_k) + \frac{\beta}{2}</td>
+      <td> </td>
+      <td>x - x_k</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>which can be reduced to</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} \lambda g(x)+\frac{\beta}{2}</td>
+      <td> </td>
+      <td>x - (x_k - \frac{1}{\beta}\nabla{f(x_k)})</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Despite the fact the each iteration here involves another optimization, a wide class of problems in this form can be solved with <em>proximal minimization algorithms</em> [13, 14]<em>.</em>  Proximal algorithms minimizing a β-smooth function f(x) can in general be represented as:</p>
+
+<p>[latex]x_{k+1} = prox_{\eta,f}(x_k)[/latex]</p>
+
+<p>where η = 1/β and the proximity operator, proxηf(y), of a scaled function η f(x) is defined as</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]\mathrm{argmin}_{x \in \mathbb{R}} f(x) + \frac{1}{2\eta}</td>
+      <td> </td>
+      <td>x - y</td>
+      <td> </td>
+      <td>^2[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For the composite function, f(x) + λg(x), this implies</p>
+
+<p>[latex]x_{k+1} = prox_{\lambda\eta,g(x)}(x_k - \frac{1}{2\eta\lambda}\nabla{f(x_k)})[/latex]</p>
+
+<p>Proximal algorithms are useful when the optimization subproblems either admit a closed-form solution or can be rapidly solved numerically. If this is the case, then g(x) is considered “simple.” For example, g(x) in regularization problems is an Lp norm, where p = {1, 2, ∞}. Using the calculus of proximity operators, it is possible to evaluate the closed-form solutions for these norm:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]prox_{\eta,</td>
+      <td> </td>
+      <td>.</td>
+      <td> </td>
+      <td>_{1}}(y)= \begin{cases} y-\eta, &amp; y\ge \eta\\ 0, &amp;</td>
+      <td>y</td>
+      <td>&lt; \eta\\ y+\eta, &amp; y\le \eta\end{cases}[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This operation, for L1 norm, is also called <em>soft thresholding__.</em></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]prox_{\eta,</td>
+      <td> </td>
+      <td>.</td>
+      <td> </td>
+      <td>_{2}}(y)= \begin{cases} (1-\frac{\eta}{</td>
+      <td> </td>
+      <td>y</td>
+      <td> </td>
+      <td>_2})y, &amp;</td>
+      <td> </td>
+      <td>y</td>
+      <td> </td>
+      <td>_2\ge \eta\\ 0, &amp;</td>
+      <td> </td>
+      <td>y</td>
+      <td> </td>
+      <td>_2 &lt; \eta\end{cases}[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The operation for L2 norm is also called <em>b__lockwise soft thresholding</em>.</p>
+
+<p>How rapidly would this scheme converge for composite functions compared to subgradient descent (since g(x) is non-smooth)? Since the proximal algorithm does not need to evaluate the subgradient of g(x) - only the gradient of f(x), which is β-smooth - the convergence rate should the same as that f(x). Following Theorem 3.3 in [7], given the minimum x*,</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex](f(x_k) + \lambda g(x_k)) - (f(x*) + \lambda g(x*)) \le \O(1)\frac{\beta</td>
+      <td> </td>
+      <td>x_0 - x*</td>
+      <td> </td>
+      <td>}{k}[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>which is much faster than subgradient descent’s O(1/√k). Improving convergence rate to O(1/k2) [1,2] will be the topic of our next post.</p>
+
+<p><strong>L1-Prox in R</strong></p>
+
+<p>We give sample code for a basic Iterative Shrinkage-Thresholding Algorithm in R to solve the LASSO problem:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]\min_{x \in \mathbb{R}^n}(\frac{1}{2}</td>
+      <td> </td>
+      <td>Ax - b</td>
+      <td> </td>
+      <td>_2^2 + \lambda</td>
+      <td> </td>
+      <td>x</td>
+      <td> </td>
+      <td>_1)[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>which can be reformulated as</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]x_{k+1}=prox_{\frac{\lambda}{\beta},</td>
+      <td> </td>
+      <td>.</td>
+      <td> </td>
+      <td>_{1}}(x_k- A^T(Ax - b))[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The smoothness parameter, β, can be evaluated directly since</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]\beta \le</td>
+      <td> </td>
+      <td>\nabla^2{f(x)}</td>
+      <td> </td>
+      <td>=</td>
+      <td> </td>
+      <td>A</td>
+      <td> </td>
+      <td>[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>[code language=”r”] ## Corrupted signal and model</p>
+
+<p>x &lt;- c(1, 2, 3, 4, 5, 6) t &lt;- seq(from = 0, by = 0.02, to = 2*pi) A &lt;- cbind(sin(t), sin(2*t), sin(3*t), sin(4*t), sin(5*t), sin(6*t)) e &lt;- -4+8*rnorm(length(t),0,1) #e[100:115] &lt;- 30 y &lt;- A %*% x + e</p>
+
+<p>plot(t, A %*% x, ‘l’, col=’blue’, ylab = “signal”, xlab = “time”) lines(t, y)</p>
+
+<p>## Proximal algorithm for l1</p>
+
+<p>## parameters iter &lt;- 1000 beta &lt;- norm(A, type=”F”)^2 eta &lt;- 1 / beta lambda &lt;- 1 xx &lt;- c(0, 0, 0, 0, 0, 0)</p>
+
+<p>## main loop for (i in 1:iter) { gradient_x &lt;- t(A) %*% ( A %*% xx - y ) xx_tmp &lt;- xx - eta * gradient_x v &lt;- eta * lambda # L1 prox/shrinkage-thresholding xx &lt;- pmax(xx_tmp - v, 0) - pmax(- xx_tmp - v, 0) }</p>
+
+<p>xx</p>
+
+<p>lines(t, A %*% xx, col=”red”)</p>
+
+<p>legend(“topright”, legend=c(“original signal”, “corrupted signal”, “recovered signal”), col=c(“black”, “blue”, “red”), lwd=c(1, 1, 1)) [/code]</p>
+
+<p> </p>
+
+<p>[caption id=”attachment_736” align=”aligncenter” width=”300”]<a href="http://umayrh.files.wordpress.com/2014/07/l1prox1.png"><img src="http://umayrh.files.wordpress.com/2014/07/l1prox1.png?w=300" alt="Signal recovery using L1-Prox" /></a> Signal recovery using L1-Prox[/caption]</p>
+
+<p><strong>References</strong></p>
+
+<p><a href="http://mechroom.technion.ac.il/~becka/papers/71654.pdf">[1]</a> A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM J. Imaging Sciences, 2009 <a href="http://statweb.stanford.edu/~candes/nesta/NESTA.pdf">[2]</a> S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 <a href="http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/">[3]</a> http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/ <a href="https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf">[4]</a> M. Teboulle. First-Order Algorithms for Convex Optimization. IPAM, 2010 <a href="http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf">[5]</a> A. Ben-Tal, A. Nemirovski. Lectures on Modern Convex Optimization. Lecture Notes, 2013 <a href="http://en.wikipedia.org/wiki/Subgradient#The_subgradient">[6]</a> http://en.wikipedia.org/wiki/Subgradient#The_subgradient <a href="http://www.princeton.edu/~sbubeck/Bubeck14.pdf">[7]</a> S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014 [8] T. Hastie, R. Tibshirani, J. Friedman. Elements of Statistical Learning. Second Edition. <a href="http://www.ecore.be/DPs/dp_1329823186.pdf">[9]</a> Y. Nesterov. Subgradient Methods for Huge-Scale Optimization Problems. ECORE Discussion Paper, 2012 <a href="http://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf">[10]</a> A. Juditsky, A. Nemirovski. First-Order Methods for Non-Smooth Convex Large-Scale Optimization, 1. Optimization for Machine Learning, [11] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 <a href="https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf">[12]</a> A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Framework. SIAM Journal Of Optimization, 2012 <a href="http://web.stanford.edu/~boyd/papers/prox_algs.html">[13]</a> N. Parrikh, S. Boyd. Proximal Algorithms. Foundations and Trends in Optimization, 2014 <a href="http://www.ljll.math.upmc.fr/~plc/mms1.pdf">[14]</a> P. L. Combette, V. R. Wajs. Signal Recovery by Proximal Forward-Backward Splitting. Multiscale Modeling and Simulation, 2005</p>

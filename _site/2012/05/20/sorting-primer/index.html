@@ -1,0 +1,87 @@
+<p>A quick overview of several important comparison-based sorting algorithms:</p>
+
+<p><em>Sorting technique</em></p>
+
+<p><em>Time (avg)</em></p>
+
+<p><em>Time (worst)</em></p>
+
+<p><em>Memory</em></p>
+
+<p>Insertion sort</p>
+
+<p>O(N^2)</p>
+
+<p>O(N^2)</p>
+
+<p>O(1)</p>
+
+<p>Heap sort</p>
+
+<p>O(NlgN)</p>
+
+<p>O(NlgN)</p>
+
+<p>O(1)</p>
+
+<p>Merge sort</p>
+
+<p>O(NlgN)</p>
+
+<p>O(NlgN)</p>
+
+<p>O(N)</p>
+
+<p>Quick sort</p>
+
+<p>O(NlgN)</p>
+
+<p>O(n^2)</p>
+
+<p>O(lgN)</p>
+
+<p><em>Insertion sort</em></p>
+
+<p>Iterate over the array, pick each element, and, if the given element is ‘smaller’ than previous; swaps all previous elements till an element even smaller than the given is found or there are no more elements to compare.</p>
+
+<p>[sourcecode language=”java”] public static void insertionSort(double[] a) { for (int i = 1; i &lt; a.length; i++) { int k = i; int j = i-1; while ((j &gt;= 0) &amp;&amp; (Double.comapre(a[j], a[k]) &gt; 0)) { double tmp = a[j]; a[j] = a[k]; a[k] = tmp; j–; k–; } } } [/sourcecode]</p>
+
+<p><em>Heap sort</em></p>
+
+<p>Similar to selection sort (iterate over unsorted array, selecting the minimum value in each pass, and placing it in sorted order). Instead of iterating in O(N) time to select the minimum value, a heap is used to do the same in (lgN) time. The following implementation, though, uses a max-heap and so moves the max element found to the right-end of the array.</p>
+
+<p>[sourcecode language=”java”] public static void heapSort(double[] a) { heapify(a); // max element as root for (int i = a.length-1; i &gt; 0; i–) { swap(a, 0, i); // put max element at array end siftDown(a, 0, i); // find max from the rest } }</p>
+
+<p>private static void heapify(double[] a) { for (int i = a.length/2-1; i &gt;= 0; i–) siftDown(a, i, a.length); }</p>
+
+<p>private static void siftDown(double[] a, int i, int n) { int j = 2*i + 1; while (j &lt; n) { if (j+1 &lt; n) { if (Double.compare(a[j+1], a[j]) &gt; 0) j++; } if(a[i] &gt;= a[j]) return; swap(a, i, j); i = j; j = 2*i+1; } }</p>
+
+<p>private static void swap(double[] a, int i, int j) { double tmp = a[i]; a[i] = a[j]; a[j] = tmp; } [/sourcecode]</p>
+
+<p><em>Merge sort</em></p>
+
+<p>Repeatedly divide the array into two, almost equal, sorted sub-array and then merge them.</p>
+
+<p>[sourcecode language=”java”] public static void mergeSort(double[] a, int start, int end) { if (start &gt;= end-1) { return; } int mid = (end+start) / 2;</p>
+
+<p>mergeSort(a, start, mid); mergeSort(a, mid, end); merge(a, start, mid, end); }</p>
+
+<p>private static void merge (double[] a, int start, int mid, int end) { double[] tmp = new double[a.length]; for (int i = 0; i &lt; a.length; i++) tmp[i] = a[i];</p>
+
+<p>int i = start, j = mid, k = start;</p>
+
+<p>while ((i &lt; mid) &amp;&amp; (j &lt; end)) { if (tmp[i] &lt;= tmp[j]) { a[k++] = tmp[i++]; } else { a[k++] = tmp[j++]; } } while (i &lt; mid) { a[k++] = tmp[i++]; } } [/sourcecode]</p>
+
+<p><em>Quick sort</em></p>
+
+<p>Recursively partition an array around a pivot element such that all elements less than or equal to pivot are in the left sub-array, and the rest in the right. The following version requires O(lgN) auxiliary space to support recursive calls.</p>
+
+<p>[sourcecode language=”java”] public static void quickSort(double[] a) { qsort(a, 0, a.length); }</p>
+
+<p>private static void qsort (double[] a, int low, int high) { if (low &gt;= high) return; double pivot = a[(low+high-1)/2]; int i = low-1, j = high; while (i &lt; j) { i++; while (Double.compare(a[i], pivot) &lt; 0) i++; j–; while (Double.compare(a[j], pivot) &gt; 0) j–; if (i &lt; j) swap(a, i, j); }</p>
+
+<p>qsort(a, low, j); qsort(a, j+1, high); } [/sourcecode]</p>
+
+<p>References</p>
+
+<p>[1] http://www.iti.fh-flensburg.de/lang/algorithmen/sortieren/heap/heapen.htm [2] http://www.vogella.com/articles/JavaAlgorithmsMergesort/article.html [3] http://www.augustana.ca/~jmohr/courses/2004.winter/csc310/source/QuickSort.java.html</p>

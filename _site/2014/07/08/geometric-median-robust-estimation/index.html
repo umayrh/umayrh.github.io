@@ -1,0 +1,49 @@
+<p>[caption id=”attachment_1971” align=”alignright” width=”245”]<img src="https://umayrh.files.wordpress.com/2014/07/geometric_proof.png" alt="geometric_proof" /> Fermat-Weber <a href="https://mgje.github.io/presentations/Budapest2014/#/13">problem</a>[/caption]</p>
+
+<p>Stanislav Minsker addresses the following question:</p>
+
+<p>Problem: Given X1, …, Xk that are i.i.d. random variables, how can we estimate the mean of the distribution so that the confidence interval still has a coverage probability ≥ 1 - O(e-t)? Note: the smaller the confidence interval, the better the estimator.</p>
+
+<p>1. Assuming the variables from normal distribution N(μ, σ2). If the estimator is constructed as</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex] \hat{\mu}_n = \Sigma_i X_i / n [/latex] [latex] Pr (</td>
+      <td>\mu_n - \hat{\mu}_n</td>
+      <td>\ge \sigma \sqrt{2t/n} ) \le e^{-t} [/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For non-normal distribution, the confidence interval is much different:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex] Pr (</td>
+      <td>\mu_n - \hat{\mu}_n</td>
+      <td>\ge \sigma \sqrt{e^t/n} ) \le e^{-t} [/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Since the length of this interval depends on et, can we do better?</p>
+
+<p>2. If we split the sample into k = floor(t) + 1 groups G1, …, Gk each of size approximate n /t, then median-of-means estimator has the following confidence interval (result due to Nemirovskii and Yudin, 1983):</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex] \hat{\mu}_{n,k} = median(\hat{\mu}_1, …, \hat{\mu}_k) [/latex] [latex] Pr (</td>
+      <td>\mu_n - \hat{\mu}_n</td>
+      <td>\ge \sigma C \sqrt{t/n} ) \le e^{-t} [/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Where C is a constant. The length of confidence interval for median-of-means is much smaller than for the naive mean estimator.</p>
+
+<p>3. Minsker’s work extends this to multi-dimensional distributions in Banach space using <em>geometric median</em> to obtain confidence intervals of sub-exponential length with high coverage.</p>
+
+<p>More in the paper <a href="http://sminsker.files.wordpress.com/2013/11/geometric_median_minsker_2.pdf">here</a>.</p>

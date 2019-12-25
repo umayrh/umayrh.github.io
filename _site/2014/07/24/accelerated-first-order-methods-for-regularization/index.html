@@ -1,0 +1,191 @@
+<p><strong>FISTA</strong></p>
+
+<p>Fast Iterative Shrinkage-Thresholding Algorithm (FISTA) [Beck09] was one of the first algorithms to use Nesterov’s accelerated gradient descent to speed up the convergence of iterative shrinkage-thresholding (ISTA) from O(β/ε) to O(√(β/ε)).  The algorithm and proof sketch for in the previous post based were based on [Bubeck14] and [Beck09] so we’ll skip them. Instead give an R implementation and results that compares ISTA and FISTA performance (in terms of number of iterations) for various step sizes (iterations increase and step size decreases).</p>
+
+<p>[code language=”r” wraplines=”false” collapse=”true”]</p>
+
+<p>## ISTA ista &lt;- function(A, x, beta, iter = 100) { ## parameters eta &lt;- 1 / beta lambda &lt;- 1 xx &lt;- c(0, 0, 0, 0, 0, 0) ## helpers Axx &lt;- A %*% x Axn &lt;- norm(A %*% x) error &lt;- vector(length = iter) iters &lt;- vector(length = iter)</p>
+
+<p>## main loop for (i in 1:iter) { gradient_x &lt;- t(A) %*% ( A %*% xx - y ) xx_tmp &lt;- xx - eta * gradient_x v &lt;- eta * lambda # L1 prox/shrinkage-thresholding xx &lt;- pmax(xx_tmp - v, 0) - pmax(- xx_tmp - v, 0) error[i] &lt;- norm(A %*% xx - Axx) / Axn iters[i] &lt;- i }</p>
+
+<p>return(list(xx, error, iters)) }</p>
+
+<p>## FISTA fista &lt;- function(A, x, beta, iter = 100) { ## parameters eta &lt;- 1 / beta lambda &lt;- 1 x_next &lt;- c(0, 0, 0, 0, 0, 0) z_prev &lt;- x_next z_next &lt;- x_next mu_prev &lt;- 0 mu_next &lt;- 0 ## helpers Ax &lt;- A %*% x Ax_norm &lt;- norm(Ax) error &lt;- vector(length = iter) iters &lt;- vector(length = iter)</p>
+
+<p>## main loop for (i in 1:iter) { mu_next &lt;- 0.5 * (1 + sqrt(1 + 4 * mu_prev^2)) gamma &lt;- (1 - mu_prev) / mu_next gradient_x_n &lt;- t(A) %*% ( A %*% x_next - y ) z_tmp &lt;- x_next - eta * gradient_x_n v &lt;- eta * lambda # L1 prox/shrinkage-thresholding z_next &lt;- pmax(z_tmp - v, 0) - pmax(- z_tmp - v, 0) x_next &lt;- z_next + gamma * (z_prev - z_next) z_prev &lt;- z_next mu_prev &lt;- mu_next error[i] &lt;- norm(A %*% x_next - Ax) / Ax_norm iters[i] &lt;- i }</p>
+
+<p>return(list(x_next, error, iters)) }</p>
+
+<p>max_iter &lt;- 500; beta &lt;- norm(A, type=”F”)^2</p>
+
+<p>res1 &lt;- ista(A, x, beta, max_iter) res2 &lt;- fista(A, x, beta, max_iter)</p>
+
+<p>plot(res1[[3]], res1[[2]], col = “red”, xlab = “iterations”, ylab = “error”, type = ‘l’, lty = 1) lines(res2[[3]], res2[[2]], col = “blue”, type = ‘l’, lty = 1) [/code]</p>
+
+<p>[caption id=”attachment_868” align=”aligncenter” width=”300” class=” “]<a href="https://umayrh.files.wordpress.com/2014/07/ista500.png"><img src="http://umayrh.files.wordpress.com/2014/07/ista500.png?w=300" alt="ISTA vs FISTA, 500 iterations" /></a> ISTA vs FISTA, 500 iterations[/caption]</p>
+
+<p>[caption id=”attachment_869” align=”aligncenter” width=”300” class=” “]<a href="https://umayrh.files.wordpress.com/2014/07/ista5000.png"><img src="http://umayrh.files.wordpress.com/2014/07/ista5000.png?w=300" alt="ISTA vs FISTA, 5000 iterations" /></a> ISTA vs FISTA, 5000 iterations[/caption]</p>
+
+<p>Note the non-monotonic convergence in FISTA’s case - [Beck09b, Teboulle10] describe a simple change to the algorithm to fix that. Another interesting problem with FISTA is the dependence on the worst-case smoothness parameter β in the algorithm, which can substantially reduce convergence rate for large β. This is addressed in [Katya14] using a backtracking strategy that  to improve the dependence from worst-case to average “local composite Lipschitz constant for ∇f”, which can have a much smaller value, implying a larger step size. Another solution is presented in [Baes12].</p>
+
+<p>Recall that ISTA, and hence FISTA, solve the following optimization problems:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]\min{(\frac{1}{2}</td>
+      <td> </td>
+      <td>Ax - b</td>
+      <td> </td>
+      <td>^2 + \lambda</td>
+      <td> </td>
+      <td>x</td>
+      <td> </td>
+      <td>)}[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>FISTA works for non-smooth objectives as long as they can be formulated as the sum of a smooth and a non-smooth function [Section 2, Beck09; Section 3, Tseng08]. Are there efficient first-order algorithms for a larger class of non-smooth problems?</p>
+
+<p><strong>NESTA</strong></p>
+
+<p>NESTA [Becker09] solves the following optimization problem that FISTA cannot since the objective function is non-composite non-smooth:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]\min{</td>
+      <td> </td>
+      <td>x</td>
+      <td> </td>
+      <td>_1} \\</td>
+      <td> </td>
+      <td>Ax - b</td>
+      <td> </td>
+      <td>_2 \le \epsilon[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This algorithm draws on [Nesterov05], which introduces a way to create smooth approximations of certain non-smooth function. This approximation, coupled with an accelerated gradient descent method, gives good convergence for optimizing a large class of non-smooth functions (though not as good as FISTA or Nesterov07). We’ll review [Nesterov05] via [Becker09] before returning to NESTA.</p>
+
+<p><em>Smoothing non-smooth functions</em></p>
+
+<p>Nesterov considers a class of functions that can be represented as [Section 2, Nesterov05; Section 2, Becker09; Nesterov08]</p>
+
+<p>[latex]\max_{u \in Q_d}\{(Ax - b)^{T}u - \phi{(u)}\}[/latex]</p>
+
+<p>where φ(u) is a convex function and Qd is the dual domain (convex, closed) of a function f(x) minimized over a domain Qp. The representation is similar to the <a href="http://en.wikipedia.org/wiki/Convex_conjugate">convex conjugate</a>, f*(u), of this function. Indeed Nesterov considers using φ(u) = f*(u), but then argues that such φ(u) might not be a simple enough function. This might be true in general, but as we’ll see that in the special case of L1 regularization, φ(u) = f*(u) will work.</p>
+
+<p>Nesterov then presents a smooth approximation of the function</p>
+
+<p>[latex]f_{\mu}(x) = \max_{u \in Q_d}\{(Ax - b)^{T}u - \phi{(u)} - \mu\ prox_{\alpha}(u)\}[/latex]</p>
+
+<p>where μ is the smoothness parameter, proxα(u) is an α-strongly convex proximal function over the dual domain Qd. In the original paper [Nesterov05], Nesterov actually allows for a composite function approximation, that is f(x) = fº(x) + fμ(x) where fº(x) is some smooth convex function. We’ll follow [Becker09] in assuming that fº(x) = 0. [Beck12] extends this smoothing framework to optimize an even broader class of non-smooth functions.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The important upshot is that (1) this function is smooth with factor [latex]\frac{</td>
+      <td> </td>
+      <td>A</td>
+      <td> </td>
+      <td>}{\mu \alpha}[/latex] [Theorem 1, Nesterov05], where</td>
+      <td> </td>
+      <td>A</td>
+      <td> </td>
+      <td>is the operator norm of A, and (2) that fμ(x) is a uniform smooth approximation of f(x) for μ &gt; 0. So now we can use an optimal gradient descent for smooth optimization to minimize fμ(x).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Smooth optimization</em></p>
+
+<p>Section 3 in [Nesterov05] describes an optimal first-order algorithm to minimize a β-smooth convex function f(x) using an α-strongly convex proximal function proxα(x).</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]y_k = \mathrm{argmin}_{y}(\nabla{f(x_k)}^{T} + \frac{1}{2}\beta</td>
+      <td> </td>
+      <td>y - x_k</td>
+      <td> </td>
+      <td>^2)) \\ z_k=\mathrm{argmin}_{x}(\frac{\beta}{\alpha}\ prox_{\alpha}(x)+\sum_{i=0}^{k}(\frac{i+1}{2}[\nabla{f(x_i)} + \nabla{f(x_i)}^{T}(x - x_i)])) \\ x_{k+1} = \frac{2}{k+1}z_k + \frac{k+1}{k+3}y_k[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This is shown [Theorem 2, Nesterov05] to converge at a rate</p>
+
+<p>[latex]f(y_k) - f(x*) \le \frac{4 \beta\ prox_{\alpha}(x*)}{\alpha (k+1)(k+2)}[/latex]</p>
+
+<p>This algorithm is more complicated than the earlier ones [Nesterov83, Nesterov88] - especially when compared to the version FISTA uses (see <a href="http://umayrh.wordpress.com/2014/07/21/accelerating-first-order-methods/#more-756">previous post</a>). The only advantage seems to be a somewhat better convergence rate by a factor of α at the cost of solving two minimization problems (instead of one as in FISTA).</p>
+
+<p>Applying this algorithm to optimize  fμ(x) [Theorem 3, Nesterov05] gives O(1/k) convergence for the optimal value of μ since</p>
+
+<p>[latex]f(y_k) - f(x*) \le O(1)\mu + \frac{O(1)}{\mu (k+1)^2} + \frac{O(1)}{(k+1)^2}[/latex]</p>
+
+<p><em>Nesterov’s Algorithm</em></p>
+
+<p>[Becker09] call their application of [Nesterov05] to L1 regularization, NESTA. They show that</p>
+
+<p>1. Optimizing over the convex conjugate of L1 norm when combined with an appropriate proximal function yields a simple, well-known function called the <a href="http://en.wikipedia.org/wiki/Huber_loss_function"><em>Huber loss</em></a> function. It is analytic and can be computed very efficiently, which makes it trivial to implement gradient descent (quite like the shrinkage-thresholding operation in ISTA/FISTA).</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]</td>
+      <td> </td>
+      <td>x</td>
+      <td> </td>
+      <td>_1 = \max_{u \in Q_d}{(u^{T}x)} \\ where\ Q_d = {u :</td>
+      <td> </td>
+      <td>u</td>
+      <td> </td>
+      <td>_{\infty} \le 1}[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Choosing proxα(u) to be the squared Euclidean distance with α = 1 (see also [cf. Section 4.2, Nesterov05]),</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[latex]f_{\mu}(x) = \max_{u \in Q_d}\{(u^{T}x) - \frac{\mu}{2}</td>
+      <td> </td>
+      <td>u</td>
+      <td> </td>
+      <td>_2^2\} = \begin{cases}\frac{x^2}{2\mu}, &amp;</td>
+      <td>x</td>
+      <td>&lt; \mu \\</td>
+      <td>x</td>
+      <td>- \frac{\mu}{2}, &amp; otherwise\end{cases} \\ \nabla{f(x)[i]} = \begin{cases}\frac{x[i]}{\mu}, &amp;</td>
+      <td>x[i]</td>
+      <td>&lt; \mu \\ sgn(x[i]), &amp;otherwise\end{cases}[/latex]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>2. yk and zk updates in the original algorithm need to be modified taking into account the L2 constraint. This is done using the Lagrangian form of each minimization that, under certain assumptions, allows expressing Lagrangian variables in terms of ε.</p>
+
+<p>3. Another interesting idea is the use of “continuation.” Starting with a large value of the smoothing parameter and multiplicatively decreasing after each iteration helps converge more quickly (although the theoretical convergence rate stays the same).</p>
+
+<p>Here’s R code for the unconstrained version of NESTA based on FISTA’s version of accelerated gradient descent:</p>
+
+<p>[code language=”r” wraplines=”false” collapse=”true”] nesta &lt;- function(A, x, beta, iter = 100) { ## parameters eta &lt;- 1 / beta lambda &lt;- 1 x_next &lt;- c(0, 0, 0, 0, 0, 0) z_prev &lt;- x_next z_next &lt;- x_next mu_prev &lt;- 0 mu_next &lt;- 0 smooth &lt;- 0.9 * norm(A, "I") ## helpers Ax &lt;- A %*% x Ax_norm &lt;- norm(Ax) error &lt;- vector(length = iter) iters &lt;- vector(length = iter)</p>
+
+<p>## main loop for (i in 1:iter) { mu_next &lt;- 0.5 * (1 + sqrt(1 + 4 * mu_prev^2)) gamma &lt;- (1 - mu_prev) / mu_next # grad_huber1 + grad_huber2 = gradient of Huber function   grad_huber1 &lt;- (abs(x_next) &lt; smooth) / smooth grad_huber2 &lt;- (abs(x_next) &gt;= smooth) * ifelse(x_next==0, 0, (x_next / abs(x_next))) gradient_x_n &lt;- t(A) %*% ( A %*% x_next - y ) + grad_huber1 + grad_huber2 z_next &lt;- x_next - eta * gradient_x_n x_next &lt;- z_next + gamma * (z_prev - z_next) z_prev &lt;- z_next mu_prev &lt;- mu_next smooth &lt;- 0.5 * smooth error[i] &lt;- norm(A %*% x_next - Ax) / Ax_norm iters[i] &lt;- i }</p>
+
+<p>return(list(x_next, error, iters)) } [/code]</p>
+
+<p><strong>Postscript [02/09/2014]</strong></p>
+
+<p>Building on the message-passing (aka belief propagation) algorithms introduced in [Donoho09], [Mousavi13] improve the convergence rate of iterative-shrinkage thresholding algorithm (ISTA) to O(e-t). This was made possible by finding the optimal values of the regularization parameter, λ, at each iteration under the assumption of Gaussian error distribution (which is probably why it escapes the upper-bounds for first-order methods).</p>
+
+<p><strong>References</strong> [<a href="http://arxiv.org/pdf/1207.3951v1.pdf">Baes12</a>] M. Baes, M. Burgisser. An acceleration procedure for optimal first-order methods. 2012 [<a href="http://mechroom.technion.ac.il/~becka/papers/71654.pdf">Beck09</a>] A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM Journal of Imaging Sciences, 2009 [<a href="http://www.math.tau.ac.il/~teboulle/papers/tlv.pdf">Beck09b</a>] A. Beck, M. Teboulle. Fast Gradient-Based Algorithms for Constrained Total Variation Image Denoising and Deblurring Problems. IEEE Transactions on Image Processing, 2009. [<a href="https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf">Beck12</a>] A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Approach. SIAM Journal of Optimization, 2012. [<a href="http://statweb.stanford.edu/~candes/nesta/NESTA.pdf">Becker09</a>] S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 [<a href="http://www.princeton.edu/~sbubeck/Bubeck14.pdf">Bubeck14</a>] S. Bubeck, Theory of Convex Optimization for Machine Learning [<a href="http://www.ece.rice.edu/~mam15/amp_pnas.pdf">Donoho09</a>] D. Donoho, A. Maleki, A. Montanari. Message-passing algorithms for compressed sensing. Proceedings of National Academy of Sciences, 2009. [<a href="http://arxiv.org/pdf/1311.0035v1.pdf">Mousavi13</a>] A. Mousavi, A. Maleki, R. Baranuick. Parameterless optimal approximate message passing. CoRR, 2013 [Nesterov83] Y. Nesterov. A method for solving a convex programming problem with convergence rate O(1/k2). Dokaldy AN SSR, 1983 [Nesterov88] Y. Nesterov. On an approach to the construction of optimal methods of minimization of smooth convex functions. Ekonom. i. Mat. Metody, 1988 [Nesterov04] Y. Nesterov. Introductory Lectures On Convex Programming: A Basic Course. Kluwer Academic Publishers, 2004 [<a href="http://luthuli.cs.uiuc.edu/~daf/courses/Optimization/MRFpapers/nesterov05.pdf">Nesterov05</a>] Y. Nesterov. Smooth minimization of non-smooth functions. Mathematical Programming, 2005. [<a href="http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=10&amp;cad=rja&amp;uact=8&amp;ved=0CHkQFjAJ&amp;url=http%3A%2F%2Fwww.ecore.be%2FDPs%2Fdp_1191313936.pdf&amp;ei=2PPNU7nmEoaT8QHOioGwCA&amp;usg=AFQjCNFLHxemWvAoXMH4NdWlKh8d9sQOrw&amp;bvm=bv.71198958,d.b2U">Nesterov07</a>] Y. Nesterov. Gradient methods for minimizing composite objective function. Report, CORE, 2007 [<a href="http://galton.uchicago.edu/~lekheng/courses/31060s13/nesterov.pdf">Nesterov08</a>] Y. Nesterov. How to advance in Structural Convex Optimization. Optima, 2008 [<a href="http://www.optimization-online.org/DB_FILE/2011/04/3004.pdf">Katya14</a>] K. Scheinberg, D. Goldfarb, X. Bai. Fast First-Order Methods for Composite Convex Optimization with Backtracking. Foundations of Computational Mathematics, 2014. [<a href="https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf">Teboulle10</a>]. M. Teboulle. First-Order Methods for Optimization. IPAM Optimization Tutorials, 2010 [<a href="http://www.mit.edu/~dimitrib/PTseng/papers/apgm.pdf">Tseng08</a>] P. Tseng. On Accelerated Proximal Gradient Algorithms for Convex-Concave Optimization. SIAM Journal of Optimization, 2008</p>
+
+<p><strong>Implementations</strong></p>
+
+<p>[1] http://web.stanford.edu/~boyd/papers/prox_algs/lasso.html [2] https://github.com/gpeyre/numerical-tours/tree/master/matlab/solutions [3] https://www.ceremade.dauphine.fr/~peyre/numerical-tour/tours/optim_4_fb/#54 [4] http://www.caam.rice.edu/~optimization/disparse/LASSO/FISTA/pFistaLasso.html [5] http://www.mathworks.com/matlabcentral/fileexchange/16204-toolbox-sparse-optmization/content/toolbox_optim/perform_fb.m [6] http://slipguru.disi.unige.it/Software/L1L2Py/algorithms.html [7] http://www.eecs.berkeley.edu/~yang/software/l1benchmark/ [8] http://www.ece.rice.edu/~tag7/Tom_Goldstein/CGIST.html [9] http://users.ece.gatech.edu/%7Esasif/index.html [10] https://www.ceremade.dauphine.fr/~peyre/numerical-tour/ [11] http://www.mit.edu/~dimitrib/PTseng/papers/apg_alg.m [12] http://www.ece.rice.edu/~tag7/Tom_Goldstein/CGIST.html [13] http://www.math.ucla.edu/~wotaoyin/software.html</p>

@@ -32,7 +32,6 @@ mailchimp_input:
 # Author settings
 author:
   - name: Umayr Hassan
-    bio: Codes, dances, reads...
     url: http://umayrh.github.io
 
 # Pagination settings

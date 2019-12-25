@@ -1,0 +1,19 @@
+<p>[caption id=”attachment_1948” align=”alignright” width=”172”]<img src="https://umayrh.files.wordpress.com/2015/05/fareypoincaremovie.gif" alt="fareypoincaremovie" /> <a href="http://www-bcf.usc.edu/~fbonahon/STML49/FareyFord.html">Farey tessellation</a> in complex plane[/caption]</p>
+
+<p>In fact, the matrix formulation of Fibonacci numbers mentioned <a href="https://umayrh.wordpress.com/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/" title="Fibonacci Numbers">before</a> can be generalized to represent any 2-D matrix and, by way of continued fractions, any real number - not just the golden mean. This post is inspired from David Austin’s AMS <a href="http://www.ams.org/samplings/feature-column/fcarc-stern-brocot">feature column</a> and draws on Phillipe Flajolet’s beautiful <a href="http://www.lix.polytechnique.fr/Labo/Ilan.Vardi/continued_fractions.ps">survey</a> on continued fractions to set the stage for a future post on <a href="http://en.wikipedia.org/wiki/Diophantine_approximation">Diophantine approximation</a>.</p>
+
+<p>“<em>Every matrix A of determinant one with non-negative integer coefficients will have a unique factorization…corresponding to a continued fraction expansion.</em>” [1]</p>
+
+<p>[latex]A = \left[ \begin{array}{cc} a &amp; b \\ c &amp; d \end{array} \right] = U^{\alpha_0}L^{\alpha_1}U^{\alpha_2}L^{\alpha_3}… \\ where \ U = \left[ \begin{array}{cc} 1 &amp; 1 \\ 0 &amp; 1 \end{array} \right], \\ \ L = \left[ \begin{array}{cc} 1 &amp; 0 \\ 1 &amp; 1 \end{array} \right], \ and \\ \frac{b}{d} = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \dotsb}}}[/latex]</p>
+
+<p> The Fibonacci numbers can be derived as</p>
+
+<p>[latex]\left[ \begin{array}{cc} F_{n-1} &amp; F_{n} \\ F_{n-2} &amp; F_{n-1} \end{array} \right] = ULULUL… \\ \phi(n) = \frac{F_{n}}{F_{n-1}} = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \dotsb}}}[/latex]</p>
+
+<p>Of course, both the factorization series and the fraction terminate for finite values of n i.e. rational approximations of the golden mean. Already this formulation can be used to calculate the n-th Fibonacci number in log(n) steps.</p>
+
+<p>While ”every positive rational number appears in the Stern-Brocot tree,” [2] such factorization also represents a specific path in the tree whose nodes provide the <em>optimal</em> rational approximation to a real number within a given error.</p>
+
+<p><strong>References</strong></p>
+
+<p>[1] P. Flajolet, B. Vallee, and I. Vardi. Continued fractions from Euclid to present day. Preprint, March 2000. [2] D. Austin. Trees, Teeth, and Time: The mathematics of clock making. AMS Feature Column, December 2008.</p>
