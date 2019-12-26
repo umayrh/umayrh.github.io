@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/40d58d05-74d4-455c-ad12-1949bd5aeee6/deploy-status)](https://app.netlify.com/sites/elated-colden-37a8ae/deploys)
+
 # umayrh.github.io 
 
 Theme: barber-jekyll
