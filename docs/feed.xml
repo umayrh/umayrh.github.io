@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Dec 2019 16:00:32 -0800</pubDate>
-    <lastBuildDate>Wed, 25 Dec 2019 16:00:32 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Dec 2019 01:59:28 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Dec 2019 01:59:28 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -41,7 +41,7 @@ writing about Deleuze (&lt;em&gt;I’ll Have to Wander All Alone&lt;/em&gt;): �
   &lt;p&gt;death takes from us not only some particular life within the world, some moment that belongs to us, but, each time, without limit, someone through whom the world, and first of all our own world, will have opened up in a both finite and infinite—mortally infinite—way.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=mxPE6vYwqLg&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/mxPE6vYwqLg/0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;450&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/mxPE6vYwqLg&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.ias.edu/ideas/dynamics-moduli-spaces-curves-i&quot;&gt;Dynamics of the Moduli Spaces of Curves&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -1141,7 +1141,8 @@ on &lt;a href=&quot;http://ggplot2.org&quot;&gt;ggplot2&lt;/a&gt; and &lt;a hre
 
 &lt;p&gt;The scatterplot and dendogram outputs of the code:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_hclust.png&quot;&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_qplot.png?w=300&quot; alt=&quot;nmf7_cf_ml_k19_qplot&quot; /&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_hclust.png?w=300&quot; alt=&quot;nmf7_cf_ml_k19_hclust&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_qplot.png?w=300&quot; alt=&quot;nmf7_cf_ml_k19_qplot&quot; /&gt;
+&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_hclust.png?w=300&quot; alt=&quot;nmf7_cf_ml_k19_hclust&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Caveat&lt;/em&gt;: while NMF itself can be used for matrix completion, the NMF package in R cannot since it cannot account for missing values. An alternative is to use &lt;a href=&quot;http://cran.r-project.org/web/packages/softImpute/&quot;&gt;softImpute&lt;/a&gt;.&lt;/p&gt;
 
@@ -1159,29 +1160,14 @@ on &lt;a href=&quot;http://ggplot2.org&quot;&gt;ggplot2&lt;/a&gt; and &lt;a hre
 
 &lt;p&gt;NMF, contrary to Lee and Seung’s intuition and experiments, doesn’t always produce a part-based representation. In this, Kim07 and Kim08 followed the arguments and counter-examples of Li01 and Hoyer04. Since, as Hoyer04 states, ”the sparseness given by NMF is somewhat of a side-effect rather than a goal,” regularization needs to be explicitly introduced to control the degree of sparseness. Li07 does that by penalizing the energy of the factors in the optimization objective (similar to the Koren09 basic model); Hoyer04 introduces sparseness constraints separately on each factor; while Kim07, Kim08 mix L1 and L2 norms to impose sparsity on one of the factors. Sparseness may not only improve the quality of the result but, as Kim08 show, also result in better execution time. The two algorithms, SNMF/R and SNMF/L, introduced in Kim07 are available in the R &lt;a href=&quot;http://cran.r-project.org/web/packages/NMF/index.html&quot;&gt;NMF&lt;/a&gt; package.&lt;/p&gt;
 
-&lt;p&gt;Purity and entropy are two traditional &lt;a href=&quot;http://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html&quot;&gt;clustering metrics&lt;/a&gt;. Purity measures the accuracy of assignment (n data point, k clusters and l classes) - larger value implies better clustering. Entropy measures the amount of information-theoretic order - smaller value is better.&lt;/p&gt;
+&lt;p&gt;Purity and entropy are two traditional &lt;a href=&quot;http://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html&quot;&gt;clustering metrics&lt;/a&gt;. 
+Purity measures the accuracy of assignment (n data point, k clusters and l classes) - larger value implies better clustering. 
+Entropy measures the amount of information-theoretic order - smaller value is better.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$purity = \frac{1}{n}\sum_{k}\max_{l}&lt;/td&gt;
-      &lt;td&gt;c_k \cap C_l&lt;/td&gt;
-      &lt;td&gt;$&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$entropy = \frac{-1}{n\log_{2}l} \sum_{k} \sum_{l}&lt;/td&gt;
-      &lt;td&gt;c_k \cap C_l&lt;/td&gt;
-      &lt;td&gt;\log_{2}\frac{&lt;/td&gt;
-      &lt;td&gt;c_k \cap C_l&lt;/td&gt;
-      &lt;td&gt;}{c_k}$&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+  &lt;li&gt;$purity = \frac{1}{n} \sum_{k} \max_{l} \lVert c_k \cap C_l\rVert$&lt;/li&gt;
+  &lt;li&gt;$entropy = \frac{-1} {n\log_{2}l} \sum_{k} \sum_{l} \lVert c_k \cap C_l\rVert \log_{2} \frac{\lVert c_k \cap C_l\rVert} {c_k}$&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;For model selection (i.e. the number of factors to use), Burnet04 introduced &lt;em&gt;consensus matrix&lt;/em&gt; and the related 
 &lt;em&gt;dispersion coefficient&lt;/em&gt;. Since NMF may not converge to the same solution on each run, consensus matrix (C) encodes the 
@@ -1270,49 +1256,74 @@ dispersion on its own is not reliable for model selection.&lt;/p&gt;
     
       <item>
         <title>Obituaries: Harold Kuhn (1925–2014)</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;Kuhn enrolled at Princeton in the fall of 1947. He wrote his doctoral dissertation in group theory under the direction of Ralph Fox. Concurrently, he joined mathematics professor A.W. Tucker and fellow graduate student David Gale in a hastily organized summer project to study the suspected equivalence between linear programming and matrix game theory. That project, he later wrote, “set the course of my subsequent academic career, which has centered around the applications of mathematics to economics.” In 1980, the three shared the John von Neumann Theory Prize of the Operations Research Society of America (now part of INFORMS) for their pioneering work in game theory and optimization.&lt;/p&gt;
+        <description>&lt;iframe width=&quot;450&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/SZ0tzt54Mlc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Kuhn enrolled at Princeton in the fall of 1947. He wrote his doctoral dissertation in group theory under the direction of
+Ralph Fox. Concurrently, he joined mathematics professor A.W. Tucker and fellow graduate student David Gale in a hastily 
+organized summer project to study the suspected equivalence between linear programming and matrix game theory. That project,
+he later wrote, “set the course of my subsequent academic career, which has centered around the applications of mathematics 
+to economics.” In 1980, the three shared the John von Neumann Theory Prize of the Operations Research Society of America 
+(now part of INFORMS) for their pioneering work in game theory and optimization.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://sinews.siam.org/DetailsPage/tabid/607/ArticleID/212/Obituaries-Harold-Kuhn-1925-ndash-2014.aspx&quot;&gt;Obituaries: Harold Kuhn (1925–2014)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;[embed width=300 height=150]https://www.youtube.com/watch?v=SZ0tzt54Mlc[/embed]&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Oct 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/10/06/obituaries-harold-kuhn-1925-2014/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/10/06/obituaries-harold-kuhn-1925-2014/</guid>
+        
+        <category>Obit</category>
+        
+        <category>Computational economics</category>
+        
+        <category>Convex optimization</category>
+        
+        <category>Mathematicians</category>
+        
+        <category>Mathematics</category>
         
         
       </item>
     
       <item>
         <title>3-Manifolds</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://abel.math.harvard.edu/~ctm/index.html&quot;&gt;Curtis McMullen&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;iframe width=&quot;450&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZY50V_d4wok&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;[embed]https://www.youtube.com/watch?v=ZY50V_d4wok[/embed]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://abel.math.harvard.edu/~ctm/index.html&quot;&gt;Curtis McMullen&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;[embed]https://www.youtube.com/watch?v=ZU_ATH9Vc6I[/embed]&lt;/p&gt;
+&lt;iframe width=&quot;450&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZU_ATH9Vc6I&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Thu, 21 Aug 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/08/21/3-manifolds/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/08/21/3-manifolds/</guid>
+        
+        <category>Differential geometry</category>
+        
+        <category>Dynamical systems</category>
+        
+        <category>Mathematics</category>
+        
+        <category>Topology</category>
         
         
       </item>
     
       <item>
         <title>Fibonacci Numbers</title>
-        <description>&lt;p&gt;Two notes from &lt;a href=&quot;http://kam.mff.cuni.cz/~matousek/&quot;&gt;Jiřì Matoušek&lt;/a&gt;’s book &lt;em&gt;Thirty-three Miniatures: Mathematical and Algorithmic Applications of Linear Algebra&lt;/em&gt; [&lt;a href=&quot;http://www.ams.org/bookstore?fn=20&amp;amp;arg1=stmlseries&amp;amp;ikey=STML-53&quot;&gt;1&lt;/a&gt;,&lt;a href=&quot;http://kam.mff.cuni.cz/~matousek/la-ams.html&quot;&gt;2&lt;/a&gt;].&lt;/p&gt;
+        <description>&lt;p&gt;Two notes from &lt;a href=&quot;http://kam.mff.cuni.cz/~matousek/&quot;&gt;Jiřì Matoušek&lt;/a&gt;’s book &lt;em&gt;Thirty-three Miniatures: Mathematical and 
+Algorithmic Applications of Linear Algebra&lt;/em&gt; &lt;a href=&quot;http://www.ams.org/bookstore?fn=20&amp;amp;arg1=stmlseries&amp;amp;ikey=STML-53&quot;&gt;1&lt;/a&gt;, 
+&lt;a href=&quot;http://kam.mff.cuni.cz/~matousek/la-ams.html&quot;&gt;2&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Fibonacci numbers in O(lg_n_) steps&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fibonacci numbers in $O(lg\ n)$ steps&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;1.1 Matrix formulation for recursive calculation&lt;/p&gt;
 
-&lt;p&gt;[latex]\left(\begin{array}{c}F_{n+2}\\ F_{n+1}\end{array}\right) = M\left(\begin{array}{c}F_{n+1}\\ F_{n}\end{array}\right)\\for\ M\ =\left(\begin{array}{cc}1 &amp;amp; 1 \\ 1 &amp;amp; 0\end{array}\right)\\ \therefore \left(\begin{array}{c}F_{n+1}\\ F_{n}\end{array}\right) = M^{n}\left(\begin{array}{c}1\\ 0\end{array}\right)[/latex]&lt;/p&gt;
+&lt;p&gt;$\left( \begin{array}{c}F_{n+2} \ F_{n+1}\end{array} \right) = M\left(\begin{array}{c}F_{n+1}\ F_{n}\end{array}\right) \ for\ M\ =\left(\begin{array}{cc}1 &amp;amp; 1 \ 1 &amp;amp; 0\end{array}\right)\ \therefore \left(\begin{array}{c}F_{n+1}\ F_{n}\end{array}\right) = M^{n}\left(\begin{array}{c}1\ 0\end{array}\right)$&lt;/p&gt;
 
-&lt;p&gt;1.2 At most log2n multiplications needed size z &amp;lt;= log2n&lt;/p&gt;
+&lt;p&gt;1.2 At most $log_{2}\ n$ multiplications needed size $z &amp;lt;= log_{2}\ n$&lt;/p&gt;
 
-&lt;p&gt;[latex]n = 2^a + 2^b +\ …+ 2^z\ for\ a &amp;lt; b &amp;lt;\ …,\ M^n=M^{2^a}M^{2^b}…M^{2^z}[/latex]&lt;/p&gt;
+&lt;p&gt;$n = 2^a + 2^b +\ …+ 2^z\ for\ a &amp;lt; b &amp;lt;\ …,\ M^n=M^{2^a}M^{2^b}…M^{2^z}$&lt;/p&gt;
 
 &lt;p&gt;This can be extended to any recursive formula.&lt;/p&gt;
 
@@ -1320,27 +1331,35 @@ dispersion on its own is not reliable for model selection.&lt;/p&gt;
 
 &lt;p&gt;2.1 Given the formula&lt;/p&gt;
 
-&lt;p&gt;[latex]F_{n+2} = F_{n+1} + F_{n}[/latex]&lt;/p&gt;
+&lt;p&gt;$F_{n+2} = F_{n+1} + F_{n}$&lt;/p&gt;
 
-&lt;p&gt;2.2 If we start with the ansatz for either of the two sequences, un and vn, that compose Fn&lt;/p&gt;
+&lt;p&gt;2.2 If we start with the ansatz for either of the two sequences, $u_n$ and $v_n$, that compose $F_n$&lt;/p&gt;
 
-&lt;p&gt;[latex]u_n = \tau^{n} \\ \therefore \tau^{n+2} = \tau^{n+1} + \tau^{n} \\ \Rightarrow \tau^{2} = \tau + 1[/latex]&lt;/p&gt;
+&lt;p&gt;$u_n = \tau^{n} \therefore \tau^{n+2} = \tau^{n+1} + \tau^{n}\ \Rightarrow \tau^{2} = \tau + 1$&lt;/p&gt;
 
 &lt;p&gt;2.3 This yields two distinct roots&lt;/p&gt;
 
-&lt;p&gt;[latex]\tau = (1 \pm \sqrt{5}) / 2[/latex]&lt;/p&gt;
+&lt;p&gt;$\tau = (1 \pm \sqrt{5}) / 2$&lt;/p&gt;
 
 &lt;p&gt;2.4 The two roots individually form two sequences, &lt;strong&gt;u&lt;/strong&gt; and &lt;strong&gt;v&lt;/strong&gt;, that are linearly independent. Thus Fibonacci numbers can be written in terms of these basis vectors.&lt;/p&gt;
 
-&lt;p&gt;[latex]\mathbf{F}=\alpha \mathbf{u}+\beta \mathbf{v}[/latex]&lt;/p&gt;
+&lt;p&gt;$\mathbf{F} = \alpha \mathbf{u}+ \beta \mathbf{v}$&lt;/p&gt;
 
 &lt;p&gt;2.5 The values of α and β can be evaluation by solving the linear systems, and eventually&lt;/p&gt;
 
-&lt;p&gt;[latex]F_n = \frac{1}{\sqrt{5}}\left\{(\frac{1+\sqrt{5}}{2})^{n}-(\frac{1-\sqrt{5}}{2})^n\right\}[/latex]&lt;/p&gt;
+&lt;p&gt;$F_n = \frac{1}{\sqrt{5}} \left( (\frac{1+\sqrt{5}}{2})^{n} - (\frac{1-\sqrt{5}}{2})^n \right) $&lt;/p&gt;
+
+&lt;p&gt;See also: &lt;a href=&quot;https://matthewarcus.wordpress.com/2012/12/22/complex-fibonacci/&quot;&gt;complex Fibonacci&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Aug 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/</guid>
+        
+        <category>Algorithms</category>
+        
+        <category>Linear Algebra</category>
+        
+        <category>Mathematics</category>
         
         
       </item>
@@ -1348,7 +1367,11 @@ dispersion on its own is not reliable for model selection.&lt;/p&gt;
       <item>
         <title>Physical Review Letters, Past</title>
         <description>&lt;blockquote&gt;
-  &lt;p&gt;As part of the celebration of PRL’s 50th anniversary, we will be presenting throughout 2008 a series of milestone Letters that made long-lived contributions to physics, either by announcing significant discoveries, or by initiating new areas of research. A number of these articles report on work that was later recognized with a Nobel Prize for one or more of the authors. Starting the week of January 2, we will present a few important Letters from PRL in 1958, and the next week from 1959, etc., continuing up through the year 2000.&lt;/p&gt;
+  &lt;p&gt;As part of the celebration of PRL’s 50th anniversary, we will be presenting throughout 2008 a series of milestone 
+Letters that made long-lived contributions to physics, either by announcing significant discoveries, or by initiating 
+new areas of research. A number of these articles report on work that was later recognized with a Nobel Prize for one 
+or more of the authors. Starting the week of January 2, we will present a few important Letters from PRL in 1958, and 
+the next week from 1959, etc., continuing up through the year 2000.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;http://journals.aps.org/prl/50years/milestones&lt;/p&gt;
@@ -1356,6 +1379,8 @@ dispersion on its own is not reliable for model selection.&lt;/p&gt;
         <pubDate>Fri, 01 Aug 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/08/01/physical-review-of-letters-past/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/08/01/physical-review-of-letters-past/</guid>
+        
+        <category>Physics</category>
         
         
       </item>

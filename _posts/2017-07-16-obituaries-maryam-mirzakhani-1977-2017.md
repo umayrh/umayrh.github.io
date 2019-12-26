@@ -15,6 +15,6 @@ writing about Deleuze (*I'll Have to Wander All Alone*): "Too much to say, and I
 
 > death takes from us not only some particular life within the world, some moment that belongs to us, but, each time, without limit, someone through whom the world, and first of all our own world, will have opened up in a both finite and infinite—mortally infinite—way.
 
-[![](http://img.youtube.com/vi/mxPE6vYwqLg/0.jpg)](http://www.youtube.com/watch?v=mxPE6vYwqLg)
+<iframe width="450" height="315" src="https://www.youtube.com/embed/mxPE6vYwqLg" frameborder="0" allowfullscreen></iframe>
 
 [Dynamics of the Moduli Spaces of Curves](https://www.ias.edu/ideas/dynamics-moduli-spaces-curves-i)

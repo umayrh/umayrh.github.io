@@ -116,7 +116,8 @@ on [ggplot2](http://ggplot2.org) and [directlabels](http://directlabels.r-forge
 
 The scatterplot and dendogram outputs of the code:
 
-[![nmf7_cf_ml_k19_qplot](http://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_qplot.png?w=300)![nmf7_cf_ml_k19_hclust](http://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_hclust.png?w=300)](https://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_hclust.png)
+![nmf7_cf_ml_k19_qplot](http://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_qplot.png?w=300)
+![nmf7_cf_ml_k19_hclust](http://umayrh.files.wordpress.com/2014/10/nmf7_cf_ml_k19_hclust.png?w=300)
 
 _Caveat_: while NMF itself can be used for matrix completion, the NMF package in R cannot since it cannot account for missing values. An alternative is to use [softImpute](http://cran.r-project.org/web/packages/softImpute/).
 
@@ -132,11 +133,12 @@ Non-negative matrix factorization is essentially a form of cluster analysis - th
 
 NMF, contrary to Lee and Seung's intuition and experiments, doesn't always produce a part-based representation. In this, Kim07 and Kim08 followed the arguments and counter-examples of Li01 and Hoyer04. Since, as Hoyer04 states, "the sparseness given by NMF is somewhat of a side-effect rather than a goal," regularization needs to be explicitly introduced to control the degree of sparseness. Li07 does that by penalizing the energy of the factors in the optimization objective (similar to the Koren09 basic model); Hoyer04 introduces sparseness constraints separately on each factor; while Kim07, Kim08 mix L1 and L2 norms to impose sparsity on one of the factors. Sparseness may not only improve the quality of the result but, as Kim08 show, also result in better execution time. The two algorithms, SNMF/R and SNMF/L, introduced in Kim07 are available in the R [NMF](http://cran.r-project.org/web/packages/NMF/index.html) package.
 
-Purity and entropy are two traditional [clustering metrics](http://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html). Purity measures the accuracy of assignment (n data point, k clusters and l classes) - larger value implies better clustering. Entropy measures the amount of information-theoretic order - smaller value is better.
+Purity and entropy are two traditional [clustering metrics](http://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html). 
+Purity measures the accuracy of assignment (n data point, k clusters and l classes) - larger value implies better clustering. 
+Entropy measures the amount of information-theoretic order - smaller value is better.
 
-$purity = \frac{1}{n}\sum_{k}\max_{l}|c_k \cap C_l|$
-
-$entropy = \frac{-1}{n\log_{2}l} \sum_{k} \sum_{l} |c_k \cap C_l|\log_{2}\frac{|c_k \cap C_l|}{c_k}$
+* $purity = \frac{1}{n} \sum_{k} \max_{l} \lVert c_k \cap C_l\rVert$
+* $entropy = \frac{-1} {n\log_{2}l} \sum_{k} \sum_{l} \lVert c_k \cap C_l\rVert \log_{2} \frac{\lVert c_k \cap C_l\rVert} {c_k}$
 
 For model selection (i.e. the number of factors to use), Burnet04 introduced _consensus matrix_ and the related 
 _dispersion coefficient_. Since NMF may not converge to the same solution on each run, consensus matrix (C) encodes the 
