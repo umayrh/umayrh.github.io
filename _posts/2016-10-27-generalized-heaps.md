@@ -3,7 +3,7 @@ layout: post
 title: "Generalized heaps"
 date: "2016-10-27"
 description:
-image: /assets/images/screen-shot-2016-10-27-at-10-31-39-am.png
+image: /assets/images/gen-heaps.png
 author: Umayr Hassan
 tags:
 - Algorithms

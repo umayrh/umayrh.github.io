@@ -3,7 +3,7 @@ layout: post
 title: "Obituaries: Alexander Grothendieck (1928–2014)"
 date: "2014-11-17"
 description:
-image: /assets/images/grothendieck.jpg
+image: /assets/images/groth.jpg
 author: Umayr Hassan
 tags:
 - Obit

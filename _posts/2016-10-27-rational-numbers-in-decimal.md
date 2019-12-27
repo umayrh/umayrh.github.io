@@ -3,7 +3,7 @@ layout: post
 title: "Rational numbers in decimal"
 date: "2016-10-27"
 description:
-image: /assets/images/repeating-decimal-fractions-gray.png
+image: /assets/images/repeating-dec.png
 author: Umayr Hassan
 tags:
 - Algorithms

@@ -3,7 +3,7 @@ layout: post
 title: "Sorting primer"
 date: "2012-05-20"
 description:
-image: 
+image:
 author: Umayr Hassan
 tags:
 ---
@@ -146,3 +146,7 @@ private static void qsort (double[] a, int low, int high) {
 * [1] http://www.iti.fh-flensburg.de/lang/algorithmen/sortieren/heap/heapen.htm 
 * [2] http://www.vogella.com/articles/JavaAlgorithmsMergesort/article.html 
 * [3] http://www.augustana.ca/~jmohr/courses/2004.winter/csc310/source/QuickSort.java.html
+
+### Credits
+
+Image from [Wikimedia](https://upload.wikimedia.org/wikipedia/commons/a/ae/Metal_movable_type.jpg).
