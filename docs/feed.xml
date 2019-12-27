@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Dec 2019 17:11:15 -0800</pubDate>
-    <lastBuildDate>Thu, 26 Dec 2019 17:11:15 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Dec 2019 17:55:36 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Dec 2019 17:55:36 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -1875,303 +1875,197 @@ filling in the areas between the curves (Trott 1999, pp. 10 and 84).”&lt;/p&gt
     
       <item>
         <title>First-order methods for regularization</title>
-        <description>&lt;p&gt;General first-order methods use only the values of objective/constraints and their subgradients to optimize non-smooth (including constrained) function [5]. Such methods that are oblivious to the structure of the problem are termed &lt;em&gt;black-box optimization&lt;/em&gt; techniques.&lt;/p&gt;
+        <description>&lt;p&gt;General first-order methods use only the values of objective/constraints and their subgradients to optimize non-smooth 
+(including constrained) function [5]. Such methods that are oblivious to the structure of the problem are 
+termed &lt;em&gt;black-box optimization&lt;/em&gt; techniques.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Why first-order?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;why-first-order&quot;&gt;Why first-order?&lt;/h2&gt;
 
-&lt;p&gt;Primarily because the computation cost, per iteration, of high-accuracy methods like interior-point generally increases non-linearly, which is prohibitively expensive for very large data-sets (&amp;gt; 100K variables).&lt;/p&gt;
+&lt;p&gt;Primarily because the computation cost, per iteration, of high-accuracy methods like interior-point generally increases 
+non-linearly, which is prohibitively expensive for very large data-sets (&amp;gt; 100K variables).&lt;/p&gt;
 
-&lt;p&gt;Though the cost per iteration of general methods is low, these methods cannot exploit the structure of the problem. This post discusses two first-order optimization techniques for regularization problems that can exploit the structure of the problem to give better convergence rate than general methods.&lt;/p&gt;
+&lt;p&gt;Though the cost per iteration of general methods is low, these methods cannot exploit the structure of the problem. 
+This post discusses two first-order optimization techniques for regularization problems that can exploit the structure 
+of the problem to give better convergence rate than general methods.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Regularization&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;regularization&quot;&gt;Regularization&lt;/h2&gt;
 
-&lt;p&gt;Regularization problems in statistics and machine learning, or denoting problems in signal processing, take one of the following forms:&lt;/p&gt;
+&lt;p&gt;Regularization problems in statistics and machine learning, or denoting problems in signal processing, take one of the 
+following forms:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]\min{(\frac{1}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Ax - b&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2 + \lambda&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;)}[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\min{(\frac{1}{2}\|Ax - b\|^2 + \lambda \|x\|)}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\min{f(x)} \mbox{ s.t. } \| b - Ax \| \le \epsilon&lt;/script&gt;&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt; [latex]\min{f(x)} \\[/latex] [latex]&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;b - Ax&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;\le \epsilon[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;where $|.|$ indicates some kind of a norm (or seminorm), e.g. $L_1$ or $L_2$ in statistics and Total Variation norm in 
+imaging, and $\lambda$ is a real-valued regularization parameter. Optimization of such composite convex functions - 
+often with a smooth component, $f(x)$, and a non-smooth component, $g(x)$ - can be expressed as:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;where&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;indicates some kind of a norm (or seminorm), e.g. L1 or L2 in statistics and Total Variation norm in imaging, and λ is a real-valued regularization parameter. Optimization of such composite convex functions - often with a smooth component, f(x), and a non-smooth component, g(x) - can be expressed as:&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\min_{x \in \mathbb{R}} {f(x) + \lambda g(x)}&lt;/script&gt;
 
-&lt;p&gt;[latex]\min_{x \in \mathbb{R}} {f(x) + \lambda g(x)}[/latex]&lt;/p&gt;
+&lt;p&gt;Regularization imposes a structure, using a specific norm, on the solution. For example, using L1 norm encourages 
+sparsity, which often results in more noise-tolerant solutions. This was the motivation behind ridge regression and 
+LASSO [8] in statistical estimation. Unconstrained regularization problems can be solved using (constrained) linear 
+programming while constrained problems may be solved using second-order cone program. Both programs are variants of 
+interior-points algorithms, and too slow for very large data sets. Various first-order methods may be used to solve 
+regularization problem. In fact, for the specific case of regularization problems, first-order method can be shown 
+to converge to an ε-solution at an optimal rate.&lt;/p&gt;
 
-&lt;p&gt;Regularization imposes a structure, using a specific norm, on the solution. For example, using L1 norm encourages sparsity, which often results in more noise-tolerant solutions. This was the motivation behind ridge regression and LASSO [8] in statistical estimation. Unconstrained regularization problems can be solved using (constrained) linear programming while constrained problems may be solved using second-order cone program. Both programs are variants of interior-points algorithms, and too slow for very large data sets. Various first-order methods may be used to solve regularization problem. In fact, for the specific case of regularization problems, first-order method can be shown to converge to an ε-solution at an optimal rate.&lt;/p&gt;
+&lt;h2 id=&quot;complexity&quot;&gt;Complexity&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Complexity&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The complexity of first-order methods is often measured in terms of the number of calls to a first-order oracle 
+(section 5.1 in [5]) required to reach an $\epsilon$-solution. Conversely, the convergence rate gives the approximation error 
+after &lt;em&gt;t&lt;/em&gt; iterations. Nemirovski and Yudin’s work [5] established a lower bound for the information-based complexity of 
+black-box optimization techniques: $O(\frac{1}{\epsilon^2})$ iterations (alternatively, an $O(\frac{1}{\sqrt{t}})$-precise 
+solution after $t$ iterations). 
+Furthermore, in many cases, the complexity is still dependent on the dimension, $n$, of the problem - $O(n)$, in the worst 
+case. For very large dimensional problems, such black-box schemes would converge too slowly.&lt;/p&gt;
 
-&lt;p&gt;The complexity of first-order methods is often measured in terms of the number of calls to a first-order oracle (section 5.1 in [5]) required to reach an ε-solution. Conversely, the convergence rate gives the approximation error after &lt;em&gt;t&lt;/em&gt; iterations. Nemirovski and Yudin’s work [5] established a lower bound for the information-based complexity of black-box optimization techniques: O(1/ε2) iterations (alternatively, an O(1/√t)-precise solution after t iterations). Furthermore, in many cases, the complexity is still dependent on the dimension, n, of the problem - O(n), in the worst case. For very large dimensional problems, such black-box schemes would converge too slowly.&lt;/p&gt;
-
-&lt;p&gt;Nonetheless, there are large classes of problems - including regularization - for which the complexity is O(1/ε) or, in some cases, O(1/√ε) (theorem 3.8 in [7], section 5.1 in [9] [10, 12]). In such cases, the complexity is also either independent of or only sublinearly dependent on problem dimension, making them feasible for very large dimensional but medium-accuracy problems (such as those in machine learning).&lt;/p&gt;
+&lt;p&gt;Nonetheless, there are large classes of problems - including regularization - for which the complexity is $O(\frac{1}{\epsilon})$ 
+or, in some cases, $O(\frac{1}{\sqrt{\epsilon}})$ (theorem 3.8 in [7], section 5.1 in [9] [10, 12]). In such cases, the 
+complexity is also either independent of or only sublinearly dependent on problem dimension, making them feasible for 
+very large dimensional but medium-accuracy problems (such as those in machine learning).&lt;/p&gt;
 
 &lt;p&gt;Why not use polynomial-time interior-point methods for convex optimization?&lt;/p&gt;
 
-&lt;p&gt;While interior-point methods converge rapidly - Ο(e-Ο(t)) - to an ε-solution, the complexity of each iteration is super-linear - O(nk), k &amp;gt; 1. For very large dimensional problems, these methods are prohibitively expensive.&lt;/p&gt;
+&lt;p&gt;While interior-point methods converge rapidly - $Ο(e^{Ο(t)})$ - to an ε-solution, the complexity of each iteration is 
+super-linear - $O(nk)$, $k &amp;gt; 1$. For very large dimensional problems, these methods are prohibitively expensive.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Proximal algorithms&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;proximal-algorithms&quot;&gt;Proximal algorithms&lt;/h2&gt;
 
-&lt;p&gt;[latex]\min_{x \in \mathbb{R}} {f(x) + \lambda g(x)}[/latex]&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\min_{x \in \mathbb{R}} {f(x) + \lambda g(x)}&lt;/script&gt;
 
 &lt;p&gt;For the composite function optimization problem, we assume that:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;the problem has a unique minimizer&lt;/li&gt;
-  &lt;li&gt;f(x) is β-smooth, convex and differentiable&lt;/li&gt;
-  &lt;li&gt;g(x) is convex, subdifferentiable and “simple” (to be clarified later)&lt;/li&gt;
+  &lt;li&gt;$f(x)$ is $\beta$-smooth, convex and differentiable&lt;/li&gt;
+  &lt;li&gt;$g(x)$ is convex, subdifferentiable and “simple” (to be clarified later)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;From the definition of β-smooth convex function, f(x):&lt;/p&gt;
+&lt;p&gt;From the definition of $\beta$-smooth convex function, f(x):&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]f(x_{k+1}) \le f(x_k)+ \nabla{f(x_k)}(x_{k+1} - x_k) + \frac{\beta}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x_{k+1} - x_k&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x_{k+1}) \le f(x_k)+ \nabla{f(x_k)}(x_{k+1} - x_k) + \frac{\beta}{2} \|x_{k+1} - x_k\|^2&lt;/script&gt;
 
-&lt;p&gt;For subgradient descent from a given a point xk, we need to find the next point xk+1 such that f(xk+1) is minimized i.e [3].&lt;/p&gt;
+&lt;p&gt;For subgradient descent from a given a point $x_k$, we need to find the next point xk+1 such that $f(x_{k}+1)$ is minimized i.e [3].&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} f(x_k)+ \nabla{f(x_k)}(x - x_k) + \frac{\beta}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x - x_k&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} f(x_k)+ \nabla{f(x_k)}(x - x_k) + \frac{\beta}{2} \|x - x_k\|^2&lt;/script&gt;
 
-&lt;p&gt;For the composite function, f(x) + λg(x), this becomes&lt;/p&gt;
+&lt;p&gt;For the composite function, $f(x) + \lambda g(x)$, this becomes&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} \lambda g(x)+ \nabla{f(x_k)}(x - x_k) + \frac{\beta}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x - x_k&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} \lambda g(x)+ \nabla{f(x_k)}(x - x_k) + \frac{\beta}{2} \|x - x_k\|^2&lt;/script&gt;
 
 &lt;p&gt;which can be reduced to&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} \lambda g(x)+\frac{\beta}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x - (x_k - \frac{1}{\beta}\nabla{f(x_k)})&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_{k+1} = \mathrm{argmin}_{x \in \mathbb{R}} \lambda g(x)+\frac{\beta}{2} \|x - (x_k - \frac{1}{\beta}\nabla{f(x_k)})\|^2&lt;/script&gt;
 
-&lt;p&gt;Despite the fact the each iteration here involves another optimization, a wide class of problems in this form can be solved with &lt;em&gt;proximal minimization algorithms&lt;/em&gt; [13, 14]&lt;em&gt;.&lt;/em&gt;  Proximal algorithms minimizing a β-smooth function f(x) can in general be represented as:&lt;/p&gt;
+&lt;p&gt;Despite the fact the each iteration here involves another optimization, a wide class of problems in this form can 
+be solved with &lt;em&gt;proximal minimization algorithms&lt;/em&gt; [13, 14]&lt;em&gt;.&lt;/em&gt;  Proximal algorithms minimizing a $\beta$-smooth function 
+$f(x)$ can in general be represented as:&lt;/p&gt;
 
-&lt;p&gt;[latex]x_{k+1} = prox_{\eta,f}(x_k)[/latex]&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_{k+1} = prox_{\eta,f}(x_k)&lt;/script&gt;
 
-&lt;p&gt;where η = 1/β and the proximity operator, proxηf(y), of a scaled function η f(x) is defined as&lt;/p&gt;
+&lt;p&gt;where $\eta = \frac{1}{\beta}$ and the proximity operator, $prox_{\eta}f(y)$, of a scaled function $f(x)$ is defined as&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]\mathrm{argmin}_{x \in \mathbb{R}} f(x) + \frac{1}{2\eta}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x - y&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathrm{argmin}_{x \in \mathbb{R}} f(x) + \frac{1}{2\eta} \|x - y\|^2&lt;/script&gt;
 
-&lt;p&gt;For the composite function, f(x) + λg(x), this implies&lt;/p&gt;
+&lt;p&gt;For the composite function, $f(x) + \lambda g(x)$, this implies&lt;/p&gt;
 
-&lt;p&gt;[latex]x_{k+1} = prox_{\lambda\eta,g(x)}(x_k - \frac{1}{2\eta\lambda}\nabla{f(x_k)})[/latex]&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_{k+1} = prox_{\lambda\eta,g(x)}(x_k - \frac{1}{2\eta\lambda}\nabla{f(x_k)})&lt;/script&gt;
 
-&lt;p&gt;Proximal algorithms are useful when the optimization subproblems either admit a closed-form solution or can be rapidly solved numerically. If this is the case, then g(x) is considered “simple.” For example, g(x) in regularization problems is an Lp norm, where p = {1, 2, ∞}. Using the calculus of proximity operators, it is possible to evaluate the closed-form solutions for these norm:&lt;/p&gt;
+&lt;p&gt;Proximal algorithms are useful when the optimization subproblems either admit a closed-form solution or can be 
+rapidly solved numerically. If this is the case, then $g(x)$ is considered “simple.” For example, $g(x)$ in regularization 
+problems is an $L_p$ norm, where p = {1, 2, $\infty$}. Using the calculus of proximity operators, it is possible to evaluate the 
+closed-form solutions for these norm:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]prox_{\eta,&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_{1}}(y)= \begin{cases} y-\eta, &amp;amp; y\ge \eta\\ 0, &amp;amp;&lt;/td&gt;
-      &lt;td&gt;y&lt;/td&gt;
-      &lt;td&gt;&amp;lt; \eta\\ y+\eta, &amp;amp; y\le \eta\end{cases}[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;$prox_{\eta,|.|_{1}}(y)= \begin{cases} y-\eta, &amp;amp; y \ge \eta \ 0, &amp;amp; |y| &amp;lt; \eta \ y+\eta, &amp;amp; y \le \eta \end{cases}$&lt;/p&gt;
 
-&lt;p&gt;This operation, for L1 norm, is also called &lt;em&gt;soft thresholding__.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This operation, for $L_1$ norm, is also called &lt;em&gt;soft thresholding&lt;/em&gt;.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]prox_{\eta,&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_{2}}(y)= \begin{cases} (1-\frac{\eta}{&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;y&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_2})y, &amp;amp;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;y&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_2\ge \eta\\ 0, &amp;amp;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;y&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_2 &amp;lt; \eta\end{cases}[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;$prox_{\eta,|.|_{2}}(y)= \begin{cases} (1-\frac{\eta}{|y|_2})y, &amp;amp; |y|_2 \ge \eta \ 0, &amp;amp; |y|_2 &amp;lt; \eta\end{cases}$&lt;/p&gt;
 
-&lt;p&gt;The operation for L2 norm is also called &lt;em&gt;b__lockwise soft thresholding&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The operation for $L_2$ norm is also called &lt;em&gt;blockwise soft thresholding&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;How rapidly would this scheme converge for composite functions compared to subgradient descent (since g(x) is non-smooth)? Since the proximal algorithm does not need to evaluate the subgradient of g(x) - only the gradient of f(x), which is β-smooth - the convergence rate should the same as that f(x). Following Theorem 3.3 in [7], given the minimum x*,&lt;/p&gt;
+&lt;p&gt;How rapidly would this scheme converge for composite functions compared to subgradient descent (since $g(x)$ is 
+non-smooth)? Since the proximal algorithm does not need to evaluate the subgradient of $g(x)$ - only the gradient of $f(x)$, 
+which is $\beta$-smooth - the convergence rate should the same as that $f(x)$. Following Theorem 3.3 in [7], given 
+the minimum $x^{\ast}$,&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex](f(x_k) + \lambda g(x_k)) - (f(x*) + \lambda g(x*)) \le \O(1)\frac{\beta&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x_0 - x*&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;}{k}[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(f(x_k) + \lambda g(x_k)) - (f(x^{\ast}) + \lambda g(x^{\ast})) \le O(1)\frac{\beta \|x_0 - x^{\ast}\|}{k}&lt;/script&gt;
 
-&lt;p&gt;which is much faster than subgradient descent’s O(1/√k). Improving convergence rate to O(1/k2) [1,2] will be the topic of our next post.&lt;/p&gt;
+&lt;p&gt;which is much faster than subgradient descent’s $O(\frac{1}{\sqrt{k}})$. Improving convergence rate to $O(\frac{1}{k^2})$ [1,2] 
+will be the topic of our next post.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;L1-Prox in R&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;## Corrupted signal and model&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;by&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cbind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-4+8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rnorm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#e[100:115] &amp;lt;- 30&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'l'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'blue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;signal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;time&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## Proximal algorithm for l1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## parameters&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;F&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eta&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## main loop&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gradient_x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx_tmp&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eta&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gradient_x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eta&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# L1 prox/shrinkage-thresholding&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx_tmp&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx_tmp&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;topright&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;original signal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;corrupted signal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;recovered signal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/07/l1prox1.png?w=300&quot; alt=&quot;Signal recovery using L1-Prox&quot; /&gt;
+Signal recovery using L1-Prox&lt;/p&gt;
 
-&lt;p&gt;We give sample code for a basic Iterative Shrinkage-Thresholding Algorithm in R to solve the LASSO problem:&lt;/p&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]\min_{x \in \mathbb{R}^n}(\frac{1}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Ax - b&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_2^2 + \lambda&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_1)[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;http://mechroom.technion.ac.il/~becka/papers/71654.pdf&quot;&gt;1&lt;/a&gt; A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM J. Imaging Sciences, 2009 
+&lt;a href=&quot;http://statweb.stanford.edu/~candes/nesta/NESTA.pdf&quot;&gt;2&lt;/a&gt; S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 
+&lt;a href=&quot;http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/&quot;&gt;3&lt;/a&gt; http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/ 
+&lt;a href=&quot;https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf&quot;&gt;4&lt;/a&gt; M. Teboulle. First-Order Algorithms for Convex Optimization. IPAM, 2010 
+&lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf&quot;&gt;5&lt;/a&gt; A. Ben-Tal, A. Nemirovski. Lectures on Modern Convex Optimization. Lecture Notes, 2013 
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Subgradient#The_subgradient&quot;&gt;6&lt;/a&gt; http://en.wikipedia.org/wiki/Subgradient#The_subgradient 
+&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;7&lt;/a&gt; S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014 
+[8] T. Hastie, R. Tibshirani, J. Friedman. Elements of Statistical Learning. Second Edition. 
+&lt;a href=&quot;http://www.ecore.be/DPs/dp_1329823186.pdf&quot;&gt;9&lt;/a&gt; Y. Nesterov. Subgradient Methods for Huge-Scale Optimization Problems. ECORE Discussion Paper, 2012 
+&lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf&quot;&gt;10&lt;/a&gt; A. Juditsky, A. Nemirovski. First-Order Methods for Non-Smooth Convex Large-Scale Optimization, 1. Optimization for Machine Learning, 
+[11] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 
+&lt;a href=&quot;https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf&quot;&gt;12&lt;/a&gt; A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Framework. SIAM Journal Of Optimization, 2012 
+&lt;a href=&quot;http://web.stanford.edu/~boyd/papers/prox_algs.html&quot;&gt;13&lt;/a&gt; N. Parrikh, S. Boyd. Proximal Algorithms. Foundations and Trends in Optimization, 2014 
+&lt;a href=&quot;http://www.ljll.math.upmc.fr/~plc/mms1.pdf&quot;&gt;14&lt;/a&gt; P. L. Combette, V. R. Wajs. Signal Recovery by Proximal Forward-Backward Splitting. Multiscale Modeling and Simulation, 2005&lt;/p&gt;
 
-&lt;p&gt;which can be reformulated as&lt;/p&gt;
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]x_{k+1}=prox_{\frac{\lambda}{\beta},&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_{1}}(x_k- A^T(Ax - b))[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;The smoothness parameter, β, can be evaluated directly since&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]\beta \le&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;\nabla^2{f(x)}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;=&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;A&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;[code language=”r”] ## Corrupted signal and model&lt;/p&gt;
-
-&lt;p&gt;x &amp;lt;- c(1, 2, 3, 4, 5, 6) t &amp;lt;- seq(from = 0, by = 0.02, to = 2*pi) A &amp;lt;- cbind(sin(t), sin(2*t), sin(3*t), sin(4*t), sin(5*t), sin(6*t)) e &amp;lt;- -4+8*rnorm(length(t),0,1) #e[100:115] &amp;lt;- 30 y &amp;lt;- A %*% x + e&lt;/p&gt;
-
-&lt;p&gt;plot(t, A %*% x, ‘l’, col=’blue’, ylab = “signal”, xlab = “time”) lines(t, y)&lt;/p&gt;
-
-&lt;p&gt;## Proximal algorithm for l1&lt;/p&gt;
-
-&lt;p&gt;## parameters iter &amp;lt;- 1000 beta &amp;lt;- norm(A, type=”F”)^2 eta &amp;lt;- 1 / beta lambda &amp;lt;- 1 xx &amp;lt;- c(0, 0, 0, 0, 0, 0)&lt;/p&gt;
-
-&lt;p&gt;## main loop for (i in 1:iter) { gradient_x &amp;lt;- t(A) %*% ( A %*% xx - y ) xx_tmp &amp;lt;- xx - eta * gradient_x v &amp;lt;- eta * lambda # L1 prox/shrinkage-thresholding xx &amp;lt;- pmax(xx_tmp - v, 0) - pmax(- xx_tmp - v, 0) }&lt;/p&gt;
-
-&lt;p&gt;xx&lt;/p&gt;
-
-&lt;p&gt;lines(t, A %*% xx, col=”red”)&lt;/p&gt;
-
-&lt;p&gt;legend(“topright”, legend=c(“original signal”, “corrupted signal”, “recovered signal”), col=c(“black”, “blue”, “red”), lwd=c(1, 1, 1)) [/code]&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;[caption id=”attachment_736” align=”aligncenter” width=”300”]&lt;a href=&quot;http://umayrh.files.wordpress.com/2014/07/l1prox1.png&quot;&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/07/l1prox1.png?w=300&quot; alt=&quot;Signal recovery using L1-Prox&quot; /&gt;&lt;/a&gt; Signal recovery using L1-Prox[/caption]&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://mechroom.technion.ac.il/~becka/papers/71654.pdf&quot;&gt;[1]&lt;/a&gt; A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM J. Imaging Sciences, 2009 &lt;a href=&quot;http://statweb.stanford.edu/~candes/nesta/NESTA.pdf&quot;&gt;[2]&lt;/a&gt; S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 &lt;a href=&quot;http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/&quot;&gt;[3]&lt;/a&gt; http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/ &lt;a href=&quot;https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf&quot;&gt;[4]&lt;/a&gt; M. Teboulle. First-Order Algorithms for Convex Optimization. IPAM, 2010 &lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf&quot;&gt;[5]&lt;/a&gt; A. Ben-Tal, A. Nemirovski. Lectures on Modern Convex Optimization. Lecture Notes, 2013 &lt;a href=&quot;http://en.wikipedia.org/wiki/Subgradient#The_subgradient&quot;&gt;[6]&lt;/a&gt; http://en.wikipedia.org/wiki/Subgradient#The_subgradient &lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;[7]&lt;/a&gt; S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014 [8] T. Hastie, R. Tibshirani, J. Friedman. Elements of Statistical Learning. Second Edition. &lt;a href=&quot;http://www.ecore.be/DPs/dp_1329823186.pdf&quot;&gt;[9]&lt;/a&gt; Y. Nesterov. Subgradient Methods for Huge-Scale Optimization Problems. ECORE Discussion Paper, 2012 &lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf&quot;&gt;[10]&lt;/a&gt; A. Juditsky, A. Nemirovski. First-Order Methods for Non-Smooth Convex Large-Scale Optimization, 1. Optimization for Machine Learning, [11] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 &lt;a href=&quot;https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf&quot;&gt;[12]&lt;/a&gt; A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Framework. SIAM Journal Of Optimization, 2012 &lt;a href=&quot;http://web.stanford.edu/~boyd/papers/prox_algs.html&quot;&gt;[13]&lt;/a&gt; N. Parrikh, S. Boyd. Proximal Algorithms. Foundations and Trends in Optimization, 2014 &lt;a href=&quot;http://www.ljll.math.upmc.fr/~plc/mms1.pdf&quot;&gt;[14]&lt;/a&gt; P. L. Combette, V. R. Wajs. Signal Recovery by Proximal Forward-Backward Splitting. Multiscale Modeling and Simulation, 2005&lt;/p&gt;
+&lt;p&gt;The image comes from &lt;a href=&quot;https://regularize.wordpress.com/2012/05/21/problems-solved-rip-and-nsp-are-np-hard-homotopy-for-l1-has-exponential-complexity/&quot;&gt;regularize.wordpress&lt;/a&gt;, 
+and shows a 3d Mairal-Yu simplex, the equivalent of a Klee-Minty cube for the $L_1$ homotopy method.&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Jul 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/07/17/first-order-methods-for-regularization/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/17/first-order-methods-for-regularization/</guid>
+        
+        <category>Convex optimization</category>
+        
+        <category>First-order methods</category>
+        
+        <category>Mathematics</category>
         
         
       </item>
