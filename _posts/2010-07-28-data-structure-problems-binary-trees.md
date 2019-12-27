@@ -8,7 +8,7 @@ author: Umayr Hassan
 tags:
 ---
 
-1. Mapping a binary tree into a list
+##### 1 Mapping a binary tree into a list
 
 ```java
 public BinNode treeList(BinNode root) {
@@ -36,7 +36,7 @@ void join(BinNode prev, BinNode next) {
  }
 ```
 
-2. Finding the longest path in a binary tree
+##### 2 Finding the longest path in a binary tree
 
 Use breadth-first search to find the last node visited - this shall necessarily be one of the longest paths. 
 Maintain pointers in each node to the node's parent. Use the last node to recursively find all of its ancestors. This
@@ -95,7 +95,7 @@ public Queue getAncestors(BinNode child) {
  }
 ```
 
-3. Find the least common ancestor for two given nodes in a tree.
+##### 3 Find the least common ancestor for two given nodes in a tree.
 
 Search for one of the nodes and mark each node in along path as visited: takes O(log N) time. Search for the 
 other nodes and keep track of the last visited node seen. net O(log N) time. Pre-processing the tree can be 

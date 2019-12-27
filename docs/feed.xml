@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Dec 2019 21:48:07 -0800</pubDate>
-    <lastBuildDate>Thu, 26 Dec 2019 21:48:07 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Dec 2019 21:55:39 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Dec 2019 21:55:39 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -3681,9 +3681,7 @@ ensuring that it is carried out within a transaction. More information on code a
     
       <item>
         <title>Data Structure Problems: Binary Trees</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Mapping a binary tree into a list&lt;/li&gt;
-&lt;/ol&gt;
+        <description>&lt;h5 id=&quot;1-mapping-a-binary-tree-into-a-list&quot;&gt;1 Mapping a binary tree into a list&lt;/h5&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;treeList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -3710,9 +3708,7 @@ ensuring that it is carried out within a transaction. More information on code a
  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Finding the longest path in a binary tree&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h5 id=&quot;2-finding-the-longest-path-in-a-binary-tree&quot;&gt;2 Finding the longest path in a binary tree&lt;/h5&gt;
 
 &lt;p&gt;Use breadth-first search to find the last node visited - this shall necessarily be one of the longest paths. 
 Maintain pointers in each node to the node’s parent. Use the last node to recursively find all of its ancestors. This&lt;/p&gt;
@@ -3770,9 +3766,7 @@ Maintain pointers in each node to the node’s parent. Use the last node to recu
  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Find the least common ancestor for two given nodes in a tree.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h5 id=&quot;3-find-the-least-common-ancestor-for-two-given-nodes-in-a-tree&quot;&gt;3 Find the least common ancestor for two given nodes in a tree.&lt;/h5&gt;
 
 &lt;p&gt;Search for one of the nodes and mark each node in along path as visited: takes O(log N) time. Search for the 
 other nodes and keep track of the last visited node seen. net O(log N) time. Pre-processing the tree can be 
@@ -3793,26 +3787,20 @@ used by &lt;a href=&quot;http://en.wikipedia.org/wiki/Lowest_common_ancestor&quo
     
       <item>
         <title>Data Structure Problems: Statistics</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Algorithm to calculate running mean over a window of N values&lt;/li&gt;
-&lt;/ol&gt;
+        <description>&lt;h5 id=&quot;1-algorithm-to-calculate-running-mean-over-a-window-of-n-values&quot;&gt;1 Algorithm to calculate running mean over a window of N values&lt;/h5&gt;
 
 &lt;ul&gt;
   &lt;li&gt;mean = SUM(n)/N therefore given the new data point y and old point x, new_mean = [ SUM(n) +y - x ] / N&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Algorithm to calculate running variance/standard deviation over a window of N values&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h5 id=&quot;2-algorithm-to-calculate-running-variancestandard-deviation-over-a-window-of-n-values&quot;&gt;2 Algorithm to calculate running variance/standard deviation over a window of N values&lt;/h5&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Use the fact that Var[X] = E[X²] - E[X]². Maintain the running mean for the values and the squares of these 
 values to estimate Var[X] and hence standard deviation on the fly.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Algorithm to calculate running median over a window of N values&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h5 id=&quot;3-algorithm-to-calculate-running-median-over-a-window-of-n-values&quot;&gt;3 Algorithm to calculate running median over a window of N values&lt;/h5&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Maintain a queue of values. Enqueue new value, and dequeue old value in O(1) time. Use an 
@@ -3820,9 +3808,7 @@ values to estimate Var[X] and hence standard deviation on the fly.&lt;/li&gt;
  value in O(logN) time. Access the middle value in O(1) time using the half of the size of the list as index.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Algorithm to find the median value in an unsorted list of values.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h5 id=&quot;4-algorithm-to-find-the-median-value-in-an-unsorted-list-of-values&quot;&gt;4 Algorithm to find the median value in an unsorted list of values.&lt;/h5&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Using an array: sort in O(N log N) time (e.g. using heapsort) and access the middle values. Total time: O(N log N)&lt;/li&gt;
@@ -3848,17 +3834,11 @@ index - if current median is greater, find median of medians from pivot index to
     
       <item>
         <title>Data structure problems: Heaps and Priority Queues</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Heap: in-place sorting using heap in O(n log n).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Using heaps to improve merge k lists of size n each in O(n log k) time.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;How to find the kth smallest element using min-heaps in O(k log k) time.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+        <description>&lt;p&gt;(1) Heap: in-place sorting using heap in O(n log n).&lt;/p&gt;
+
+&lt;p&gt;(2) Using heaps to improve merge k lists of size n each in O(n log k) time.&lt;/p&gt;
+
+&lt;p&gt;(3) How to find the kth smallest element using min-heaps in O(k log k) time.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://discuss.joelonsoftware.com/default.asp?interview.11.593253.5&quot;&gt;One solution&lt;/a&gt;.&lt;/p&gt;
 
@@ -3875,9 +3855,7 @@ index - if current median is greater, find median of medians from pivot index to
     
       <item>
         <title>Data structure problems: Linked Lists.</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Reversing a singly-linked list:&lt;/li&gt;
-&lt;/ol&gt;
+        <description>&lt;h5 id=&quot;1-reversing-a-singly-linked-list&quot;&gt;1 Reversing a singly-linked list:&lt;/h5&gt;
 
 &lt;p&gt;(a) &lt;em&gt;Iterative method&lt;/em&gt;: maintain three pointers, two to the nodes being reversed, and one to the next node to be 
 reversed. Continue reversing nodes till the current node goes past the last node.&lt;/p&gt;
@@ -3914,21 +3892,15 @@ ListNode* recRev(ListNode* prev, ListNode* curr) {
  return recRev(curr, next);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;“There is linked list of millions of node and you do not know the length of it. Write a function which will 
-return a random number from the list.”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“There is a linked list of numbers of length N. N is very large and you don’t know N. You have to write a function 
-that will return k random numbers from the list. Numbers should be completely random. Hint: 1. Use random function rand() 
+&lt;h5 id=&quot;2-there-is-linked-list-of-millions-of-node-and-you-do-not-know-the-length-of-it-write-a-function-which-will&quot;&gt;2 “There is linked list of millions of node and you do not know the length of it. Write a function which will&lt;/h5&gt;
+&lt;p&gt;return a random number from the list.”&lt;/p&gt;
+
+&lt;h5 id=&quot;3-there-is-a-linked-list-of-numbers-of-length-n-n-is-very-large-and-you-dont-know-n-you-have-to-write-a-function&quot;&gt;3 “There is a linked list of numbers of length N. N is very large and you don’t know N. You have to write a function&lt;/h5&gt;
+&lt;p&gt;that will return k random numbers from the list. Numbers should be completely random. Hint: 1. Use random function rand() 
 (returns a number between 0 and 1) and irand() (return either 0 or 1) 2. It should be done in O(n).”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Given two linked lists, return the intersection of the two lists: i.e. return a list containing only the elements 
-that occur in both of the input lists.”&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;h5 id=&quot;4-given-two-linked-lists-return-the-intersection-of-the-two-lists-ie-return-a-list-containing-only-the-elements&quot;&gt;4 “Given two linked lists, return the intersection of the two lists: i.e. return a list containing only the elements&lt;/h5&gt;
+&lt;p&gt;that occur in both of the input lists.”&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Sort both lists. Starting with the first element of List1, iterate till the last occurrence of current element. 
@@ -3938,10 +3910,8 @@ equal, then add element to new list, List3. If List2 elements is less than List1
 lists have elements left.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;“Find or determine non existence of a number in a sorted list of N numbers where the numbers range over M, 
-M» N and N large enough to span multiple disks. Algorithm to beat O(log n) bonus points for constant time algorithm.”&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h5 id=&quot;5-find-or-determine-non-existence-of-a-number-in-a-sorted-list-of-n-numbers-where-the-numbers-range-over-m&quot;&gt;5 “Find or determine non existence of a number in a sorted list of N numbers where the numbers range over M,&lt;/h5&gt;
+&lt;p&gt;M» N and N large enough to span multiple disks. Algorithm to beat O(log n) bonus points for constant time algorithm.”&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Use a Bloom filter: k hash functions (where, optimally, k = (m/N)ln2) map a number to k locations in an m-bit 
@@ -3951,10 +3921,8 @@ certainty. See &lt;a href=&quot;http://pages.cs.wisc.edu/~cao/papers/summary-cac
 for non-existent rows or columns.”&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;“You are given a small sorted list of numbers, and a very very long sorted list of numbers - so long that it 
-had to be put on a disk in different blocks. How would you find those short list numbers in the bigger one?”&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h5 id=&quot;6-you-are-given-a-small-sorted-list-of-numbers-and-a-very-very-long-sorted-list-of-numbers---so-long-that-it&quot;&gt;6 “You are given a small sorted list of numbers, and a very very long sorted list of numbers - so long that it&lt;/h5&gt;
+&lt;p&gt;had to be put on a disk in different blocks. How would you find those short list numbers in the bigger one?”&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Let k be the size of the small list, p be the size of each block and q be the total number of blocks. Then, 
@@ -3964,11 +3932,10 @@ each unique number in the small list, find which block it may lie in, and then s
 time. Total complexity is O(q)+O(k log p).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;“Write a function to find the middle node of a single link list.” Maintain a boolean toggle, and two pointers: 
-slower and faster, initially pointing to the head. Move faster to next node till last node, and toggle counter. 
-If toggle is true, move slower to next node. If faster goes beyond last node, return slower.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h5 id=&quot;7-write-a-function-to-find-the-middle-node-of-a-single-link-list&quot;&gt;7 “Write a function to find the middle node of a single link list.”&lt;/h5&gt;
+&lt;p&gt;Maintain a boolean toggle, and two pointers: slower and faster, initially pointing to the head. 
+Move faster to next node till last node, and toggle counter. 
+If toggle is true, move slower to next node. If faster goes beyond last node, return slower.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;T findMid() {
  if (head == NULL) return NULL;
@@ -3983,17 +3950,12 @@ If toggle is true, move slower to next node. If faster goes beyond last node, re
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;“You are given a list of numbers. When you reach the end of the list you will come back to the beginning of the list 
-(a circular list). Write the most efficient algorithm to find the minimum # in this list. Find any given # in the list. 
+&lt;h5 id=&quot;8-you-are-given-a-list-of-numbers-when-you-reach-the-end-of-the-list-you-will-come-back-to-the-beginning-of-the-list&quot;&gt;8 “You are given a list of numbers. When you reach the end of the list you will come back to the beginning of the list&lt;/h5&gt;
+&lt;p&gt;(a circular list). Write the most efficient algorithm to find the minimum # in this list. Find any given # in the list. 
 The numbers in the list are always increasing but you don’t know where the circular list begins, 
 ie: 38, 40, 55, 89, 6, 13, 20, 23, 36.”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;How to find the kth node from last in a singly-linked list?&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;h5 id=&quot;9-how-to-find-the-kth-node-from-last-in-a-singly-linked-list&quot;&gt;9 How to find the kth node from last in a singly-linked list?&lt;/h5&gt;
 </description>
         <pubDate>Tue, 02 Feb 2010 00:00:00 -0800</pubDate>
         <link>http://localhost:4000/2010/02/02/linked-lists/</link>
