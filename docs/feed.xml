@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Dec 2019 21:30:05 -0800</pubDate>
-    <lastBuildDate>Thu, 26 Dec 2019 21:30:05 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Dec 2019 21:48:07 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Dec 2019 21:48:07 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -3466,21 +3466,31 @@ exact replicas of each other.&lt;/p&gt;
         <title>Perl: split tricks</title>
         <description>&lt;p&gt;Why does the following Perl script give an incorrect field count?&lt;/p&gt;
 
-&lt;p&gt;[sourcecode language=”perl”]#!/bin/perl&lt;/p&gt;
+&lt;div class=&quot;language-perl highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!/bin/perl&lt;/span&gt;
 
-&lt;p&gt;use strict; use warnings; use Data::Dumper;&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;strict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;warnings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Data::&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Dumper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;p&gt;my $str = “a\t\t\tb\t\t\t\t6\t\t”; my @fields = split( /\t/, $str); my $n = 0; print Dumper @fields; while ($fields[$n]) { print “$n: $fields[$n]\n”; $n++; } print “Field count: “ . scalar(@fields) . “\n”; print “done!\n”;[/sourcecode]&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;my&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t6&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&quot;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;my&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;@fields&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/\\t/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;my&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Dumper&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;@fields&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$fields&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$fields&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&quot;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Field count: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;scalar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;@fields&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&quot;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;done!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&quot;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Simply because split() function discards trailing null characters when splitting argument string. There are two 
+ways to avoid this:&lt;/p&gt;
 
-&lt;p&gt;Simply because split() function discards trailing null characters when splitting argument string. There are two ways to avoid this:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Force the split() function to map the results to a predefined number of fields, e.g.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;1. Force the split() function to map the results to a predefined number of fields, e.g.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;(split( /\\t/, $str))[0..8];&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;[sourcecode language=”perl”](split( /\t/, $str))[0..8];[/sourcecode]&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Append the string to be parsed with a non-delimiter character, e.g. newline, and then remove it:&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;2. Append the string to be parsed with a non-delimiter character, e.g. newline, and then remove it:&lt;/p&gt;
-
-&lt;p&gt;[sourcecode language=”perl”]$str = “$str” . “\n”; my @array = split( /\t/, $str); splice(@array, $#array, 1)[/sourcecode]&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;str = &quot;$str&quot; . &quot;\\n&quot;; my @array = split( /\\t/, $str); splice(@array, $#array, 1)&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Jan 2011 00:00:00 -0800</pubDate>
         <link>http://localhost:4000/2011/01/14/perl-split-tricks/</link>
@@ -3491,47 +3501,52 @@ exact replicas of each other.&lt;/p&gt;
     
       <item>
         <title>Awk: comparing numbers in two files</title>
-        <description>&lt;p&gt;Given two files, each with the first column serving as a key and the second column as value; how can we obtain the percentage difference between corresponding keys in the file?&lt;/p&gt;
+        <description>&lt;p&gt;Given two files, each with the first column serving as a key and the second column as value; how can we obtain the 
+percentage difference between corresponding keys in the file?&lt;/p&gt;
 
 &lt;p&gt;For example, if a.txt has data:&lt;/p&gt;
 
-&lt;p&gt;key1 10 key2 20 key3 30&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;key1 10 key2 20 key3 30&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;While b.txt has data:&lt;/p&gt;
 
-&lt;p&gt;key1 5 key2 10 key3 20&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;key1 5 key2 10 key3 20&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;We might be interested in percentage difference between the values, i.e.:&lt;/p&gt;
 
-&lt;p&gt;key1 50 key2 50 key3 33.3&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;key1 50 key2 50 key3 33.3&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;The following awk script can achieve this, while also skipping any keys not common to both files:&lt;/p&gt;
 
-&lt;p&gt;awk ‘
-BEGIN {
-   while (getline &amp;lt; “a.txt”) {arr[$1] = $2}
-} {
-   if (length(arr[$1])==0)
-      { print FILENAME”:” $0 }
-   else arr2[$1]=$2
-}
-END {
-for (key in arr)
-   if (arr2[key]&amp;gt;0)
-      { print (arr2[key]-arr[key])*100/arr2[key] }
-}’ b.txt&lt;/p&gt;
+&lt;div class=&quot;language-awk highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;BEGIN&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;  &lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;getline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;a.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;  &lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;     &lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;FILENAME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;:&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;  &lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$2&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;  &lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;     &lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;txt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;To achieve the same for more than two files, we can modify the while loop in BEGIN to read the contents of all but the last file into a distinct array and then, in END, comparing the last file’s current key to see if it exists in all arrays before processing the array’s contents.&lt;/p&gt;
+&lt;p&gt;To achieve the same for more than two files, we can modify the while loop in BEGIN to read the contents of all but 
+the last file into a distinct array and then, in END, comparing the last file’s current key to see if it exists in all 
+arrays before processing the array’s contents.&lt;/p&gt;
 
 &lt;p&gt;To find the number of columns in the last line of all files in a directory:&lt;/p&gt;
 
-&lt;p&gt;#!/bin/bash&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
 
-&lt;p&gt;for file in *
-  do
-    awk -F”\t” ‘END {print FILENAME, NF}’ $file
-  done
-#&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;file &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\*&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&quot;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'END {print FILENAME, NF}'&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 10 Jan 2011 00:00:00 -0800</pubDate>
         <link>http://localhost:4000/2011/01/10/awk-comparing-numbers-in-two-files/</link>
@@ -3542,7 +3557,11 @@ for (key in arr)
     
       <item>
         <title>Note on databases: mass deletion, aggregation and migration</title>
-        <description>&lt;p&gt;&lt;em&gt;Scenario&lt;/em&gt;: Our company stores ad statistics (e.g. ads viewed) and properties (e.g. homepage) in a database so that marketing folks can query the database according to their needs. The database is MS SQL since it was thought that it would provide better performance for certain queries. This year, the database size grew rapidly such that secondary memory had to be supplemented with USB-based 2TB Flash memory. Eventually, even that filled up and the database was unable to load new data. Thus, our goals are to:&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt;Scenario&lt;/em&gt;: Our company stores ad statistics (e.g. ads viewed) and properties (e.g. homepage) in a database so 
+that marketing folks can query the database according to their needs. The database is MS SQL since it was thought that 
+it would provide better performance for certain queries. This year, the database size grew rapidly such that secondary 
+memory had to be supplemented with USB-based 2TB Flash memory. Eventually, even that filled up and the database was 
+unable to load new data. Thus, our goals are to:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Delete all data before January 01, 2010, since it’s too old to be useful&lt;/li&gt;
@@ -3551,39 +3570,107 @@ for (key in arr)
   &lt;li&gt;Migrate the database to a new one with an updated schema&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;em&gt;Observation 1&lt;/em&gt;: Significant differences between SQL scripts written for MS-SQL and MySQL. For example, &lt;a href=&quot;http://dev.mysql.com/doc/refman/5.0/en/load-data.html&quot;&gt;LOAD DATA INFILE&lt;/a&gt; queries in MySQL are replaced by &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms188365.aspx&quot;&gt;BULK INSERT&lt;/a&gt; queries in MS-SQL. Moreover, bulk queries in MS-SQL may requires explicit permissions from the DBA to be carried out.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Observation 1&lt;/em&gt;: Significant differences between SQL scripts written for MS-SQL and MySQL. For example, 
+&lt;a href=&quot;http://dev.mysql.com/doc/refman/5.0/en/load-data.html&quot;&gt;LOAD DATA INFILE&lt;/a&gt; queries in MySQL are replaced by 
+&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms188365.aspx&quot;&gt;BULK INSERT&lt;/a&gt; queries in MS-SQL. Moreover, bulk queries in MS-SQL 
+may requires explicit permissions from the DBA to be carried out.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Observation 2&lt;/em&gt;: The company actually maintains two databases: the primary database stores the various statistics and properties, while the &lt;a href=&quot;http://www.microsoft.com/sqlserver/2008/en/us/Analysis-Services.aspx&quot;&gt;Cube&lt;/a&gt; is a &lt;a href=&quot;http://en.wikipedia.org/wiki/MOLAP&quot;&gt;MOLAP&lt;/a&gt; that processes (using XML queries) the data (partitioned by the month) in the primary database and then stores the results, to make certain queries (now made using an ODC-based &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms178798.aspx&quot;&gt;PivotTable&lt;/a&gt;) much faster and easy to invoke. Before issuing bulk delete, we needed ensure that modifying data did not crash the Cube.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Observation 2&lt;/em&gt;: The company actually maintains two databases: the primary database stores the various statistics and 
+properties, while the &lt;a href=&quot;http://www.microsoft.com/sqlserver/2008/en/us/Analysis-Services.aspx&quot;&gt;Cube&lt;/a&gt; is 
+a &lt;a href=&quot;http://en.wikipedia.org/wiki/MOLAP&quot;&gt;MOLAP&lt;/a&gt; that processes (using XML queries) the data (partitioned by the month) 
+in the primary database and then stores the results, to make certain queries (now made using an ODC-based 
+&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms178798.aspx&quot;&gt;PivotTable&lt;/a&gt;) much faster and easy to invoke. Before issuing 
+bulk delete, we needed ensure that modifying data did not crash the Cube.&lt;/p&gt;
 
-&lt;p&gt;Bulk delete was nearly disastrous. It seems that the MS SQL Server was writing to C drive while deleting data from the Flash memory. The available space on C drive fell from &amp;lt;100GB to 24Gb in an hour. This was primarily because the database log file kept on increasing. We had better luck deleting rows in batches. How large should a batch be? For example, a batch of 500000 rows took ~2.5min while five batches of 50 million rows took more than five hours. After running the deletion query, we &lt;a href=&quot;http://technet.microsoft.com/en-us/library/ms190757.aspx&quot;&gt;shrank the log files&lt;/a&gt; (located on C drive), as well as the &lt;a href=&quot;http://technet.microsoft.com/en-us/library/ms189035.aspx&quot;&gt;database&lt;/a&gt; (on the Flash-based U drive), to reclaim free space.&lt;/p&gt;
+&lt;p&gt;Bulk delete was nearly disastrous. It seems that the MS SQL Server was writing to C drive while deleting data from the 
+Flash memory. The available space on C drive fell from &amp;lt;100GB to 24Gb in an hour. This was primarily because the 
+database log file kept on increasing. We had better luck deleting rows in batches. How large should a batch be? 
+For example, a batch of 500000 rows took ~2.5min while five batches of 50 million rows took more than five hours. 
+After running the deletion query, we &lt;a href=&quot;http://technet.microsoft.com/en-us/library/ms190757.aspx&quot;&gt;shrank the log files&lt;/a&gt; 
+(located on C drive), as well as the &lt;a href=&quot;http://technet.microsoft.com/en-us/library/ms189035.aspx&quot;&gt;database&lt;/a&gt; (on the 
+Flash-based U drive), to reclaim free space.&lt;/p&gt;
 
-&lt;p&gt;Another problem is determining the number of batches, which would requires us to know the total number of rows being deleted beforehand. Given that this number is very large (in billions), a count query might take too long. We roughly estimated the number of batches by counting the rows being affected for ten days and then using the fact that we had around six months of data to be deleted. Here’s a script to automate the process:&lt;/p&gt;
+&lt;p&gt;Another problem is determining the number of batches, which would requires us to know the total number of rows being 
+deleted beforehand. Given that this number is very large (in billions), a count query might take too long. We roughly 
+estimated the number of batches by counting the rows being affected for ten days and then using the fact that we had 
+around six months of data to be deleted. Here’s a script to automate the process:&lt;/p&gt;
 
-&lt;p&gt;[sourcecode language=”sql”] Set rowcount to 50000000 to limit number of deletes per batch SET ROWCOUNT 50000000&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-roomsql&quot;&gt;Set rowcount to 50000000 to limit number of deletes per batch
+ SET ROWCOUNT 50000000
+ 
+ DECLARE @innerCount INT
+ SET @innerCount = 0
+ 
+ DECLARE @outerCount INT
+ SET @outerCount = 0
+ 
+ WHILE (@outerCount &amp;lt; 3)
+ BEGIN
+   WHILE (@innerCount &amp;lt; 5)
+   BEGIN
+   BEGIN TRANSACTION
+   -- Use tablockx and holdlock to obtain and hold
+   -- an immediate exclusive table lock. This unusually
+   -- speeds the update because only one lock is needed.
+   DELETE [reporting].[dbo].[stats] WITH (tablockx, holdlock)
+   WHERE [stats_date] &amp;lt; 14610
+   -- Commit the transaction
+   COMMIT
+ SET @innerCount = (@innerCount + 1)
+ END
+ -- Shrink log files to free up space for future transactions
+ -- Note that reporting_log is the name of the log file
+ DBCC SHRINKFILE (reporting_log, 1);
+ -- Reclaim free space in the database. This might take a while.
+ -- Note that reporting is the name of the database being shrunk
+ DBCC SHRINKDATABASE (reporting);
+ 
+ SET @outerCount = (@outerCount + 1)
+ END
+ 
+-- Remove rowcount limitation
+SET ROWCOUNT 0
+ 
+-- Delete the rest of rows, less than ROWCOUNT
+BEGIN TRANSACTION
+DELETE [reporting].[dbo].[stats] WITH (tablockx, holdlock)
+WHERE [stats_date] &amp;lt; 14610
+COMMIT
+-- Validate no rows are left to be deleted
+SELECT COUNT(*)
+FROM [reporting].[dbo].[stats]
+WHERE [stats_date] &amp;lt; 14610
+-- Shrink again
+DBCC SHRINKFILE (reporting_log, 1);
+DBCC SHRINKDATABASE (reporting);
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;DECLARE @innerCount INT SET @innerCount = 0&lt;/p&gt;
+&lt;p&gt;On our system, this query deleted 750 million rows, took 11.5hr to complete, freed up 227GB of memory 
+on U: drive and returned the free space in C: to its normal state. We needed to runs this query a couple more 
+times to delete all rows, taking up 22hr more and finally freeing up ~450GB on U: drive.&lt;/p&gt;
 
-&lt;p&gt;DECLARE @outerCount INT SET @outerCount = 0&lt;/p&gt;
+&lt;p&gt;It is now trivial to write a &lt;a href=&quot;http://baishui.info/orelly/linux/dbi/ch08_02.htm&quot;&gt;Perl script&lt;/a&gt; that can remotely 
+connect to a database server (using DBD::Proxy, DBI and DBD::ODBC modules), and execute this query.&lt;/p&gt;
 
-&lt;p&gt;WHILE (@outerCount &amp;lt; 3) BEGIN WHILE (@innerCount &amp;lt; 5) BEGIN BEGIN TRANSACTION – Use tablockx and holdlock to obtain and hold – an immediate exclusive table lock. This unusually – speeds the update because only one lock is needed. DELETE [reporting].[dbo].[stats] WITH (tablockx, holdlock) WHERE [stats_date] &amp;lt; 14610 – Commit the transaction COMMIT SET @innerCount = (@innerCount + 1) END – Shrink log files to free up space for future transactions – Note that reporting_log is the name of the log file DBCC SHRINKFILE (reporting_log, 1); – Reclaim free space in the database. This might take a while. – Note that reporting is the name of the database being shrunk DBCC SHRINKDATABASE (reporting);&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Observation 3&lt;/em&gt;: Once deletion is complete, we may start aggregation data over certain columns to further reduce 
+database size. In our case, the table in question is composed of two kinds of columns: keys and values. We may 
+aggregate values (e.g. sum them) for given keys. Thus, assuming that (key_i+1…key_N) are the keys we are 
+aggregating on, this yields an aggregation query with the following format:&lt;/p&gt;
 
-&lt;p&gt;SET @outerCount = (@outerCount + 1) END&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-roomsql&quot;&gt;INSERT INTO aggregated_table (key1...key_i, value1...value_M)
+(
+    SELECT key1...key_i, SUM(value1)...SUM(value_M)
+    FROM unaggregated_table
+    GROUP BY key1...key_i
+)
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;-- Remove rowcount limitation SET ROWCOUNT 0&lt;/p&gt;
+&lt;p&gt;Finally, as for migration, which is need to change the number of columns in the database, we need to ensure that 
+the aggregated_table above, when created, include the new columns.&lt;/p&gt;
 
-&lt;p&gt;-- Delete the rest of rows, less than ROWCOUNT BEGIN TRANSACTION DELETE [reporting].[dbo].[stats] WITH (tablockx, holdlock) WHERE [stats_date] &amp;lt; 14610 COMMIT – Validate no rows are left to be deleted SELECT COUNT(*) FROM [reporting].[dbo].[stats] WHERE [stats_date] &amp;lt; 14610 – Shrink again DBCC SHRINKFILE (reporting_log, 1); DBCC SHRINKDATABASE (reporting); [/sourcecode]&lt;/p&gt;
-
-&lt;p&gt;On our system, this query deleted 750 million rows, took 11.5hr to complete, freed up 227GB of memory on U: drive and returned the free space in C: to its normal state. We needed to runs this query a couple more times to delete all rows, taking up 22hr more and finally freeing up ~450GB on U: drive.&lt;/p&gt;
-
-&lt;p&gt;It is now trivial to write a &lt;a href=&quot;http://baishui.info/orelly/linux/dbi/ch08_02.htm&quot;&gt;Perl script&lt;/a&gt; that can remotely connect to a database server (using DBD::Proxy, DBI and DBD::ODBC modules), and execute this query.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Observation 3&lt;/em&gt;: Once deletion is complete, we may start aggregation data over certain columns to further reduce database size. In our case, the table in question is composed of two kinds of columns: keys and values. We may aggregate values (e.g. sum them) for given keys. Thus, assuming that (key_i+1…key_N) are the keys we are aggregating on, this yields an aggregation query with the following format:&lt;/p&gt;
-
-&lt;p&gt;[sourcecode language=”sql”] INSERT INTO aggregated_table (key1…key_i, value1…value_M) ( SELECT key1…key_i, SUM(value1)…SUM(value_M) FROM unaggregated_table GROUP BY key1…key_i ) [/sourcecode]&lt;/p&gt;
-
-&lt;p&gt;Finally, as for migration, which is need to change the number of columns in the database, we need to ensure that the aggregated_table above, when created, include the new columns.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Observation 4&lt;/em&gt;: What if one accidentally truncates a table? It seems that that only way to undo truncation is by ensuring that it is carried out within a transaction. More information on code and limitations available &lt;a href=&quot;http://blog.sqlauthority.com/2010/03/04/sql-server-rollback-truncate-command-in-transaction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Observation 4&lt;/em&gt;: What if one accidentally truncates a table? It seems that that only way to undo truncation is by 
+ensuring that it is carried out within a transaction. More information on code and limitations available 
+&lt;a href=&quot;http://blog.sqlauthority.com/2010/03/04/sql-server-rollback-truncate-command-in-transaction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Aug 2010 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2010/08/26/notes-on-databases-mass-deletion-aggregation-and-migration/</link>
@@ -3594,33 +3681,108 @@ for (key in arr)
     
       <item>
         <title>Data Structure Problems: Binary Trees</title>
-        <description>&lt;p&gt;1. Mapping a binary tree into a list&lt;/p&gt;
+        <description>&lt;ol&gt;
+  &lt;li&gt;Mapping a binary tree into a list&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;[sourcecode language=”java”] public BinNode treeList(BinNode root) { if (root == null) return null; BinNode left = treeList(root.left); BinNode right = treeList(root.right); root.left = root; root.right = root; left = splice (left, root); left = splice (left, right); return left; }&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;treeList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;treeList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;treeList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;splice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;splice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;splice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;BinNode splice (BinNode list1, BinNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; join(list1.left, list2); join(list2.left, list1); return list1; }&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Finding the longest path in a binary tree&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;void join(BinNode prev, BinNode next) { prev.right = next; next.left = prev; } [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Use breadth-first search to find the last node visited - this shall necessarily be one of the longest paths. 
+Maintain pointers in each node to the node’s parent. Use the last node to recursively find all of its ancestors. This&lt;/p&gt;
 
-&lt;p&gt;2. Finding the longest path in a binary tree&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAncestors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;child&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;nc&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+ &lt;span class=&quot;c1&quot;&gt;// Returns one of the leaf nodes in the tree, in the&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;// order found using breadth-first search&lt;/span&gt;
+ &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getLeafNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;nc&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;last&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+     &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;child&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;child&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getUnvisitedChild&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;visited&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;last&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;clearVisited&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+ &lt;span class=&quot;c1&quot;&gt;// Returns the unvisited (i.e. visited=false) child of given node,&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;// and null otherwise&lt;/span&gt;
+ &lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getUnvisitedChild&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+ &lt;span class=&quot;c1&quot;&gt;// Clears the visited attribute of all nodes, starting&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;// from the root&lt;/span&gt;
+ &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;clearVisited&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;BinNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;clearVisited&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;visited&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;clearVisited&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;        
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Use breadth-first search to find the last node visited - this shall necessarily be one of the longest paths. Maintain pointers in each node to the node’s parent. Use the last node to recursively find all of its ancestors. This&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Find the least common ancestor for two given nodes in a tree.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;[sourcecode language=”java”] public Queue getAncestors(BinNode child) { if (child == null) return null; BinNode current = child; Queue queue = new LinkedList(); while (current != null) { queue.add(current); current = current.parent; } return queue; }&lt;/p&gt;
-
-&lt;p&gt;// Returns one of the leaf nodes in the tree, in the // order found using breadth-first search public BinNode getLeafNode (BinNode root) { if (root == null) return null; Queue queue = new LinkedList(); queue.add(root); root.visited=true; BinNode last = null; while(!queue.isEmpty()) { BinNode current = (BinNode) queue.remove(); BinNode child = null; while( (child = getUnvisitedChild (current)) != null ) { child.visited = true; queue.add(child); } last = current; } clearVisited(root); return last; }&lt;/p&gt;
-
-&lt;p&gt;// Returns the unvisited (i.e. visited=false) child of given node, // and null otherwise BinNode getUnvisitedChild (BinNode parent) { if (parent == null) return null; if (parent.left != null &amp;amp;&amp;amp; !parent.left.visited) return parent.left; if (parent.right != null &amp;amp;&amp;amp; !parent.right.visited) return parent.right; return null; }&lt;/p&gt;
-
-&lt;p&gt;// Clears the visited attribute of all nodes, starting // from the root void clearVisited(BinNode root) { if (root == null) return; clearVisited(root.left); root.visited = false; clearVisited(root.right);         } [/sourcecode]&lt;/p&gt;
-
-&lt;p&gt;3. Find the least common ancestor for two given nodes in a tree.&lt;/p&gt;
-
-&lt;p&gt;Search for one of the nodes and mark each node in along path as visited: takes O(log N) time. Search for the other nodes and keep track of the last visited node seen. net O(log N) time. Pre-processing the tree can be used by &lt;a href=&quot;http://en.wikipedia.org/wiki/Lowest_common_ancestor&quot;&gt;off-line algorithms&lt;/a&gt; to yield result constant times.&lt;/p&gt;
+&lt;p&gt;Search for one of the nodes and mark each node in along path as visited: takes O(log N) time. Search for the 
+other nodes and keep track of the last visited node seen. net O(log N) time. Pre-processing the tree can be 
+used by &lt;a href=&quot;http://en.wikipedia.org/wiki/Lowest_common_ancestor&quot;&gt;off-line algorithms&lt;/a&gt; to yield result constant times.&lt;/p&gt;
 
 &lt;p&gt;References:&lt;/p&gt;
 
-&lt;p&gt;[1] Some simple binary &lt;a href=&quot;http://cslibrary.stanford.edu/110/BinaryTrees.html&quot;&gt;tree problems&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;[1] Some simple binary &lt;a href=&quot;http://cslibrary.stanford.edu/110/BinaryTrees.html&quot;&gt;tree problems&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Wed, 28 Jul 2010 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2010/07/28/data-structure-problems-binary-trees/</link>
@@ -3631,34 +3793,51 @@ for (key in arr)
     
       <item>
         <title>Data Structure Problems: Statistics</title>
-        <description>&lt;p&gt;1. Algorithm to calculate running mean over a window of N values&lt;/p&gt;
+        <description>&lt;ol&gt;
+  &lt;li&gt;Algorithm to calculate running mean over a window of N values&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;ul&gt;
   &lt;li&gt;mean = SUM(n)/N therefore given the new data point y and old point x, new_mean = [ SUM(n) +y - x ] / N&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;2. Algorithm to calculate running variance/standard deviation over a window of N values&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Algorithm to calculate running variance/standard deviation over a window of N values&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Use the fact that Var[X] = E[X²] - E[X]². Maintain the running mean for the values and the squares of these values to estimate Var[X] and hence standard deviation on the fly.&lt;/li&gt;
+  &lt;li&gt;Use the fact that Var[X] = E[X²] - E[X]². Maintain the running mean for the values and the squares of these 
+values to estimate Var[X] and hence standard deviation on the fly.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;3. Algorithm to calculate running median over a window of N values&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Algorithm to calculate running median over a window of N values&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Maintain a queue of values. Enqueue new value, and dequeue old value in O(1) time. Use an &lt;a href=&quot;http://en.wikipedia.org/wiki/Skip_list&quot;&gt;indexable skip list&lt;/a&gt; to remove the old value and to insert the new value in O(logN) time. Access the middle value in O(1) time using the half of the size of the list as index.&lt;/li&gt;
+  &lt;li&gt;Maintain a queue of values. Enqueue new value, and dequeue old value in O(1) time. Use an 
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Skip_list&quot;&gt;indexable skip list&lt;/a&gt; to remove the old value and to insert the new
+ value in O(logN) time. Access the middle value in O(1) time using the half of the size of the list as index.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;4. Algorithm to find the median value in an unsorted list of values.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Algorithm to find the median value in an unsorted list of values.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Using an array: sort in O(N log N) time (e.g. using heapsort) and access the middle values. Total time: O(N log N)&lt;/li&gt;
-  &lt;li&gt;Use the &lt;a href=&quot;http://en.wikipedia.org/wiki/Selection_algorithm#Linear_general_selection_algorithm_-_Median_of_Medians_algorithm&quot;&gt;BFPRT partitioning algorithm&lt;/a&gt; to select median in worst-case O(N) time. It is as follows: - Recursively, group the data in fives and find the median of each group - Use the median of medians as a pivot to partition about - if current median is the same as pivot, return pivot - if current median is less than pivot, find median of medians till pivot index - if current median is greater, find median of medians from pivot index to end of array&lt;/li&gt;
+  &lt;li&gt;Use the &lt;a href=&quot;http://en.wikipedia.org/wiki/Selection_algorithm#Linear_general_selection_algorithm_-_Median_of_Medians_algorithm&quot;&gt;BFPRT partitioning algorithm&lt;/a&gt; 
+to select median in worst-case O(N) time. It is as follows: - Recursively, group the data in fives and 
+find the median of each group - Use the median of medians as a pivot to partition about - if current median 
+is the same as pivot, return pivot - if current median is less than pivot, find median of medians till pivot 
+index - if current median is greater, find median of medians from pivot index to end of array&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;References&lt;/p&gt;
 
-&lt;p&gt;- &lt;a href=&quot;ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf&quot;&gt;William Pugh’s paper&lt;/a&gt; on skip lists&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf&quot;&gt;William Pugh’s paper&lt;/a&gt; on skip lists&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Tue, 27 Jul 2010 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2010/07/27/data-structure-problems-statistics/</link>
@@ -3669,15 +3848,23 @@ for (key in arr)
     
       <item>
         <title>Data structure problems: Heaps and Priority Queues</title>
-        <description>&lt;p&gt;1. Heap: in-place sorting using heap in O(n log n).&lt;/p&gt;
-
-&lt;p&gt;2. Using heaps to improve merge k lists of size n each in O(n log k) time.&lt;/p&gt;
-
-&lt;p&gt;3. How to find the kth smallest element using min-heaps in O(k log k) time.&lt;/p&gt;
+        <description>&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Heap: in-place sorting using heap in O(n log n).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Using heaps to improve merge k lists of size n each in O(n log k) time.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;How to find the kth smallest element using min-heaps in O(k log k) time.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://discuss.joelonsoftware.com/default.asp?interview.11.593253.5&quot;&gt;One solution&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;- On various priority queue functions: &lt;a href=&quot;http://www.utdallas.edu/~ravip/cs3345/slidesweb/node5.html&quot;&gt;read&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;On various priority queue functions: &lt;a href=&quot;http://www.utdallas.edu/~ravip/cs3345/slidesweb/node5.html&quot;&gt;read&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sat, 24 Jul 2010 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2010/07/24/heaps/</link>
@@ -3692,72 +3879,116 @@ for (key in arr)
   &lt;li&gt;Reversing a singly-linked list:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;(a) &lt;em&gt;Iterative method&lt;/em&gt;: maintain three pointers, two to the nodes being reversed, and one to the next node to be reversed. Continue reversing nodes till the current node goes past the last node.&lt;/p&gt;
+&lt;p&gt;(a) &lt;em&gt;Iterative method&lt;/em&gt;: maintain three pointers, two to the nodes being reversed, and one to the next node to be 
+reversed. Continue reversing nodes till the current node goes past the last node.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[sourcecode language=”cpp”] void reverse() { if (head == NULL&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;head-&amp;gt;next == NULL) return; ListNode *prev = head, *curr = head-&amp;gt;next, *next = (head-&amp;gt;next)-&amp;gt;next; while (curr != NULL) { curr-&amp;gt;next = prev; if (prev == head) prev-&amp;gt;next = NULL; // loop otherwise prev = curr; curr = next; if (next != NULL) next = next-&amp;gt;next; } ListNode *n = head; head = tail; tail = n; } [/sourcecode]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;void reverse() {
+ if (head == NULL || head-&amp;gt;next == NULL) return;
+ ListNode *prev = head, *curr = head-&amp;gt;next, *next = (head-&amp;gt;next)-&amp;gt;next;
+ while (curr != NULL) {
+   curr-&amp;gt;next = prev;
+   if (prev == head) prev-&amp;gt;next = NULL; // loop otherwise
+   prev = curr; curr = next;
+   if (next != NULL) next = next-&amp;gt;next;
+ }
+ ListNode *n = head;
+ head = tail;
+ tail = n;
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;(b) &lt;em&gt;Recursive method&lt;/em&gt;: Save the pointer to current head node. Starting with the first two node, reverse links and return the last node. Update pointers to head and tail nodes.&lt;/p&gt;
+&lt;p&gt;(b) &lt;em&gt;Recursive method&lt;/em&gt;: Save the pointer to current head node. Starting with the first two node, reverse 
+links and return the last node. Update pointers to head and tail nodes.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[sourcecode language=”cpp”] void recursiveReverse() { ListNode* tmp = head; head = recRev(head, head-&amp;gt;next); tail = tmp; } private: ListNode* recRev(ListNode* prev, ListNode* curr) { if (prev == NULL&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;curr == NULL) return prev; ListNode* next = curr-&amp;gt;next; curr-&amp;gt;next = prev; if (prev == head) prev-&amp;gt;next = NULL; return recRev(curr, next); } [/sourcecode]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;void recursiveReverse() {
+   ListNode* tmp = head;
+   head = recRev(head, head-&amp;gt;next);
+   tail = tmp;
+}
+private:
+ListNode* recRev(ListNode* prev, ListNode* curr) {
+ if (prev == NULL || curr == NULL) return prev;
+ ListNode* next = curr-&amp;gt;next;
+ curr-&amp;gt;next = prev;
+ if (prev == head) prev-&amp;gt;next = NULL;
+ return recRev(curr, next);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;“There is linked list of millions of node and you do not know the length of it. Write a function which will return a random number from the list.”&lt;/p&gt;
+    &lt;p&gt;“There is linked list of millions of node and you do not know the length of it. Write a function which will 
+return a random number from the list.”&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;“There is a linked list of numbers of length N. N is very large and you don’t know N. You have to write a function that will return k random numbers from the list. Numbers should be completely random. Hint: 1. Use random function rand() (returns a number between 0 and 1) and irand() (return either 0 or 1) 2. It should be done in O(n).”&lt;/p&gt;
+    &lt;p&gt;“There is a linked list of numbers of length N. N is very large and you don’t know N. You have to write a function 
+that will return k random numbers from the list. Numbers should be completely random. Hint: 1. Use random function rand() 
+(returns a number between 0 and 1) and irand() (return either 0 or 1) 2. It should be done in O(n).”&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;“Given two linked lists, return the intersection of the two lists: i.e. return a list containing only the elements that occur in both of the input lists.”&lt;/p&gt;
+    &lt;p&gt;“Given two linked lists, return the intersection of the two lists: i.e. return a list containing only the elements 
+that occur in both of the input lists.”&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Sort both lists. Starting with the first element of List1, iterate till the last occurrence of current element. Starting with the first element of List2, iterate till the last occurrence of current element. Compare List1’s current element with List2’s, and iterate on List1 as long as List1 element is less than List2. If elements are equal, then add element to new list, List3. If List2 elements is less than List1, iterate on List2. Repeat while both lists have elements left.&lt;/li&gt;
+  &lt;li&gt;Sort both lists. Starting with the first element of List1, iterate till the last occurrence of current element. 
+Starting with the first element of List2, iterate till the last occurrence of current element. Compare List1’s 
+current element with List2’s, and iterate on List1 as long as List1 element is less than List2. If elements are 
+equal, then add element to new list, List3. If List2 elements is less than List1, iterate on List2. Repeat while both 
+lists have elements left.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;“Find or determine non existence of a number in a sorted list of N numbers where the numbers range over M, M» N and N large enough to span multiple disks. Algorithm to beat O(log n) bonus points for constant time algorithm.”&lt;/li&gt;
+  &lt;li&gt;“Find or determine non existence of a number in a sorted list of N numbers where the numbers range over M, 
+M» N and N large enough to span multiple disks. Algorithm to beat O(log n) bonus points for constant time algorithm.”&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Use a Bloom filter: k hash functions (where, optimally, k = (m/N)ln2) map a number to k locations in an m-bit array/vector. No false-negatives i.e. we can determine non-existence of a number mapped to the Bloom filter with certainty. See &lt;a href=&quot;http://pages.cs.wisc.edu/~cao/papers/summary-cache/node8.html&quot;&gt;this post&lt;/a&gt; for Bloom filter math. “Google &lt;a href=&quot;http://en.wikipedia.org/wiki/BigTable&quot; title=&quot;BigTable&quot;&gt;BigTable&lt;/a&gt; uses Bloom filters to reduce the disk lookups for non-existent rows or columns.”&lt;/li&gt;
+  &lt;li&gt;Use a Bloom filter: k hash functions (where, optimally, k = (m/N)ln2) map a number to k locations in an m-bit 
+array/vector. No false-negatives i.e. we can determine non-existence of a number mapped to the Bloom filter with 
+certainty. See &lt;a href=&quot;http://pages.cs.wisc.edu/~cao/papers/summary-cache/node8.html&quot;&gt;this post&lt;/a&gt; for Bloom filter math. 
+“Google &lt;a href=&quot;http://en.wikipedia.org/wiki/BigTable&quot; title=&quot;BigTable&quot;&gt;BigTable&lt;/a&gt; uses Bloom filters to reduce the disk lookups 
+for non-existent rows or columns.”&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;“You are given a small sorted list of numbers, and a very very long sorted list of numbers - so long that it had to be put on a disk in different blocks. How would you find those short list numbers in the bigger one?”&lt;/li&gt;
+  &lt;li&gt;“You are given a small sorted list of numbers, and a very very long sorted list of numbers - so long that it 
+had to be put on a disk in different blocks. How would you find those short list numbers in the bigger one?”&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Let k be the size of the small list, p be the size of each block and q be the total number of blocks. Then, using binary search on each block, we can find the small number in O(k*q log p) time.&lt;/li&gt;
-  &lt;li&gt;Better method: Find the first (i.e. minimum) number in each block and store in a sorted list in O(q). For each unique number in the small list, find which block it may lie in, and then search for the number in O(k log p) time. Total complexity is O(q)+O(k log p).&lt;/li&gt;
+  &lt;li&gt;Let k be the size of the small list, p be the size of each block and q be the total number of blocks. Then, 
+using binary search on each block, we can find the small number in O(k*q log p) time.&lt;/li&gt;
+  &lt;li&gt;Better method: Find the first (i.e. minimum) number in each block and store in a sorted list in O(q). For 
+each unique number in the small list, find which block it may lie in, and then search for the number in O(k log p) 
+time. Total complexity is O(q)+O(k log p).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;“Write a function to find the middle node of a single link list.” Maintain a boolean toggle, and two pointers: slower and faster, initially pointing to the head. Move faster to next node till last node, and toggle counter. If toggle is true, move slower to next node. If faster goes beyond last node, return slower.&lt;/li&gt;
+  &lt;li&gt;“Write a function to find the middle node of a single link list.” Maintain a boolean toggle, and two pointers: 
+slower and faster, initially pointing to the head. Move faster to next node till last node, and toggle counter. 
+If toggle is true, move slower to next node. If faster goes beyond last node, return slower.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;[sourcecode language=”cpp”] T findMid() { if (head == NULL) return NULL; ListNode* slower = head, *faster = head; bool toggle = false; while (faster-&amp;gt;next != NULL) { faster = faster-&amp;gt;next; if (toggle) slower = slower-&amp;gt;next; toggle = !toggle; } return slower-&amp;gt;data; } [/sourcecode]&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;T findMid() {
+ if (head == NULL) return NULL;
+ ListNode* slower = head, *faster = head;
+ bool toggle = false;
+ while (faster-&amp;gt;next != NULL) {
+   faster = faster-&amp;gt;next;
+   if (toggle) slower = slower-&amp;gt;next;
+   toggle = !toggle;
+ }
+ return slower-&amp;gt;data;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;“You are given a list of numbers. When you reach the end of the list you will come back to the beginning of the list (a circular list). Write the most efficient algorithm to find the minimum # in this list. Find any given # in the list. The numbers in the list are always increasing but you don’t know where the circular list begins, ie: 38, 40, 55, 89, 6, 13, 20, 23, 36.”&lt;/p&gt;
+    &lt;p&gt;“You are given a list of numbers. When you reach the end of the list you will come back to the beginning of the list 
+(a circular list). Write the most efficient algorithm to find the minimum # in this list. Find any given # in the list. 
+The numbers in the list are always increasing but you don’t know where the circular list begins, 
+ie: 38, 40, 55, 89, 6, 13, 20, 23, 36.”&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;How to find the kth node from last in a singly-linked list?&lt;/p&gt;
