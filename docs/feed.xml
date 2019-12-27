@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Dec 2019 19:30:24 -0800</pubDate>
-    <lastBuildDate>Thu, 26 Dec 2019 19:30:24 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Dec 2019 21:03:08 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Dec 2019 21:03:08 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -1967,27 +1967,44 @@ filling in the areas between the curves (Trott 1999, pp. 10 and 84).”&lt;/p&gt
     
       <item>
         <title>Subgradient</title>
-        <description>&lt;p&gt;Subgradient generalizes the notion of gradient/derivative and quantifies the rate of change of non-differentiable/non-smooth function ([1], section 8.1 in [2]). For a real-valued function, the &lt;em&gt;subgradients&lt;/em&gt; of the function at a point x0 are all values of c such that:&lt;/p&gt;
+        <description>&lt;p&gt;Subgradient generalizes the notion of gradient/derivative and quantifies the rate of change of 
+non-differentiable/non-smooth function ([1], section 8.1 in [2]). For a real-valued function, the ”subgradients” 
+of the function at a point $x_0$ are all values of $c$ such that:&lt;/p&gt;
 
-&lt;p&gt;[latex]f(x) - f(x_0) \ge c (x - x_0)[/latex]&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x) - f(x_0) \ge c (x - x_0)&lt;/script&gt;
 
-&lt;p&gt;Unlike derivative of smooth function, which is a singleton value, the subgradients form a set (e.g. an interval of points). The set of all subgradients is called the &lt;em&gt;subdifferential&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Unlike derivative of smooth function, which is a singleton value, the subgradients form a set 
+(e.g. an interval of points). The set of all subgradients is called the ”subdifferential”.&lt;/p&gt;
 
-&lt;p&gt;Subdifferential always exists if f(x) is a convex function with a convex domain X, and vice versa (proposition 1.1 in [3]):&lt;/p&gt;
+&lt;p&gt;Subdifferential always exists if $f(x)$ is a convex function with a convex domain $X$, and vice versa (proposition 1.1 in [3]):&lt;/p&gt;
 
-&lt;p&gt;[latex]\forall x,y\in X,f(tx + (1-t)y) \le tf(x) + (1-t)f(y)\leftrightarrow \partial f \not\in \emptyset[/latex]&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\forall x,y\in X,f(tx + (1-t)y) \le tf(x) + (1-t)f(y)\leftrightarrow \partial f \not\in \emptyset&lt;/script&gt;
 
 &lt;p&gt;The generalized subgradient descent scheme is given as:&lt;/p&gt;
 
-&lt;p&gt;[latex]x_{k+1} = x_k - \lambda \nabla{f(x_k)}[/latex]&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_{k+1} = x_k - \lambda \nabla{f(x_k)}&lt;/script&gt;
 
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Subgradient#The_subgradient&quot;&gt;[1]&lt;/a&gt; Wikipedia, Subgradient [2] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 &lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;[3]&lt;/a&gt; S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Subgradient#The_subgradient&quot;&gt;1&lt;/a&gt; Wikipedia, Subgradient&lt;/li&gt;
+  &lt;li&gt;[2] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;3&lt;/a&gt; S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;Image from the Hal Daumé’s post, &lt;a href=&quot;https://nlpers.blogspot.com/2016/06/subgradient-descent-or-something.html&quot;&gt;Subgradient descent, or something…&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Jul 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/07/17/subgradient/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/17/subgradient/</guid>
+        
+        <category>Convex optimization</category>
+        
+        <category>Function analysis</category>
+        
+        <category>Mathematics</category>
         
         
       </item>
@@ -2156,20 +2173,22 @@ Signal recovery using L1-Prox&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://mechroom.technion.ac.il/~becka/papers/71654.pdf&quot;&gt;1&lt;/a&gt; A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM J. Imaging Sciences, 2009 
-&lt;a href=&quot;http://statweb.stanford.edu/~candes/nesta/NESTA.pdf&quot;&gt;2&lt;/a&gt; S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 
-&lt;a href=&quot;http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/&quot;&gt;3&lt;/a&gt; http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/ 
-&lt;a href=&quot;https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf&quot;&gt;4&lt;/a&gt; M. Teboulle. First-Order Algorithms for Convex Optimization. IPAM, 2010 
-&lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf&quot;&gt;5&lt;/a&gt; A. Ben-Tal, A. Nemirovski. Lectures on Modern Convex Optimization. Lecture Notes, 2013 
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Subgradient#The_subgradient&quot;&gt;6&lt;/a&gt; http://en.wikipedia.org/wiki/Subgradient#The_subgradient 
-&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;7&lt;/a&gt; S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014 
-[8] T. Hastie, R. Tibshirani, J. Friedman. Elements of Statistical Learning. Second Edition. 
-&lt;a href=&quot;http://www.ecore.be/DPs/dp_1329823186.pdf&quot;&gt;9&lt;/a&gt; Y. Nesterov. Subgradient Methods for Huge-Scale Optimization Problems. ECORE Discussion Paper, 2012 
-&lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf&quot;&gt;10&lt;/a&gt; A. Juditsky, A. Nemirovski. First-Order Methods for Non-Smooth Convex Large-Scale Optimization, 1. Optimization for Machine Learning, 
-[11] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 
-&lt;a href=&quot;https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf&quot;&gt;12&lt;/a&gt; A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Framework. SIAM Journal Of Optimization, 2012 
-&lt;a href=&quot;http://web.stanford.edu/~boyd/papers/prox_algs.html&quot;&gt;13&lt;/a&gt; N. Parrikh, S. Boyd. Proximal Algorithms. Foundations and Trends in Optimization, 2014 
-&lt;a href=&quot;http://www.ljll.math.upmc.fr/~plc/mms1.pdf&quot;&gt;14&lt;/a&gt; P. L. Combette, V. R. Wajs. Signal Recovery by Proximal Forward-Backward Splitting. Multiscale Modeling and Simulation, 2005&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mechroom.technion.ac.il/~becka/papers/71654.pdf&quot;&gt;1&lt;/a&gt; A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM J. Imaging Sciences, 2009&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://statweb.stanford.edu/~candes/nesta/NESTA.pdf&quot;&gt;2&lt;/a&gt; S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/&quot;&gt;3&lt;/a&gt; http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf&quot;&gt;4&lt;/a&gt; M. Teboulle. First-Order Algorithms for Convex Optimization. IPAM, 2010&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf&quot;&gt;5&lt;/a&gt; A. Ben-Tal, A. Nemirovski. Lectures on Modern Convex Optimization. Lecture Notes, 2013&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Subgradient#The_subgradient&quot;&gt;6&lt;/a&gt; http://en.wikipedia.org/wiki/Subgradient#The_subgradient&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;7&lt;/a&gt; S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014&lt;/li&gt;
+  &lt;li&gt;[8] T. Hastie, R. Tibshirani, J. Friedman. Elements of Statistical Learning. Second Edition.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ecore.be/DPs/dp_1329823186.pdf&quot;&gt;9&lt;/a&gt; Y. Nesterov. Subgradient Methods for Huge-Scale Optimization Problems. ECORE Discussion Paper, 2012&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf&quot;&gt;10&lt;/a&gt; A. Juditsky, A. Nemirovski. First-Order Methods for Non-Smooth Convex Large-Scale Optimization, 1. Optimization for Machine Learning,&lt;/li&gt;
+  &lt;li&gt;[11] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf&quot;&gt;12&lt;/a&gt; A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Framework. SIAM Journal Of Optimization, 2012&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.stanford.edu/~boyd/papers/prox_algs.html&quot;&gt;13&lt;/a&gt; N. Parrikh, S. Boyd. Proximal Algorithms. Foundations and Trends in Optimization, 2014&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ljll.math.upmc.fr/~plc/mms1.pdf&quot;&gt;14&lt;/a&gt; P. L. Combette, V. R. Wajs. Signal Recovery by Proximal Forward-Backward Splitting. Multiscale Modeling and Simulation, 2005&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
 
@@ -2263,10 +2282,12 @@ only if $f^{\ast}$ is $\frac{1}{\alpha}$-strongly smooth with respect to the dua
 
 &lt;h2 id=&quot;references&quot;&gt;References:&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;[1]&lt;/a&gt; S. Bubeck, Theory of Convex Optimization for Machine Learning, section 3.4 
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions&quot;&gt;[2]&lt;/a&gt; Wikipedia, Convex function 
-&lt;a href=&quot;http://web.stanford.edu/~boyd/cvxbook/&quot;&gt;[3]&lt;/a&gt; S. Boyd and G. Vandenberghe, Convex Optimization, section 9.1.2 
-&lt;a href=&quot;http://ttic.uchicago.edu/~shai/papers/KakadeShalevTewari09.pdf&quot;&gt;[4]&lt;/a&gt; S. M. Kakade, S. Shalev-Schwartz, A. Tiwari. On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization. Technical Report, 2009&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;1&lt;/a&gt; S. Bubeck, Theory of Convex Optimization for Machine Learning, section 3.4&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions&quot;&gt;2&lt;/a&gt; Wikipedia, Convex function&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.stanford.edu/~boyd/cvxbook/&quot;&gt;3&lt;/a&gt; S. Boyd and G. Vandenberghe, Convex Optimization, section 9.1.2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ttic.uchicago.edu/~shai/papers/KakadeShalevTewari09.pdf&quot;&gt;4&lt;/a&gt; S. M. Kakade, S. Shalev-Schwartz, A. Tiwari. On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization. Technical Report, 2009&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
 
@@ -2340,43 +2361,52 @@ Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/
     
       <item>
         <title>EC'14 - some intriguing papers</title>
-        <description>&lt;p&gt;[&lt;a href=&quot;http://arxiv.org/pdf/1402.5758v1.pdf&quot;&gt;1&lt;/a&gt;] &lt;strong&gt;Bandits with concave rewards and convex knapsacks,&lt;/strong&gt; Shipra Agrawal and Nikhil R. Devanur&lt;/p&gt;
+        <description>&lt;h4 id=&quot;bandits-with-concave-rewards-and-convex-knapsacks&quot;&gt;Bandits with concave rewards and convex knapsacks.&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://arxiv.org/pdf/1402.5758v1.pdf&quot;&gt;Paper&lt;/a&gt; by Shipra Agrawal and Nikhil R. Devanur.
+Introduces and gives polynomial-time near-optimal algorithms for a general model for bandit exploration-exploitation. 
+The algorithm is an extension of the Upper Confidence Bound (UCB) algorithm for the multi-armed bandits problem. The new 
+framework allows them to give more efficient algorithms for other problems such as Blackwell approachability, online 
+convex optimization and conditional-gradient/projection-free/Frank-Wolfe algorithm.&lt;/p&gt;
 
-&lt;p&gt;Introduces and gives polynomial-time near-optimal algorithms for a general model for bandit exploration-exploitation. The algorithm is an extension of the Upper Confidence Bound (UCB) algorithm for the multi-armed bandits problem. The new framework allows them to give more efficient algorithms for other problems such as Blackwell approachability, online convex optimization and conditional-gradient/projection-free/Frank-Wolfe algorithm.&lt;/p&gt;
+&lt;h4 id=&quot;managing-congestion-in-decentralized-matching-markets&quot;&gt;Managing congestion in decentralized matching markets,&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2427960&quot;&gt;Paper&lt;/a&gt; by Nick Arnosti, Ramesh Johari and Yash Kanoria.
+Shows that in decentralized two-sided markets with asynchronous arrivals and departures and no information about seller 
+availability, limited seller visibility can improve general welfare.&lt;/p&gt;
 
-&lt;p&gt;[&lt;a href=&quot;http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2427960&quot;&gt;2&lt;/a&gt;] &lt;strong&gt;Managing congestion in decentralized matching markets,&lt;/strong&gt; Nick Arnosti, Ramesh Johari and Yash Kanoria&lt;/p&gt;
+&lt;h4 id=&quot;optimising-trade-offs-among-stakeholders-in-ad-auctions&quot;&gt;Optimising Trade-offs Among Stakeholders in Ad Auctions&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://arxiv.org/pdf/1404.5127v1.pdf&quot;&gt;Paper&lt;/a&gt; by Yoram Bachrach, Sofia Ceppi, Ian Kash, Peter Key and David Kurokaw.
+Optimizes linear combinations of the utilities of competing stakeholders (auctioneer, user, advertiser) in ad auctions 
+using a generalized second-price (GSP) auction with per-click reserve prices.&lt;/p&gt;
 
-&lt;p&gt;Shows that in decentralized two-sided markets with asynchronous arrivals and departures and no information about seller availability, limited seller visibility can improve general welfare.&lt;/p&gt;
+&lt;h4 id=&quot;multiplicative-bidding-in-online-advertising&quot;&gt;Multiplicative Bidding in Online Advertising&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://arxiv.org/pdf/1404.6727v1.pdf&quot;&gt;Paper&lt;/a&gt; by MohammadHossein Bateni, Jon Feldman, Vahab Mirrokni and Sam Chiu-wai Wong.
+Establishes the optimization problem behind multiplicative bidding, a bid adjustment technique used by many search engines. 
+They also study the complexity of approximating the solution and give algorithms under various assumptions.&lt;/p&gt;
 
-&lt;p&gt;[&lt;a href=&quot;http://arxiv.org/pdf/1404.5127v1.pdf&quot;&gt;3&lt;/a&gt;] &lt;strong&gt;Optimising Trade-offs Among Stakeholders in Ad Auctions,&lt;/strong&gt; Yoram Bachrach, Sofia Ceppi, Ian Kash, Peter Key and David Kurokaw&lt;/p&gt;
+&lt;h4 id=&quot;why-marketplace-experimentation-is-harder-than-it-seems-the-role-of-test-control-interference&quot;&gt;Why Marketplace Experimentation is Harder than it Seems: The Role of Test-Control Interference&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.scu.edu/business/economics/upload/YellowPad-TomBlake.pdf&quot;&gt;Paper&lt;/a&gt; by Dominic Coey and Thomas Blake.
+Discusses role of and conditions for test-control (A/B) interference in determining the effectiveness of marketplace campaigns&lt;/p&gt;
 
-&lt;p&gt;Optimizes linear combinations of the utilities of competing stakeholders (auctioneer, user, advertiser) in ad auctions using a generalized second-price (GSP) auction with per-click reserve prices.&lt;/p&gt;
+&lt;h4 id=&quot;incentivized-optimal-advert-assignment-via-utility-decomposition&quot;&gt;Incentivized Optimal Advert Assignment via Utility Decomposition,&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://arxiv.org/pdf/1404.2750v2.pdf&quot;&gt;Paper&lt;/a&gt; by Frank Kelly, Peter Key and Neil Walton.
+Kelly extends his primal-dual optimization framework (originally introduced for communication networks) to formulate a 
+network utility maximization framework for platform and advertisers together. The mechanism introduced is also incentive 
+compatible.&lt;/p&gt;
 
-&lt;p&gt;[&lt;a href=&quot;http://arxiv.org/pdf/1404.6727v1.pdf&quot;&gt;4&lt;/a&gt;] &lt;strong&gt;Multiplicative Bidding in Online Advertising,&lt;/strong&gt; MohammadHossein Bateni, Jon Feldman, Vahab Mirrokni and Sam Chiu-wai Wong&lt;/p&gt;
+&lt;h4 id=&quot;the-complexity-of-fairness-through-equilibrium&quot;&gt;The Complexity of Fairness through Equilibrium,&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://arxiv.org/pdf/1312.6249v2.pdf&quot;&gt;Paper&lt;/a&gt; by Abraham Othman, Christos Papadimitriou and Aviad Rubinstein.
+Discusses the complexity of approximating Competitive Equilibrium with Equal Income (CEEI, a particular market clearing 
+mechanism that offers efficiency, feasibility and fairness. In short, approximating CEEI in general is hard.&lt;/p&gt;
 
-&lt;p&gt;Establishes the optimization problem behind multiplicative bidding, a bid adjustment technique used by many search engines. They also study the complexity of approximating the solution and give algorithms under various assumptions.&lt;/p&gt;
+&lt;h4 id=&quot;asymptotically-truthful-equilibrium-selection-in-large-congestion-games&quot;&gt;Asymptotically Truthful Equilibrium Selection in Large Congestion Games,&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://arxiv.org/pdf/1311.2625v1.pdf&quot;&gt;Paper&lt;/a&gt; by Ryan Rogers and Aaron Roth.
+For congestion games with large number of players and incomplete information, this paper introduces mechanism that 
+guarantees a Nash equilibrium improving on previous mechanisms that could only guarantee correlated equilibrium.&lt;/p&gt;
 
-&lt;p&gt;[&lt;a href=&quot;http://www.scu.edu/business/economics/upload/YellowPad-TomBlake.pdf&quot;&gt;5&lt;/a&gt;] &lt;strong&gt;Why Marketplace Experimentation is Harder than it Seems: The Role of Test-Control Interference,&lt;/strong&gt; Dominic Coey and Thomas Blake&lt;/p&gt;
-
-&lt;p&gt;Discusses role of and conditions for test-control (A/B) interference in determining the effectiveness of marketplace campaigns&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&quot;http://arxiv.org/pdf/1404.2750v2.pdf&quot;&gt;6&lt;/a&gt;] &lt;strong&gt;Incentivized Optimal Advert Assignment via Utility Decomposition,&lt;/strong&gt; Frank Kelly, Peter Key and Neil Walton&lt;/p&gt;
-
-&lt;p&gt;Kelly extends his primal-dual optimization framework (originally introduced for communication networks) to formulate a network utility maximization framework for platform and advertisers together. The mechanism introduced is also incentive compatible.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&quot;http://arxiv.org/pdf/1312.6249v2.pdf&quot;&gt;7&lt;/a&gt;] &lt;strong&gt;The Complexity of Fairness through Equilibrium,&lt;/strong&gt; Abraham Othman, Christos Papadimitriou and Aviad Rubinstein&lt;/p&gt;
-
-&lt;p&gt;Discusses the complexity of approximating Competitive Equilibrium with Equal Income (CEEI, a particular market clearing mechanism that offers efficiency, feasibility and fairness. In short, approximating CEEI in general is hard.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&quot;http://arxiv.org/pdf/1311.2625v1.pdf&quot;&gt;8&lt;/a&gt;] &lt;strong&gt;Asymptotically Truthful Equilibrium Selection in Large Congestion Games,&lt;/strong&gt; Ryan Rogers and Aaron Roth&lt;/p&gt;
-
-&lt;p&gt;For congestion games with large number of players and incomplete information, this paper introduces mechanism that guarantees a Nash equilibrium improving on previous mechanisms that could only guarantee correlated equilibrium.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&quot;http://www.cs.cmu.edu/~nkshah/papers/euclidean_voting.ec14.pdf&quot;&gt;9&lt;/a&gt;] &lt;strong&gt;Neutrality and Geometry of Mean Voting,&lt;/strong&gt; Sébastien Lahaie and Nisarg Shah&lt;/p&gt;
-
-&lt;p&gt;Integrates the neutrality axiom into mean proximity framework for voting to achieve consensus amongst agents, and shows that the new axiom allows a more compact representation for every mean proximity rule.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
+&lt;h4 id=&quot;neutrality-and-geometry-of-mean-voting&quot;&gt;Neutrality and Geometry of Mean Voting&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cs.cmu.edu/~nkshah/papers/euclidean_voting.ec14.pdf&quot;&gt;Paper&lt;/a&gt; by Sébastien Lahaie and Nisarg Shah.
+Integrates the neutrality axiom into mean proximity framework for voting to achieve consensus amongst agents, 
+and shows that the new axiom allows a more compact representation for every mean proximity rule.&lt;/p&gt;
 
 &lt;p&gt;A complete list of papers is available &lt;a href=&quot;http://www.sigecom.org/ec14/accepted_papers.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -2389,9 +2419,17 @@ Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/
     
       <item>
         <title>Congestion control as optimization, 1</title>
-        <description>&lt;h5&gt;&lt;img src=&quot;https://umayrh.files.wordpress.com/2014/06/ss-ca-phases.png&quot; alt=&quot;ss-ca-phases&quot; /&gt;&lt;/h5&gt;
+        <description>&lt;h2 id=&quot;why-transmission-control&quot;&gt;Why transmission control?&lt;/h2&gt;
 
-&lt;p&gt;The Internet of 1986 underwent a congestion collapse as available bandwidth dropped by factor of 1000 (1). Transmission Control Protocol (TCP) was then enhanced with various algorithms, two in particular, to ensure that the network reached and stayed close to equilibrium. The algorithms were called “Slow-start” and “Congestion avoidance.” TCP, with these enhancements, has kept the Internet afloat, and spurred much research on the design and analysis of network protocols. Although the initial justifications for these algorithms were control-theoretic - concerned with stability, and, to some extent, efficiency and fairness of allocation - it was only much later that more sophisticated mathematical models for congestion control were developed. In this note, we will focus on the connections between optimization and congestion control. The aim is to try and apply concepts and techniques from congestion control to computational ad serving, especially distributed ad optimization.&lt;/p&gt;
+&lt;p&gt;The Internet of 1986 underwent a congestion collapse as available bandwidth dropped by factor of 1000 (1). 
+Transmission Control Protocol (TCP) was then enhanced with various algorithms, two in particular, to ensure that the 
+network reached and stayed close to equilibrium. The algorithms were called “Slow-start” and “Congestion avoidance.” 
+TCP, with these enhancements, has kept the Internet afloat, and spurred much research on the design and analysis of 
+network protocols. Although the initial justifications for these algorithms were control-theoretic - concerned with 
+stability, and, to some extent, efficiency and fairness of allocation - it was only much later that more sophisticated 
+mathematical models for congestion control were developed. In this note, we will focus on the connections between 
+optimization and congestion control. The aim is to try and apply concepts and techniques from congestion control to 
+computational ad serving, especially distributed ad optimization.&lt;/p&gt;
 
 &lt;p&gt;After a brief overview of TCP, we’ll discuss four topics in congestion control:&lt;/p&gt;
 
@@ -2399,28 +2437,54 @@ Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/
   &lt;li&gt;Increase/decrease algorithms, and linear control systems (2)&lt;/li&gt;
   &lt;li&gt;Online search, and competitive analysis (3)&lt;/li&gt;
   &lt;li&gt;Network optimization, and primal-dual algorithms (4)&lt;/li&gt;
-  &lt;li&gt;Network games, and non-cooperative equilibria (5)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Network games, and non-cooperative equilibria (5)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;(1) V. Jacobson, M. Karels. Congestion Control and Avoidance. Proceedings of SIGCOMM, 1988.&lt;/li&gt;
+  &lt;li&gt;(2) D. Chiu, R. Jain. Analysis of the increase and decrease algorithms for congestion avoidance in computer networks. Computer Networks and ISDN Systems, 1989.&lt;/li&gt;
+  &lt;li&gt;(3) R. Karp, E. Koutsoupias, C. Papadimitriou, S. Shenker.  Optimization Problems in Congestion Control. Proceedings of FOCS, 2000.&lt;/li&gt;
+  &lt;li&gt;(4) F. P. Kelly, A. Maulloo, D. Tan. Rate control in communication networks: shadow prices, proportional fairness and stability. Journal of the Operations Research Society, 1998.&lt;/li&gt;
+  &lt;li&gt;(5) C. Papadimitriou. Algorithms, Games and the Internet. Proceedings of STOC, 2001.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;(1) V. Jacobson, M. Karels. Congestion Control and Avoidance. Proceedings of SIGCOMM, 1988. (2) D. Chiu, R. Jain. Analysis of the increase and decrease algorithms for congestion avoidance in computer networks. Computer Networks and ISDN Systems, 1989. (3) R. Karp, E. Koutsoupias, C. Papadimitriou, S. Shenker.  Optimization Problems in Congestion Control. Proceedings of FOCS, 2000. (4) F. P. Kelly, A. Maulloo, D. Tan. Rate control in communication networks: shadow prices, proportional fairness and stability. Journal of the Operations Research Society, 1998. (5) C. Papadimitriou. Algorithms, Games and the Internet. Proceedings of STOC, 2001.&lt;/p&gt;
+&lt;h2 id=&quot;tcp-congestion-control-overview&quot;&gt;TCP congestion control: overview&lt;/h2&gt;
 
-&lt;h5 id=&quot;tcp-congestion-control-overview&quot;&gt;TCP congestion control: overview&lt;/h5&gt;
+&lt;p&gt;Two variables are essential for congestion control: the congestion window (CWND) and round-trip time (RTT) (6). 
+CWND controls the number of packets transmitted at a given point in time. RTT indicates the time it takes to 
+receive acknowledgement for a packet. Thus the ratio of CWND to RTT indicates the sender’s instantaneous sending rate. 
+Another parameter, receiver window (RWND), indicates the number of packets that the receiver is willing to receive. Hence 
+the sender needs to send the minimum of RWND and CWND. We’ll assume that the receiver bandwidth is not restrictive and 
+hence RWND » CWND.&lt;/p&gt;
 
-&lt;p&gt;Two variables are essential for congestion control: the congestion window (CWND) and round-trip time (RTT) (6). CWND controls the number of packets transmitted at a given point in time. RTT indicates the time it takes to receive acknowledgement for a packet. Thus the ratio of CWND to RTT indicates the sender’s instantaneous sending rate. Another parameter, receiver window (RWND), indicates the number of packets that the receiver is willing to receive. Hence the sender needs to send the minimum of RWND and CWND. We’ll assume that the receiver bandwidth is not restrictive and hence RWND » CWND.&lt;/p&gt;
+&lt;p&gt;RTT is assumed to be a property of the network, and can be decomposed into a fixed component (propagation delay) and a 
+variable component (queuing delay). It is used primarily to estimate the timeout (RTO) span after which an unacknowledged 
+packet is considered lost, which in turn is interpreted as a binary congestion signal. Although, in some cases (TCP Vegas, 
+FAST TCP e.g.), it is also used directly as  multi-bit congestion signal since queuing delays are usually due to congestion.&lt;/p&gt;
 
-&lt;p&gt;RTT is assumed to be a property of the network, and can be decomposed into a fixed component (propagation delay) and a variable component (queuing delay). It is used primarily to estimate the timeout (RTO) span after which an unacknowledged packet is considered lost, which in turn is interpreted as a binary congestion signal. Although, in some cases (TCP Vegas, FAST TCP e.g.), it is also used directly as  multi-bit congestion signal since queuing delays are usually due to congestion.&lt;/p&gt;
+&lt;p&gt;CWND itself is determined or limited by various other parameters such as initial window (IW), slow-start threshold 
+(SSTHRESH). Initial window sets the initial size of the CWND, while SSTHRESH is the maximum value of CWND beyond which 
+TCP enters “congestion avoidance” phase.&lt;/p&gt;
 
-&lt;p&gt;CWND itself is determined or limited by various other parameters such as initial window (IW), slow-start threshold (SSTHRESH). Initial window sets the initial size of the CWND, while SSTHRESH is the maximum value of CWND beyond which TCP enters “congestion avoidance” phase.&lt;/p&gt;
+&lt;p&gt;There are two congestion control phases in TCP: slow-start and congestion avoidance. The aim of slow-start is to ramp up 
+the sending rate so that the algorithm reaches close to equilibrium value of available bandwidth as soon as possible. 
+Congestion avoidance, on the other hand, allows staying close to equilibrium without causing congestion.&lt;/p&gt;
 
-&lt;p&gt;There are two congestion control phases in TCP: slow-start and congestion avoidance. The aim of slow-start is to ramp up the sending rate so that the algorithm reaches close to equilibrium value of available bandwidth as soon as possible. Congestion avoidance, on the other hand, allows staying close to equilibrium without causing congestion.&lt;/p&gt;
+&lt;p&gt;Slow-start works by doubling the CWND  for every packet acknowledged (hence once every RTT), which implies exponential 
+increase in CWND size (2, 4, 8, 16…). This is akin to binary search and allows the sender overshoot the equilibrium value 
+by a factor of at most 2 in log(N)*RTT time, where N is the number of packets sent. The first slow-start ends when - 
+because of excessive sending rate, and hence congestion at the gateway/router - a packet is lost. At this point, the sender 
+sets its new SSTHRESH value to be max(FlightSize, 2), where FlightSize is the number of unacknowledged packets (which is 
+generally CWND until unless CWND &amp;gt; RWND). The sender then restarts slow-start till another loss is encountered or 
+CWND = SSTHRESH. If latter, the algorithm moves into congestion avoidance.&lt;/p&gt;
 
-&lt;p&gt;Slow-start works by doubling the CWND  for every packet acknowledged (hence once every RTT), which implies exponential increase in CWND size (2, 4, 8, 16…). This is akin to binary search and allows the sender overshoot the equilibrium value by a factor of at most 2 in log(N)*RTT time, where N is the number of packets sent. The first slow-start ends when - because of excessive sending rate, and hence congestion at the gateway/router - a packet is lost. At this point, the sender sets its new SSTHRESH value to be max(FlightSize, 2), where FlightSize is the number of unacknowledged packets (which is generally CWND until unless CWND &amp;gt; RWND). The sender then restarts slow-start till another loss is encountered or CWND = SSTHRESH. If latter, the algorithm moves into congestion avoidance.&lt;/p&gt;
-
-&lt;p&gt;In congestion avoidance, the CWND is increased incrementally. For example, if N packets were sent and acknowledged, then the sender may send (N+1) packets next. In case of severe packet loss (indicated by RTO timeout) slow-start is restarted. Otherwise, CWND keeps growing till packet loss (indicate by duplicate ACKs) is experienced, at which point the CWND is reset to half of SSTHRESH.&lt;/p&gt;
+&lt;p&gt;In congestion avoidance, the CWND is increased incrementally. For example, if N packets were sent and acknowledged, 
+then the sender may send (N+1) packets next. In case of severe packet loss (indicated by RTO timeout) slow-start is 
+restarted. Otherwise, CWND keeps growing till packet loss (indicate by duplicate ACKs) is experienced, at which point 
+the CWND is reset to half of SSTHRESH.&lt;/p&gt;
 
 &lt;p&gt;(6) M. Allman, V. Paxon, E. Blanton. TCP Congestion Control. RFC 5681, September 2009.&lt;/p&gt;
 
-&lt;h5 id=&quot;increasedecrease-algorithms-and-linear-control-systems&quot;&gt;Increase/decrease algorithms, and linear control systems&lt;/h5&gt;
+&lt;h2 id=&quot;increasedecrease-algorithms-and-linear-control-systems&quot;&gt;Increase/decrease algorithms, and linear control systems&lt;/h2&gt;
 
 &lt;p&gt;[&lt;em&gt;to be concluded&lt;/em&gt;]&lt;/p&gt;
 </description>
@@ -2428,61 +2492,122 @@ Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/
         <link>http://localhost:4000/2014/06/24/congestion-control-as-optimization/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/06/24/congestion-control-as-optimization/</guid>
         
+        <category>Optimization</category>
+        
+        <category>Algorithms</category>
+        
+        <category>Distributed systems</category>
+        
         
       </item>
     
       <item>
         <title>Estimating uniques - sampling with replacement</title>
-        <description>&lt;p&gt;While exploring ways to estimate multiset union and intersection cardinalities, I discovered an interesting result mentioned in a paper by Shukla [1], who in turn cites Feller [2]: If r elements are chosen uniformly and at random from a set of n elements, the expected number of distinct elements obtained is&lt;/p&gt;
+        <description>&lt;p&gt;While exploring ways to estimate multiset union and intersection cardinalities, I discovered an interesting 
+result mentioned in a paper by Shukla [1], who in turn cites Feller [2]: If $r$ elements are chosen uniformly and at 
+random from a set of n elements, the expected number of distinct elements obtained is $ n - n (1 - 1/n)^r$.&lt;/p&gt;
 
-&lt;p&gt;$latex n - n (1 - 1/n)^r$.&lt;/p&gt;
+&lt;p&gt;Given an element $a$ from the set, the probability that there are none of the elements after $r$ draws is $a$ is 
+$ (1 - 1/n)^r$. Thus the probability that there is at least one element is $a$ (or equivalently that there is 
+at least one unique item) is $1 - (1 - 1/n)^r$, and hence the expected number of uniques is $n - n (1 - 1/n)^r$. 
+Alternatively, as Feller explains, the probability of a single unique at the ith step is $ ((1 - 1/n)/n)^{i-1}$,
+ hence the expected number of uniques after $r$ draws is&lt;/p&gt;
 
-&lt;p&gt;Given an element &lt;em&gt;a&lt;/em&gt; from the set, the probability that there are none of the elements after r draws is &lt;em&gt;a&lt;/em&gt; is $latex (1 - 1/n)^r$. Thus the probability that there is at least one element is &lt;em&gt;a&lt;/em&gt; (or equivalently that there is at least one unique item) is $latex 1 - (1 - 1/n)^r$, and hence the expected number of uniques is $latex n - n (1 - 1/n)^r$. Alternatively, as Feller explains, the probability of a single unique at the ith step is $latex ((1 - 1/n)/n)^{i-1}$, hence the expected number of uniques after r draws is&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{i=1}^{r} ((1 - 1/n)/n)^{i-1}&lt;/script&gt;
 
-&lt;p&gt; $latex \sum_{i=1}^{r} ((1 - 1/n)/n)^{i-1}$&lt;/p&gt;
+&lt;p&gt;A geometric series that converges to $n - n (1 - 1/n)^r$.&lt;/p&gt;
 
-&lt;p&gt;A geometric series that converges to $latex n - n (1 - 1/n)^r$.&lt;/p&gt;
+&lt;p&gt;This is an instance of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Birthday_problem&quot;&gt;Birthday problem&lt;/a&gt;. 
+&lt;a href=&quot;http://math.stackexchange.com/questions/72223/finding-expected-number-of-distinct-values-selected-from-a-set-of-integers&quot;&gt;Stackexchange&lt;/a&gt; 
+has a couple of other more complicated but interesting solutions.&lt;/p&gt;
 
-&lt;p&gt;This is an instance of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Birthday_problem&quot;&gt;Birthday problem&lt;/a&gt;. &lt;a href=&quot;http://math.stackexchange.com/questions/72223/finding-expected-number-of-distinct-values-selected-from-a-set-of-integers&quot;&gt;Stackexchange&lt;/a&gt; has a couple of other more complicated but interesting solutions.&lt;/p&gt;
-
-&lt;p&gt;[1] A. Shukla et al, Storage estimation for multidimensional aggregates in the presence of hierarchies [&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.7924&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;paper&lt;/a&gt;] [2] W. Feller, An introduction to probability theory and its applications, vol. 1, 1957&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.7924&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;1&lt;/a&gt; A. Shukla et al, Storage estimation for multidimensional aggregates in the presence of hierarchies&lt;/li&gt;
+  &lt;li&gt;[2] W. Feller, An introduction to probability theory and its applications, vol. 1, 1957&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sat, 26 Oct 2013 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2013/10/26/estimating-uniques-sampling-with-replacement/</link>
         <guid isPermaLink="true">http://localhost:4000/2013/10/26/estimating-uniques-sampling-with-replacement/</guid>
+        
+        <category>Algorithms</category>
         
         
       </item>
     
       <item>
         <title>Linear Regression in R</title>
-        <description>&lt;p&gt;[caption id=”” align=”alignright” width=”265”]&lt;a href=&quot;http://umayrh.files.wordpress.com/2012/11/regresssolution.png&quot;&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2012/11/regresssolution.png?w=432&quot; alt=&quot;Image&quot; title=&quot;Regression using L1, L2 and LInf norms&quot; /&gt;&lt;/a&gt; Regression using L1, L2 and LInf norms [&lt;a href=&quot;http://users.isy.liu.se/johanl/yalmip/pmwiki.php?n=Tutorials.LinearAndQuadraticProgramming&quot;&gt;source&lt;/a&gt;][/caption]Given a set of noisy data points, such as the following, how can we find the best fitting linear model?&lt;/p&gt;
+        <description>&lt;p&gt;Given a set of noisy data points, such as the following, how can we find the best fitting linear model?&lt;/p&gt;
 
-&lt;p&gt;[code language=”r” wraplines=”false”]&lt;/p&gt;
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;by&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cbind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-4+8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;runif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;115&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'l'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Various packages in R support linear regression models, such as &lt;code class=&quot;highlighter-rouge&quot;&gt;stats&lt;/code&gt; (for least-squares) and &lt;code class=&quot;highlighter-rouge&quot;&gt;quantreg&lt;/code&gt; 
+(for quantile regression):&lt;/p&gt;
 
-&lt;p&gt;x &amp;lt;- c(1, 2, 3, 4, 5, 6) t &amp;lt;- seq(from = 0, by = 0.02, to = 2*pi) A &amp;lt;- cbind(sin(t), sin(2*t), sin(3*t), sin(4*t), sin(5*t), sin(6*t)) e &amp;lt;- -4+8*runif(length(t),min=-1,max=1) e[100:115] &amp;lt;- 30 y = A%*%x + e plot(t, y, ‘l’)&lt;/p&gt;
-
-&lt;p&gt;[/code]&lt;/p&gt;
-
-&lt;p&gt;Various packages in R support linear regression models, such as stats (for least-squares) and quantreg (for quantile regression):&lt;/p&gt;
-
-&lt;p&gt;[code language=”r”]&lt;/p&gt;
-
-&lt;p&gt;library(stats) res1 &amp;lt;- lm(y ~ A) lines(t, res1$fitted.values, col=’green’) qr.solve(A, res1$fitted.values)&lt;/p&gt;
-
-&lt;p&gt;library(MASS) res2 &amp;lt;- rlm(y ~ A) lines(t, res2$fitted.values, col=’red’) qr.solve(A, res2$fitted.values)&lt;/p&gt;
-
-&lt;p&gt;library(quantreg) res3 &amp;lt;- rq(y ~ A) lines(t, res3$fitted.values, col=’darkred’) qr.solve(A, res3$fitted.values) [/code]&lt;/p&gt;
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'green'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qr.solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rlm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'red'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qr.solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantreg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'darkred'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qr.solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;How can we implement these techniques in R to better understand how they work?&lt;/p&gt;
 
 &lt;p&gt;Here are two implementations that use convex optimization:&lt;/p&gt;
 
-&lt;p&gt;[code language=”r”]&lt;/p&gt;
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Ordinary Least Squares regression&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ols&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;+2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bvec&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Amat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cbind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dmat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;+2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;+2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1e-7&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1e-7&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dvec&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;+2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solve.QP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dvec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Amat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;meq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bvec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bvec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'blue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ 
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Ordinary Least Absolute Deviation regression&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;olad&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;+2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mat1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cbind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mat2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cbind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rbind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mat1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mat2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rhs&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;+2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Rglpk_solve_LP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rhs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'green'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Regression using $L_1$, $L_2$ and $L_{\infty}$ norms 
+&lt;a href=&quot;http://users.isy.liu.se/johanl/yalmip/pmwiki.php?n=Tutorials.LinearAndQuadraticProgramming&quot;&gt;source&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;# Ordinary Least Squares regression ols &amp;lt;- function(x, y) { obj &amp;lt;- rep(1, length(x) +2 ) obj[c(1,2)] &amp;lt;- 0 eye &amp;lt;- diag(length(x)) bvec &amp;lt;- y Amat &amp;lt;- cbind(x, rep(1, length(x)), eye) Dmat &amp;lt;- matrix(0, length(x)+2, length(x)+2) diag(Dmat) &amp;lt;- 1; Dmat[1,1] &amp;lt;- 1e-7 Dmat[2,2] &amp;lt;- 1e-7 dvec &amp;lt;- rep(0, length(x)+2) res &amp;lt;- solve.QP(Dmat,dvec,t(Amat),meq=length(x), bvec=bvec) yhat &amp;lt;- res$solution[1]*x +res$solution[2] lines(x, yhat, col=’blue’) }&lt;/p&gt;
-
-&lt;p&gt;# Ordinary Least Absolute Deviation regression olad &amp;lt;- function(x, y) { obj &amp;lt;- rep(1, length(x)+2) obj[c(1,2)] &amp;lt;- 0 eye &amp;lt;- diag(length(x)); mat1 &amp;lt;- cbind(x, rep(1, length(x)), -1*eye) mat2 &amp;lt;- cbind(x, rep(1, length(x)), eye) mat &amp;lt;- rbind(mat1, mat2) dir &amp;lt;- c(rep(“&amp;lt;=”, length(x)), rep(“&amp;gt;=”, length(x))) rhs &amp;lt;- c(y, y) types &amp;lt;- c(rep(“C”, length(x)+2)) max &amp;lt;- F res &amp;lt;- Rglpk_solve_LP(obj, mat, dir, rhs, types = types, max = max) yhat &amp;lt;- res$solution[1]*x +res$solution[2] lines(x, yhat, col=’green’) } [/code]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/regresssolution.png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;How do these implementation work? What are their limitations?&lt;/p&gt;
 </description>
@@ -2495,43 +2620,77 @@ Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/
     
       <item>
         <title>IP possibilities</title>
-        <description>&lt;p&gt;A problem I was asked: suppose a file that stored many valid IPv4 addresses was corrupted such that all dot in the addresses were removed. Given such a corrupt IP, infer all possible corresponding IP addresses. For example, given 12345, all possible addresses are: 12.3.4.5, 1.23.4.5, 1.2.34.5 and 1.2.3.45. The hint that recursion should be used made the problem easier:&lt;/p&gt;
+        <description>&lt;p&gt;A problem I was asked: suppose a file that stored many valid IPv4 addresses was corrupted such that all dot in the 
+addresses were removed. Given such a corrupt IP, infer all possible corresponding IP addresses. For example, given 12345, 
+all possible addresses are: 12.3.4.5, 1.23.4.5, 1.2.34.5 and 1.2.3.45. The hint that recursion should be used made the 
+problem easier:&lt;/p&gt;
 
-&lt;p&gt;[sourcecode language=”java”] public static final int MIN_TOKEN_SIZE = 1; public static final int MAX_TOKEN_SIZE = 3;&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MIN_TOKEN_SIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MAX_TOKEN_SIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getValidIPs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remTokens&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ArrayList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;avgTokenSize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;remTokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ 
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avgTokenSize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MIN_TOKEN_SIZE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avgTokenSize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MAX_TOKEN_SIZE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;remTokens&lt;/span&gt;       &lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getValidToken&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxTokenLen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remTokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MAX_TOKEN_SIZE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minTokenLen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;remTokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxTokenLen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MIN_TOKEN_SIZE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+ 
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenLen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minTokenLen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenLen&lt;/span&gt;       &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;substring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenLen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remainder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;substring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenLen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+ 
+    &lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getValidToken&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ 
+    &lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;substrs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getValidIPs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;remainder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remTokens&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+ 
+    &lt;span class=&quot;nc&quot;&gt;StringBuffer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StringBuffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;substr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;substrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;'.'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setLength&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getValidToken&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;       &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;     &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;valueOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;public static List getValidIPs(String ip, int remTokens) { List result = new ArrayList(); double avgTokenSize = ip.length() / (double)remTokens ;&lt;/p&gt;
+&lt;p&gt;Here is a test result:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;if ((Double.compare(avgTokenSize, MIN_TOKEN_SIZE) &amp;lt; 0)&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;(Double.compare(avgTokenSize, MAX_TOKEN_SIZE) &amp;gt; 0)) return result; else if (remTokens ip = getValidToken(ip); if (ip == null) return result; result.add(ip); return result; }&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;8880028&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remTokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getValidIPs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remTokens&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;int maxTokenLen = Math.min(ip.length() - remTokens + 1, MAX_TOKEN_SIZE); int minTokenLen = Math.max(ip.length() - (remTokens - 1) * maxTokenLen, MIN_TOKEN_SIZE);&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;8.88.0.28 8.88.2.8 88.8.0.28 88.80.2.8 8.8.8.28 8.8.80.28 88.8.2.8 88.80.0.28&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;for (int tokenLen = minTokenLen; tokenLen String prefix = ip.substring(0, tokenLen); String remainder = ip.substring(tokenLen);&lt;/p&gt;
+&lt;p&gt;Assuming we weren’t validating IP correctness and wanted to know the number of permutation possible for given number of 
+digits, n, to be split in four IP tokens; how can we go about it? A simple trick is to use to program to find out the sizes, 
+C, of result set for all possible inputs, n:&lt;/p&gt;
 
-&lt;p&gt;prefix = getValidToken(prefix); if (prefix == null) continue;&lt;/p&gt;
-
-&lt;p&gt;List substrs = getValidIPs(remainder, remTokens-1);&lt;/p&gt;
-
-&lt;p&gt;StringBuffer buf = new StringBuffer(); for (String substr : substrs) { buf.append(prefix); buf.append(‘.’); buf.append(substr); result.add(buf.toString()); buf.setLength(0); } } return result; }&lt;/p&gt;
-
-&lt;p&gt;private static String getValidToken(String prefix) { if (prefix.length() &amp;lt; 1) return null; int val = Integer.parseInt(prefix); if (val &amp;gt; 255) return null; return String.valueOf(val); } [/sourcecode]&lt;/p&gt;
-
-&lt;p&gt;Here a test result:&lt;/p&gt;
-
-&lt;p&gt;[sourcecode language=”java”] public static void main(String[] args) { String ip = “8880028”; int remTokens = 4; Set; results = getValidIPs(ip, remTokens); for (String res : results) { System.out.println(res); } } [/sourcecode]&lt;/p&gt;
-
-&lt;p&gt;8.88.0.28 8.88.2.8 88.8.0.28 88.80.2.8 8.8.8.28 8.8.80.28 88.8.2.8 88.80.0.28&lt;/p&gt;
-
-&lt;p&gt;Assuming we weren’t validating IP correctness and wanted to know the number of permutation possible for given number of digits, n, to be split in four IP tokens; how can we go about it? A simple trick is to use to program to find out the sizes, C, of result set for all possible inputs, n:&lt;/p&gt;
-
-&lt;p&gt;n = 4, C = 1
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;n = 4, C = 1
 n = 5, C = 4
 n = 6, C = 10
 n = 7, C = 16
@@ -2539,75 +2698,49 @@ n = 8, C = 19
 n = 9, C = 16
 n = 10, C = 10
 n = 11, C = 4
-n = 12, C = 1&lt;/p&gt;
+n = 12, C = 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;There are at most four recursive calls, one for each token. Each token offers at most three possibilities, but not all the time. Here’s a clumsy recursion to express this program:&lt;/p&gt;
+&lt;p&gt;There are at most four recursive calls, one for each token. Each token offers at most three possibilities, but not all 
+the time. Here’s a clumsy recursion to express this program:&lt;/p&gt;
 
-&lt;p&gt;$latex \begin{array} {rcl} D(m, n) &amp;amp; = &amp;amp; \sum\limits_{j}^{k} D(m-i, n-1) \\ k &amp;amp; = &amp;amp; \min (m-n+1, 3) \\ j &amp;amp; = &amp;amp; \max (m+k-kn, 1), \\ D(1 \leq m \leq 3, 1) &amp;amp; = &amp;amp; 1, \\ D(m \geq 4, 1) &amp;amp; = &amp;amp; 0, \\ n &amp;amp; = &amp;amp; 4, \\ 4 \leq &amp;amp; m &amp;amp; \leq 12 \end{array} $&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D(m, n) = \sum\limits_{j}^{k} D(m-i, n-1) \\ k = \min (m-n+1, 3) \\ j = \max (m+k-kn, 1) \\ D(1 \leq m \leq 3, 1) = 1 \\  D(m \geq 4, 1) = 0 \\ n = 4 \\ 4 \leq m \leq 12&lt;/script&gt;
 
-&lt;p&gt;Desperate to find a closed-form solution to this problem, I searched and found the series (1, 4, 10, 16, 19, 16, 10, 4, 1) in Pascal’s Pyramid [1], which is to trinomial numbers what Pascal’s Triangle is to binomials. Summing the numbers in each column of the layer 4 of Pascal’s pyramid gives:&lt;/p&gt;
+&lt;p&gt;Desperate to find a closed-form solution to this problem, I searched and found the series 
+(1, 4, 10, 16, 19, 16, 10, 4, 1) in Pascal’s Pyramid [1], which is to trinomial numbers what Pascal’s Triangle is 
+to binomials. Summing the numbers in each column of the layer 4 of Pascal’s pyramid gives:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;  &lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;6&lt;/td&gt;
-      &lt;td&gt;    &lt;/td&gt;
-      &lt;td&gt;12&lt;/td&gt;
-      &lt;td&gt;     &lt;/td&gt;
-      &lt;td&gt;6&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;  &lt;/td&gt;
-      &lt;td&gt;12&lt;/td&gt;
-      &lt;td&gt;  &lt;/td&gt;
-      &lt;td&gt;12&lt;/td&gt;
-      &lt;td&gt;  &lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;   &lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;    &lt;/td&gt;
-      &lt;td&gt;6&lt;/td&gt;
-      &lt;td&gt;    &lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;  &lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;16&lt;/td&gt;
-      &lt;td&gt;19&lt;/td&gt;
-      &lt;td&gt;16&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1     |1|       |1|            |1|                     | 1|                              | 1|
+---   1| |1    |2| |2|        |3| |3|                | 4|  | 4|                        | 5|  | 5|
+ 1    -----   1| |2| |1     |3| |6| |3|           | 6|  |12|  | 6|                  |10|  |20|  |10|
+      1 1 1   ---------    1| |3| |3| |1       | 4|  |12|  |12|  | 4|            |10|  |30|  |30|  |10|
+              1 2 3 2 1    -------------      1|  | 4|  | 6|  | 4|  | 1       | 5|  |20|  |30|  |20|  | 5|
+                           1 3 6 7 6 3 1     --------------------------      1|  | 5|  |10|  |10|  | 5|  | 1
+                                              1 04 10 16 19 16 10 04 01     --------------------------------
+                                                                             1 05 15 30 45 51 45 30 15 05 01
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;For which we can derive a closed form. Given C(n, i, j), the trinomial coefficient for layer n, row i and column j; and C(i, j) the binomial coefficient for row i and column j:&lt;/p&gt;
+&lt;p&gt;For which we can derive a closed form. Given C(n, i, j), the trinomial coefficient for layer n, row i and column j; 
+and C(i, j) the binomial coefficient for row i and column j:&lt;/p&gt;
 
-&lt;p&gt;$latex \begin{array} {rcl} C(n, i, j) &amp;amp; = &amp;amp; C(n, i) \times C(i, j) \\ 0 \leq &amp;amp; i &amp;amp; \leq n \\ 0 \leq &amp;amp; j &amp;amp; \leq i \end{array}$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;C(n, i, j) = C(n, i) \times C(i, j) \\ 0 \leq i \leq n \\ 0 \leq j \leq i&lt;/script&gt;
 
-&lt;p&gt;A number at a given column (or position) in our desired sequence is the sum of trinomial coefficients for alternating rows (even numbered rows for even m, and odd for odd) and given column. The sequence is symmetric about the median column:&lt;/p&gt;
+&lt;p&gt;A number at a given column (or position) in our desired sequence is the sum of trinomial coefficients for alternating 
+rows (even numbered rows for even m, and odd for odd) and given column. The sequence is symmetric about the median column:&lt;/p&gt;
 
-&lt;p&gt;$latex \begin{array} {rcl} D(m, n) &amp;amp; = &amp;amp; \sum\limits_{i=m-n,i-=2}^{i \geq 0} C(n, i, \lfloor \frac{i}{2} \rfloor) \\ n \leq &amp;amp; m &amp;amp; \leq 2n \\ D(m, n) &amp;amp; = &amp;amp; D(4n-m ,n) \end{array} $&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D(m, n) = \sum\limits_{i=m-n,i-=2}^{i \geq 0} C(n, i, \lfloor \frac{i}{2} \rfloor) \\ n \leq m \leq 2n \\ D(m, n) = D(4n-m, n)&lt;/script&gt;
 
-&lt;p&gt;It turns out that this problem is also related to enumerating lattice paths: Find the set A(n, k) of all lattice paths, from point (0, 0) to (n, k) in a Cartesian plane that use either an up-step (1,1), level-step (0, 1) or down-step (1, -1) [2].&lt;/p&gt;
+&lt;p&gt;It turns out that this problem is also related to enumerating lattice paths: Find the set A(n, k) of all lattice paths, 
+from point (0, 0) to (n, k) in a Cartesian plane that use either an up-step (1,1), level-step (0, 1) or down-step (1, -1) [2].&lt;/p&gt;
 
 &lt;p&gt;Update (05/27/12): Corrected the closed-form equation.&lt;/p&gt;
 
 &lt;p&gt;References:&lt;/p&gt;
 
-&lt;p&gt;[1] &lt;a href=&quot;http://en.wikipedia.org/wiki/Pascal%27s_pyramid&quot;&gt;Pascal’s Pyramid&lt;/a&gt; [2] A &lt;a href=&quot;http://www.fq.math.ca/Scanned/40-1/woan.pdf&quot;&gt;Combinatorial Proof&lt;/a&gt; of a Recursive Relation of the Motzkin Sequence by Lattice Paths&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;[1] &lt;a href=&quot;http://en.wikipedia.org/wiki/Pascal%27s_pyramid&quot;&gt;Pascal’s Pyramid&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[2] A &lt;a href=&quot;http://www.fq.math.ca/Scanned/40-1/woan.pdf&quot;&gt;Combinatorial Proof&lt;/a&gt; of a Recursive Relation of the Motzkin Sequence by Lattice Paths&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Thu, 24 May 2012 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2012/05/24/ip-possibilities/</link>
@@ -2618,57 +2751,82 @@ n = 12, C = 1&lt;/p&gt;
     
       <item>
         <title>Note on minimax optimization</title>
-        <description>&lt;p&gt;At &lt;a href=&quot;http://www.adap.tv&quot; title=&quot;Adap.tv&quot;&gt;Adap.tv&lt;/a&gt;, one of my favorite projects is an ad delivery optimization feature that we internally call the “bid optimizer.” It allows an advertiser to achieve her impression, average CPM (cost per thousand impressions) and performance (click-through rate, completion rate and/or premium impression distribution) goals for a given ad. The ad bids in our second-price auction market-place to try and win impressions on selected sites.&lt;/p&gt;
+        <description>&lt;p&gt;At &lt;a href=&quot;http://www.adap.tv&quot; title=&quot;Adap.tv&quot;&gt;Adap.tv&lt;/a&gt;, one of my favorite projects is an ad delivery optimization feature that we 
+internally call the “bid optimizer.” It allows an advertiser to achieve her impression, average CPM (cost per thousand 
+impressions) and performance (click-through rate, completion rate and/or premium impression distribution) goals for a 
+given ad. The ad bids in our second-price auction market-place to try and win impressions on selected sites.&lt;/p&gt;
 
-&lt;p&gt;In general, the bid optimizer’s objective is to minimize the $ per impression that the advertiser has to pay. But our market-place is quite volatile - at least in terms of the winning price of an impression on a given site, with specific targeting, and relatively short forecasting horizon - so forecasting errors are usually large. This problem is exacerbated if the optimizer decides to select most of the impressions from a few sites, in which case forecast error can threaten ad’s impression goal. In this post, I’ll focus on a way that the optimizer can use to improve the diversity of its site portfolio without assuming anything about the forecast accuracy.&lt;/p&gt;
+&lt;p&gt;In general, the bid optimizer’s objective is to minimize the $ per impression that the advertiser has to pay. But our 
+market-place is quite volatile - at least in terms of the winning price of an impression on a given site, with specific 
+targeting, and relatively short forecasting horizon - so forecasting errors are usually large. This problem is exacerbated 
+if the optimizer decides to select most of the impressions from a few sites, in which case forecast error can threaten ad’s 
+impression goal. In this post, I’ll focus on a way that the optimizer can use to improve the diversity of its site portfolio 
+without assuming anything about the forecast accuracy.&lt;/p&gt;
 
-&lt;p&gt;If our ad was not constrained by cost and all the sites selected by the advertiser had the same number of forecasted impressions, then the optimizer would select impressions till it reaches the impression goal. For example, if each of the sites site1, site2 and site3 offered 10,000 impressions, then an optimizer with an impression goal of 18,000 can simply solve the following linear program (necessary if thousands of sites are actually involved) to see what fraction of impressions it needs from each site (there’s no objective since impression goal is fixed and there’s no cost goal):&lt;/p&gt;
+&lt;p&gt;If our ad was not constrained by cost and all the sites selected by the advertiser had the same number of forecasted 
+impressions, then the optimizer would select impressions till it reaches the impression goal. For example, if each of 
+the sites site1, site2 and site3 offered 10,000 impressions, then an optimizer with an impression goal of 18,000 can 
+simply solve the following linear program (necessary if thousands of sites are actually involved) to see what fraction 
+of impressions it needs from each site (there’s no objective since impression goal is fixed and there’s no cost goal):&lt;/p&gt;
 
-&lt;p&gt;Maximize
- objective_function: + 0 site3&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Maximize
+ objective_function: + 0 site3
 
-&lt;p&gt;Subject To
- impressions: + 10000 site3 + 10000 site2 + 10000 site1 = 18000&lt;/p&gt;
-
-&lt;p&gt;Bounds
- 0 &amp;lt;= site1 &amp;lt;= 1
- 0 &amp;lt;= site2 &amp;lt;= 1
- 0 &amp;lt;= site3 &amp;lt;= 1&lt;/p&gt;
-
-&lt;p&gt;End&lt;/p&gt;
-
-&lt;p&gt;This formulation effectively only asks to see if the program has a feasible solution, or not, for a given goal and hence there’s no restriction that impressions must be bought from all sites, not just any two. The restriction to buy from as many distinct sites as possible (without violating any other, say cost or performance, constraints) would maximize our portfolio’s diversity, and is best expressed as a &lt;em&gt;maximin optimization&lt;/em&gt; objective: maximize the minimum number of impressions across sites.&lt;/p&gt;
-
-&lt;p&gt;$latex \max [\min (f_1(x),…,f_n(x))] $&lt;/p&gt;
-
-&lt;p&gt;where &lt;em&gt;fi(x)&lt;/em&gt; (i = 1…n) are linear functions of &lt;em&gt;x&lt;/em&gt;. In fact, for our purposes, &lt;em&gt;fi(x)&lt;/em&gt; = &lt;em&gt;Fi_xi__, where _Fi&lt;/em&gt; represents forecasted impressions for site i and &lt;em&gt;xi&lt;/em&gt; is the fraction that the optimizer is interested in.&lt;/p&gt;
-
-&lt;p&gt;Maximin optimization, in general, is a non-linear convex program. Luckily, it’s possible to reformulate it as a linear program [1] by introducing an unbounded, slack variable &lt;em&gt;site0&lt;/em&gt;:&lt;/p&gt;
-
-&lt;p&gt;$latex \max z $ $latex s. t. F_{i} x_{i} \ge z $&lt;/p&gt;
-
-&lt;p&gt;Maximize
- objective_function: + site0&lt;/p&gt;
-
-&lt;p&gt;Subject To
+Subject To
  impressions: + 10000 site3 + 10000 site2 + 10000 site1 = 18000
- maximin1: + 10000 site1 - site0 &amp;gt;= 0
- maximin2: + 10000 site2 - site0 &amp;gt;= 0
- maximin3: + 10000 site3 - site0 &amp;gt;= 0&lt;/p&gt;
 
-&lt;p&gt;Bounds
+Bounds
  0 &amp;lt;= site1 &amp;lt;= 1
  0 &amp;lt;= site2 &amp;lt;= 1
  0 &amp;lt;= site3 &amp;lt;= 1
- site0 free&lt;/p&gt;
 
-&lt;p&gt;End&lt;/p&gt;
+End
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The maximin linear program would have an optimal solution when 6000 impressions are chosen from each site, thus minimizing the absolute impression difference between any two sites.&lt;/p&gt;
+&lt;p&gt;This formulation effectively only asks to see if the program has a feasible solution, or not, for a given goal and hence 
+there’s no restriction that impressions must be bought from all sites, not just any two. The restriction to buy from as 
+many distinct sites as possible (without violating any other, say cost or performance, constraints) would maximize our 
+portfolio’s diversity, and is best expressed as a &lt;em&gt;maximin optimization&lt;/em&gt; objective: maximize the minimum number of 
+impressions across sites.&lt;/p&gt;
 
-&lt;p&gt;But what if one of the sites could not be part of a feasible solution because otherwise it could violate other goals (e.g. if impression from a site are too expensive or vastly under-perform)? Such cases, which, unfortunately are likely to be the norm, cause this minimax formulation to fail since the minimum number of impressions across &lt;em&gt;all&lt;/em&gt; sites stays at zero to (no impressions selected from at least one site) regardless of the distribution of other fractions. It is tempting to solve this by recasting the problem as:&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\max [\min (f_1(x),...,f_n(x))]&lt;/script&gt;
 
-&lt;p&gt;$latex \max z $ $latex s. t. x^{T}_{j} F_{i} x_{i} \ge x_i z $&lt;/p&gt;
+&lt;p&gt;where $f_{i}(x) (i = 1 \ldots n)$ are linear functions of $x$. In fact, for our purposes, $f_{i}(x) = F_{i}x_{i}$, where $F_i$ 
+represents forecasted impressions for site $i$ and $x_i$ is the fraction that the optimizer is interested in.&lt;/p&gt;
+
+&lt;p&gt;Maximin optimization, in general, is a non-linear convex program. Luckily, it’s possible to reformulate it as a 
+linear program [1] by introducing an unbounded, slack variable $site_0$:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\max z \\ \mbox{ s. t.} F_{i} x_{i} \ge z&lt;/script&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Maximize
+ objective_function: + site0
+
+Subject To
+ impressions: + 10000 site3 + 10000 site2 + 10000 site1 = 18000
+ maximin1: + 10000 site1 - site0 &amp;gt;= 0
+ maximin2: + 10000 site2 - site0 &amp;gt;= 0
+ maximin3: + 10000 site3 - site0 &amp;gt;= 0
+
+Bounds
+ 0 &amp;lt;= site1 &amp;lt;= 1
+ 0 &amp;lt;= site2 &amp;lt;= 1
+ 0 &amp;lt;= site3 &amp;lt;= 1
+ site0 free
+
+End
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The maximin linear program would have an optimal solution when 6000 impressions are chosen from each site, 
+thus minimizing the absolute impression difference between any two sites.&lt;/p&gt;
+
+&lt;p&gt;But what if one of the sites could not be part of a feasible solution because otherwise it could violate other goals 
+(e.g. if impression from a site are too expensive or vastly under-perform)? Such cases, which, unfortunately are 
+likely to be the norm, cause this minimax formulation to fail since the minimum number of impressions across &lt;em&gt;all&lt;/em&gt; 
+sites stays at zero to (no impressions selected from at least one site) regardless of the distribution of other 
+fractions. It is tempting to solve this by recasting the problem as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\max z \\ \mbox{ s. t. } x^{T}_{j} F_{i} x_{i} \ge x_i z&lt;/script&gt;
 
 &lt;p&gt;But such a quadratically-constraint program is far less efficient to solve than a linear program.&lt;/p&gt;
 
@@ -2676,27 +2834,37 @@ n = 12, C = 1&lt;/p&gt;
 
 &lt;p&gt;Note (05/23/12):&lt;/p&gt;
 
-&lt;p&gt;While reading a StackExchange post [2], I realized that this problem could potentially be reformulated as a mixed integer linear program by introducing binary variables $latex t_1,…,t_n $ corresponding to $latex x_1,…,x_n $ such that&lt;/p&gt;
+&lt;p&gt;While reading a StackExchange post [2], I realized that this problem could potentially be reformulated as a 
+mixed integer linear program by introducing binary variables $ t_1, \ldots ,t_n$ corresponding to $ x_1, \ldots , x_n$ 
+such that&lt;/p&gt;
 
-&lt;p&gt;$latex t_i = 1 \Rightarrow x_i \textgreater 0 $ $latex t_i = 0 \Rightarrow x_i = 0 $&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;t_i = 1 \Rightarrow x_i \gt 0 \\ t_i = 0 \Rightarrow x_i = 0&lt;/script&gt;
 
 &lt;p&gt;With the objective function being:&lt;/p&gt;
 
-&lt;p&gt;$latex \max (\sum_i t_i) $&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\max (\sum_i t_i)&lt;/script&gt;
 
-&lt;p&gt;But what are the right constraints for this formulation? These don’t work with the maximization objective (though will with minimization):&lt;/p&gt;
+&lt;p&gt;But what are the right constraints for this formulation? These don’t work with the maximization objective 
+(though will with minimization):&lt;/p&gt;
 
-&lt;p&gt;$latex x_i \leq t_i $&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \leq t_i&lt;/script&gt;
 
 &lt;p&gt;Note (05/27/12):&lt;/p&gt;
 
 &lt;p&gt;The right constraints (thanks to [3] for showing the way) are:&lt;/p&gt;
 
-&lt;p&gt;$latex x_i \geq \epsilon t_i $ $latex x_i \leq t_i $&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \geq \epsilon t_i \\ x_i \leq t_i&lt;/script&gt;
 
-&lt;p&gt;$latex \epsilon $ is the smallest possible non-zero value of $latex x_i $ and, in our case,  must be the inverse of the maximum impressions from any site.&lt;/p&gt;
+&lt;p&gt;$\epsilon$ is the smallest possible non-zero value of $x_i$ and, in our case, must be the inverse of the maximum 
+impressions from any site.&lt;/p&gt;
 
-&lt;p&gt;References: [1] &lt;a href=&quot;http://www.stanford.edu/~boyd/cvxbook/&quot;&gt;Convex Optimization&lt;/a&gt; [2] http://math.stackexchange.com/questions/16788/solution-technique-to-optimize-sets-of-constraint-functions-with-objective-funct [3] &lt;a href=&quot;http://www.aimms.com/aimms/download/manuals/aimms3om_integerprogrammingtricks.pdf&quot;&gt;Integer Programming Tricks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;References:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[1] &lt;a href=&quot;http://www.stanford.edu/~boyd/cvxbook/&quot;&gt;Convex Optimization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[2] http://math.stackexchange.com/questions/16788/solution-technique-to-optimize-sets-of-constraint-functions-with-objective-funct&lt;/li&gt;
+  &lt;li&gt;[3] &lt;a href=&quot;http://www.aimms.com/aimms/download/manuals/aimms3om_integerprogrammingtricks.pdf&quot;&gt;Integer Programming Tricks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Wed, 23 May 2012 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2012/05/23/note-on-minimax-optimization/</link>
@@ -3370,7 +3538,9 @@ for (key in arr)
     
       <item>
         <title>Data structure problems: Linked Lists.</title>
-        <description>&lt;p&gt;1. Reversing a singly-linked list:&lt;/p&gt;
+        <description>&lt;ol&gt;
+  &lt;li&gt;Reversing a singly-linked list:&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;(a) &lt;em&gt;Iterative method&lt;/em&gt;: maintain three pointers, two to the nodes being reversed, and one to the next node to be reversed. Continue reversing nodes till the current node goes past the last node.&lt;/p&gt;
 
@@ -3396,36 +3566,53 @@ for (key in arr)
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;2. “There is linked list of millions of node and you do not know the length of it. Write a function which will return a random number from the list.”&lt;/p&gt;
-
-&lt;p&gt;3. “There is a linked list of numbers of length N. N is very large and you don’t know N. You have to write a function that will return k random numbers from the list. Numbers should be completely random. Hint: 1. Use random function rand() (returns a number between 0 and 1) and irand() (return either 0 or 1) 2. It should be done in O(n).”&lt;/p&gt;
-
-&lt;p&gt;4. “Given two linked lists, return the intersection of the two lists: i.e. return a list containing only the elements that occur in both of the input lists.”&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;“There is linked list of millions of node and you do not know the length of it. Write a function which will return a random number from the list.”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“There is a linked list of numbers of length N. N is very large and you don’t know N. You have to write a function that will return k random numbers from the list. Numbers should be completely random. Hint: 1. Use random function rand() (returns a number between 0 and 1) and irand() (return either 0 or 1) 2. It should be done in O(n).”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“Given two linked lists, return the intersection of the two lists: i.e. return a list containing only the elements that occur in both of the input lists.”&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Sort both lists. Starting with the first element of List1, iterate till the last occurrence of current element. Starting with the first element of List2, iterate till the last occurrence of current element. Compare List1’s current element with List2’s, and iterate on List1 as long as List1 element is less than List2. If elements are equal, then add element to new list, List3. If List2 elements is less than List1, iterate on List2. Repeat while both lists have elements left.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;5. “Find or determine non existence of a number in a sorted list of N numbers where the numbers range over M, M» N and N large enough to span multiple disks. Algorithm to beat O(log n) bonus points for constant time algorithm.”&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;“Find or determine non existence of a number in a sorted list of N numbers where the numbers range over M, M» N and N large enough to span multiple disks. Algorithm to beat O(log n) bonus points for constant time algorithm.”&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Use a Bloom filter: k hash functions (where, optimally, k = (m/N)ln2) map a number to k locations in an m-bit array/vector. No false-negatives i.e. we can determine non-existence of a number mapped to the Bloom filter with certainty. See &lt;a href=&quot;http://pages.cs.wisc.edu/~cao/papers/summary-cache/node8.html&quot;&gt;this post&lt;/a&gt; for Bloom filter math. “Google &lt;a href=&quot;http://en.wikipedia.org/wiki/BigTable&quot; title=&quot;BigTable&quot;&gt;BigTable&lt;/a&gt; uses Bloom filters to reduce the disk lookups for non-existent rows or columns.”&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;6. “You are given a small sorted list of numbers, and a very very long sorted list of numbers - so long that it had to be put on a disk in different blocks. How would you find those short list numbers in the bigger one?”&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;“You are given a small sorted list of numbers, and a very very long sorted list of numbers - so long that it had to be put on a disk in different blocks. How would you find those short list numbers in the bigger one?”&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Let k be the size of the small list, p be the size of each block and q be the total number of blocks. Then, using binary search on each block, we can find the small number in O(k*q log p) time.&lt;/li&gt;
   &lt;li&gt;Better method: Find the first (i.e. minimum) number in each block and store in a sorted list in O(q). For each unique number in the small list, find which block it may lie in, and then search for the number in O(k log p) time. Total complexity is O(q)+O(k log p).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;7. “Write a function to find the middle node of a single link list.” Maintain a boolean toggle, and two pointers: slower and faster, initially pointing to the head. Move faster to next node till last node, and toggle counter. If toggle is true, move slower to next node. If faster goes beyond last node, return slower.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;“Write a function to find the middle node of a single link list.” Maintain a boolean toggle, and two pointers: slower and faster, initially pointing to the head. Move faster to next node till last node, and toggle counter. If toggle is true, move slower to next node. If faster goes beyond last node, return slower.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;[sourcecode language=”cpp”] T findMid() { if (head == NULL) return NULL; ListNode* slower = head, *faster = head; bool toggle = false; while (faster-&amp;gt;next != NULL) { faster = faster-&amp;gt;next; if (toggle) slower = slower-&amp;gt;next; toggle = !toggle; } return slower-&amp;gt;data; } [/sourcecode]&lt;/p&gt;
 
-&lt;p&gt;8. “You are given a list of numbers. When you reach the end of the list you will come back to the beginning of the list (a circular list). Write the most efficient algorithm to find the minimum # in this list. Find any given # in the list. The numbers in the list are always increasing but you don’t know where the circular list begins, ie: 38, 40, 55, 89, 6, 13, 20, 23, 36.”&lt;/p&gt;
-
-&lt;p&gt;9. How to find the kth node from last in a singly-linked list?&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;“You are given a list of numbers. When you reach the end of the list you will come back to the beginning of the list (a circular list). Write the most efficient algorithm to find the minimum # in this list. Find any given # in the list. The numbers in the list are always increasing but you don’t know where the circular list begins, ie: 38, 40, 55, 89, 6, 13, 20, 23, 36.”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;How to find the kth node from last in a singly-linked list?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Tue, 02 Feb 2010 00:00:00 -0800</pubDate>
         <link>http://localhost:4000/2010/02/02/linked-lists/</link>

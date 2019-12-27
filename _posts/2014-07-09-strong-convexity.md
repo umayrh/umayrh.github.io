@@ -77,10 +77,10 @@ only if $f^{\ast}$ is $\frac{1}{\alpha}$-strongly smooth with respect to the dua
 
 ## References:
 
-[[1]](http://www.princeton.edu/~sbubeck/Bubeck14.pdf) S. Bubeck, Theory of Convex Optimization for Machine Learning, section 3.4 
-[[2]](http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions) Wikipedia, Convex function 
-[[3]](http://web.stanford.edu/~boyd/cvxbook/) S. Boyd and G. Vandenberghe, Convex Optimization, section 9.1.2 
-[[4]](http://ttic.uchicago.edu/~shai/papers/KakadeShalevTewari09.pdf) S. M. Kakade, S. Shalev-Schwartz, A. Tiwari. On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization. Technical Report, 2009
+* [1](http://www.princeton.edu/~sbubeck/Bubeck14.pdf) S. Bubeck, Theory of Convex Optimization for Machine Learning, section 3.4 
+* [2](http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions) Wikipedia, Convex function 
+* [3](http://web.stanford.edu/~boyd/cvxbook/) S. Boyd and G. Vandenberghe, Convex Optimization, section 9.1.2 
+* [4](http://ttic.uchicago.edu/~shai/papers/KakadeShalevTewari09.pdf) S. M. Kakade, S. Shalev-Schwartz, A. Tiwari. On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization. Technical Report, 2009
 
 ## Credits
 

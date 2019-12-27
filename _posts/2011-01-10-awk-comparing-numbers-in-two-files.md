@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Awk: comparing numbers in two files"
 date: "2011-01-10"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 Given two files, each with the first column serving as a key and the second column as value; how can we obtain the percentage difference between corresponding keys in the file?

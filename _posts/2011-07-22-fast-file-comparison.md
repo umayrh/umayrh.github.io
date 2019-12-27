@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Fast File Comparison"
 date: "2011-07-22"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 \[caption id="attachment\_132" align="aligncenter" width="300"\][![](http://umayrh.files.wordpress.com/2011/07/blog1910sortingmail.jpg?w=300 "Sorting mail")](http://umayrh.files.wordpress.com/2011/07/blog1910sortingmail.jpg) Sorting mail at the Federal Building post office, circa 1910.\[/caption\]

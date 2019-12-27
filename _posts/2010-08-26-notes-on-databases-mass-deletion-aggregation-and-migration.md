@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Note on databases: mass deletion, aggregation and migration"
 date: "2010-08-26"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 _Scenario_: Our company stores ad statistics (e.g. ads viewed) and properties (e.g. homepage) in a database so that marketing folks can query the database according to their needs. The database is MS SQL since it was thought that it would provide better performance for certain queries. This year, the database size grew rapidly such that secondary memory had to be supplemented with USB-based 2TB Flash memory. Eventually, even that filled up and the database was unable to load new data. Thus, our goals are to:

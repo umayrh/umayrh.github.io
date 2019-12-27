@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Perl: split tricks"
 date: "2011-01-14"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 Why does the following Perl script give an incorrect field count?

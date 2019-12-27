@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Problem: The Dropbox Diet"
 date: "2011-08-17"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 Dropbox posed the following problem on their [website](http://www.dropbox.com/jobs/challenges):

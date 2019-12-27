@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Data Structure Problems: Binary Trees"
 date: "2010-07-28"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 1\. Mapping a binary tree into a list

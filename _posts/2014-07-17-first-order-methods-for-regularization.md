@@ -174,20 +174,20 @@ Signal recovery using L1-Prox
 
 ## References
 
-[1](http://mechroom.technion.ac.il/~becka/papers/71654.pdf) A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM J. Imaging Sciences, 2009 
-[2](http://statweb.stanford.edu/~candes/nesta/NESTA.pdf) S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 
-[3](http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/) http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/ 
-[4](https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf) M. Teboulle. First-Order Algorithms for Convex Optimization. IPAM, 2010 
-[5](http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf) A. Ben-Tal, A. Nemirovski. Lectures on Modern Convex Optimization. Lecture Notes, 2013 
-[6](http://en.wikipedia.org/wiki/Subgradient#The_subgradient) http://en.wikipedia.org/wiki/Subgradient#The_subgradient 
-[7](http://www.princeton.edu/~sbubeck/Bubeck14.pdf) S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014 
-[8] T. Hastie, R. Tibshirani, J. Friedman. Elements of Statistical Learning. Second Edition. 
-[9](http://www.ecore.be/DPs/dp_1329823186.pdf) Y. Nesterov. Subgradient Methods for Huge-Scale Optimization Problems. ECORE Discussion Paper, 2012 
-[10](http://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf) A. Juditsky, A. Nemirovski. First-Order Methods for Non-Smooth Convex Large-Scale Optimization, 1. Optimization for Machine Learning, 
-[11] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 
-[12](https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf) A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Framework. SIAM Journal Of Optimization, 2012 
-[13](http://web.stanford.edu/~boyd/papers/prox_algs.html) N. Parrikh, S. Boyd. Proximal Algorithms. Foundations and Trends in Optimization, 2014 
-[14](http://www.ljll.math.upmc.fr/~plc/mms1.pdf) P. L. Combette, V. R. Wajs. Signal Recovery by Proximal Forward-Backward Splitting. Multiscale Modeling and Simulation, 2005
+* [1](http://mechroom.technion.ac.il/~becka/papers/71654.pdf) A. Beck, M. Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM J. Imaging Sciences, 2009 
+* [2](http://statweb.stanford.edu/~candes/nesta/NESTA.pdf) S. Becker, J. Bobin, E. Candes. NESTA: A Fast and Accurate First-Order Method for Sparse Recovery. Technical Report, Caltech, 2009 
+* [3](http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/) http://blogs.princeton.edu/imabandit/2013/04/11/orf523-ista-and-fista/ 
+* [4](https://www.ipam.ucla.edu/publications/optut/optut_9300.pdf) M. Teboulle. First-Order Algorithms for Convex Optimization. IPAM, 2010 
+* [5](http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf) A. Ben-Tal, A. Nemirovski. Lectures on Modern Convex Optimization. Lecture Notes, 2013 
+* [6](http://en.wikipedia.org/wiki/Subgradient#The_subgradient) http://en.wikipedia.org/wiki/Subgradient#The_subgradient 
+* [7](http://www.princeton.edu/~sbubeck/Bubeck14.pdf) S. Bubeck. Theory of Convex Optimization for Machine Learning. Lecture Notes, 2014 
+* [8] T. Hastie, R. Tibshirani, J. Friedman. Elements of Statistical Learning. Second Edition. 
+* [9](http://www.ecore.be/DPs/dp_1329823186.pdf) Y. Nesterov. Subgradient Methods for Huge-Scale Optimization Problems. ECORE Discussion Paper, 2012 
+* [10](http://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf) A. Juditsky, A. Nemirovski. First-Order Methods for Non-Smooth Convex Large-Scale Optimization, 1. Optimization for Machine Learning, 
+* [11] J. F. Bonnan, J. C. Gilbert, C. Lemaréchal, C. A. Sagastizábal. Numerical Optimization: Theoretical and Practical Aspects. Second Edition, Springer, 2006 
+* [12](https://iew3.technion.ac.il/Home/Users/becka/smoothing.pdf) A. Beck, M. Teboulle. Smoothing and First Order Methods: A Unified Framework. SIAM Journal Of Optimization, 2012 
+* [13](http://web.stanford.edu/~boyd/papers/prox_algs.html) N. Parrikh, S. Boyd. Proximal Algorithms. Foundations and Trends in Optimization, 2014 
+* [14](http://www.ljll.math.upmc.fr/~plc/mms1.pdf) P. L. Combette, V. R. Wajs. Signal Recovery by Proximal Forward-Backward Splitting. Multiscale Modeling and Simulation, 2005
 
 ## Credits
 

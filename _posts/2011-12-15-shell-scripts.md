@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Shell scripts"
 date: "2011-12-15"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 1\. Sorting du output by human-readable

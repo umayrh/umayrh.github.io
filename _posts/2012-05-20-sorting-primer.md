@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Sorting primer"
 date: "2012-05-20"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 A quick overview of several important comparison-based sorting algorithms:

@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Convex optimization in five easy steps"
 date: "2012-03-21"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 1\. Install [NumPy](http://numpy.scipy.org/ "NumPy")

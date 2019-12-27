@@ -1,6 +1,11 @@
 ---
+layout: post
 title: "Data Structure Problems: Statistics"
 date: "2010-07-27"
+description:
+image: 
+author: Umayr Hassan
+tags:
 ---
 
 1\. Algorithm to calculate running mean over a window of N values

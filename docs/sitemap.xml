@@ -189,6 +189,15 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/tag/algorithms/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/optimization/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/distributed-systems/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/tag/robust-estimation/</loc>
 </url>
 <url>
@@ -213,9 +222,6 @@
 <loc>http://localhost:4000/tag/physics/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tag/algorithms/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/tag/linear-algebra/</loc>
 </url>
 <url>
@@ -238,9 +244,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/tag/machine-learning/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/tag/optimization/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/tag/gradient-descent/</loc>
