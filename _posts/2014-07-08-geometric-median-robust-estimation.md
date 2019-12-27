@@ -2,16 +2,13 @@
 layout: post
 title: "Geometric Median & Robust Estimation"
 date: "2014-07-08"
-description:
+description: Fermat-Weber problem and mean estimation.
 image: /assets/images/geometric_proof-g.png 
 author: Umayr Hassan
 tags:
 - Robust Estimation
 - Mathematics
 ---
-
-![geometric_proof](/assets/images/geometric_proof.png) 
-Fermat-Weber [problem](https://mgje.github.io/presentations/Budapest2014/#/13)
 
 Stanislav Minsker addresses the following question:
 
@@ -42,4 +39,7 @@ Where $C$ is a constant. The length of confidence interval for median-of-means i
 3. Minsker's work extends this to multi-dimensional distributions in Banach space using _geometric median_ to obtain 
 confidence intervals of sub-exponential length with high coverage.
 
-More in the paper [here](/assets/images/geometric_median_minsker_2.pdf).
+More in the paper [here](http://sminsker.files.wordpress.com/2013/11/geometric_median_minsker_2.pdf). See also, 
+Fermat-Weber [problem](https://mgje.github.io/presentations/Budapest2014/#/13).
+
+![geometric_proof](/assets/images/geometric_proof.png) 

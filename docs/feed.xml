@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Dec 2019 18:27:30 -0800</pubDate>
-    <lastBuildDate>Thu, 26 Dec 2019 18:27:30 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Dec 2019 18:32:04 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Dec 2019 18:32:04 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -2168,10 +2168,7 @@ only if $f^{\ast}$ is $\frac{1}{\alpha}$-strongly smooth with respect to the dua
     
       <item>
         <title>Geometric Median &amp; Robust Estimation</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/geometric_proof.png&quot; alt=&quot;geometric_proof&quot; /&gt; 
-Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/#/13&quot;&gt;problem&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Stanislav Minsker addresses the following question:&lt;/p&gt;
+        <description>&lt;p&gt;Stanislav Minsker addresses the following question:&lt;/p&gt;
 
 &lt;p&gt;Problem: Given $X_1, \ldots, X_k$ that are i.i.d. random variables, how can we estimate the mean of the distribution so 
 that the confidence interval still has a coverage probability $\ge 1 - O(e^{-t})$? Note: the smaller the confidence interval, 
@@ -2206,7 +2203,10 @@ median-of-means estimator has the following confidence interval (result due to N
 confidence intervals of sub-exponential length with high coverage.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;More in the paper &lt;a href=&quot;/assets/images/geometric_median_minsker_2.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More in the paper &lt;a href=&quot;http://sminsker.files.wordpress.com/2013/11/geometric_median_minsker_2.pdf&quot;&gt;here&lt;/a&gt;. See also, 
+Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/#/13&quot;&gt;problem&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/geometric_proof.png&quot; alt=&quot;geometric_proof&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Jul 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/07/08/geometric-median-robust-estimation/</link>
