@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Dec 2019 17:55:36 -0800</pubDate>
-    <lastBuildDate>Thu, 26 Dec 2019 17:55:36 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Dec 2019 18:27:30 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Dec 2019 18:27:30 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -2065,6 +2065,10 @@ and shows a 3d Mairal-Yu simplex, the equivalent of a Klee-Minty cube for the $L
         
         <category>First-order methods</category>
         
+        <category>Robust Estimation</category>
+        
+        <category>R</category>
+        
         <category>Mathematics</category>
         
         
@@ -2072,220 +2076,145 @@ and shows a 3d Mairal-Yu simplex, the equivalent of a Klee-Minty cube for the $L
     
       <item>
         <title>α-strong convexity, β-strong smoothness</title>
-        <description>&lt;p&gt;Strong convexity often allows for optimization algorithms that converge very quickly to an ε-optimum (rf. &lt;a href=&quot;http://mechroom.technion.ac.il/~becka/papers/71654.pdf&quot;&gt;FISTA&lt;/a&gt; and &lt;a href=&quot;http://statweb.stanford.edu/~candes/nesta/NESTA.pdf&quot;&gt;NESTA&lt;/a&gt;). This post will cover some fundamentals of strongly convex functions.&lt;/p&gt;
+        <description>&lt;p&gt;Strong convexity often allows for optimization algorithms that converge very quickly to an $\epsilon$-optimum 
+(rf. &lt;a href=&quot;http://mechroom.technion.ac.il/~becka/papers/71654.pdf&quot;&gt;FISTA&lt;/a&gt; and 
+&lt;a href=&quot;http://statweb.stanford.edu/~candes/nesta/NESTA.pdf&quot;&gt;NESTA&lt;/a&gt;). This post will cover some fundamentals of strongly 
+convex functions.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Convexity&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;convexity&quot;&gt;Convexity&lt;/h2&gt;
 
-&lt;p&gt;For a convex function, [latex]f: \mathbf{R} \to \mathbf{R}[/latex] and [latex]\forall \gamma \in [0, 1][/latex],&lt;/p&gt;
+&lt;p&gt;For a convex function, $f: \mathbf{R} \to \mathbf{R}$ and $\forall \gamma \in [0, 1]$,&lt;/p&gt;
 
-&lt;p&gt;[latex] f(tx + (1-t)y) \le tf(x) + (1-t)f(y) [/latex]&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(tx + (1-t)y) \le tf(x) + (1-t)f(y)&lt;/script&gt;
 
-&lt;p&gt;&lt;strong&gt;Strict convexity&lt;/strong&gt;:&lt;/p&gt;
+&lt;h2 id=&quot;strict-convexity&quot;&gt;Strict convexity&lt;/h2&gt;
 
 &lt;p&gt;For a &lt;em&gt;strictly&lt;/em&gt; convex function,&lt;/p&gt;
 
-&lt;p&gt;[latex] f(tx + (1-t)y) &amp;lt; tf(x) + (1-t)f(y) [/latex]&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+f(tx + (1-t)y) &lt; tf(x) + (1-t)f(y) %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;Geometrically, the definition of convexity implies that all points on any straight line connecting any two points in a convex set also lie in the set. Strict convexity excludes linear and affine functions, or functions with linear/affine subsets in their boundaries. (How would this extend to non-Euclidean geometries?)&lt;/p&gt;
+&lt;p&gt;Geometrically, the definition of convexity implies that all points on any straight line connecting any two points in a 
+convex set also lie in the set. Strict convexity excludes linear and affine functions, or functions with linear/affine 
+subsets in their boundaries. (How would this extend to non-Euclidean geometries?)&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;α-strong convexity&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;α-strong-convexity&quot;&gt;α-strong convexity&lt;/h2&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;A function is α-strongly convex with respect to a norm&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;if, for α &amp;gt; 0&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;A function is α-strongly convex with respect to a norm |.| if, for α &amp;gt; 0&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]f(tx + (1-t)y) &amp;lt; tf(x) + (1-t)f(y) - \frac{\alpha}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x - y&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+f(tx + (1-t)y) &lt; tf(x) + (1-t)f(y) - \frac{\alpha}{2} \|x - y\|^2 %]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Alternatively,&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex](\nabla{f(x)} - \nabla{f(y)})(x - y) \ge \alpha&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x - y&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\nabla{f(x)} - \nabla{f(y)})(x - y) \ge \alpha \|x - y\|^2&lt;/script&gt;
 
 &lt;p&gt;or,&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]f(y) \ge f(x)+ \nabla{f(x)}(y - x) + \frac{\alpha}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x - y&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(y) \ge f(x)+ \nabla{f(x)}(y - x) + \frac{\alpha}{2} \|x - y\|^2&lt;/script&gt;
 
-&lt;p&gt;Strongly convexity extends strict convexity. For twice-differentiable functions, this implies that [latex]\nabla^2f(x) \ge \alpha[/latex]. As Bubeck explains [1], strongly convex functions speed up convergence of first-order methods. Larger values of α imply larger gradient, and hence step size, when further away from the optimum.&lt;/p&gt;
+&lt;p&gt;Strongly convexity extends strict convexity. For twice-differentiable functions, this implies that 
+$\nabla^2f(x) \ge \alpha$. As Bubeck explains [1], strongly convex functions speed up 
+convergence of first-order methods. Larger values of α imply larger gradient, and hence step size, when further away 
+from the optimum.&lt;/p&gt;
 
 &lt;p&gt;Strong smoothness is another property of certain convex functions:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;β-smoothness&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;beta-smoothness&quot;&gt;$\beta$-smoothness&lt;/h2&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;A function is β-smoothly convex with respect to a norm&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;if, for β &amp;gt; 0, [4]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;A function is $\beta$-smoothly convex with respect to a norm |.| if, for $\beta$ &amp;gt; 0, [4]&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]f(y) \le f(x)+ \nabla{f(x)}(y - x) + \frac{\beta}{2}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x - y&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(y) \le f(x)+ \nabla{f(x)}(y - x) + \frac{\beta}{2} \|x - y\|^2&lt;/script&gt;
 
 &lt;p&gt;This definition gives an lower bound on the improvement in one step of (sub)gradient descent [1]:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]f(x - \frac{1}{\beta}\nabla{f(x)})- f(x) \le \frac{-1}{2 \beta}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;\nabla{f(x)}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x - \frac{1}{\beta}\nabla{f(x)})- f(x) \le \frac{-1}{2 \beta} \| \nabla{f(x)} \|^2&lt;/script&gt;
 
-&lt;p&gt;Alternatively, β-smoothly convex function [lemma 3.3, 1]:&lt;/p&gt;
+&lt;p&gt;Alternatively, $\beta$-smoothly convex function [lemma 3.3, 1]:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex]f(x) - f(y) \le \nabla{f(x)}(y - x) - \frac{1}{2 \beta}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;\nabla{f(x)} - \nabla{f(y)}&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;^2[/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x) - f(y) \le \nabla{f(x)}(y - x) - \frac{1}{2 \beta} \|\nabla{f(x)} - \nabla{f(y)}\|^2&lt;/script&gt;
 
-&lt;p&gt;&lt;strong&gt;Strong/smooth duality&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;strongsmooth-duality&quot;&gt;Strong/smooth duality&lt;/h2&gt;
 
-&lt;p&gt;Under certain conditions, a-strong convexity and β-smoothness are dual notions. For now, we’ll state the result without discussion.&lt;/p&gt;
+&lt;p&gt;Under certain conditions, a-strong convexity and $\beta$-smoothness are dual notions. For now, we’ll state the result 
+without discussion.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;If &lt;em&gt;f&lt;/em&gt; is a closed and convex function, then f is α-strongly convex function with respect to a norm&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;if and only if &lt;em&gt;f*&lt;/em&gt; is 1/α-strongly smooth with respect to the dual norm&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;* (corollary 7 in [4]).&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;If $f$ is a closed and convex function, then $f$ is $\alpha$-strongly convex function with respect to a norm $|.|$ if and 
+only if $f^{\ast}$ is $\frac{1}{\alpha}$-strongly smooth with respect to the dual norm $|.|^{\ast}$ (corollary 7 in [4]).&lt;/p&gt;
 
-&lt;p&gt;References:&lt;/p&gt;
+&lt;h2 id=&quot;references&quot;&gt;References:&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;[1]&lt;/a&gt; S. Bubeck, Theory of Convex Optimization for Machine Learning, section 3.4 &lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions&quot;&gt;[2]&lt;/a&gt; Wikipedia, Convex function &lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions&quot;&gt;&lt;/a&gt; &lt;a href=&quot;http://web.stanford.edu/~boyd/cvxbook/&quot;&gt;[3]&lt;/a&gt; S. Boyd and G. Vandenberghe, Convex Optimization, section 9.1.2 &lt;a href=&quot;http://ttic.uchicago.edu/~shai/papers/KakadeShalevTewari09.pdf&quot;&gt;[4]&lt;/a&gt; S. M. Kakade, S. Shalev-Schwartz, A. Tiwari. On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization. Technical Report, 2009&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.princeton.edu/~sbubeck/Bubeck14.pdf&quot;&gt;[1]&lt;/a&gt; S. Bubeck, Theory of Convex Optimization for Machine Learning, section 3.4 
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_function#Strongly_convex_functions&quot;&gt;[2]&lt;/a&gt; Wikipedia, Convex function 
+&lt;a href=&quot;http://web.stanford.edu/~boyd/cvxbook/&quot;&gt;[3]&lt;/a&gt; S. Boyd and G. Vandenberghe, Convex Optimization, section 9.1.2 
+&lt;a href=&quot;http://ttic.uchicago.edu/~shai/papers/KakadeShalevTewari09.pdf&quot;&gt;[4]&lt;/a&gt; S. M. Kakade, S. Shalev-Schwartz, A. Tiwari. On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization. Technical Report, 2009&lt;/p&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;Image from Sebastian Pokutta’s post, &lt;a href=&quot;(http://www.pokutta.com/blog/research/2018/12/07/cheatsheet-smooth-idealized.html)&quot;&gt;Cheat Sheet: Smooth Convex Optimization&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Jul 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/07/09/strong-convexity/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/09/strong-convexity/</guid>
+        
+        <category>Convex optimization</category>
+        
+        <category>Function analysis</category>
+        
+        <category>Mathematics</category>
         
         
       </item>
     
       <item>
         <title>Geometric Median &amp; Robust Estimation</title>
-        <description>&lt;p&gt;[caption id=”attachment_1971” align=”alignright” width=”245”]&lt;img src=&quot;https://umayrh.files.wordpress.com/2014/07/geometric_proof.png&quot; alt=&quot;geometric_proof&quot; /&gt; Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/#/13&quot;&gt;problem&lt;/a&gt;[/caption]&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/geometric_proof.png&quot; alt=&quot;geometric_proof&quot; /&gt; 
+Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/#/13&quot;&gt;problem&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Stanislav Minsker addresses the following question:&lt;/p&gt;
 
-&lt;p&gt;Problem: Given X1, …, Xk that are i.i.d. random variables, how can we estimate the mean of the distribution so that the confidence interval still has a coverage probability ≥ 1 - O(e-t)? Note: the smaller the confidence interval, the better the estimator.&lt;/p&gt;
+&lt;p&gt;Problem: Given $X_1, \ldots, X_k$ that are i.i.d. random variables, how can we estimate the mean of the distribution so 
+that the confidence interval still has a coverage probability $\ge 1 - O(e^{-t})$? Note: the smaller the confidence interval, 
+the better the estimator.&lt;/p&gt;
 
-&lt;p&gt;1. Assuming the variables from normal distribution N(μ, σ2). If the estimator is constructed as&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Assuming the variables from normal distribution $N(\mu, \sigma^2)$. If the estimator is constructed 
+as $ \hat{\mu}_n = \Sigma_i X_i / n $, then:&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex] \hat{\mu}_n = \Sigma_i X_i / n [/latex] [latex] Pr (&lt;/td&gt;
-      &lt;td&gt;\mu_n - \hat{\mu}_n&lt;/td&gt;
-      &lt;td&gt;\ge \sigma \sqrt{2t/n} ) \le e^{-t} [/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Pr ( | \mu_n - \hat{\mu}_n | \ge \sigma \sqrt{2t/n} ) \le e^{-t}&lt;/script&gt;
 
 &lt;p&gt;For non-normal distribution, the confidence interval is much different:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex] Pr (&lt;/td&gt;
-      &lt;td&gt;\mu_n - \hat{\mu}_n&lt;/td&gt;
-      &lt;td&gt;\ge \sigma \sqrt{e^t/n} ) \le e^{-t} [/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Pr ( | \mu_n - \hat{\mu}_n | \ge \sigma \sqrt{e^t/n} ) \le e^{-t}&lt;/script&gt;
 
-&lt;p&gt;Since the length of this interval depends on et, can we do better?&lt;/p&gt;
+&lt;p&gt;Since the length of this interval depends on $e^t$, can we do better?&lt;/p&gt;
 
-&lt;p&gt;2. If we split the sample into k = floor(t) + 1 groups G1, …, Gk each of size approximate n /t, then median-of-means estimator has the following confidence interval (result due to Nemirovskii and Yudin, 1983):&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;If we split the sample into $k = floor(t) + 1$ groups $G_1, \ldots, G_k$ each of size approximate $frac{n}{t}$, then 
+median-of-means estimator has the following confidence interval (result due to Nemirovskii and Yudin, 1983):&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[latex] \hat{\mu}_{n,k} = median(\hat{\mu}_1, …, \hat{\mu}_k) [/latex] [latex] Pr (&lt;/td&gt;
-      &lt;td&gt;\mu_n - \hat{\mu}_n&lt;/td&gt;
-      &lt;td&gt;\ge \sigma C \sqrt{t/n} ) \le e^{-t} [/latex]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{\mu}_{n,k} = median(\hat{\mu}_1, ..., \hat{\mu}_k)&lt;/script&gt;
 
-&lt;p&gt;Where C is a constant. The length of confidence interval for median-of-means is much smaller than for the naive mean estimator.&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Pr ( \| \mu_n - \hat{\mu}_n \| \ge \sigma C \sqrt{\frac{t}{n}} ) \le e^{-t}&lt;/script&gt;
 
-&lt;p&gt;3. Minsker’s work extends this to multi-dimensional distributions in Banach space using &lt;em&gt;geometric median&lt;/em&gt; to obtain confidence intervals of sub-exponential length with high coverage.&lt;/p&gt;
+&lt;p&gt;Where $C$ is a constant. The length of confidence interval for median-of-means is much smaller than for the naive mean estimator.&lt;/p&gt;
 
-&lt;p&gt;More in the paper &lt;a href=&quot;http://sminsker.files.wordpress.com/2013/11/geometric_median_minsker_2.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Minsker’s work extends this to multi-dimensional distributions in Banach space using &lt;em&gt;geometric median&lt;/em&gt; to obtain 
+confidence intervals of sub-exponential length with high coverage.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;More in the paper &lt;a href=&quot;/assets/images/geometric_median_minsker_2.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Jul 2014 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/2014/07/08/geometric-median-robust-estimation/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/08/geometric-median-robust-estimation/</guid>
+        
+        <category>Robust Estimation</category>
+        
+        <category>Mathematics</category>
         
         
       </item>

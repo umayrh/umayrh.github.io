@@ -189,10 +189,7 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tag/convex-optimization/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/tag/first-order-methods/</loc>
+<loc>http://localhost:4000/tag/robust-estimation/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/tag/mathematics/</loc>
@@ -201,7 +198,13 @@
 <loc>http://localhost:4000/tag/mathematics/page/2/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tag/robust-estimation/</loc>
+<loc>http://localhost:4000/tag/convex-optimization/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/function-analysis/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/first-order-methods/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/tag/r/</loc>

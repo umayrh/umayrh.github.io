@@ -8,6 +8,8 @@ author: Umayr Hassan
 tags:
 - Convex optimization
 - First-order methods
+- Robust Estimation
+- R
 - Mathematics
 ---
 
