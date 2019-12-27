@@ -3,7 +3,7 @@ layout: post
 title: "Accelerated first-order methods for regularization"
 date: "2014-07-24"
 description:
-image: /assets/images/basismap_k_3-gray.png
+image: /assets/images/agd.png
 author: Umayr Hassan
 tags:
 - Convex optimization
@@ -274,3 +274,7 @@ distribution (which is probably why it escapes the upper-bounds for first-order 
 * [MATLAB, Optim Toolbox](http://www.mathworks.com/matlabcentral/fileexchange/16204-toolbox-sparse-optmization/content/toolbox_optim/perform_fb.m) 
 * [Numerical algorithms in MATLAB](https://github.com/gpeyre/numerical-tours/tree/master/matlab/solutions)
 * [Numerical Tours](http://www.numerical-tours.com)
+
+## Credits
+
+Main image from [lossfunctions.tumblr](https://lossfunctions.tumblr.com/image/126914340062).

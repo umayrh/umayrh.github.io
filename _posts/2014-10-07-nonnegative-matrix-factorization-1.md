@@ -3,7 +3,7 @@ layout: post
 title: "Nonnegative Matrix Factorization, 1"
 date: "2014-10-07"
 description:
-image: /assets/images/basismap_k_3-gray.png
+image: /assets/images/nmf.png
 author: Umayr Hassan
 tags:
 - Machine learning
@@ -14,7 +14,7 @@ tags:
 The aim of this post is to highlight the utility of non-negative factorization (NMF) in data analysis through examples.
 In a different post, we'll talk theory and implementation by thinking of NMF as constrained optimization.
 
-**Learning parts of a whole**
+## Learning parts of a whole
 
 When Lee and Seung [Lee99] re-introduced non-negative matrix factorization (NMF), they emphasized on the 
 algorithm's ability to learn parts of a whole. That is, a good and interpretable low-rank approximation of a 
@@ -64,7 +64,7 @@ set.seed(1234) for (n in seq(1, k, 1)) { freq <- res.coef[n,(order(res.coefn,], 
 _Summary_: NMF is useful because some applications (e.g. in physical sciences and signal processing) naturally 
 restrict the data and hence latent factor to be non-negative, and NMF can satisfy this constraint.
 
-**Collaborative filtering**
+## Collaborative filtering
 
 While NMF steadily found new applications in diverse fields such as signal processing and data mining [Cichoki09], 
 perhaps matrix factorization's role in solving the [Netflix prize](http://en.wikipedia.org/wiki/Netflix_Prize) problem 
@@ -123,7 +123,7 @@ _Caveat_: while NMF itself can be used for matrix completion, the NMF package in
 
 _Summary_: another reason for the success of NMF is the ability to extend the basic model for use in specific applications (like collaborative filtering).
 
-**Cluster analysis**
+## Cluster analysis
 
 Non-negative matrix factorization is essentially a form of cluster analysis - the critical difference being that the clusters are derived from linear, additive latent factors instead of item-to-item similarity/distance metrics/divergences. So, it's not surprising that researchers were interested in the connections between traditional unsupervised learning methods like K-means and NMF. Two interesting papers in this line are Kim07 and Kim08. Apart from analyzing the relationship between K-mean and NMF, they highlight (though, not introduce):
 
@@ -189,7 +189,7 @@ dispersion on its own is not reliable for model selection.
 
 _Summary_: NMF lends well to cluster analysis though model selection seems tricky.
 
-**References**
+## References
 
 * [Arora12a](http://arxiv.org/pdf/1111.0952v1.pdf) S. Arora, R. Ge, R. Kannan, and A. Moitra. Computing a Nonnegative Matrix Factorization – Provably. STOC, 2012 
 * [Arora12b](http://arxiv.org/abs/1204.1956) S. Arora, R. Ge, A. Moitra. Learning Topic Models - Going Beyond SVD. FOCS, 2012 
@@ -199,7 +199,7 @@ _Summary_: NMF lends well to cluster analysis though model selection seems trick
 * [Hopke00](http://www.epa.gov/ttnamti1/files/ambient/pm25/workshop/laymen.pdf) P. K. Hopke. A guide to positive matrix factorization.Workshop on UNMIX and PMF as Applied to PM2, 2000. 
 * [Hoyer04](http://jmlr.org/papers/volume5/hoyer04a/hoyer04a.pdf) P. O. Hoyer. Non-negative matrix factorization with sparseness constraints. JMLR, 2004. 
 * [Juvela94](http://www.mrao.cam.ac.uk/yerac/juvela/juvela.html) M. Juvela, K. Lehtinen, and P. Paatero. The use of positive matrix factorization in the analysis of molecular line spectra from the thumbprint nebula. 
-* D. P. Clemens and R. Barvainis, eds., _Clouds, Cores, and Low Mass Stars_, volume 65 of _ASP Conference Series_, 1994. 
+* [Clemens94] D. P. Clemens and R. Barvainis, eds., _Clouds, Cores, and Low Mass Stars_, volume 65 of _ASP Conference Series_, 1994. 
 * [Juvela96](http://adsabs.harvard.edu/abs/1996MNRAS.280..616J) M. Juvela, K. Lehtinen, and P. Paatero. The use of positive matrix factorization in the analysis of molecular line spectra. _MNRAS_, 1996. 
 * [Kim07](http://bioinformatics.oxfordjournals.org/content/23/12/1495.full.pdf) H. Kim and H. Park. Sparse non-negative matrix factorizations via alternating non-negativity-constrained least squares for microarray data analysis. Bioinformatics, 2007. 
 * [Kim08](http://www.cc.gatech.edu/~hpark/papers/GT-CSE-08-01.pdf) J. Kim and H. Park. Sparse Nonnegative Matrix Factorization for Clustering. Georgia Tech Technical Report, GT-CSE-08-01, 2008. 
