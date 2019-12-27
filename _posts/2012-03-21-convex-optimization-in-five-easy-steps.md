@@ -3,48 +3,66 @@ layout: post
 title: "Convex optimization in five easy steps"
 date: "2012-03-21"
 description:
-image: 
+image: /assets/images/socp.png
 author: Umayr Hassan
 tags:
 ---
 
-1\. Install [NumPy](http://numpy.scipy.org/ "NumPy")
+1. Install [NumPy](http://numpy.scipy.org/ "NumPy")
 
 sudo apt-get install python-numpy
 
-2\. Install [SciPy](http://www.scipy.org "SciPy")
+2. Install [SciPy](http://www.scipy.org "SciPy")
 
 sudo apt-get install python-scipy
 
-3\. Install [CVXOPT](http://abel.ee.ucla.edu/cvxopt/ "CVXOPT")
+3. Install [CVXOPT](http://abel.ee.ucla.edu/cvxopt/ "CVXOPT")
 
 sudo apt-get install python-cvxopt
 
-4\. Install [OpenOpt](http://openopt.org/Welcome "OpenOpt")
+4. Install [OpenOpt](http://openopt.org/Welcome "OpenOpt")
 
+```
 wget http://openopt.org/images/3/33/OpenOpt.zip
 unzip OpenOpt.zip
 cd OpenOpt
 sudo python setup.py install --prefix=/usr/local/
+```
+5. Run your second-order conic optimization program ([source](http://trac.openopt.org/openopt/browser/PythonPackages/OpenOpt/openopt/examples/socp_1.py "source"))
 
-5\. Run your second-order conic optimization program ([source](http://trac.openopt.org/openopt/browser/PythonPackages/OpenOpt/openopt/examples/socp_1.py "source"))
+![](/assets/images/socp.png "SOCP")
 
-[![](http://umayrh.files.wordpress.com/2012/03/socp.png?w=300 "SOCP")](http://umayrh.files.wordpress.com/2012/03/socp.png)
+```python
+"""
+OpenOpt SOCP example for the problem http://openopt.org/images/2/28/SOCP.png
+"""
+ 
+from numpy import *
+from openopt import SOCP
+ 
+f = array([-2, 1, 5])
+C0 = mat('-13 3 5; -12 12 -6')
+d0 = [-3, -2]
+q0 = array([-12, -6, 5])
+s0 = -12
+ 
+C1 = mat('-3 6 2; 1 9 2; -1 -19 3')
+d1 = [0, 3, -42]
+q1 = array([-3, 6, -10])
+s1 = 27
+ 
+# you could add lb <= x <= ub, Ax <= b, Aeq x = beq constraints
+# via p = SOCP(f,  ..., A=A, b=b, Aeq=Aeq, beq=beq,lb=lb, ub=ub)
+p = SOCP(f,  C=[C0, C1],  d=[d0, d1], q=[q0, q1], s=[s0, s1])
+r = p.solve('cvxopt_socp')
+ 
+x_opt, f_opt = r.xf,  r.ff
+ 
+# f_opt: -38.346368    x_opt: [-5.01428121 -5.76680444 -8.52162517]
+print(' f_opt: %f    x_opt: %s' % (f_opt, x_opt))
+```
 
-\[sourcecode language="python"\] """ OpenOpt SOCP example for the problem http://openopt.org/images/2/28/SOCP.png """
-
-from numpy import \* from openopt import SOCP
-
-f = array(\[-2, 1, 5\]) C0 = mat('-13 3 5; -12 12 -6') d0 = \[-3, -2\] q0 = array(\[-12, -6, 5\]) s0 = -12
-
-C1 = mat('-3 6 2; 1 9 2; -1 -19 3') d1 = \[0, 3, -42\] q1 = array(\[-3, 6, -10\]) s1 = 27
-
-\# you could add lb <= x <= ub, Ax <= b, Aeq x = beq constraints # via p = SOCP(f, ..., A=A, b=b, Aeq=Aeq, beq=beq,lb=lb, ub=ub) p = SOCP(f,  C=\[C0, C1\],  d=\[d0, d1\], q=\[q0, q1\], s=\[s0, s1\]) r = p.solve('cvxopt\_socp')
-
-x\_opt, f\_opt = r.xf,  r.ff
-
-\# f\_opt: -38.346368 x\_opt: \[-5.01428121 -5.76680444 -8.52162517\] print(' f\_opt: %f    x\_opt: %s' % (f\_opt, x\_opt)) \[/sourcecode\]
-
+```
 python socp.py
 
 ------------------------- OpenOpt 0.38 -------------------------
@@ -66,3 +84,4 @@ istop: 1000 (optimal)
 Solver:   Time Elapsed = 0.01     CPU Time Elapsed = 0.01
 objFunValue: -38.346368
  f\_opt: -38.346368    x\_opt: \[-5.01469912 -5.76690749 -8.52177183\]
+```
