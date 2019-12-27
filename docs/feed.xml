@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Dec 2019 13:17:39 -0800</pubDate>
-    <lastBuildDate>Thu, 26 Dec 2019 13:17:39 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Dec 2019 16:02:55 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Dec 2019 16:02:55 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -1467,11 +1467,20 @@ so we’ll skip them. Instead give an R implementation and results that compares
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'l'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/07/ista500.png?w=300&quot; alt=&quot;ISTA vs FISTA, 500 iterations&quot; /&gt;
-ISTA vs FISTA, 500 iterations&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/07/ista5000.png?w=300&quot; alt=&quot;ISTA vs FISTA, 5000 iterations&quot; /&gt;
-ISTA vs FISTA, 5000 iterations&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/07/ista500.png?w=300&quot; alt=&quot;ISTA vs FISTA, 500 iterations&quot; /&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://umayrh.files.wordpress.com/2014/07/ista5000.png?w=300&quot; alt=&quot;ISTA vs FISTA, 5000 iterations&quot; /&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ISTA vs FISTA, 500 iterations&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5000 iterations&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;Note the non-monotonic convergence in FISTA’s case - [Beck09b, Teboulle10] describe a simple change to the algorithm to 
 fix that. Another interesting problem with FISTA is the dependence on the worst-case smoothness parameter β in the 
@@ -1481,7 +1490,7 @@ for ∇f”, which can have a much smaller value, implying a larger step size. A
 
 &lt;p&gt;Recall that ISTA, and hence FISTA, solve the following optimization problems:&lt;/p&gt;
 
-&lt;p&gt;$\min{( \frac{1}{2} |Ax - b|^2 +\lambda |x| )}$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\min{( \frac{1}{2} \|Ax - b\|^2 +\lambda \|x\| )}&lt;/script&gt;
 
 &lt;p&gt;FISTA works for non-smooth objectives as long as they can be formulated as the sum of a smooth and a non-smooth function 
 [Section 2, Beck09; Section 3, Tseng08]. Are there efficient first-order algorithms for a larger class of non-smooth 
@@ -1492,28 +1501,28 @@ problems?&lt;/p&gt;
 &lt;p&gt;NESTA Becker09 solves the following optimization problem that FISTA cannot since the objective function is 
 non-composite non-smooth:&lt;/p&gt;
 
-&lt;p&gt;$\min{|x|_1} \mbox{s.t.} |Ax - b|_2 \le \epsilon$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\min{\|x\|_1} \mbox{s.t.} \|Ax - b\|_2 \le \epsilon&lt;/script&gt;
 
 &lt;p&gt;This algorithm draws on [Nesterov05], which introduces a way to create smooth approximations of certain non-smooth 
 function. This approximation, coupled with an accelerated gradient descent method, gives good convergence for optimizing 
 a large class of non-smooth functions (though not as good as FISTA or Nesterov07). We’ll review 
 [Nesterov05] via [Becker09] before returning to NESTA.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Smoothing non-smooth functions&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;smoothing-non-smooth-functions&quot;&gt;Smoothing non-smooth functions&lt;/h2&gt;
 
 &lt;p&gt;Nesterov considers a class of functions that can be represented as [Section 2, [Nesterov05]; Section 2, Becker09; Nesterov08]&lt;/p&gt;
 
-&lt;p&gt;$\max_{u \in Q_d}{(Ax - b)^{T}u - \phi{(u)}}$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\max_{u \in Q_d}\{(Ax - b)^{T}u - \phi{(u)}\}&lt;/script&gt;
 
 &lt;p&gt;where $\phi{(u)}$ is a convex function and $Q_d$ is the dual domain (convex, closed) of a function $f(x)$ minimized over a 
-domain $Q_p$. The representation is similar to the &lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_conjugate&quot;&gt;convex conjugate&lt;/a&gt;, $f*(u)$, 
-of this function. Indeed Nesterov considers using $phi{(u)} = f*(u)$, but then argues that such $phi{(u)}$ might not 
+domain $Q_p$. The representation is similar to the &lt;a href=&quot;http://en.wikipedia.org/wiki/Convex_conjugate&quot;&gt;convex conjugate&lt;/a&gt;, $f^{\ast}(u)$, 
+of this function. Indeed Nesterov considers using $\phi{(u)} = f^{\ast}(u)$, but then argues that such $\phi{(u)}$ might not 
 be a simple enough function. This might be true in general, but as we’ll see that in the special case of $L_1$ 
-regularization, $phi{(u)} = f*(u)$ will work.&lt;/p&gt;
+regularization, $\phi{(u)} = f^{\ast}(u)$ will work.&lt;/p&gt;
 
 &lt;p&gt;Nesterov then presents a smooth approximation of the function&lt;/p&gt;
 
-&lt;p&gt;$f_{\mu}(x) = \max_{u \in Q_d}{(Ax - b)^{T}u - \phi{(u)} - \mu\ prox_{\alpha}(u)}$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f_{\mu}(x) = \max_{u \in Q_d}\{(Ax - b)^{T}u - \phi{(u)} - \mu\ prox_{\alpha}(u)\}&lt;/script&gt;
 
 &lt;p&gt;where μ is the smoothness parameter, $prox_{\alpha}(u)$ is an $\alpha$-strongly convex proximal function over the dual 
 domain $Q_d$. In the original paper [Nesterov05], Nesterov actually allows for a composite function approximation, that 
@@ -1521,64 +1530,54 @@ is $f(x) = fº(x) + f \mu{(x)}$ where $fº(x)$ is some smooth convex function. 
 that $fº(x) = 0$. Beck12 extends this smoothing framework to optimize an even broader class of non-smooth functions.&lt;/p&gt;
 
 &lt;p&gt;The important upshot is that (1) this function is smooth with factor $\frac{|A|}{\mu \alpha}$ 
-[Theorem 1, [Nesterov05]], where $|A|$ is the operator norm of $A$, and (2) that $f \mu{(x)}$ is a uniform smooth approximation 
-of $f(x)$ for $mu &amp;gt; 0$. So now we can use an optimal gradient descent for smooth optimization to minimize $f \mu{(x)}$.&lt;/p&gt;
+[Theorem 1, [Nesterov05]], where $|A|$ is the operator norm of $A$, and (2) that $f_{\mu}(x)$ is a uniform smooth approximation 
+of $f(x)$ for $\mu &amp;gt; 0$. So now we can use an optimal gradient descent for smooth optimization to minimize $f_{\mu}(x)$.&lt;/p&gt;
 
 &lt;h2 id=&quot;smooth-optimization&quot;&gt;Smooth optimization&lt;/h2&gt;
 
 &lt;p&gt;Section 3 in [Nesterov05] describes an optimal first-order algorithm to minimize a $\beta$-smooth convex function $f(x)$ 
 using an $\alpha$-strongly convex proximal function $prox_{\alpha}(x)$.&lt;/p&gt;
 
-&lt;p&gt;$y_k = \mathrm{argmin}&lt;em&gt;{y}(\nabla{f(x_k)}^{T} + \frac{1}{2}\beta |y - x_k|^2))\ z_k=\mathrm{argmin}&lt;/em&gt;{x}(\frac{\beta}{\alpha}\ prox_{\alpha}(x)+\sum_{i=0}^{k}(\frac{i+1}{2}[\nabla{f(x_i)} + \nabla{f(x_i)}^{T}(x - x_i)])) \ x_{k+1} = \frac{2}{k+1}z_k + \frac{k+1}{k+3}y_k$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y_k = \mathrm{argmin}_{y}(\nabla{f(x_k)}^{T} + \frac{1}{2}\beta \|y - x_k\|^2)) \\ z_k=\mathrm{argmin}_{x}(\frac{\beta}{\alpha}\ prox_{\alpha}(x)+\sum_{i=0}^{k}(\frac{i+1}{2}[\nabla{f(x_i)} + \nabla{f(x_i)}^{T}(x - x_i)])) \\ x_{k+1} = \frac{2}{k+1}z_k + \frac{k+1}{k+3}y_k&lt;/script&gt;
 
 &lt;p&gt;This is shown Theorem 2, [Nesterov05] to converge at a rate&lt;/p&gt;
 
-&lt;p&gt;$f(y_k) - f(x^\ast) \le \frac{4 \beta\ prox_{\alpha}(x^\ast)}{\alpha (k+1)(k+2)}$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(y_k) - f(x^\ast) \le \frac{4 \beta\ prox_{\alpha}(x^\ast)}{\alpha (k+1)(k+2)}&lt;/script&gt;
 
 &lt;p&gt;This algorithm is more complicated than the earlier ones Nesterov83, Nesterov88 - especially when compared to the 
 version FISTA uses (see &lt;a href=&quot;http://umayrh.wordpress.com/2014/07/21/accelerating-first-order-methods/#more-756&quot;&gt;previous post&lt;/a&gt;). 
 The only advantage seems to be a somewhat better convergence rate by a factor of α at the cost of solving two minimization 
 problems (instead of one as in FISTA).&lt;/p&gt;
 
-&lt;p&gt;Applying this algorithm to optimize $f \mu{(x)}$ Theorem 3, [Nesterov05] gives $O(1/k$ convergence for the optimal value of $\mu$ 
-since:&lt;/p&gt;
+&lt;p&gt;Applying this algorithm to optimize $f_{\mu}(x)$ Theorem 3, [Nesterov05] gives $O(1/k)$ convergence for the optimal value 
+of $\mu$ since:&lt;/p&gt;
 
-&lt;p&gt;$f(y_k) - f(x^\ast) \le O(1)\mu + \frac{O(1)}{\mu (k+1)^2} + \frac{O(1)}{(k+1)^2}$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(y_k) - f(x^\ast) \le O(1)\mu + \frac{O(1)}{\mu (k+1)^2} + \frac{O(1)}{(k+1)^2}&lt;/script&gt;
 
 &lt;h2 id=&quot;nesterovs-algorithm&quot;&gt;Nesterov’s Algorithm&lt;/h2&gt;
 
 &lt;p&gt;[Becker09] call their application of [Nesterov05] to $L_1$ regularization, NESTA. They show that:&lt;/p&gt;
 
 &lt;p&gt;(1) Optimizing over the convex conjugate of $L_1$ norm when combined with an appropriate proximal function yields a simple, 
-  well-known function called the &lt;a href=&quot;http://en.wikipedia.org/wiki/Huber_loss_function&quot;&gt;Huber loss&lt;/a&gt; function. It is analytic 
-  and can be computed very efficiently, which makes it trivial to implement gradient descent (quite like the 
-  shrinkage-thresholding operation in ISTA/FISTA).&lt;/p&gt;
+well-known function called the &lt;a href=&quot;http://en.wikipedia.org/wiki/Huber_loss_function&quot;&gt;Huber loss&lt;/a&gt; function. It is analytic 
+and can be computed very efficiently, which makes it trivial to implement gradient descent (quite like the 
+shrinkage-thresholding operation in ISTA/FISTA).&lt;/p&gt;
 
-&lt;p&gt;$ |x| = \max_{u \in Q_d} {(u^{T}x)} \mbox{ where } Q_d = {u : |u|_{\infty} \le 1}$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\|x\| = \max_{u \in Q_d} \{(u^{T}x)\} \mbox{ where } Q_d = \{u : \|u\|_{\infty} \le 1\}&lt;/script&gt;
 
-&lt;p&gt;Choosing $prox \alpha{(u)}$ to be the squared Euclidean distance with $\alpha = 1$ (cf. Section 4.2, [Nesterov05]),&lt;/p&gt;
+&lt;p&gt;Choosing $prox_{\alpha}(u)$ to be the squared Euclidean distance with $\alpha = 1$ (cf. Section 4.2, [Nesterov05]),&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$f_{\mu}(x) = \max_{u \in Q_d}{(u^{T}x) - \frac{\mu}{2}|u|_2^2} = \begin{cases}\frac{x^2}{2\mu}, &amp;amp;&lt;/td&gt;
-      &lt;td&gt;x&lt;/td&gt;
-      &lt;td&gt;&amp;lt; \mu \&lt;/td&gt;
-      &lt;td&gt;x&lt;/td&gt;
-      &lt;td&gt;- \frac{\mu}{2}, &amp;amp; otherwise\end{cases} \ \nabla{f(x)[i]} = \begin{cases}\frac{x[i]}{\mu}, &amp;amp;&lt;/td&gt;
-      &lt;td&gt;x[i]&lt;/td&gt;
-      &lt;td&gt;&amp;lt; \mu \ sgn(x[i]), &amp;amp;otherwise\end{cases}$&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;$f_{\mu}(x) = \max_{u \in Q_d}{(u^{T}x) - \frac{\mu}{2}|u|_2^2} = \begin{cases}\frac{x^2}{2\mu}, &amp;amp; |x| &amp;lt; \mu \ |x| - \frac{\mu}{2}, &amp;amp; otherwise\end{cases} $&lt;/p&gt;
+
+&lt;p&gt;$\nabla{f(x)[i]} = \begin{cases}\frac{x[i]}{\mu}, &amp;amp; |x[i]| &amp;lt; \mu \ sgn(x[i]), &amp;amp; otherwise\end{cases}$&lt;/p&gt;
 
 &lt;p&gt;(2) $y_k$ and $z_k$ updates in the original algorithm need to be modified taking into account the $L_2$ constraint. This is 
-  done using the Lagrangian form of each minimization that, under certain assumptions, allows expressing Lagrangian 
-  variables in terms of $\epsilon$.&lt;/p&gt;
+done using the Lagrangian form of each minimization that, under certain assumptions, allows expressing Lagrangian 
+variables in terms of $\epsilon$.&lt;/p&gt;
 
 &lt;p&gt;(3) Another interesting idea is the use of “continuation.” Starting with a large value of the smoothing parameter and 
-  multiplicatively decreasing after each iteration helps converge more quickly (although the theoretical convergence rate 
-  stays the same).&lt;/p&gt;
+multiplicatively decreasing after each iteration helps converge more quickly (although the theoretical convergence rate 
+stays the same).&lt;/p&gt;
 
 &lt;p&gt;Here’s R code for the unconstrained version of NESTA based on FISTA’s version of accelerated gradient descent:&lt;/p&gt;
 
@@ -1622,7 +1621,7 @@ since:&lt;/p&gt;
 &lt;h2 id=&quot;postscript-02092014&quot;&gt;Postscript 02/09/2014&lt;/h2&gt;
 
 &lt;p&gt;Building on the message-passing (aka belief propagation) algorithms introduced in [Donoho09], [Mousavi13] improve 
-the convergence rate of iterative-shrinkage thresholding algorithm (ISTA) to O(e-t). This was made possible by finding 
+the convergence rate of iterative-shrinkage thresholding algorithm (ISTA) to $O(e^{-t})$. This was made possible by finding 
 the optimal values of the regularization parameter, λ, at each iteration under the assumption of Gaussian error 
 distribution (which is probably why it escapes the upper-bounds for first-order methods).&lt;/p&gt;
 
@@ -1651,19 +1650,16 @@ distribution (which is probably why it escapes the upper-bounds for first-order 
 &lt;h2 id=&quot;implementations&quot;&gt;Implementations&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;http://web.stanford.edu/~boyd/papers/prox_algs/lasso.html&lt;/li&gt;
-  &lt;li&gt;https://github.com/gpeyre/numerical-tours/tree/master/matlab/solutions&lt;/li&gt;
-  &lt;li&gt;https://www.ceremade.dauphine.fr/~peyre/numerical-tour/tours/optim_4_fb/#54&lt;/li&gt;
-  &lt;li&gt;http://www.caam.rice.edu/~optimization/disparse/LASSO/FISTA/pFistaLasso.html&lt;/li&gt;
-  &lt;li&gt;http://www.mathworks.com/matlabcentral/fileexchange/16204-toolbox-sparse-optmization/content/toolbox_optim/perform_fb.m&lt;/li&gt;
-  &lt;li&gt;http://slipguru.disi.unige.it/Software/L1L2Py/algorithms.html&lt;/li&gt;
-  &lt;li&gt;http://www.eecs.berkeley.edu/~yang/software/l1benchmark/&lt;/li&gt;
-  &lt;li&gt;http://www.ece.rice.edu/~tag7/Tom_Goldstein/CGIST.html&lt;/li&gt;
-  &lt;li&gt;http://users.ece.gatech.edu/%7Esasif/index.html 
-* https://www.ceremade.dauphine.fr/~peyre/numerical-tour/ 
-* http://www.mit.edu/~dimitrib/PTseng/papers/apg_alg.m 
-* http://www.ece.rice.edu/~tag7/Tom_Goldstein/CGIST.html 
-* http://www.math.ucla.edu/~wotaoyin/software.html&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.stanford.edu/~boyd/papers/prox_algs/lasso.html&quot;&gt;Stanford, LASSO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.caam.rice.edu/~optimization/disparse/LASSO/FISTA/pFistaLasso.html&quot;&gt;Rice, LASSO-FISTA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/slipguru/l1l2py&quot;&gt;Genoa, L1-L2 in Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.eecs.berkeley.edu/~yang/software/l1benchmark/&quot;&gt;UCB, L1 Benchmark&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ece.rice.edu/~tag7/Tom_Goldstein/CGIST.html&quot;&gt;Rice, CGIST&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mit.edu/~dimitrib/PTseng/papers/apg_alg.m&quot;&gt;MIT, Approx. Proximal Gradient&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.math.ucla.edu/~wotaoyin/software.html&quot;&gt;UCLA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mathworks.com/matlabcentral/fileexchange/16204-toolbox-sparse-optmization/content/toolbox_optim/perform_fb.m&quot;&gt;MATLAB, Optim Toolbox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gpeyre/numerical-tours/tree/master/matlab/solutions&quot;&gt;Numerical algorithms in MATLAB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.numerical-tours.com&quot;&gt;Numerical Tours&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 24 Jul 2014 00:00:00 -0700</pubDate>
