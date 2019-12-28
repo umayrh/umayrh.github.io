@@ -3,7 +3,7 @@ layout: post
 title: "Obituaries: Herbert Scarf (1930 - 2015)"
 date: "2015-12-06"
 description:
-image: /assets/images/screen-shot-2016-10-27-at-10-31-39-am.png
+image: /assets/images/scarf-230.jpg
 author: Umayr Hassan
 tags:
 - Obit
