@@ -47,6 +47,7 @@ private static Result powerSetMethod(int size, Map<Integer, BitSet> adjacent, in
      return new Result(maxSetSum, maxSetCount);
  }
 ```
+
 Yet, as we will see, it is still a simple and useful method for enumerating all sets if n is small.
 
 A faster way would be to start with the set of all nodes and, in each iteration, check for independence. If the set 

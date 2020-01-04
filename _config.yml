@@ -23,6 +23,8 @@ social:
     url: https://github.com/umayrh
   - name: gitlab
     url: https://gitlab.com/umayrh
+  - name: wordpress
+    url: https://umayrh.wordpress.com
 
 # Contact settings
 contact_img: /assets/images/form_contact.jpg
@@ -67,6 +69,7 @@ autopages:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
