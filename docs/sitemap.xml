@@ -177,6 +177,10 @@
 <lastmod>2017-08-18T00:00:00-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/01/11/like-as-not/</loc>
+<lastmod>2020-01-11T00:00:00-08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
@@ -295,5 +299,11 @@
 </url>
 <url>
 <loc>http://localhost:4000/tag/linear-systems/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/systems/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/architecture/</loc>
 </url>
 </urlset>
