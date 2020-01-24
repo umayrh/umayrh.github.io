@@ -21,7 +21,7 @@ is an open-ended, self-organizing catalog of catalogs, categories, associations,
 * Type 3: two apparently unconnected meanings are given simultaneously
 * Type 4: alternative meanings combine to make clear a complicated state of mind in the author
 * Type 5: a fortunate confusion
-* Type 6: what is said is contradictory or irrelevant  and the reader is forced to inevnt interpretations  
+* Type 6: what is said is contradictory or irrelevant  and the reader is forced to invent interpretations  
 * Type 7: full contradiction, marking a division in the author's mind
 
 (W. Empson, 1949.)
@@ -66,7 +66,7 @@ T. H. Nelson in [A File Structure for The Complex, The Changing and the Indeterm
 * "capacity for intricate and idiosyncratic arrangements, total modifiability, undecided alternatives, and thorough internal documentation"
 * "acts like a multifarious, polymorphic, many-dimensional, infinite blackboard"
 * "card file, notebook, index tabs, edge-punching, file folders, scissors and paste, graphic boards, index-strip frames, Xerox machine and the roll-top desk"
-* "many revision processes before they are finished. Intellectually they are pondere~ juxtaposed, compared, adapted, transposed, and judged; mechanically 
+* "many revision processes before they are finished. Intellectually they are pondered juxtaposed, compared, adapted, transposed, and judged; mechanically 
   they are copied, overwritten with revision markings, rearranged and copied again"
 * "different categories of personal notes, separate drafts, outlines and master indices"
 * "niggling complications, hidden passageways, and lurking, detailed interlocks, restrictions, specializations, provisos"
@@ -84,3 +84,46 @@ T. H. Nelson in [A File Structure for The Complex, The Changing and the Indeterm
 * "Let me introduce the word "hypertext" to mean a body of written or pictorial material interconnected 
   in such a complex way that it could not conveniently be presented or represented on paper."
 
+#### A Palette of Systems Thinking Tools
+
+![Systems Tools](/assets/images/systems-arch-1.png)
+
+
+![Systems Archetypes](/assets/images/system-arch.png)
+
+Daniel Kim, in [System Archetypes 1](https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-I-TRSA01_pk.pdf), 
+somewhat effortlessly combines self-help, managerial/organizational psychology, and cybernetics: 
+
+* "There are at least 10 distinct types of systems thinking tools ... They fall under four broad categories: 
+  brainstorming tools, dynamic thinking tools, structural thinking tools, and computer-based tools."
+* "The Double-Q (QQ) Diagram is based on what is commonly known as a fish- bone or cause-and-effect diagram"
+* "Behavior Over Time (BOT) Diagrams are more than simple line projections— they capture the dynamic relationships among variables."
+* "Causal Loop Diagrams (CLDs) provide a useful way to represent dynamic interrelationships"
+* "System Archetypes is the name given to certain common dynamics that seem to recur in many different settings."
+* "Graphical Function Diagrams, Structure-Behavior Pairs, and Policy Structure Diagrams can be viewed as the building blocks for computer models."
+
+#### Peirce’s Recursive Trichotomies 
+
+![Systems Tools](/assets/images/Ten-classes-of-signs.png)
+
+C. S. Perice reminds me of Leibniz though Peirce's monadology is trivalent semiotics. T. Nellhaus discusses the 
+self-branching process of Perice's categories in an interesting [post](http://tobinnellhaus.com/2018/09/peirces-recursive-trichotomies/#Note%201):
+ 
+* "'the map itself will be portrayed in the map, and in this map of the map everything on the soil of the 
+  country can be discerned, including the map itself with the map of the map within its boundary. Thus there 
+  will be within the map a map of the map, and within that a map of the map of the map and so on ad infinitum'. 
+  (EP 2.162)"
+* "Peirce next applies the concepts of the categories and their degenerate forms to semiotics, tying Firstness 
+  to icons, Secondness to indexes, and Thirdness to symbols, and then elaborating on the iconic element of 
+  indexes and the iconic and indexical elements of symbols. He adds, significantly, that “The Symbol, or 
+  relatively genuine form of Representamen, divides by trichotomy into the Term, the Proposition, and 
+  the Argument” (EP 2.164)."
+* "in “Nomenclature and Divisions of Triadic Relations, as Far as They Are Determined,” he presented the theory 
+  that there are three trichotomies: (1) Qualisigns, Sinsigns, and Legisigns; (2) Icons, Indexes, and Symbols; 
+  and (3) Rhemes, Dicents, and Arguments."
+* "If three recursions leads to ten classes of signs, then three recursions of three recursions, for a total of 
+  ten recursions (hence ten trichotomies) would mean there are 66 types of signs—which was his claim (EP 2.481)."
+* "'the six trichotomies, instead of determining 729 classes of signs, as they would if they were independent, 
+  only yield 28 classes; and if, as I strongly opine (not to say almost prove) there are four other trichotomies 
+  of signs of the same order of importance, instead of making 59,049 classes, these will only come to 66.' (EP 2.481)"
+* 
