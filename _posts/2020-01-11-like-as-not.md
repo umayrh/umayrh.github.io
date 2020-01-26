@@ -86,9 +86,6 @@ T. H. Nelson in [A File Structure for The Complex, The Changing and the Indeterm
 
 #### A Palette of Systems Thinking Tools
 
-![Systems Tools](/assets/images/systems-arch-1.png)
-
-
 ![Systems Archetypes](/assets/images/system-arch.png)
 
 Daniel Kim, in [System Archetypes 1](https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-I-TRSA01_pk.pdf), 
@@ -104,7 +101,7 @@ somewhat effortlessly combines self-help, managerial/organizational psychology, 
 
 #### Peirce’s Recursive Trichotomies 
 
-![Systems Tools](/assets/images/Ten-classes-of-signs.png)
+![Peirce-signs](/assets/images/Ten-classes-of-signs.png)
 
 C. S. Perice reminds me of Leibniz though Peirce's monadology is trivalent semiotics. T. Nellhaus discusses the 
 self-branching process of Perice's categories in an interesting [post](http://tobinnellhaus.com/2018/09/peirces-recursive-trichotomies/#Note%201):
@@ -126,4 +123,58 @@ self-branching process of Perice's categories in an interesting [post](http://to
 * "'the six trichotomies, instead of determining 729 classes of signs, as they would if they were independent, 
   only yield 28 classes; and if, as I strongly opine (not to say almost prove) there are four other trichotomies 
   of signs of the same order of importance, instead of making 59,049 classes, these will only come to 66.' (EP 2.481)"
-* 
+
+#### The Seven Tools of Causal Inference.
+
+![Causal Questions](/assets/images/causal-questions.png)
+
+Judea Pearl's [paper](https://ftp.cs.ucla.edu/pub/stat_ser/r481.pdf) establishes a causal hierarchy (association, 
+intervention, counterfactual), and outlines seven tasks accomplished by the Structural Causal Models (composed of 
+graphical models, structural equations, and a couterfactual and interventional calculus):
+  * Encoding Causal Assumptions – Transparency and Testability
+  * Do-calculus and the control of confounding 
+  * The Algorithmization of Counterfactuals 
+  * Mediation Analysis and the Assessment of Direct and Indirect Effects 
+  * Adaptability, External Validity and Sample Selection Bias
+  * Recovering from Missing Data
+  * Causal Discovery
+
+#### Performance, Observation, Methodology
+
+![Observability](/assets/images/linux_observability_tools.png)
+
+In laying out his argument for [Performance Analysis Methodology](http://www.brendangregg.com/methodology.html), Brendan 
+Gregg calls for understanding system behavior more efficiently by mapping out the architecture of a system, tagging 
+substructures with observational tools, and relating observations using architectural constraints.
+
+* Anti-Methodologies:
+  * Blame-Someone-Else
+  * Streetlight
+  * Drunk Man
+  * Random Change
+  * Passive Benchmarking
+  * Traffic Light
+* Methodologies
+  * Ad Hoc Checklist
+  * Problem Statement
+  * Read-The-Fine-Manual (RTFM)
+  * Scientific Method
+  * Observe-Orient-Decide-Act Loop
+  * Workload Characterization
+  * Drill-Down Analysis
+  * Process of Elimination
+  * Time Division
+  * 5 Whys Performance
+  * By-Layer Method
+  * Tools Method
+  * Utilization-Saturation-Errors (USE)
+  * CPU Profile
+  * Off-CPU Analysis
+  * Stack Profile
+  * Thread State Analysis
+  * Active Benchmarking
+  * Method R
+  * Performance Evaluation
+  * Capacity Planning
+  * Performance Mantras
+  * Benchmarking Checklist

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Jan 2020 00:54:35 -0800</pubDate>
-    <lastBuildDate>Fri, 24 Jan 2020 00:54:35 -0800</lastBuildDate>
+    <pubDate>Sun, 26 Jan 2020 02:07:35 -0800</pubDate>
+    <lastBuildDate>Sun, 26 Jan 2020 02:07:35 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -97,8 +97,6 @@ in such a complex way that it could not conveniently be presented or represented
 
 &lt;h4 id=&quot;a-palette-of-systems-thinking-tools&quot;&gt;A Palette of Systems Thinking Tools&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/systems-arch-1.png&quot; alt=&quot;Systems Tools&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&quot;/assets/images/system-arch.png&quot; alt=&quot;Systems Archetypes&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Daniel Kim, in &lt;a href=&quot;https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-I-TRSA01_pk.pdf&quot;&gt;System Archetypes 1&lt;/a&gt;, 
@@ -116,7 +114,7 @@ brainstorming tools, dynamic thinking tools, structural thinking tools, and comp
 
 &lt;h4 id=&quot;peirces-recursive-trichotomies&quot;&gt;Peirce’s Recursive Trichotomies&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/Ten-classes-of-signs.png&quot; alt=&quot;Systems Tools&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/Ten-classes-of-signs.png&quot; alt=&quot;Peirce-signs&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;C. S. Perice reminds me of Leibniz though Peirce’s monadology is trivalent semiotics. T. Nellhaus discusses the 
 self-branching process of Perice’s categories in an interesting &lt;a href=&quot;http://tobinnellhaus.com/2018/09/peirces-recursive-trichotomies/#Note%201&quot;&gt;post&lt;/a&gt;:&lt;/p&gt;
@@ -139,7 +137,71 @@ ten recursions (hence ten trichotomies) would mean there are 66 types of signs�
   &lt;li&gt;“‘the six trichotomies, instead of determining 729 classes of signs, as they would if they were independent, 
 only yield 28 classes; and if, as I strongly opine (not to say almost prove) there are four other trichotomies 
 of signs of the same order of importance, instead of making 59,049 classes, these will only come to 66.’ (EP 2.481)”&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;the-seven-tools-of-causal-inference&quot;&gt;The Seven Tools of Causal Inference.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/causal-questions.png&quot; alt=&quot;Causal Questions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Judea Pearl’s &lt;a href=&quot;https://ftp.cs.ucla.edu/pub/stat_ser/r481.pdf&quot;&gt;paper&lt;/a&gt; establishes a causal hierarchy (association, 
+intervention, counterfactual), and outlines seven tasks accomplished by the Structural Causal Models (composed of 
+graphical models, structural equations, and a couterfactual and interventional calculus):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Encoding Causal Assumptions – Transparency and Testability&lt;/li&gt;
+  &lt;li&gt;Do-calculus and the control of confounding&lt;/li&gt;
+  &lt;li&gt;The Algorithmization of Counterfactuals&lt;/li&gt;
+  &lt;li&gt;Mediation Analysis and the Assessment of Direct and Indirect Effects&lt;/li&gt;
+  &lt;li&gt;Adaptability, External Validity and Sample Selection Bias&lt;/li&gt;
+  &lt;li&gt;Recovering from Missing Data&lt;/li&gt;
+  &lt;li&gt;Causal Discovery&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;performance-observation-methodology&quot;&gt;Performance, Observation, Methodology&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/linux_observability_tools.png&quot; alt=&quot;Observability&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In laying out his argument for &lt;a href=&quot;http://www.brendangregg.com/methodology.html&quot;&gt;Performance Analysis Methodology&lt;/a&gt;, Brendan 
+Gregg calls for understanding system behavior more efficiently by mapping out the architecture of a system, tagging 
+substructures with observational tools, and relating observations using architectural constraints.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Anti-Methodologies:
+    &lt;ul&gt;
+      &lt;li&gt;Blame-Someone-Else&lt;/li&gt;
+      &lt;li&gt;Streetlight&lt;/li&gt;
+      &lt;li&gt;Drunk Man&lt;/li&gt;
+      &lt;li&gt;Random Change&lt;/li&gt;
+      &lt;li&gt;Passive Benchmarking&lt;/li&gt;
+      &lt;li&gt;Traffic Light&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Methodologies
+    &lt;ul&gt;
+      &lt;li&gt;Ad Hoc Checklist&lt;/li&gt;
+      &lt;li&gt;Problem Statement&lt;/li&gt;
+      &lt;li&gt;Read-The-Fine-Manual (RTFM)&lt;/li&gt;
+      &lt;li&gt;Scientific Method&lt;/li&gt;
+      &lt;li&gt;Observe-Orient-Decide-Act Loop&lt;/li&gt;
+      &lt;li&gt;Workload Characterization&lt;/li&gt;
+      &lt;li&gt;Drill-Down Analysis&lt;/li&gt;
+      &lt;li&gt;Process of Elimination&lt;/li&gt;
+      &lt;li&gt;Time Division&lt;/li&gt;
+      &lt;li&gt;5 Whys Performance&lt;/li&gt;
+      &lt;li&gt;By-Layer Method&lt;/li&gt;
+      &lt;li&gt;Tools Method&lt;/li&gt;
+      &lt;li&gt;Utilization-Saturation-Errors (USE)&lt;/li&gt;
+      &lt;li&gt;CPU Profile&lt;/li&gt;
+      &lt;li&gt;Off-CPU Analysis&lt;/li&gt;
+      &lt;li&gt;Stack Profile&lt;/li&gt;
+      &lt;li&gt;Thread State Analysis&lt;/li&gt;
+      &lt;li&gt;Active Benchmarking&lt;/li&gt;
+      &lt;li&gt;Method R&lt;/li&gt;
+      &lt;li&gt;Performance Evaluation&lt;/li&gt;
+      &lt;li&gt;Capacity Planning&lt;/li&gt;
+      &lt;li&gt;Performance Mantras&lt;/li&gt;
+      &lt;li&gt;Benchmarking Checklist&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 11 Jan 2020 00:00:00 -0800</pubDate>
