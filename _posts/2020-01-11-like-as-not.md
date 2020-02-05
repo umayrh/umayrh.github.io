@@ -84,24 +84,9 @@ T. H. Nelson in [A File Structure for The Complex, The Changing and the Indeterm
 * "Let me introduce the word "hypertext" to mean a body of written or pictorial material interconnected 
   in such a complex way that it could not conveniently be presented or represented on paper."
 
-#### A Palette of Systems Thinking Tools
-
-![Systems Archetypes](/assets/images/system-arch.png)
-
-Daniel Kim, in [System Archetypes 1](https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-I-TRSA01_pk.pdf), 
-somewhat effortlessly combines self-help, managerial/organizational psychology, and cybernetics: 
-
-* "There are at least 10 distinct types of systems thinking tools ... They fall under four broad categories: 
-  brainstorming tools, dynamic thinking tools, structural thinking tools, and computer-based tools."
-* "The Double-Q (QQ) Diagram is based on what is commonly known as a fish- bone or cause-and-effect diagram"
-* "Behavior Over Time (BOT) Diagrams are more than simple line projections— they capture the dynamic relationships among variables."
-* "Causal Loop Diagrams (CLDs) provide a useful way to represent dynamic interrelationships"
-* "System Archetypes is the name given to certain common dynamics that seem to recur in many different settings."
-* "Graphical Function Diagrams, Structure-Behavior Pairs, and Policy Structure Diagrams can be viewed as the building blocks for computer models."
-
 #### Peirce’s Recursive Trichotomies 
 
-![Peirce-signs](/assets/images/Ten-classes-of-signs.png)
+![Classes of Signs](/assets/images/Ten-classes-of-signs.png)
 
 C. S. Perice reminds me of Leibniz though Peirce's monadology is trivalent semiotics. T. Nellhaus discusses the 
 self-branching process of Perice's categories in an interesting [post](http://tobinnellhaus.com/2018/09/peirces-recursive-trichotomies/#Note%201):
@@ -131,13 +116,13 @@ self-branching process of Perice's categories in an interesting [post](http://to
 Judea Pearl's [paper](https://ftp.cs.ucla.edu/pub/stat_ser/r481.pdf) establishes a causal hierarchy (association, 
 intervention, counterfactual), and outlines seven tasks accomplished by the Structural Causal Models (composed of 
 graphical models, structural equations, and a couterfactual and interventional calculus):
-  * Encoding Causal Assumptions – Transparency and Testability
-  * Do-calculus and the control of confounding 
-  * The Algorithmization of Counterfactuals 
-  * Mediation Analysis and the Assessment of Direct and Indirect Effects 
-  * Adaptability, External Validity and Sample Selection Bias
-  * Recovering from Missing Data
-  * Causal Discovery
+  * Encoding causal assumptions
+  * The control of confounding 
+  * The algorithmization of counterfactuals 
+  * The assessment of direct and indirect effects 
+  * Robustness to change in environmental conditions
+  * Recovering from missing data
+  * Causal discovery
 
 #### Performance, Observation, Methodology
 
@@ -160,21 +145,10 @@ substructures with observational tools, and relating observations using architec
   * Read-The-Fine-Manual (RTFM)
   * Scientific Method
   * Observe-Orient-Decide-Act Loop
-  * Workload Characterization
   * Drill-Down Analysis
   * Process of Elimination
   * Time Division
   * 5 Whys Performance
   * By-Layer Method
   * Tools Method
-  * Utilization-Saturation-Errors (USE)
-  * CPU Profile
-  * Off-CPU Analysis
-  * Stack Profile
-  * Thread State Analysis
-  * Active Benchmarking
-  * Method R
-  * Performance Evaluation
-  * Capacity Planning
-  * Performance Mantras
-  * Benchmarking Checklist
+

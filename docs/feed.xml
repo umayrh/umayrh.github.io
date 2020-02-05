@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Jan 2020 02:07:35 -0800</pubDate>
-    <lastBuildDate>Sun, 26 Jan 2020 02:07:35 -0800</lastBuildDate>
+    <pubDate>Wed, 05 Feb 2020 00:54:29 -0800</pubDate>
+    <lastBuildDate>Wed, 05 Feb 2020 00:54:29 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -95,26 +95,9 @@ treaties, scholarly fields and history, and the mixture of trail with categorica
 in such a complex way that it could not conveniently be presented or represented on paper.”&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;a-palette-of-systems-thinking-tools&quot;&gt;A Palette of Systems Thinking Tools&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/system-arch.png&quot; alt=&quot;Systems Archetypes&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Daniel Kim, in &lt;a href=&quot;https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-I-TRSA01_pk.pdf&quot;&gt;System Archetypes 1&lt;/a&gt;, 
-somewhat effortlessly combines self-help, managerial/organizational psychology, and cybernetics:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“There are at least 10 distinct types of systems thinking tools … They fall under four broad categories: 
-brainstorming tools, dynamic thinking tools, structural thinking tools, and computer-based tools.”&lt;/li&gt;
-  &lt;li&gt;“The Double-Q (QQ) Diagram is based on what is commonly known as a fish- bone or cause-and-effect diagram”&lt;/li&gt;
-  &lt;li&gt;“Behavior Over Time (BOT) Diagrams are more than simple line projections— they capture the dynamic relationships among variables.”&lt;/li&gt;
-  &lt;li&gt;“Causal Loop Diagrams (CLDs) provide a useful way to represent dynamic interrelationships”&lt;/li&gt;
-  &lt;li&gt;“System Archetypes is the name given to certain common dynamics that seem to recur in many different settings.”&lt;/li&gt;
-  &lt;li&gt;“Graphical Function Diagrams, Structure-Behavior Pairs, and Policy Structure Diagrams can be viewed as the building blocks for computer models.”&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h4 id=&quot;peirces-recursive-trichotomies&quot;&gt;Peirce’s Recursive Trichotomies&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/Ten-classes-of-signs.png&quot; alt=&quot;Peirce-signs&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/Ten-classes-of-signs.png&quot; alt=&quot;Classes of Signs&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;C. S. Perice reminds me of Leibniz though Peirce’s monadology is trivalent semiotics. T. Nellhaus discusses the 
 self-branching process of Perice’s categories in an interesting &lt;a href=&quot;http://tobinnellhaus.com/2018/09/peirces-recursive-trichotomies/#Note%201&quot;&gt;post&lt;/a&gt;:&lt;/p&gt;
@@ -147,13 +130,13 @@ of signs of the same order of importance, instead of making 59,049 classes, thes
 intervention, counterfactual), and outlines seven tasks accomplished by the Structural Causal Models (composed of 
 graphical models, structural equations, and a couterfactual and interventional calculus):&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Encoding Causal Assumptions – Transparency and Testability&lt;/li&gt;
-  &lt;li&gt;Do-calculus and the control of confounding&lt;/li&gt;
-  &lt;li&gt;The Algorithmization of Counterfactuals&lt;/li&gt;
-  &lt;li&gt;Mediation Analysis and the Assessment of Direct and Indirect Effects&lt;/li&gt;
-  &lt;li&gt;Adaptability, External Validity and Sample Selection Bias&lt;/li&gt;
-  &lt;li&gt;Recovering from Missing Data&lt;/li&gt;
-  &lt;li&gt;Causal Discovery&lt;/li&gt;
+  &lt;li&gt;Encoding causal assumptions&lt;/li&gt;
+  &lt;li&gt;The control of confounding&lt;/li&gt;
+  &lt;li&gt;The algorithmization of counterfactuals&lt;/li&gt;
+  &lt;li&gt;The assessment of direct and indirect effects&lt;/li&gt;
+  &lt;li&gt;Robustness to change in environmental conditions&lt;/li&gt;
+  &lt;li&gt;Recovering from missing data&lt;/li&gt;
+  &lt;li&gt;Causal discovery&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;performance-observation-methodology&quot;&gt;Performance, Observation, Methodology&lt;/h4&gt;
@@ -182,27 +165,16 @@ substructures with observational tools, and relating observations using architec
       &lt;li&gt;Read-The-Fine-Manual (RTFM)&lt;/li&gt;
       &lt;li&gt;Scientific Method&lt;/li&gt;
       &lt;li&gt;Observe-Orient-Decide-Act Loop&lt;/li&gt;
-      &lt;li&gt;Workload Characterization&lt;/li&gt;
       &lt;li&gt;Drill-Down Analysis&lt;/li&gt;
       &lt;li&gt;Process of Elimination&lt;/li&gt;
       &lt;li&gt;Time Division&lt;/li&gt;
       &lt;li&gt;5 Whys Performance&lt;/li&gt;
       &lt;li&gt;By-Layer Method&lt;/li&gt;
       &lt;li&gt;Tools Method&lt;/li&gt;
-      &lt;li&gt;Utilization-Saturation-Errors (USE)&lt;/li&gt;
-      &lt;li&gt;CPU Profile&lt;/li&gt;
-      &lt;li&gt;Off-CPU Analysis&lt;/li&gt;
-      &lt;li&gt;Stack Profile&lt;/li&gt;
-      &lt;li&gt;Thread State Analysis&lt;/li&gt;
-      &lt;li&gt;Active Benchmarking&lt;/li&gt;
-      &lt;li&gt;Method R&lt;/li&gt;
-      &lt;li&gt;Performance Evaluation&lt;/li&gt;
-      &lt;li&gt;Capacity Planning&lt;/li&gt;
-      &lt;li&gt;Performance Mantras&lt;/li&gt;
-      &lt;li&gt;Benchmarking Checklist&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
 </description>
         <pubDate>Sat, 11 Jan 2020 00:00:00 -0800</pubDate>
         <link>http://localhost:4000/2020/01/11/like-as-not/</link>
