@@ -181,6 +181,10 @@
 <lastmod>2020-01-11T00:00:00-08:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2021/01/17/the-art-of-naming/</loc>
+<lastmod>2021-01-17T00:00:00-08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
@@ -305,5 +309,14 @@
 </url>
 <url>
 <loc>http://localhost:4000/tag/architecture/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/nomenclature/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/category/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/taxonomy/</loc>
 </url>
 </urlset>

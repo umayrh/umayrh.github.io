@@ -35,7 +35,6 @@ GEM
       sass (~> 3.4)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-tagslist (1.1.1)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (1.17.0)
@@ -70,8 +69,7 @@ DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-paginate-v2
   jekyll-sitemap
-  jekyll-tagslist
   tzinfo-data
 
 BUNDLED WITH
-   1.17.2
+   2.1.2

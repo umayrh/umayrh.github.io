@@ -6,9 +6,187 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Feb 2020 00:54:29 -0800</pubDate>
-    <lastBuildDate>Wed, 05 Feb 2020 00:54:29 -0800</lastBuildDate>
+    <pubDate>Thu, 21 Jan 2021 12:33:16 -0800</pubDate>
+    <lastBuildDate>Thu, 21 Jan 2021 12:33:16 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>On Naming</title>
+        <description>&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;“A proper name, when one meets with it for the first time, is existentially connected with some 
+percept or other equivalent individual knowledge of the individual it names. It is then, and 
+then only, a genuine Index. The next time one meets with it, one regards it as an Icon of that 
+Index. The habitual acquaintance with it having been acquired, it becomes a Symbol whose 
+Interpretant represents it as an Icon of an Index of the Individual named.”&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;-C. S. Peirce. Speculative Grammar: Propositions. 1903.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I hope these running notes extract some problems in knowledge creation, recognition, and organization; and summarize 
+insights from Michael Ohl’s book, “The Art of Naming” (translated by E. Lauffer, published by MIT Press). Ohl is
+a professor, and a biologist at the Natural History Museum of Berlin.&lt;/p&gt;
+
+&lt;h2 id=&quot;prologue-the-beauty-of-names&quot;&gt;Prologue: The Beauty of Names&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Each one [creature] has a name, … and it is through naming that it becomes part of our perception
+of nature.” Problem: How may changing nomenclature for natural beings indicate a change in “our” perception
+of nature?&lt;/li&gt;
+  &lt;li&gt;“A species name conveys authority and knowledge, structuring the living world according to science. A scientific
+name is therefore a culminating point of a range of impressions, knowledge and interpretations.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hitler-and-the-fledermaus&quot;&gt;Hitler and the &lt;em&gt;Fledermaus&lt;/em&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The German words for the shrew and the bat are &lt;em&gt;Spitzmaus&lt;/em&gt; and &lt;em&gt;Fledermaus&lt;/em&gt;. These are both compound words
+formed by joining &lt;em&gt;substantives&lt;/em&gt;. The second element, “maus”, is the &lt;em&gt;base&lt;/em&gt; or the &lt;em&gt;determinatum&lt;/em&gt; and “determines
+both the denotation and the grammatical gender of the compound.” The first element is the &lt;em&gt;determinative&lt;/em&gt; or
+&lt;em&gt;determinant&lt;/em&gt;, which may be multiple words, more precisely qualifies the base. Example in English: mockingbird.&lt;/li&gt;
+  &lt;li&gt;The task of systematic biology: find invariants that can most reliably group related creature together.
+    &lt;ul&gt;
+      &lt;li&gt;Since appearance may be insufficient, use anatomical features of the skull and/or teeth. This has the
+added advantage of being able to incorporate fossils.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“Groups of species are described as ‘natural’ when evidence exists of an ancestor common only to them; systems
+of organisms comprised solely of such groups are designated in the same way. These stand in contrast to artificial
+groups and artificial systems, in which the species’ linkage is based on congruities that can be shown not to have
+emerged from a unique evolutionary change in the most recent common ancestor.”
+    &lt;ul&gt;
+      &lt;li&gt;The classification of creatures, say from Aristotle to Linnaeus to current international organizations, have
+progressed from relying on animal behavior to anatomical dissection to anatomical imaging and now genetics.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A taxonomic problem: “The arthropods, [spiders, insects, crabs] with their rigid exoskeleton and eponymous
+multijointed appendages, are closely related to velvet worms and water bears, two groups of soft-skinned organisms
+with simple, inarticulate legs that don’t seem arthropodic in nature.
+    &lt;ul&gt;
+      &lt;li&gt;Campbell, L. I., Rota-Stabelli, O., Edgecombe, G. D., Marchioro, T., Longhorn, S. J., Telford, M., J., … 
+Pisani, D. (2011). MicroRNAs and phylogenomics resolve the relationship of Tardigrada and suggest that velvet 
+worms are the sister group of Arthropoda. Proceedings of the National Academy of Sciences USA. 108: 15920-15924.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://evolution.berkeley.edu/evolibrary/news/130905_newoldanimal&quot;&gt;A new old animal&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Two possible solutions:
+    &lt;ul&gt;
+      &lt;li&gt;“Velvet worms and water bears are thrown in with the arthropods, thus expanding the semantic field of
+Arthropoda.” Cost: the “old” arthropods will require a new name.&lt;/li&gt;
+      &lt;li&gt;“The old arthropods stay arthropods but acquire a new superordinate name, along with the velvet worms and 
+the water bears.”&lt;/li&gt;
+      &lt;li&gt;The cost of updating knowledge (documentation, pedagogy) seems tacit here, and so remains unqualified.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Since the first solution was adopted by the systematic biology community, the new name was formed by
+placing eu- (Greek prefix, indicating normal, typical, good, beautiful) in front of the old Arthropoda, hence
+Euarthropoda.&lt;/li&gt;
+  &lt;li&gt;How is knowledge organized and created?
+    &lt;ul&gt;
+      &lt;li&gt;International Code of Zoological Nomenclature documents the rules of naming.&lt;/li&gt;
+      &lt;li&gt;International Commission on Zoological Nomenclature edits the rules.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Some important classical texts in naming:
+    &lt;ul&gt;
+      &lt;li&gt;Friedrich Kluge. Etymological Lexicon of the German Language.&lt;/li&gt;
+      &lt;li&gt;Helmut Carl. German Plant and Animal Names: Explanation and Linguistic Order.&lt;/li&gt;
+      &lt;li&gt;Hugo Palander. Old High German Animal Names, Volume 1: The Names of Mammals. 1899.&lt;/li&gt;
+      &lt;li&gt;Hugo Suolhati. German Bird Names: A Linguistic Study. 1909.&lt;/li&gt;
+      &lt;li&gt;Theodore of Canterbury. Leviticus Apostils. ~700.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;An example of etymology:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Pferd&lt;/em&gt;, horse -&amp;gt; &lt;em&gt;pfarifit&lt;/em&gt; (Old High German) -&amp;gt; &lt;em&gt;pferfrit&lt;/em&gt;, &lt;em&gt;pharit&lt;/em&gt;, &lt;em&gt;pfert&lt;/em&gt; (Middle High German) …
+-&amp;gt; &lt;em&gt;paraveredus&lt;/em&gt; (Medieval Latin) … -&amp;gt; &lt;em&gt;gorwydd&lt;/em&gt; (Welsh) -&amp;gt; &lt;em&gt;reda&lt;/em&gt; (Celtic)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How were the linguistic creations reached for the animal names in use today?
+    &lt;ul&gt;
+      &lt;li&gt;Onomatopoeia: “the mimicry of sounds plays the biggest role in the animal names that have arisen this way.”
+        &lt;ul&gt;
+          &lt;li&gt;Examples: cuckoo, chickadee, towhee, bobwhite, bobolink, whip-poor-will, Chuck-will’s-widow.&lt;/li&gt;
+          &lt;li&gt;“&lt;em&gt;Mowe&lt;/em&gt; (seagull) is believed to be derived from the Middle High German verb &lt;em&gt;mawen&lt;/em&gt; and the
+Modern Dutch &lt;em&gt;mauwen&lt;/em&gt;, both of which signify the meowing of a cat, meaning that an onomatopoeic
+term has been transferred from one animal to another.”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Loanwords: brought from an animal’s place of origin into English
+        &lt;ul&gt;
+          &lt;li&gt;Examples: axolotl (Mexico), jaguar (South American indigenous), jackal (India), impala (Zulu),
+iguana (Arawak), salamander (Persian), cassowary (kasuari: Malay).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Recombining old words: “base word is qualified through the inclusion of certain features, such as
+geographical origin or special physical traits.”
+        &lt;ul&gt;
+          &lt;li&gt;Examples: Kompassqualle, Wasserspitmaus, Australian snubfin dolphon, Burrunan dolphin.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Example of folk etymology or reanalysis:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;crevise&lt;/em&gt; (Old French) -&amp;gt; &lt;em&gt;ecrevisse&lt;/em&gt; (Modern French) -&amp;gt; crayfish (English) -&amp;gt; craw(l)fish (Louisiana)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Some important modern texts in naming:
+    &lt;ul&gt;
+      &lt;li&gt;National Audobon Society Field Guides.&lt;/li&gt;
+      &lt;li&gt;Bernhard Grzimek. Grzimek’s Animal Life Encyclopedia. 1967.&lt;/li&gt;
+      &lt;li&gt;Mammals of Africa.&lt;/li&gt;
+      &lt;li&gt;Birds of the World: Recommended English Names. 2006.&lt;/li&gt;
+      &lt;li&gt;A Thesaurus of Bird Names: Etymology of European Lexis Through Paradigms. 1998.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Grzimek’s three important linguistic directives for popular presentation of scientific content:
+    &lt;ul&gt;
+      &lt;li&gt;Foreign or technical expressions are to be avoided, or at least reworded using more familiar terms.&lt;/li&gt;
+      &lt;li&gt;Words that may carry a negative or pejorative connotation are to be replaced with corresponding terms
+used for humans.&lt;/li&gt;
+      &lt;li&gt;All the vertebrates, at least, are to have a vernacular name.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The creation of common names for mammals is not governed by any central rulebooks, and so adoption
+may vary. Birds are an exception since there’s been literature on birds since antiquity, and 
+ornithologists - amateur or not - are well-organized. E.g. the Standing Committee on English Names is
+responsible for the official list of English bird names. The International Ornithological Congress (IOC)
+provides a regularly updated catalog of standard English names on www.worldbirdnames.org&lt;/li&gt;
+  &lt;li&gt;Other branches of science face similar issues. From 
+&lt;a href=&quot;https://www.pnas.org/content/118/3/e2025207118?etoc=&quot;&gt;Opinion: Standardizing gene product nomenclature—a call to action&lt;/a&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;The prevalence of function, appearance, and place (locale/geography) in naming: “However, 
+current protein naming systems based on different aspects of structure, 
+function, and cellular localization readily conflict, and they may make less sense if new 
+functions, alternative structures, or novel cellular localizations are discovered.”&lt;/li&gt;
+      &lt;li&gt;The organization of discourse: “Steps to implement an advanced gene product nomenclature system: 
+(i) form a working group consisting of experts from diverse fields, (ii) develop a standardized 
+nomenclature system and usage guidelines, (iii) implement the system, (iv) receive feedback, 
+and (v) improve the standardized nomenclature system and usage guidelines.” 
+&lt;img src=&quot;/assets/images/art-of-naming-fig-1.png&quot; alt=&quot;Fig. 1&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-species-get-their-names&quot;&gt;How Species Get Their Names&lt;/h2&gt;
+&lt;p&gt;…&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Jan 2021 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2021/01/17/the-art-of-naming/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/01/17/the-art-of-naming/</guid>
+        
+        <category>Nomenclature</category>
+        
+        <category>Category</category>
+        
+        <category>Taxonomy</category>
+        
+        
+      </item>
     
       <item>
         <title>Like As Not</title>
