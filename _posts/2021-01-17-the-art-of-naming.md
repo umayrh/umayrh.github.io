@@ -103,17 +103,88 @@ Euarthropoda.
   ornithologists - amateur or not - are well-organized. E.g. the Standing Committee on English Names is
   responsible for the official list of English bird names. The International Ornithological Congress (IOC)
   provides a regularly updated catalog of standard English names on www.worldbirdnames.org
-* Other branches of science face similar issues. From 
-  [Opinion: Standardizing gene product nomenclature—a call to action](https://www.pnas.org/content/118/3/e2025207118?etoc=):
+* The issue of nomenclature governance became prominent recently [[4]](#ref4), leading to the publication of 
+  "Principles for creating a single authoritative list of the world’s species" [[5]](#ref5). The opinion
+  paper uses the following figure to describe the existing process for gathering taxonomic information,
+  and highlight the challenges of decentralized information aggregation. "Thus, whilst there is 
+  already a high degree of collaboration among aggregators, with much sharing of lists (Fig 1), 
+  all the aggregators remain distinct entities. This results in differences among the lists they 
+  propagate, not least because they are updated at different rates. Added to this are the 
+  complications that arise when taxonomic groups have multiple authoritative lists." 
+  The principles are:
+  * the species list must be based on science and free from nontaxonomic considerations and interference, 
+  * governance of the species list must aim for community support and use, 
+  * all decisions about list composition must be transparent, 
+  * the governance of validated lists of species is separate from the governance of the names of taxa, 
+  * governance of lists of accepted species must not constrain academic freedom, 
+  * the set of criteria considered sufficient to recognise species boundaries may appropriately 
+     vary between different taxonomic groups but should be consistent when possible, 
+  * a global list must balance conflicting needs for currency and stability by having archived versions, 
+  * contributors need appropriate recognition, 
+  * list content should be traceable, and 
+  * a global listing process needs both to encompass global diversity and to accommodate local knowledge of that diversity. 
+  ![Fig. 1](/assets/images/art-of-naming-fig-2.png)
+* Other branches of science face similar issues. From [[7]](#ref7):
   * The prevalence of function, appearance, and place (locale/geography) in naming: "However, 
   current protein naming systems based on different aspects of structure, 
   function, and cellular localization readily conflict, and they may make less sense if new 
   functions, alternative structures, or novel cellular localizations are discovered."
   * The organization of discourse: "Steps to implement an advanced gene product nomenclature system: 
-  (i) form a working group consisting of experts from diverse fields, (ii) develop a standardized 
-  nomenclature system and usage guidelines, (iii) implement the system, (iv) receive feedback, 
-  and (v) improve the standardized nomenclature system and usage guidelines." 
-![Fig. 1](/assets/images/art-of-naming-fig-1.png)
+    * form a working group consisting of experts from diverse fields,
+    * develop a standardized nomenclature system and usage guidelines, 
+    * implement the system, 
+    * receive feedback, and 
+    * improve the standardized nomenclature system and usage guidelines." 
+  ![Fig. 2](/assets/images/art-of-naming-fig-1.png)
 
 ## How Species Get Their Names
+* Two constraints for new species: correctness of genus, uniqueness of species. Three ways to achieve this:
+  * Scour taxonomic literature for similar creatures e.g. Biodiversity Heritage Library,
+  * Examine the "type specimen", i.e. individual creatures that serve(d) as basis for species name,
+    * The individual type specimen is also called the "holotype"; others, "paratype" 
+  * Examine the "unidentified material" to be able to discern between intra- and inter-species variability.
+* Name availability and validity:
+  * The name must use the Latin alphabet though the description may be in any language and script.
+  * The name should be traceable to a specific language.
+  * The name must be a binomial, and the generic and species name must both have at least two characters.
+* "A species name usually falls into one of the following word groups:
+  * An adjective or participle in the nominative singular case. Most species name belong to this
+    group: _Echinus esculentus_, the edible sea urchin, and the _Somatochlora metallica_, the brilliant
+    emerald, a dragonfly.
+  * A noun in the nominative singular case that is in apposition to the genus name: _Cercopithecus diana_,
+    or Diana monkey.
+  * A noun in the genitive case: _Myotis daubentonii_, Daubenton's bat, and _Diplolepis rosae_, the
+    rose bedeguar gall."
+* Books on naming:
+  * F. C. Werner. Wortelemente lateinisch-griechischer Fachausdrücke in den biologischen Wissenschaften. 1968.
+  * F. C. Werner. Die Benennung der Organismen und Organe nach Größe, Form, Farbe und anderen Merkmalen. 1970.
+  * R. W. Brown. Composition of Scientific Words. 1927.
+* Principle of priority: "A taxon's oldest name is always the valid one."
+  * Synonymy: different name gives to the same taxon
+    * Subjective synonymy: different descriptions exist for the same taxon because of different opinions
+    * Objective synonymy: "two different descriptions exist for the same source material."  
+  * Homonymy: same name for different species."
+    * Primary homonymy: "a name that was originally described in a genus tha already contained the given species name."
+    * Secondary homonymy: "the species in question is later moved into a different genus that it was originally ascribed." 
+  * Example: 
+    * _Crabro sabulosus_, (J. C. Fabricius, 1787) was suggested be moved to genus _Spex_ but _Sphex sabulosus_ was taken.
+    * Two secondary homonyms suggested: _Sphex ruficornis_ (1789) and _Sphex crabronea_ (1791).
+    * Turns out that it actually belongs to the genus _Mellinus_, so _Mellinus sabulosus_?
+    * The Code through proscribes junior homonyms introduced before 1961, so no sabulosus.
+    * Next in line of succession is _Sphex ruficornis_: also a junior primary homonym.
+    * Next after is _Sphex crabronea_, which after genus and grammatical-gender correction, became 
+      _Mellinus craboneus_ (Thunberg, 1791).
+      * Note that the two constraints - priority, and preservation of name-author association - in
+        this case led of the erasure of the name of the discoverer.
+
+## Words, Proper Names, Individuals
 ...
+
+## References
+1. <a name="ref1"></a> P. F. Stevens. An Essay on Naming Nature: The Clash Between Instinct and Science. [link](arnoldia.arboretum.harvard.edu/pdf/articles/2010-67-4-an-essay-on-naming-nature-the-clash-between-instinct-and-science.pdf)
+2. <a name="ref2"></a> Ivonne J. Garzón-Orduña. Systematic Biology, Volume 59, Issue 2, March 2010, Pages 242–243. [link](https://academic.oup.com/sysbio/article/59/2/242/1618948)
+3. <a name="ref3"></a> A. J. Drummond. Inferring phylogenies: an instant classic.  [link](https://www.nature.com/articles/6800575)
+4. <a name="ref4"></a> How a scientific spat over how to name species turned into a big plus for nature [link](https://theconversation.com/how-a-scientific-spat-over-how-to-name-species-turned-into-a-big-plus-for-nature-138887)
+5. <a name="ref5"></a> S. T. Garnett et al. Principles for creating a single authoritative list of the world’s species [link](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000736)
+6. <a name="ref6"></a> T. F. Steussy. Challenges facing systematic biology. [link](https://onlinelibrary.wiley.com/doi/10.1002/tax.12279)
+7. <a name="ref7"></a> Opinion: Standardizing gene product nomenclature — a call to action. [link](https://www.pnas.org/content/118/3/e2025207118?etoc=)

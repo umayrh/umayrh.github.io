@@ -69,6 +69,8 @@ autopages:
 
 # Build settings
 markdown: kramdown
+kramdown:
+  auto_ids: true
 highlighter: rouge
 plugins:
   - jekyll-paginate-v2

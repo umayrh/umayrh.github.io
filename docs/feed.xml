@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jan 2021 12:33:16 -0800</pubDate>
-    <lastBuildDate>Thu, 21 Jan 2021 12:33:16 -0800</lastBuildDate>
+    <pubDate>Tue, 26 Jan 2021 00:08:05 -0800</pubDate>
+    <lastBuildDate>Tue, 26 Jan 2021 00:08:05 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -156,24 +156,135 @@ may vary. Birds are an exception since there’s been literature on birds since 
 ornithologists - amateur or not - are well-organized. E.g. the Standing Committee on English Names is
 responsible for the official list of English bird names. The International Ornithological Congress (IOC)
 provides a regularly updated catalog of standard English names on www.worldbirdnames.org&lt;/li&gt;
-  &lt;li&gt;Other branches of science face similar issues. From 
-&lt;a href=&quot;https://www.pnas.org/content/118/3/e2025207118?etoc=&quot;&gt;Opinion: Standardizing gene product nomenclature—a call to action&lt;/a&gt;:
+  &lt;li&gt;The issue of nomenclature governance became prominent recently &lt;a href=&quot;#ref4&quot;&gt;[4]&lt;/a&gt;, leading to the publication of 
+“Principles for creating a single authoritative list of the world’s species” &lt;a href=&quot;#ref5&quot;&gt;[5]&lt;/a&gt;. The opinion
+paper uses the following figure to describe the existing process for gathering taxonomic information,
+and highlight the challenges of decentralized information aggregation. “Thus, whilst there is 
+already a high degree of collaboration among aggregators, with much sharing of lists (Fig 1), 
+all the aggregators remain distinct entities. This results in differences among the lists they 
+propagate, not least because they are updated at different rates. Added to this are the 
+complications that arise when taxonomic groups have multiple authoritative lists.” 
+The principles are:
+    &lt;ul&gt;
+      &lt;li&gt;the species list must be based on science and free from nontaxonomic considerations and interference,&lt;/li&gt;
+      &lt;li&gt;governance of the species list must aim for community support and use,&lt;/li&gt;
+      &lt;li&gt;all decisions about list composition must be transparent,&lt;/li&gt;
+      &lt;li&gt;the governance of validated lists of species is separate from the governance of the names of taxa,&lt;/li&gt;
+      &lt;li&gt;governance of lists of accepted species must not constrain academic freedom,&lt;/li&gt;
+      &lt;li&gt;the set of criteria considered sufficient to recognise species boundaries may appropriately 
+ vary between different taxonomic groups but should be consistent when possible,&lt;/li&gt;
+      &lt;li&gt;a global list must balance conflicting needs for currency and stability by having archived versions,&lt;/li&gt;
+      &lt;li&gt;contributors need appropriate recognition,&lt;/li&gt;
+      &lt;li&gt;list content should be traceable, and&lt;/li&gt;
+      &lt;li&gt;a global listing process needs both to encompass global diversity and to accommodate local knowledge of that diversity. 
+&lt;img src=&quot;/assets/images/art-of-naming-fig-2.png&quot; alt=&quot;Fig. 1&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Other branches of science face similar issues. From &lt;a href=&quot;#ref7&quot;&gt;[7]&lt;/a&gt;:
     &lt;ul&gt;
       &lt;li&gt;The prevalence of function, appearance, and place (locale/geography) in naming: “However, 
 current protein naming systems based on different aspects of structure, 
 function, and cellular localization readily conflict, and they may make less sense if new 
 functions, alternative structures, or novel cellular localizations are discovered.”&lt;/li&gt;
-      &lt;li&gt;The organization of discourse: “Steps to implement an advanced gene product nomenclature system: 
-(i) form a working group consisting of experts from diverse fields, (ii) develop a standardized 
-nomenclature system and usage guidelines, (iii) implement the system, (iv) receive feedback, 
-and (v) improve the standardized nomenclature system and usage guidelines.” 
-&lt;img src=&quot;/assets/images/art-of-naming-fig-1.png&quot; alt=&quot;Fig. 1&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;The organization of discourse: “Steps to implement an advanced gene product nomenclature system:
+        &lt;ul&gt;
+          &lt;li&gt;form a working group consisting of experts from diverse fields,&lt;/li&gt;
+          &lt;li&gt;develop a standardized nomenclature system and usage guidelines,&lt;/li&gt;
+          &lt;li&gt;implement the system,&lt;/li&gt;
+          &lt;li&gt;receive feedback, and&lt;/li&gt;
+          &lt;li&gt;improve the standardized nomenclature system and usage guidelines.” 
+&lt;img src=&quot;/assets/images/art-of-naming-fig-1.png&quot; alt=&quot;Fig. 2&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;how-species-get-their-names&quot;&gt;How Species Get Their Names&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Two constraints for new species: correctness of genus, uniqueness of species. Three ways to achieve this:
+    &lt;ul&gt;
+      &lt;li&gt;Scour taxonomic literature for similar creatures e.g. Biodiversity Heritage Library,&lt;/li&gt;
+      &lt;li&gt;Examine the “type specimen”, i.e. individual creatures that serve(d) as basis for species name,
+        &lt;ul&gt;
+          &lt;li&gt;The individual type specimen is also called the “holotype”; others, “paratype”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Examine the “unidentified material” to be able to discern between intra- and inter-species variability.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Name availability and validity:
+    &lt;ul&gt;
+      &lt;li&gt;The name must use the Latin alphabet though the description may be in any language and script.&lt;/li&gt;
+      &lt;li&gt;The name should be traceable to a specific language.&lt;/li&gt;
+      &lt;li&gt;The name must be a binomial, and the generic and species name must both have at least two characters.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“A species name usually falls into one of the following word groups:
+    &lt;ul&gt;
+      &lt;li&gt;An adjective or participle in the nominative singular case. Most species name belong to this
+group: &lt;em&gt;Echinus esculentus&lt;/em&gt;, the edible sea urchin, and the &lt;em&gt;Somatochlora metallica&lt;/em&gt;, the brilliant
+emerald, a dragonfly.&lt;/li&gt;
+      &lt;li&gt;A noun in the nominative singular case that is in apposition to the genus name: &lt;em&gt;Cercopithecus diana&lt;/em&gt;,
+or Diana monkey.&lt;/li&gt;
+      &lt;li&gt;A noun in the genitive case: &lt;em&gt;Myotis daubentonii&lt;/em&gt;, Daubenton’s bat, and &lt;em&gt;Diplolepis rosae&lt;/em&gt;, the
+rose bedeguar gall.”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Books on naming:
+    &lt;ul&gt;
+      &lt;li&gt;F. C. Werner. Wortelemente lateinisch-griechischer Fachausdrücke in den biologischen Wissenschaften. 1968.&lt;/li&gt;
+      &lt;li&gt;F. C. Werner. Die Benennung der Organismen und Organe nach Größe, Form, Farbe und anderen Merkmalen. 1970.&lt;/li&gt;
+      &lt;li&gt;R. W. Brown. Composition of Scientific Words. 1927.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Principle of priority: “A taxon’s oldest name is always the valid one.”
+    &lt;ul&gt;
+      &lt;li&gt;Synonymy: different name gives to the same taxon
+        &lt;ul&gt;
+          &lt;li&gt;Subjective synonymy: different descriptions exist for the same taxon because of different opinions&lt;/li&gt;
+          &lt;li&gt;Objective synonymy: “two different descriptions exist for the same source material.”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Homonymy: same name for different species.”
+        &lt;ul&gt;
+          &lt;li&gt;Primary homonymy: “a name that was originally described in a genus tha already contained the given species name.”&lt;/li&gt;
+          &lt;li&gt;Secondary homonymy: “the species in question is later moved into a different genus that it was originally ascribed.”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Example:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;em&gt;Crabro sabulosus&lt;/em&gt;, (J. C. Fabricius, 1787) was suggested be moved to genus &lt;em&gt;Spex&lt;/em&gt; but &lt;em&gt;Sphex sabulosus&lt;/em&gt; was taken.&lt;/li&gt;
+          &lt;li&gt;Two secondary homonyms suggested: &lt;em&gt;Sphex ruficornis&lt;/em&gt; (1789) and &lt;em&gt;Sphex crabronea&lt;/em&gt; (1791).&lt;/li&gt;
+          &lt;li&gt;Turns out that it actually belongs to the genus &lt;em&gt;Mellinus&lt;/em&gt;, so &lt;em&gt;Mellinus sabulosus&lt;/em&gt;?&lt;/li&gt;
+          &lt;li&gt;The Code through proscribes junior homonyms introduced before 1961, so no sabulosus.&lt;/li&gt;
+          &lt;li&gt;Next in line of succession is &lt;em&gt;Sphex ruficornis&lt;/em&gt;: also a junior primary homonym.&lt;/li&gt;
+          &lt;li&gt;Next after is &lt;em&gt;Sphex crabronea&lt;/em&gt;, which after genus and grammatical-gender correction, became 
+&lt;em&gt;Mellinus craboneus&lt;/em&gt; (Thunberg, 1791).
+            &lt;ul&gt;
+              &lt;li&gt;Note that the two constraints - priority, and preservation of name-author association - in
+this case led of the erasure of the name of the discoverer.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;words-proper-names-individuals&quot;&gt;Words, Proper Names, Individuals&lt;/h2&gt;
 &lt;p&gt;…&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a name=&quot;ref1&quot;&gt;&lt;/a&gt; P. F. Stevens. An Essay on Naming Nature: The Clash Between Instinct and Science. &lt;a href=&quot;arnoldia.arboretum.harvard.edu/pdf/articles/2010-67-4-an-essay-on-naming-nature-the-clash-between-instinct-and-science.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref2&quot;&gt;&lt;/a&gt; Ivonne J. Garzón-Orduña. Systematic Biology, Volume 59, Issue 2, March 2010, Pages 242–243. &lt;a href=&quot;https://academic.oup.com/sysbio/article/59/2/242/1618948&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref3&quot;&gt;&lt;/a&gt; A. J. Drummond. Inferring phylogenies: an instant classic.  &lt;a href=&quot;https://www.nature.com/articles/6800575&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref4&quot;&gt;&lt;/a&gt; How a scientific spat over how to name species turned into a big plus for nature &lt;a href=&quot;https://theconversation.com/how-a-scientific-spat-over-how-to-name-species-turned-into-a-big-plus-for-nature-138887&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref5&quot;&gt;&lt;/a&gt; S. T. Garnett et al. Principles for creating a single authoritative list of the world’s species &lt;a href=&quot;https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000736&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref6&quot;&gt;&lt;/a&gt; T. F. Steussy. Challenges facing systematic biology. &lt;a href=&quot;https://onlinelibrary.wiley.com/doi/10.1002/tax.12279&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref7&quot;&gt;&lt;/a&gt; Opinion: Standardizing gene product nomenclature — a call to action. &lt;a href=&quot;https://www.pnas.org/content/118/3/e2025207118?etoc=&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Sun, 17 Jan 2021 00:00:00 -0800</pubDate>
         <link>http://localhost:4000/2021/01/17/the-art-of-naming/</link>
