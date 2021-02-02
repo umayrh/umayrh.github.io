@@ -155,16 +155,17 @@ Euarthropoda.
     or Diana monkey.
   * A noun in the genitive case: _Myotis daubentonii_, Daubenton's bat, and _Diplolepis rosae_, the
     rose bedeguar gall."
-* Books on naming:
+* Books on name composition:
   * F. C. Werner. Wortelemente lateinisch-griechischer Fachausdrücke in den biologischen Wissenschaften. 1968.
   * F. C. Werner. Die Benennung der Organismen und Organe nach Größe, Form, Farbe und anderen Merkmalen. 1970.
   * R. W. Brown. Composition of Scientific Words. 1927.
+  * International Commission on Zoological Nomenclature. [The Code](https://www.iczn.org/the-code/the-international-code-of-zoological-nomenclature/the-code-online/).
 * Principle of priority: "A taxon's oldest name is always the valid one."
   * Synonymy: different name gives to the same taxon
     * Subjective synonymy: different descriptions exist for the same taxon because of different opinions
     * Objective synonymy: "two different descriptions exist for the same source material."  
-  * Homonymy: same name for different species."
-    * Primary homonymy: "a name that was originally described in a genus tha already contained the given species name."
+  * Homonymy: same name for different species
+    * Primary homonymy: "a name that was originally described in a genus that already contained the given species name."
     * Secondary homonymy: "the species in question is later moved into a different genus that it was originally ascribed." 
   * Example: 
     * _Crabro sabulosus_, (J. C. Fabricius, 1787) was suggested be moved to genus _Spex_ but _Sphex sabulosus_ was taken.
@@ -178,7 +179,54 @@ Euarthropoda.
         this case led of the erasure of the name of the discoverer.
 
 ## Words, Proper Names, Individuals
-...
+* What are the functions of species name?
+  * Help make scientific communication - data, results, interpretations - clearer.
+* Proper names vs appellatives (common nouns):
+  * "It is ... expected that each zoological name will refer unambiguously and unmistakeably to
+  exactly one taxon - that is, one named group of animals such as species."
+  * "[N]ames perform their referential function immediately - that is, directly and without a 'detour'
+  through semantic meaning... Appellatives help make reference, not to a single thing, but to a 
+  whole class of things."
+  * "In this one-to-one relationship between name and object, proper names differ fundamentally
+  from appellatives, which refer to a class of objects."
+  * Interesting example: _Tamias minimus_ is a proper name but "least chipmunk" is an appellative
+  though they refer to the same object. Since the object is necessarily a class of specific
+  individuals, it makes more sense to say that species, though a class, function as individuals
+  in biological nomenclature i.e. taxons, as classes, are composed of species, and species are a
+  fundamental unit.
+* Do species as classes have real or nominal existence?
+  * Reproductive isolation, or barriers, foster consistent similarities and differences between
+  individual bound together by sexual procreation. (Ernst Mayr).
+    * How can this be extended to organisms that procreate through "budding" (like polyps) or
+    parthogenesis (like walking sticks)?
+  * "One important quality of a class is also its consistency, which can be attributed to the
+  fact that a specific, unalterable quality - ... essense - is unique to it."
+  * Typological species concept: "The notion of species as classes with constant, class-specific
+  qualities represents a monumental contradiction to the notion of a dynamic evolutionary
+  process and changing species."
+    * "Contradiction" seems exaggerated, since it is clearly possible to evolve and yet possess
+    similarities and differences that may be consistent over some period of time.
+    * Michael T. Ghiselin. A Radical Solution to the Species Problem. 1974.
+  * To be an individual, a "thing", species should be:
+    * Spatially and temporally locatable
+      * "The discontinuity of an 'individual' that exists in areas distant from one another
+      definitely poses a problem..."
+    * Accessible to the senses
+      * Not directly really, until unless it's the last individual of a species.
+    * Be "particular", and "change"
+      * Species are particular, and change while remaining the same species (anagenesis). 
+    * Have contingent existence
+      * Species, as products of evolution, don't have a necessary existence.
+  * "[S]pecies naming is 'biologically neutral'":
+    * Nomenclature, organization of names and naming, is distinct from taxonomy, the codification
+    of biological entities.
+    * "The objects of the Code are to promote stability and universality in the scientific
+    names of animals and to ensure that the name of each taxon is unique and distinct. All its
+    provisions and recommendations are subservient to those ends and none restricts the
+    freedom of taxonomic though or actions."
+
+## Types and the Materialty of Names
+*  
 
 ## References
 1. <a name="ref1"></a> P. F. Stevens. An Essay on Naming Nature: The Clash Between Instinct and Science. [link](arnoldia.arboretum.harvard.edu/pdf/articles/2010-67-4-an-essay-on-naming-nature-the-clash-between-instinct-and-science.pdf)
@@ -188,3 +236,9 @@ Euarthropoda.
 5. <a name="ref5"></a> S. T. Garnett et al. Principles for creating a single authoritative list of the world’s species [link](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000736)
 6. <a name="ref6"></a> T. F. Steussy. Challenges facing systematic biology. [link](https://onlinelibrary.wiley.com/doi/10.1002/tax.12279)
 7. <a name="ref7"></a> Opinion: Standardizing gene product nomenclature — a call to action. [link](https://www.pnas.org/content/118/3/e2025207118?etoc=)
+8. <a name="ref8"></a> DNA barcoding and taxonomy: dark taxa and dark texts/ [link](https://royalsocietypublishing.org/doi/10.1098/rstb.2015.0334)
+9. <a name="ref9"></a> https://inquisitivebiologist.com/2018/08/24/book-review-the-art-of-naming/
+10. <a name="ref10"></a> R. A. Richards. The Species Problem: A Philosophical Analysis 
+  * A. Hamilton. Notre Dame Philosophical Reviews. 2012.03.27. [link](https://ndpr.nd.edu/news/the-species-problem-a-philosophical-analysis/)
+  * J. S. Wilkins. Systematic Biology, Volume 61, Issue 2, March 2012, Pages 362–363. [link](https://academic.oup.com/sysbio/article/61/2/362/1648669)
+11. <a name="ref11"></a>

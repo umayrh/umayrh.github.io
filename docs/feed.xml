@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Jan 2021 00:08:05 -0800</pubDate>
-    <lastBuildDate>Tue, 26 Jan 2021 00:08:05 -0800</lastBuildDate>
+    <pubDate>Mon, 01 Feb 2021 23:29:18 -0800</pubDate>
+    <lastBuildDate>Mon, 01 Feb 2021 23:29:18 -0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -231,11 +231,12 @@ or Diana monkey.&lt;/li&gt;
 rose bedeguar gall.”&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Books on naming:
+  &lt;li&gt;Books on name composition:
     &lt;ul&gt;
       &lt;li&gt;F. C. Werner. Wortelemente lateinisch-griechischer Fachausdrücke in den biologischen Wissenschaften. 1968.&lt;/li&gt;
       &lt;li&gt;F. C. Werner. Die Benennung der Organismen und Organe nach Größe, Form, Farbe und anderen Merkmalen. 1970.&lt;/li&gt;
       &lt;li&gt;R. W. Brown. Composition of Scientific Words. 1927.&lt;/li&gt;
+      &lt;li&gt;International Commission on Zoological Nomenclature. &lt;a href=&quot;https://www.iczn.org/the-code/the-international-code-of-zoological-nomenclature/the-code-online/&quot;&gt;The Code&lt;/a&gt;.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Principle of priority: “A taxon’s oldest name is always the valid one.”
@@ -246,9 +247,9 @@ rose bedeguar gall.”&lt;/li&gt;
           &lt;li&gt;Objective synonymy: “two different descriptions exist for the same source material.”&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Homonymy: same name for different species.”
+      &lt;li&gt;Homonymy: same name for different species
         &lt;ul&gt;
-          &lt;li&gt;Primary homonymy: “a name that was originally described in a genus tha already contained the given species name.”&lt;/li&gt;
+          &lt;li&gt;Primary homonymy: “a name that was originally described in a genus that already contained the given species name.”&lt;/li&gt;
           &lt;li&gt;Secondary homonymy: “the species in question is later moved into a different genus that it was originally ascribed.”&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
@@ -273,7 +274,91 @@ this case led of the erasure of the name of the discoverer.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;words-proper-names-individuals&quot;&gt;Words, Proper Names, Individuals&lt;/h2&gt;
-&lt;p&gt;…&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;What are the functions of species name?
+    &lt;ul&gt;
+      &lt;li&gt;Help make scientific communication - data, results, interpretations - clearer.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Proper names vs appellatives (common nouns):
+    &lt;ul&gt;
+      &lt;li&gt;“It is … expected that each zoological name will refer unambiguously and unmistakeably to
+exactly one taxon - that is, one named group of animals such as species.”&lt;/li&gt;
+      &lt;li&gt;“[N]ames perform their referential function immediately - that is, directly and without a ‘detour’
+through semantic meaning… Appellatives help make reference, not to a single thing, but to a 
+whole class of things.”&lt;/li&gt;
+      &lt;li&gt;“In this one-to-one relationship between name and object, proper names differ fundamentally
+from appellatives, which refer to a class of objects.”&lt;/li&gt;
+      &lt;li&gt;Interesting example: &lt;em&gt;Tamias minimus&lt;/em&gt; is a proper name but “least chipmunk” is an appellative
+though they refer to the same object. Since the object is necessarily a class of specific
+individuals, it makes more sense to say that species, though a class, function as individuals
+in biological nomenclature i.e. taxons, as classes, are composed of species, and species are a
+fundamental unit.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Do species as classes have real or nominal existence?
+    &lt;ul&gt;
+      &lt;li&gt;Reproductive isolation, or barriers, foster consistent similarities and differences between
+individual bound together by sexual procreation. (Ernst Mayr).
+        &lt;ul&gt;
+          &lt;li&gt;How can this be extended to organisms that procreate through “budding” (like polyps) or
+parthogenesis (like walking sticks)?&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;“One important quality of a class is also its consistency, which can be attributed to the
+fact that a specific, unalterable quality - … essense - is unique to it.”&lt;/li&gt;
+      &lt;li&gt;Typological species concept: “The notion of species as classes with constant, class-specific
+qualities represents a monumental contradiction to the notion of a dynamic evolutionary
+process and changing species.”
+        &lt;ul&gt;
+          &lt;li&gt;“Contradiction” seems exaggerated, since it is clearly possible to evolve and yet possess
+similarities and differences that may be consistent over some period of time.&lt;/li&gt;
+          &lt;li&gt;Michael T. Ghiselin. A Radical Solution to the Species Problem. 1974.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;To be an individual, a “thing”, species should be:
+        &lt;ul&gt;
+          &lt;li&gt;Spatially and temporally locatable
+            &lt;ul&gt;
+              &lt;li&gt;“The discontinuity of an ‘individual’ that exists in areas distant from one another
+definitely poses a problem…”&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Accessible to the senses
+            &lt;ul&gt;
+              &lt;li&gt;Not directly really, until unless it’s the last individual of a species.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Be “particular”, and “change”
+            &lt;ul&gt;
+              &lt;li&gt;Species are particular, and change while remaining the same species (anagenesis).&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Have contingent existence
+            &lt;ul&gt;
+              &lt;li&gt;Species, as products of evolution, don’t have a necessary existence.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;“[S]pecies naming is ‘biologically neutral’”:
+        &lt;ul&gt;
+          &lt;li&gt;Nomenclature, organization of names and naming, is distinct from taxonomy, the codification
+of biological entities.&lt;/li&gt;
+          &lt;li&gt;“The objects of the Code are to promote stability and universality in the scientific
+names of animals and to ensure that the name of each taxon is unique and distinct. All its
+provisions and recommendations are subservient to those ends and none restricts the
+freedom of taxonomic though or actions.”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;types-and-the-materialty-of-names&quot;&gt;Types and the Materialty of Names&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 &lt;ol&gt;
@@ -284,6 +369,15 @@ this case led of the erasure of the name of the discoverer.&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref5&quot;&gt;&lt;/a&gt; S. T. Garnett et al. Principles for creating a single authoritative list of the world’s species &lt;a href=&quot;https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000736&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref6&quot;&gt;&lt;/a&gt; T. F. Steussy. Challenges facing systematic biology. &lt;a href=&quot;https://onlinelibrary.wiley.com/doi/10.1002/tax.12279&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref7&quot;&gt;&lt;/a&gt; Opinion: Standardizing gene product nomenclature — a call to action. &lt;a href=&quot;https://www.pnas.org/content/118/3/e2025207118?etoc=&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref8&quot;&gt;&lt;/a&gt; DNA barcoding and taxonomy: dark taxa and dark texts/ &lt;a href=&quot;https://royalsocietypublishing.org/doi/10.1098/rstb.2015.0334&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref9&quot;&gt;&lt;/a&gt; https://inquisitivebiologist.com/2018/08/24/book-review-the-art-of-naming/&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref10&quot;&gt;&lt;/a&gt; R. A. Richards. The Species Problem: A Philosophical Analysis
+    &lt;ul&gt;
+      &lt;li&gt;A. Hamilton. Notre Dame Philosophical Reviews. 2012.03.27. &lt;a href=&quot;https://ndpr.nd.edu/news/the-species-problem-a-philosophical-analysis/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;J. S. Wilkins. Systematic Biology, Volume 61, Issue 2, March 2012, Pages 362–363. &lt;a href=&quot;https://academic.oup.com/sysbio/article/61/2/362/1648669&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref11&quot;&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 17 Jan 2021 00:00:00 -0800</pubDate>
