@@ -6,24 +6,415 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Feb 2021 23:29:18 -0800</pubDate>
-    <lastBuildDate>Mon, 01 Feb 2021 23:29:18 -0800</lastBuildDate>
-    <generator>Jekyll v3.8.6</generator>
+    <pubDate>Sat, 03 Apr 2021 00:14:56 -0700</pubDate>
+    <lastBuildDate>Sat, 03 Apr 2021 00:14:56 -0700</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>The Algorithmic Beauty of Plants</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“The idea of form implicitly contains also the history of such a form.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Notes on Prusinkiewicz and Lindenmayer’s beautiful book, “The Algorithmic Beauty of Plans” (Springer-Verlag, 1990),
+which is also available &lt;a href=&quot;http://algorithmicbotany.org/papers/#abop&quot;&gt;online&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-graphical-modeling-using-l-systems&quot;&gt;1 Graphical modeling using L-systems&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lindenmayer systems, or L-systems, were originally a topological model of plant development, 
+emphasizing the neighborhood relations between plant modules (cells, filaments…).
+    &lt;ul&gt;
+      &lt;li&gt;Geometry was added later on to make the model more expressive.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;11-rewriting-systems&quot;&gt;1.1 Rewriting systems&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Complex objects are composed by successively replaces parts on an initial simple object using 
+a set of &lt;em&gt;rewriting rules&lt;/em&gt; or &lt;em&gt;productions&lt;/em&gt;. Examples are:
+    &lt;ul&gt;
+      &lt;li&gt;von Koch’s rewriting rules for open polygons (snowflake curve)&lt;/li&gt;
+      &lt;li&gt;Conway’s &lt;em&gt;game of life&lt;/em&gt;&lt;/li&gt;
+      &lt;li&gt;Chomsky’s formal grammars&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“The essential difference between Chomsky’s formal grammars and L-systems lies in the method
+of applying productions.”
+    &lt;ul&gt;
+      &lt;li&gt;Sequentially in the former, and in parallel in the latter&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-dol-systems&quot;&gt;1.2 DOL-systems&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DOL-systems, the simplest class of L-systems, is deterministic and context-free.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Axiom&lt;/em&gt; is the &lt;em&gt;initiator&lt;/em&gt; string, and all string rewriting rules are applied simultaneously
+in each steps. So, given rules (1) &lt;code class=&quot;highlighter-rouge&quot;&gt;a -&amp;gt; ab&lt;/code&gt;, and (2) &lt;code class=&quot;highlighter-rouge&quot;&gt;b -&amp;gt; a&lt;/code&gt;, the axiom &lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt; after two steps
+becomes &lt;code class=&quot;highlighter-rouge&quot;&gt;aba&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Formal definition:
+    &lt;ul&gt;
+      &lt;li&gt;Let &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt; be an alphabet, &lt;script type=&quot;math/tex&quot;&gt;V*&lt;/script&gt; be the set of words, and &lt;script type=&quot;math/tex&quot;&gt;V+&lt;/script&gt; all non-empty words.&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;w \in V+&lt;/script&gt; is a non-empty initial word, called &lt;em&gt;axiom&lt;/em&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;P \subset V x V*&lt;/script&gt; be the set of productions.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(a, x) \in P&lt;/script&gt; is the same as &lt;script type=&quot;math/tex&quot;&gt;a \rightarrow x&lt;/script&gt;.&lt;/li&gt;
+          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt; is called &lt;em&gt;predecessor&lt;/em&gt;, &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; is called &lt;em&gt;successor&lt;/em&gt;.&lt;/li&gt;
+          &lt;li&gt;Thus, each character maps to a word. The default production is &lt;em&gt;identity&lt;/em&gt;, &lt;script type=&quot;math/tex&quot;&gt;a \rightarrow a&lt;/script&gt;.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;An OL-system is the triplet &lt;script type=&quot;math/tex&quot;&gt;G = (V, w, P)&lt;/script&gt;.
+        &lt;ul&gt;
+          &lt;li&gt;An OL-system is deterministic if there is exactly one &lt;script type=&quot;math/tex&quot;&gt;x \in V*&lt;/script&gt; s.t. &lt;script type=&quot;math/tex&quot;&gt;a \rightarrow x&lt;/script&gt;.&lt;/li&gt;
+          &lt;li&gt;A simple example is the simulation of the development of a multi-cellular filament
+of bacteria &lt;em&gt;Anabaena catenula&lt;/em&gt;.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;13-turtle-interpretation-of-strings&quot;&gt;1.3 Turtle interpretation of strings&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Graphical representations of L-systems allow modeling more complex plants.&lt;/li&gt;
+  &lt;li&gt;Turtle interpretation of L-system:
+    &lt;ul&gt;
+      &lt;li&gt;Current state defined by the triplet &lt;script type=&quot;math/tex&quot;&gt;(x, y, \alpha)&lt;/script&gt;, where &lt;script type=&quot;math/tex&quot;&gt;(x, y)&lt;/script&gt; represent the Cartesian 
+coordinates, and angle &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; is the heading.&lt;/li&gt;
+      &lt;li&gt;Given the steps size &lt;script type=&quot;math/tex&quot;&gt;d&lt;/script&gt; and angle increment &lt;script type=&quot;math/tex&quot;&gt;\delta&lt;/script&gt;, the following actions are possible:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;F&lt;/script&gt;: move forward a step of size &lt;script type=&quot;math/tex&quot;&gt;d&lt;/script&gt; from &lt;script type=&quot;math/tex&quot;&gt;(x, y)&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;(x + dcos(\alpha)), y + dsin(\alpha)&lt;/script&gt;,
+and draw a line.&lt;/li&gt;
+          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;: move forward as above without drawing a line.&lt;/li&gt;
+          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;+&lt;/script&gt;: turn left by angle &lt;script type=&quot;math/tex&quot;&gt;\delta&lt;/script&gt; so the current state becomes &lt;script type=&quot;math/tex&quot;&gt;(x, y, \alpha + \delta)&lt;/script&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;-&lt;/script&gt;: turn right by angle &lt;script type=&quot;math/tex&quot;&gt;\delta&lt;/script&gt; so the current state becomes &lt;script type=&quot;math/tex&quot;&gt;(x, y, \alpha - \delta)&lt;/script&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The following L-system approximates Mandelbrot’s &lt;em&gt;quadratic Koch island&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;w: F-F-F-F&lt;/script&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;p: F \rightarrow F-F+F+FF-F-F+F&lt;/script&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;14-synthesis-of-dol-systems&quot;&gt;1.4 Synthesis of DOL-systems&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Inference problem&lt;/em&gt;: how can one generate, or discover, the generators for L-systems?
+    &lt;ul&gt;
+      &lt;li&gt;Random modifications don’t yield insight, and in fact may causes a system to die or be 
+stuck in a loop.&lt;/li&gt;
+      &lt;li&gt;There are no general methods still. Two well-developed heuristics are: &lt;em&gt;edge rewriting&lt;/em&gt;
+and &lt;em&gt;node rewriting&lt;/em&gt;. “Both approaches rely on capturing the recursive structure of
+figures and relating it to a tiling of a plane.”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Edge rewriting:
+    &lt;ul&gt;
+      &lt;li&gt;Productions operate on units of a figure (edges), substituting the whole figure for each unit.&lt;/li&gt;
+      &lt;li&gt;A variation of L-systems assumes two types of edges: right (R) and (L) although both
+correspond to the F command. They are helpful in indicating which side of a line to act on.&lt;/li&gt;
+      &lt;li&gt;The class of “space-filling, self-avoiding, simple and self-similar” (FASS) curves \ 
+are space-filling i.e. they pass through all points of a square.&lt;/li&gt;
+      &lt;li&gt;McKenna, in his paper “SquaRecurves, E-Tours, Eddies, and Frenzies: Basic Families of
+Peano Curves on the Square Grid” &lt;a href=&quot;#ref1&quot;&gt;[1]&lt;/a&gt;, that outlines the conditions under which FASS
+curve generators can be found. Given a figure of order n (i.e. a figure completely tiled 
+by &lt;script type=&quot;math/tex&quot;&gt;n \times n&lt;/script&gt; scaled version of itself, aka a “rep-tile”), he proves that:
+        &lt;ul&gt;
+          &lt;li&gt;“Theorem 1: Generator on order n triangular grids always generate Peano curves that are
+self-contacting.” Hence, there are no self-avoiding curves in this case.&lt;/li&gt;
+          &lt;li&gt;“Lemma 1: “There are no bilaterally symmetric self-avoiding Peano curve generator on
+order n fixed square grids when n is odd”.&lt;/li&gt;
+          &lt;li&gt;“Theorem 2: Bilaterally symmetric Peano curve generators on order n fixed square grids can
+never generate self-avoiding approximations, for k &amp;gt; 1” (k is the number of iterations).&lt;/li&gt;
+          &lt;li&gt;“Even when a generator, consisting of &lt;script type=&quot;math/tex&quot;&gt;n^2&lt;/script&gt; connected line segments, is self-avoiding,
+this does not necessarily mean that approximations to the Peano curve it generates are
+self-avoiding.”&lt;/li&gt;
+          &lt;li&gt;Rotational (unlike bilateral) symmetry allows some generators to mesh in a self-avoiding way.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The hexagonal and quadratic Gosper curves are examples of FASS:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img width=&quot;560&quot; alt=&quot;Hexagonal Gosper curve&quot; src=&quot;/assets/images/1.11a%20-%20hexagonal%20Gosper%20curve.gif&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img width=&quot;560&quot; alt=&quot;Quadratic Gosper curve&quot; src=&quot;/assets/images/1.11b%20-%20quadratic%20Gosper%20curve.gif&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Node rewriting:
+    &lt;ul&gt;
+      &lt;li&gt;Productions operate on units of a figure (nodes), substituting a new figure for each unit.&lt;/li&gt;
+      &lt;li&gt;Turtle interpretation extension for node rewriting:
+        &lt;ul&gt;
+          &lt;li&gt;Given subfigure A from a set of subfigures &lt;script type=&quot;math/tex&quot;&gt;\mathbb{A}&lt;/script&gt;:
+            &lt;ul&gt;
+              &lt;li&gt;Two contact points: the &lt;em&gt;entry point&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;P_A&lt;/script&gt;, and the &lt;em&gt;exit point&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;Q_A&lt;/script&gt;&lt;/li&gt;
+              &lt;li&gt;Two direction vectors: &lt;em&gt;entry vector&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;\vec{p}_A&lt;/script&gt; and the &lt;em&gt;exit vector&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;\vec{q}_A&lt;/script&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Subfigure A is translated and rotated to align with its entry point &lt;script type=&quot;math/tex&quot;&gt;P_A&lt;/script&gt; and direction
+&lt;script type=&quot;math/tex&quot;&gt;\vec{p}_A&lt;/script&gt; with the current position and orientation of the turtle.&lt;/li&gt;
+          &lt;li&gt;Having placed A, the turtle is assigned the resulting exit point and direction.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The Hilbert curve L-system for subfigures L (f+F) and R (+F):
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;w: L&lt;/script&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;L \rightarrow +RF - LFL - FR+&lt;/script&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;R \rightarrow -LF + RFR + FL-&lt;/script&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;When L and R are subfigures reduced to a point, the result is a &lt;em&gt;pure curve&lt;/em&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a name=&quot;ref1&quot;&gt;&lt;/a&gt; The Lighter Side of Mathematics: Proceedings of the Eugene Strens Memorial Conference on Recreational Mathematics and Its History &lt;a href=&quot;www.ams.org/books/spec/011&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 14 Mar 2021 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2021/03/14/the-algorithmic-beauty-of-plants/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/03/14/the-algorithmic-beauty-of-plants/</guid>
+        
+        <category>Formal languages</category>
+        
+        <category>Morphology</category>
+        
+        <category>Development</category>
+        
+        <category>Fractals</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Part, Site, Analysis</title>
+        <description>&lt;p&gt;These notes collate problems in mereology and topology, mostly arising in Casati and Varzi’s book, 
+“Parts and places: the structures of spatial representation” (MIT Press).&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Leibniz’s contention against Newton: spatial entities - objects or events - are fundamentally
+prior to space.&lt;/li&gt;
+  &lt;li&gt;Questions:
+    &lt;ul&gt;
+      &lt;li&gt;How relevant is the decomposition of objects into parts?&lt;/li&gt;
+      &lt;li&gt;How do mereological notions interact with truly spatial concepts such as contact, containment,
+and relative distance?&lt;/li&gt;
+      &lt;li&gt;How do the above relate to geometry, topology, and morphology? One could add dynamics.&lt;/li&gt;
+      &lt;li&gt;Why are spatial boundaries more important for material objects than events?&lt;/li&gt;
+      &lt;li&gt;What distinguishes parthood from constitution?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“Our contention is that the shape of the theory of space depends dramatically on the answers one gives.”&lt;/li&gt;
+  &lt;li&gt;Elimination of subjectivity and perpectival facts: concern focused on “detched” concepts such as
+‘part of’, ‘contained in’, or connected with’.&lt;/li&gt;
+  &lt;li&gt;Mereology is ontologically neutral: unconcerned whether entities under investigation abstract or concrete.&lt;/li&gt;
+  &lt;li&gt;Mereology as a starting point for theories of greater complexity: topology, morphology, kinematics…
+    &lt;ul&gt;
+      &lt;li&gt;“…the distinction between mereology and topology depends on the ontological fauna tha one is willing to countenance.”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“Our positions is that boundaries are ontologically on a part with (albeit parasitic upon) extended
+parts. But unlike extended parts, spatial boundaries have a peculiar relation to space (just as temporal
+boundaries have a peculiar relation to time): they are located in space, yet do not take up any space.”&lt;/li&gt;
+  &lt;li&gt;Potential entities: “entities that do not quite count except as parts of wholes (e.g. the left half of a cigar).&lt;/li&gt;
+  &lt;li&gt;Maps: spatial objects that represent other spatial objects, and hence have semantics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;spatial-entities&quot;&gt;Spatial Entities&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Relations amongs part are not necessarily parthood relations”: hence the motivation to use
+mereotopology instead of only mereology to describe spatial entities.&lt;/li&gt;
+  &lt;li&gt;Solid wholes (table) and scattered objects (broken glass): “mereology is about parthood, hence
+about a relational property. By contrast wholeness is a monadic property…. the latter notion 
+cannot be explained in terms of the former.”&lt;/li&gt;
+  &lt;li&gt;There is no way, mereologically, to ‘rule out “bad” wholes consisting of scattered or 
+ill-assorted entities.’ Alternatively, we lose the ability to distinguish between scattered from
+integral entities.
+    &lt;ul&gt;
+      &lt;li&gt;A. N. Whitehead’s ontology in 1919-20 was meant to admit only wholes (events, in Whitehead’s
+original presentation) made up on parts joined or connected together.&lt;/li&gt;
+      &lt;li&gt;“&lt;em&gt;x&lt;/em&gt; is connected with &lt;em&gt;y&lt;/em&gt; if and only if there exists some &lt;em&gt;z&lt;/em&gt; that overlaps with both
+&lt;em&gt;x&lt;/em&gt; and &lt;em&gt;y&lt;/em&gt;, and that has no part that overlaps neither &lt;em&gt;x&lt;/em&gt; not &lt;em&gt;y&lt;/em&gt;.”&lt;/li&gt;
+      &lt;li&gt;Whitehead’s problem: “&lt;em&gt;x&lt;/em&gt; and &lt;em&gt;y&lt;/em&gt; are not connected unless the overlapping piece &lt;em&gt;z&lt;/em&gt; is itself
+assumed to be self-connected,” which makes the original argument circular.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-the-mereological-option&quot;&gt;2.2 The Mereological Option&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Connectedness is a topological relation… it cannot be defined in mereological terms.”&lt;/li&gt;
+  &lt;li&gt;Different senses of individual integrity:
+    &lt;ul&gt;
+      &lt;li&gt;Aristotle: Continuity, rigidity, uniformity, and qualitative similarity.&lt;/li&gt;
+      &lt;li&gt;Husserl: “a range of contents which are all covered by a single foundation with the help of
+further contents… every content is foundationally associated with every content.”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Some concepts of wholes:
+    &lt;ul&gt;
+      &lt;li&gt;causally unitary: operations on certain parts have systematic effects on other parts 
+(e.g. pendulum wave).&lt;/li&gt;
+      &lt;li&gt;functionally unitary: a system closed under certain functional relationships 
+(e.g. electric circuit - telecom grid is a great example of a scattered whole).&lt;/li&gt;
+      &lt;li&gt;teleologically unitary: sharing of a common goal (e.g. a sports team).&lt;/li&gt;
+      &lt;li&gt;unitary by way of dependence: …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The whole considered here is topologically connected.&lt;/li&gt;
+  &lt;li&gt;Whitehead’s 1929 redefinition of mereology in terms of topology: &lt;em&gt;x&lt;/em&gt; is part of &lt;em&gt;y&lt;/em&gt; if and only
+if everything connected to &lt;em&gt;x&lt;/em&gt; is also connected to &lt;em&gt;y&lt;/em&gt;. &lt;a href=&quot;#ref3&quot;&gt;[3]&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The notion of “connection” here implies more than overlaps. What’s the connections between two
+halves of a brick?&lt;/li&gt;
+      &lt;li&gt;If, like Whitehead, we limit ourselves to considering only spatiotemporal &lt;em&gt;regions&lt;/em&gt; instead of
+objects/entities, then we can say that regions x and y are connected if they have at least one
+point in common. A special kind of overlap i.e. a boundary.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What if we don’t limit ourselves to regions? “Either we insist that all spatial entities can be
+mapped onto their regions…, or we maintain that a topological apparatus defined with respect to
+regions can be applied &lt;em&gt;holus bolus&lt;/em&gt; to ordinary things and events alike.”
+    &lt;ul&gt;
+      &lt;li&gt;The idea that entities have a 1:1 correspondence with their regions (what Locke used as a basis
+for the criterion of identity) may apply to material objects but not events. E.g. Caeser’s
+death (an event) took place in the same region where Caeser’s body (a physical object) was located,
+yet they are two distinct entities.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-the-hole-trouble&quot;&gt;2.3 The Hole Trouble&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To circumvent the issue of the ontological status of holes, “use holes as well as events and
+ordinary objects as dummies for spatial entities that are not themselves regions of space”&lt;/li&gt;
+  &lt;li&gt;Reasons for not reducing spatial entities to the regions that they occupy?
+    &lt;ul&gt;
+      &lt;li&gt;the relationship between the body and space is trivialized&lt;/li&gt;
+      &lt;li&gt;morphological features are ignored (the question of holes as entities cannot even be raised)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What kind of spatial entities are holes?
+    &lt;ul&gt;
+      &lt;li&gt;Substantivalist reduction: special regions of space
+        &lt;ul&gt;
+          &lt;li&gt;Harder to explain the individuality of a hole changing in time and/or space&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Adjectivalist reduction: property of the objects that host them
+        &lt;ul&gt;
+          &lt;li&gt;Blind to topologically insignificant holes, such as superficial hollows, grooves, and indentations&lt;/li&gt;
+          &lt;li&gt;Needs a lot of adjectives to characterize different configurations
+            &lt;ul&gt;
+              &lt;li&gt;“The cheese has at least one hole in it” vs “The cheese is at least singly-perforated”&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“The expressive power of the predicate ‘connection’ is safe. But this doesn’t save us from
+explicit reference to immaterial entities.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-the-compositional-approach&quot;&gt;2.4 The Compositional Approach&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Two lessons so far:
+    &lt;ul&gt;
+      &lt;li&gt;“Mereology alone is too weak; topology alone is too strong.”
+        &lt;ul&gt;
+          &lt;li&gt;Topology is clearly also two weak to consider morphological features other than holes&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Entities should be considered w.r.t their mutual spatial relationships and their relationships to space
+        &lt;ul&gt;
+          &lt;li&gt;Again, only because otherwise morpholopgy is ignored&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Recognition-by-Components (RBC) theory:
+    &lt;ul&gt;
+      &lt;li&gt;Aims to support both visual object representation and object recognition&lt;/li&gt;
+      &lt;li&gt;Offers a spatial syntax where every object is composed of “geonic” (geometrical ion) elements&lt;/li&gt;
+      &lt;li&gt;Given a vector of spatial attributes per geon, three geons can potentially describe 1.4 billion
+distinct object shapes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a name=&quot;ref1&quot;&gt;&lt;/a&gt; Kostic D. 2020 General theory of topological explanations and explanatory asymmetry. Phil. Trans. R. Soc. B 375: 20190321. &lt;a href=&quot;https://core.ac.uk/download/pdf/231877199.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref2&quot;&gt;&lt;/a&gt; D. Koehler. The city as an element of architecture. &lt;a href=&quot;papers.cumincad.org/data/works/att/ecaade2017_109.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref3&quot;&gt;&lt;/a&gt; B. Clark. A calculus of individuals based on “connection”. Notre Dame J. Formal Logic 22(3): 204-218 (July 1981). &lt;a href=&quot;https://projecteuclid.org/journals/notre-dame-journal-of-formal-logic/volume-22/issue-3/A-calculus-of-individuals-based-on-connection/10.1305/ndjfl/1093883455.full&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Fri, 05 Mar 2021 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2021/03/05/part-site-analysis/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/03/05/part-site-analysis/</guid>
+        
+        <category>Mereology</category>
+        
+        <category>Topology</category>
+        
+        
+      </item>
     
       <item>
         <title>On Naming</title>
         <description>&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;“A proper name, when one meets with it for the first time, is existentially connected with some 
+  &lt;p&gt;“A proper name, when one meets with it for the first time, is existentially connected with some 
 percept or other equivalent individual knowledge of the individual it names. It is then, and 
 then only, a genuine Index. The next time one meets with it, one regards it as an Icon of that 
 Index. The habitual acquaintance with it having been acquired, it becomes a Symbol whose 
 Interpretant represents it as an Icon of an Index of the Individual named.”&lt;/p&gt;
 
-    &lt;blockquote&gt;
-      &lt;p&gt;-C. S. Peirce. Speculative Grammar: Propositions. 1903.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
+  &lt;p&gt;(C. S. Peirce. &lt;em&gt;Speculative Grammar: Propositions.&lt;/em&gt;)&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;I hope these running notes extract some problems in knowledge creation, recognition, and organization; and summarize 
@@ -353,11 +744,21 @@ freedom of taxonomic though or actions.”&lt;/li&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;types-and-the-materialty-of-names&quot;&gt;Types and the Materialty of Names&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;It may not be obvious, but humans programming computers to human names habitually make assumptions
+about naming conventions, which are often untrue. Some examples for such assumptions from &lt;a href=&quot;#ref11&quot;&gt;[11]&lt;/a&gt;,
+which also indicate the problems that formality of The Code tries to circumvent:
+    &lt;ul&gt;
+      &lt;li&gt;People have exactly one canonical full name.&lt;/li&gt;
+      &lt;li&gt;People have exactly one full name which they go by.&lt;/li&gt;
+      &lt;li&gt;People have, at this point in time, exactly one canonical full name.&lt;/li&gt;
+      &lt;li&gt;People’s first names and last names are, by necessity, different.&lt;/li&gt;
+      &lt;li&gt;People have last names, family names, or anything else which is shared by folks recognized as their relatives.&lt;/li&gt;
+      &lt;li&gt;People’s names are almost globally unique.&lt;/li&gt;
+      &lt;li&gt;People’s names are assigned at birth.&lt;/li&gt;
+      &lt;li&gt;Two different systems containing data about the same person will use the same name for that person.&lt;/li&gt;
+      &lt;li&gt;People have names.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
@@ -377,7 +778,9 @@ freedom of taxonomic though or actions.”&lt;/li&gt;
       &lt;li&gt;J. S. Wilkins. Systematic Biology, Volume 61, Issue 2, March 2012, Pages 362–363. &lt;a href=&quot;https://academic.oup.com/sysbio/article/61/2/362/1648669&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a name=&quot;ref11&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref11&quot;&gt;&lt;/a&gt; P. Mckenzie. Falsehoods Programmers Believe About Names. June, 2010. &lt;a href=&quot;https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref12&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+ Shaohong Feng et al. Dense sampling of bird diversity increases power of comparative genomics, Nature (2020). DOI: 10.1038/s41586-020-2873-9. &lt;a href=&quot;https://phys.org/news/2021-02-dense-sampling-bird-diversity-power.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 17 Jan 2021 00:00:00 -0800</pubDate>
@@ -3668,12 +4071,12 @@ OpenOpt SOCP example for the problem http://openopt.org/images/2/28/SOCP.png
 &lt;span class=&quot;c1&quot;&gt;# you could add lb &amp;lt;= x &amp;lt;= ub, Ax &amp;lt;= b, Aeq x = beq constraints
 # via p = SOCP(f,  ..., A=A, b=b, Aeq=Aeq, beq=beq,lb=lb, ub=ub)
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SOCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cvxopt_socp'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cvxopt_socp'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
  
-&lt;span class=&quot;n&quot;&gt;x_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f_opt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ff&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f_opt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ff&lt;/span&gt;
  
 &lt;span class=&quot;c1&quot;&gt;# f_opt: -38.346368    x_opt: [-5.01428121 -5.76680444 -8.52162517]
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' f_opt: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f    x_opt: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' f_opt: %f    x_opt: %s'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python socp.py

@@ -10,13 +10,13 @@ tags:
 - Category
 - Taxonomy
 ---
->>"A proper name, when one meets with it for the first time, is existentially connected with some 
->>percept or other equivalent individual knowledge of the individual it names. It is then, and 
->>then only, a genuine Index. The next time one meets with it, one regards it as an Icon of that 
->>Index. The habitual acquaintance with it having been acquired, it becomes a Symbol whose 
->>Interpretant represents it as an Icon of an Index of the Individual named."  
->>
->>>-C. S. Peirce. Speculative Grammar: Propositions. 1903.
+>"A proper name, when one meets with it for the first time, is existentially connected with some 
+>percept or other equivalent individual knowledge of the individual it names. It is then, and 
+>then only, a genuine Index. The next time one meets with it, one regards it as an Icon of that 
+>Index. The habitual acquaintance with it having been acquired, it becomes a Symbol whose 
+>Interpretant represents it as an Icon of an Index of the Individual named."  
+>
+>(C. S. Peirce. _Speculative Grammar: Propositions._)
 
 I hope these running notes extract some problems in knowledge creation, recognition, and organization; and summarize 
 insights from Michael Ohl's book, "The Art of Naming" (translated by E. Lauffer, published by MIT Press). Ohl is
@@ -224,9 +224,18 @@ Euarthropoda.
     names of animals and to ensure that the name of each taxon is unique and distinct. All its
     provisions and recommendations are subservient to those ends and none restricts the
     freedom of taxonomic though or actions."
-
-## Types and the Materialty of Names
-*  
+* It may not be obvious, but humans programming computers to human names habitually make assumptions
+  about naming conventions, which are often untrue. Some examples for such assumptions from [[11]](#ref11),
+  which also indicate the problems that formality of The Code tries to circumvent:
+  * People have exactly one canonical full name.
+  * People have exactly one full name which they go by.
+  * People have, at this point in time, exactly one canonical full name.
+  * People’s first names and last names are, by necessity, different.
+  * People have last names, family names, or anything else which is shared by folks recognized as their relatives.
+  * People’s names are almost globally unique.
+  * People’s names are assigned at birth.
+  * Two different systems containing data about the same person will use the same name for that person.
+  * People have names.
 
 ## References
 1. <a name="ref1"></a> P. F. Stevens. An Essay on Naming Nature: The Clash Between Instinct and Science. [link](arnoldia.arboretum.harvard.edu/pdf/articles/2010-67-4-an-essay-on-naming-nature-the-clash-between-instinct-and-science.pdf)
@@ -241,4 +250,6 @@ Euarthropoda.
 10. <a name="ref10"></a> R. A. Richards. The Species Problem: A Philosophical Analysis 
   * A. Hamilton. Notre Dame Philosophical Reviews. 2012.03.27. [link](https://ndpr.nd.edu/news/the-species-problem-a-philosophical-analysis/)
   * J. S. Wilkins. Systematic Biology, Volume 61, Issue 2, March 2012, Pages 362–363. [link](https://academic.oup.com/sysbio/article/61/2/362/1648669)
-11. <a name="ref11"></a>
+11. <a name="ref11"></a> P. Mckenzie. Falsehoods Programmers Believe About Names. June, 2010. [link](https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/)
+12. <a name="ref12"></a>  
+ Shaohong Feng et al. Dense sampling of bird diversity increases power of comparative genomics, Nature (2020). DOI: 10.1038/s41586-020-2873-9. [link](https://phys.org/news/2021-02-dense-sampling-bird-diversity-power.html)
