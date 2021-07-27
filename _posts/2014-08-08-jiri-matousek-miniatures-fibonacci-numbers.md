@@ -11,13 +11,13 @@ tags:
 - Mathematics
 ---
 
-Two notes from [Jiřì Matoušek](http://kam.mff.cuni.cz/~matousek/)'s book _Thirty-three Miniatures: Mathematical and 
+Two notes from [Jiřì Matoušek](http://kam.mff.cuni.cz/~matousek/)'s book _Thirty-three Miniatures: Mathematical and 
 Algorithmic Applications of Linear Algebra_ [1](http://www.ams.org/bookstore?fn=20&arg1=stmlseries&ikey=STML-53), 
 [2](http://kam.mff.cuni.cz/~matousek/la-ams.html).
 
 **Fibonacci numbers in $O(lg\ n)$ steps**
 
-1.1 Matrix formulation for recursive calculation
+1.1 Matrix formulation for recursive calculation
 
 $\left\( \begin{array}{c}F_{n+2} \\ F_{n+1}\end{array} \right\) = M\left(\begin{array}{c}F_{n+1}\\ F_{n}\end{array}\right) \\ for\ M\ =\left(\begin{array}{cc}1 & 1 \\ 1 & 0\end{array}\right)\\ \therefore \left(\begin{array}{c}F_{n+1}\\ F_{n}\end{array}\right) = M^{n}\left(\begin{array}{c}1\\ 0\end{array}\right)$
 
@@ -41,11 +41,11 @@ $u_n = \tau^{n} \therefore \tau^{n+2} = \tau^{n+1} + \tau^{n}\ \Rightarrow \tau^
 
 $\tau = (1 \pm \sqrt{5}) / 2$
 
-2.4 The two roots individually form two sequences, **u** and **v**, that are linearly independent. Thus Fibonacci numbers can be written in terms of these basis vectors.
+2.4 The two roots individually form two sequences, **u** and **v**, that are linearly independent. Thus Fibonacci numbers can be written in terms of these basis vectors.
 
 $\mathbf{F} = \alpha \mathbf{u}+ \beta \mathbf{v}$
 
-2.5 The values of α and β can be evaluation by solving the linear systems, and eventually
+2.5 The values of α and β can be evaluation by solving the linear systems, and eventually
 
 $F_n = \frac{1}{\sqrt{5}} \left\( (\frac{1+\sqrt{5}}{2})^{n} - (\frac{1-\sqrt{5}}{2})^n \right\) $
 

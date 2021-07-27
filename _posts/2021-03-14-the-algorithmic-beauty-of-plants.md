@@ -14,6 +14,7 @@ tags:
 
 > "The idea of form implicitly contains also the history of such a form."
 
+
 Notes on Prusinkiewicz and Lindenmayer's beautiful book, "The Algorithmic Beauty of Plans" (Springer-Verlag, 1990),
 which is also available [online](http://algorithmicbotany.org/papers/#abop).
 

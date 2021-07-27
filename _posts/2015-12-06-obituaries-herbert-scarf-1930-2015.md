@@ -10,7 +10,7 @@ tags:
 ---
 
 > ![Herbert Scarf](https://umayrh.files.wordpress.com/2015/12/scarf-230.jpg)In addition to inventory policy, 
->Scarf had at least four more major breakthroughs. Perhaps his most famous discovery is the Scarf algorithm.  
+>Scarf had at least four more major breakthroughs. Perhaps his most famous discovery is the Scarf algorithm.  
 >Arrow and Debreu had proved that the equations describing economic equilibrium always have a solution when goods 
 >are divisible, but they were baffled by the problem of how to find one, except in special cases. The 
 >Scarf algorithm always finds an equilibrium, no matter how complicated the economy. This gave applied economists 
@@ -23,7 +23,7 @@ The four breakthroughs:
 
 1. Computation of equilibria (Scarf algorithm)
 2. Production sets with indivisibilities
-3. Core allocation existence and computation
+3. Core allocation existence and computation
 4. Equivalence of core allocation and competitive equilibrium allocation (Debreu-Scarf Theorem, Edgeworth's conjecture)
 
 [Here's](http://dido.econ.yale.edu/~hes/talks/fixed-point.mov) Scarf presenting 

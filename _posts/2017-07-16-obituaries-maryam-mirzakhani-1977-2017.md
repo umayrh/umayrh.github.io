@@ -10,8 +10,11 @@ tags:
 ---
 
 Maryam Mirzakhani [died](http://www.sfgate.com/bayarea/article/Stanford-University-professor-and-mathematician-11291210.php) 
-today. Terrance Tao [writes](https://terrytao.wordpress.com/2017/07/15/maryam-mirzakhani/) about her. Elsewhere, Derrida - 
-writing about Deleuze (*I'll Have to Wander All Alone*): "Too much to say, and I don't have the heart for it today." It is because:
+today. 
+
+Terrance Tao [writes](https://terrytao.wordpress.com/2017/07/15/maryam-mirzakhani/) about her. 
+Elsewhere, Derrida - writing about Deleuze (_I'll Have to Wander All Alone_): 
+"Too much to say, and I don't have the heart for it today." It is because:
 
 > death takes from us not only some particular life within the world, some moment that belongs to us, but, each time, without limit, someone through whom the world, and first of all our own world, will have opened up in a both finite and infinite—mortally infinite—way.
 

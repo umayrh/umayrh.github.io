@@ -16,14 +16,12 @@ tags:
 - Mathematics
 ---
 
-> Gus wants to open franchises of his restaurant, Los Pollos Hermanos, along Central Avenue. There are $n$ possible 
->locations for franchises, where location i is at mile i on Central. Each location i > 1, is thus a distance of 1 mile 
+> Gus wants to open franchises of his restaurant, Los Pollos Hermanos, along Central Avenue. There are $n$ possible 
+>locations for franchises, where location i is at mile i on Central. Each location i > 1, is thus a distance of 1 mile 
 >from the previous one. There are two rules.
 > 
 > 1. At each location, there can be at most one restaurant, and the profit of a restaurant at location i is $p_i$.
 > 2. Any two restaurants must be at least 2 miles apart.
-
-![clebschgraphk16_800](/assets/images/clebschgraphk16_800.gif)
 
 [This](http://www.cs.unm.edu/~saia/classes/561-f14/hw/hw3.pdf) is one way to state the sequential facility location problem, 
 which can be solved efficiently using a memo-ized dynamic program:
@@ -35,15 +33,15 @@ int sequentialFacility(idx, profits[]):
     return MAX( sequentialFacility(idx + 1),  sequentialFacility(idx + 2) + profits\[idx\])
 ```
 
-Its generalization, graph facility location, is NP-complete, being equivalent to finding the 
-[maximum weighted independent set](https://en.wikipedia.org/wiki/Independent_set_(graph_theory)) of a graph. 
+Its generalization, graph facility location, is NP-complete, being equivalent to finding the 
+[maximum weighted independent set](https://en.wikipedia.org/wiki/Independent_set_(graph_theory)) of a graph. 
 This post is about calculating the weight of such a set, and the number of ways to find this maximum weight, 
 for a general graph. We'll assume non-negative weights throughout.
 
 Let's start with graph representation. We'll assume that the graph can be conveniently represented with 
 [BitSet](https://docs.oracle.com/javase/7/docs/api/java/util/BitSet.html)s (which are very 
-[efficient](http://lemire.me/blog/2012/11/13/fast-sets-of-integers/) to work with). This graph can be searched with a 
-map that gives the adjacent set for each node, and then node independence can be tested for quickly:
+[efficient](http://lemire.me/blog/2012/11/13/fast-sets-of-integers/) to work with). This graph can be searched with a 
+map that gives the adjacent set for each node, and then node independence can be tested for quickly:
 
 ```java
 /*
@@ -62,7 +60,7 @@ private static boolean isIndependent(BitSet set, Map<Integer, BitSet> adjacent) 
 **Singletons**
 
 What if the given graph is composed only of singletons? The max weight of the independent set is trivial: sum of all nodes. 
-The number of ways to achieve this max  depends on whether or not there are nodes with zero weight. There are three cases:
+The number of ways to achieve this max  depends on whether or not there are nodes with zero weight. There are three cases:
 
 1. All node weights are positive
 2. All node weight are zero
@@ -97,14 +95,14 @@ private static Result singletons(int[] w) {
 
 **Forest**
 
-Though a forest in graph theory [refers](https://en.wikipedia.org/wiki/Tree_(graph_theory)#Forest) to a disjoint set of 
-trees, we'll use it to mean any disjoint set of connected components. Forests are a natural extension of singletons, and 
-help decompose a given graph into smaller independent set problems. If we are given all the connected components of a 
+Though a forest in graph theory [refers](https://en.wikipedia.org/wiki/Tree_(graph_theory)#Forest) to a disjoint set of 
+trees, we'll use it to mean any disjoint set of connected components. Forests are a natural extension of singletons, and 
+help decompose a given graph into smaller independent set problems. If we are given all the connected components of a 
 graph, and, for each component, the sum of its weighted max independent set and the number of ways to find the sum; how 
 can we combine this information to solve for the general graph? We face the same three cases:
 
-1. All component weights are positive: the graph sum is the sum of all components, and the number of ways is the product of the ways of all components.
-2. Zero weights: perhaps the most interesting case. Consider three components with ways (1, 2, 3). The number of ways of combining them would be: 1 + (1 + 2 + 3) + (1\*2 + 2\*3 + 1\*3 )+ (1\*2\*3). This enumeration forms a pretty polynomial: given values a, b, c..., there are (a + 1)(b + 1)(c + 1)... ways (including null set). This generalizes naturally to the power-set for the case where a = b = c ...= 1.
+1. All component weights are positive: the graph sum is the sum of all components, and the number of ways is the product of the ways of all components.
+2. Zero weights: perhaps the most interesting case. Consider three components with ways (1, 2, 3). The number of ways of combining them would be: 1 + (1 + 2 + 3) + (1\*2 + 2\*3 + 1\*3 )+ (1\*2\*3). This enumeration forms a pretty polynomial: given values a, b, c..., there are (a + 1)(b + 1)(c + 1)... ways (including null set). This generalizes naturally to the power-set for the case where a = b = c ...= 1.
 3. As before, it's a union of (1) and (2)
 
 ```java

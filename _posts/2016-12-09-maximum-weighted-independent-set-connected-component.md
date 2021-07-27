@@ -15,15 +15,12 @@ tags:
 - Java
 - Mathematics
 ---
+Given a weighted [connected component](https://en.wikipedia.org/wiki/Connected_component_(graph_theory)), what is the 
+weight of the maximum independent set, and how many different sets have this weight? A 
+[Petersen graph](https://en.wikipedia.org/wiki/Petersen_graph) GP(5, 2) with zero vertex weights has three maximal 
+subsets by size, 0 maximum set weight but 76 distinct independent sets with this weight.
 
-![coloringpeteresen2](/assets/images/coloringpeteresen2-gray.png)
-
-Given a weighted [connected component](https://en.wikipedia.org/wiki/Connected_component_(graph_theory)), what is the 
-weight of of the maximum independent set, and how many different sets have this weight? A 
-[Petersen graph](https://en.wikipedia.org/wiki/Petersen_graph) GP(5, 2) with zero vertex weights has three maximal 
-subsets by size, 0 maximum set weight but 76 distinct independent sets with this weight.
-
-The brute-force method is to enumerate all possible set of nodes, check for independence and filter for maximum weight. 
+The brute-force method is to enumerate all possible set of nodes, check for independence and filter for maximum weight. 
 It is guaranteed to run 2^n times, which quickly becomes prohibitively slow (e.g. n >= 30). The only graph this method 
 really works for is a forest of singletons, which, as we saw in the previous post, can be processed very quickly.
 
@@ -51,8 +48,8 @@ private static Result powerSetMethod(int size, Map<Integer, BitSet> adjacent, in
 Yet, as we will see, it is still a simple and useful method for enumerating all sets if n is small.
 
 A faster way would be to start with the set of all nodes and, in each iteration, check for independence. If the set 
-is independent, check for the maximum weight. Otherwise, for a given node with conflict, create two new sets: one 
-without the node, and one without its neighbors. The independent sets iteratively found this way are maximal.
+is independent, check for the maximum weight. Otherwise, for a given node with conflict, create two new sets: one 
+without the node, and one without its neighbors. The independent sets iteratively found this way are maximal.
 
 ```java
 /*
@@ -117,7 +114,7 @@ without the node, and one without its neighbors. The independent sets iterativel
  }
 ```
 
-If all the nodes in a maximum independent set are positively weighted, we can just return all such sets. 
+If all the nodes in a maximum independent set are positively weighted, we can just return all such sets. 
 For maximum sets with zero-weighted nodes, we'll need to find all unique subsets that have the same weight. 
 This is where power-set enumeration is helpful.
 

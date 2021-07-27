@@ -10,7 +10,7 @@ tags:
 
 How well are we doing when forecasting for online ads at [Adap.tv](http://adap.tv/ "Adap.tv")? Can we do better? 
 To start answering such questions, I used [**R**](http://cran.r-project.org/) to experiment with three well-known 
-forecasting techniques and used an hourly metric (transformed for data privacy) across all ads for seven days 
+forecasting techniques and used an hourly metric (transformed for data privacy) across all ads for seven days 
 (Feb 1-Feb 7) as my training data set. Then I use each of the techniques to predict for the eight day (Feb 8), and 
 compare the predicted values with actual data. Here's a synopsis of the three:
 
@@ -60,7 +60,7 @@ F_{t+m}& = (s_t + mb_t)c_{(t+m) \pmod L},<br /><br /><br /><br /><br />
 \end{align}](http://upload.wikimedia.org/wikipedia/en/math/f/9/5/f95f5a3f2a31fc46fbf0f719629ffc0c.png)([ref](http://en.wikipedia.org/wiki/Exponential_smoothing))
 
 The model I used assumes that the seasonal component is additive (instead of being multiplicative). Fig. 3 illustrates 
-the breakdown of seasonality, trend and randomness in the data,  Fig. 4 contrasts observed data with predicted data 
+the breakdown of seasonality, trend and randomness in the data,  Fig. 4 contrasts observed data with predicted data 
 (note that the prediction start after one period, and the phase lag in predicted data), while Fig. 5 shows Holt-Winters 
 prediction for Feb 8 versus observed data. The forecasted metric for Feb 8 was 63801332 whereas observed value was 63868927, 
 giving an absolute difference of ~0.11%. The absolute hourly differences lie between 1.3-20%.

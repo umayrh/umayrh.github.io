@@ -9,9 +9,9 @@ tags:
 - Mereology
 - Topology
 ---
+Notes on Casati and Varzi's book, "Parts and places: the structures of spatial representation"
+(MIT Press).
 
-These notes collate problems in mereology and topology, mostly arising in Casati and Varzi's book, 
-"Parts and places: the structures of spatial representation" (MIT Press).
 
 ## Introduction 
 

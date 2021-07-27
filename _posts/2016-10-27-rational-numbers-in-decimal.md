@@ -12,14 +12,14 @@ tags:
 - Number Theory
 ---
 
-In decimal representation, [rational numbers](https://en.wikipedia.org/wiki/Rational_number) either terminate after a 
+In decimal representation, [rational numbers](https://en.wikipedia.org/wiki/Rational_number) either terminate after a 
 finite number of digits or produce a repeating sequence. Conversely, any repeating decimal can be 
 [converted](http://mathcentral.uregina.ca/QQ/database/QQ.09.06/h/lil1.html) into a rational number e.g. 
 $(10 * 0.333.. - 0.333...) / 9 = 1/3$.
 
-How can one generate this representation in code with the repeating digits, if any, parenthesized? Find values $0 <= n < b$, 
-the period of repeating decimal,  and 0 <= m < b, the length of the period's prefix, such that $(10^n - 1) \* 10^m / b$ is 
-an integer. E.g. $1 / 3 = 0.(3)$ has $n = 1$ and $m = 0$ while $89/26 = 3.4(230769)$ has $n = 6$ and $m = 1$.
+How can one generate this representation in code with the repeating digits, if any, parenthesized? Find values $0 <= n < b$, 
+the period of repeating decimal,  and 0 <= m < b, the length of the period's prefix, such that $(10^n - 1) \* 10^m / b$ is 
+an integer. E.g. $1 / 3 = 0.(3)$ has $n = 1$ and $m = 0$ while $89/26 = 3.4(230769)$ has $n = 6$ and $m = 1$.
 
 Here's code that avoids using floating-point division and shortest repeating substring to find the decimal representation. 
 Note that the method used to find $n$ and $m$ have linear complexity but can be implemented using binary search. 
@@ -93,8 +93,8 @@ private static String sliceString(StringBuilder sb, int prefixLength, int period
 }
 ```
 
-All rational numbers with prime denominators and even length periods  have the 'nines property' i.e. the first and 
-second half-periods of the repeating part add up to 9...9 (Proven in W. G. Leavitt, _A Theorem on Repeating Decimals_, 
+All rational numbers with prime denominators and even length periods  have the 'nines property' i.e. the first and 
+second half-periods of the repeating part add up to 9...9 (Proven in W. G. Leavitt, _A Theorem on Repeating Decimals_, 
 1967 [paper](http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1047&context=mathfacpub). Also, an interesting 
 [lemma](http://mathoverflow.net/questions/41736/how-do-you-calculate-prove-the-length-of-n-the-number-of-non-repeating-digits-p) 
 on the length of the prepend to the period (it is the number of times the denominator is divisible by either 2 or 5).

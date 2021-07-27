@@ -9,8 +9,10 @@ tags:
 - Systems
 - Architecture
 ---
-Metaphor implies repetition with a difference. A catalog might then also be an extended metaphor. This post 
-is an open-ended, self-organizing catalog of catalogs, categories, associations, and tropes.
+Metaphor implies repetition with a difference. A catalog might then also be an extended metaphor. 
+
+This post is an open-ended, self-organizing catalog of catalogs, categories, 
+associations, and tropes.
 
 #### Seven Types of Ambiguity
 

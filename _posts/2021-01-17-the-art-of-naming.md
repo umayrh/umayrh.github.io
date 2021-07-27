@@ -18,9 +18,7 @@ tags:
 >
 >(C. S. Peirce. _Speculative Grammar: Propositions._)
 
-I hope these running notes extract some problems in knowledge creation, recognition, and organization; and summarize 
-insights from Michael Ohl's book, "The Art of Naming" (translated by E. Lauffer, published by MIT Press). Ohl is
-a professor, and a biologist at the Natural History Museum of Berlin. 
+Notes from Michael Ohl's book, "The Art of Naming" (translated by E. Lauffer, published by MIT Press).
 
 ## Prologue: The Beauty of Names 
 

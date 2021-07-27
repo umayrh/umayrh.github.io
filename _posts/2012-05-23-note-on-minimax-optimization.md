@@ -28,28 +28,28 @@ of impressions it needs from each site (there's no objective since impression go
 
 ```
 Maximize
- objective_function: + 0 site3
+ objective_function: + 0 site3
 
 Subject To
- impressions: + 10000 site3 + 10000 site2 + 10000 site1 = 18000
+ impressions: + 10000 site3 + 10000 site2 + 10000 site1 = 18000
 
 Bounds
- 0 <= site1 <= 1
- 0 <= site2 <= 1
- 0 <= site3 <= 1
+ 0 <= site1 <= 1
+ 0 <= site2 <= 1
+ 0 <= site3 <= 1
 
 End
 ```
 
 This formulation effectively only asks to see if the program has a feasible solution, or not, for a given goal and hence 
 there's no restriction that impressions must be bought from all sites, not just any two. The restriction to buy from as 
-many distinct sites as possible (without violating any other, say cost or performance, constraints) would maximize our 
+many distinct sites as possible (without violating any other, say cost or performance, constraints) would maximize our 
 portfolio's diversity, and is best expressed as a _maximin optimization_ objective: maximize the minimum number of 
 impressions across sites.
 
 $$ \max [\min (f_1(x),...,f_n(x))] $$
 
-where $f_{i}(x) (i = 1 \ldots n)$ are linear functions of $x$. In fact, for our purposes, $f_{i}(x) = F_{i}x_{i}$, where $F_i$ 
+where $f_{i}(x) (i = 1 \ldots n)$ are linear functions of $x$. In fact, for our purposes, $f_{i}(x) = F_{i}x_{i}$, where $F_i$ 
 represents forecasted impressions for site $i$ and $x_i$ is the fraction that the optimizer is interested in.
 
 Maximin optimization, in general, is a non-linear convex program. Luckily, it's possible to reformulate it as a 
@@ -59,19 +59,19 @@ $$ \max z \\ \mbox{ s. t.} F_{i} x_{i} \ge z $$
 
 ```
 Maximize
- objective_function: + site0
+ objective_function: + site0
 
 Subject To
- impressions: + 10000 site3 + 10000 site2 + 10000 site1 = 18000
- maximin1: + 10000 site1 - site0 >= 0
- maximin2: + 10000 site2 - site0 >= 0
- maximin3: + 10000 site3 - site0 >= 0
+ impressions: + 10000 site3 + 10000 site2 + 10000 site1 = 18000
+ maximin1: + 10000 site1 - site0 >= 0
+ maximin2: + 10000 site2 - site0 >= 0
+ maximin3: + 10000 site3 - site0 >= 0
 
 Bounds
- 0 <= site1 <= 1
- 0 <= site2 <= 1
- 0 <= site3 <= 1
- site0 free
+ 0 <= site1 <= 1
+ 0 <= site2 <= 1
+ 0 <= site3 <= 1
+ site0 free
 
 End
 ```
@@ -114,7 +114,7 @@ The right constraints (thanks to [3] for showing the way) are:
 
 $$ x_i \geq \epsilon t_i \\ x_i \leq t_i $$
 
-$\epsilon$ is the smallest possible non-zero value of $x_i$ and, in our case, must be the inverse of the maximum 
+$\epsilon$ is the smallest possible non-zero value of $x_i$ and, in our case, must be the inverse of the maximum 
 impressions from any site.
 
 References: 

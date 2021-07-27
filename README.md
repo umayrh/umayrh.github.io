@@ -49,6 +49,11 @@ tags:
 
 The front matter has to have a layout of page. All the other fields are completely optional. If you have an ````author```` variable, then it must match an author's name in ````_config.yml```` (see [Update Settings](#update-settings)). The ````tag```` variable will add a related section to the post and popular tags to the footer.
 
+#### Update postcard
+
+To change the post summary (e.g. from using `post.content` to `post.excerpt`), update
+`_includes/post-card.html`.
+
 ### Create Pages
 Creating a static page is the same as creating a post. The only difference is a page is in the root of the directory rather than the ````_posts```` directory.
 

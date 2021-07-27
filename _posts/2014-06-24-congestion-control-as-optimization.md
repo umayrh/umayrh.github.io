@@ -32,8 +32,8 @@ After a brief overview of TCP, we'll discuss four topics in congestion control:
 
 * (1) V. Jacobson, M. Karels. Congestion Control and Avoidance. Proceedings of SIGCOMM, 1988. 
 * (2) D. Chiu, R. Jain. Analysis of the increase and decrease algorithms for congestion avoidance in computer networks. Computer Networks and ISDN Systems, 1989. 
-* (3) R. Karp, E. Koutsoupias, C. Papadimitriou, S. Shenker.  Optimization Problems in Congestion Control. Proceedings of FOCS, 2000. 
-* (4) F. P. Kelly, A. Maulloo, D. Tan. Rate control in communication networks: shadow prices, proportional fairness and stability. Journal of the Operations Research Society, 1998. 
+* (3) R. Karp, E. Koutsoupias, C. Papadimitriou, S. Shenker.  Optimization Problems in Congestion Control. Proceedings of FOCS, 2000. 
+* (4) F. P. Kelly, A. Maulloo, D. Tan. Rate control in communication networks: shadow prices, proportional fairness and stability. Journal of the Operations Research Society, 1998. 
 * (5) C. Papadimitriou. Algorithms, Games and the Internet. Proceedings of STOC, 2001.
 
 ## TCP congestion control: overview
@@ -41,14 +41,14 @@ After a brief overview of TCP, we'll discuss four topics in congestion control:
 Two variables are essential for congestion control: the congestion window (CWND) and round-trip time (RTT) (6). 
 CWND controls the number of packets transmitted at a given point in time. RTT indicates the time it takes to 
 receive acknowledgement for a packet. Thus the ratio of CWND to RTT indicates the sender's instantaneous sending rate. 
-Another parameter, receiver window (RWND), indicates the number of packets that the receiver is willing to receive. Hence 
+Another parameter, receiver window (RWND), indicates the number of packets that the receiver is willing to receive. Hence 
 the sender needs to send the minimum of RWND and CWND. We'll assume that the receiver bandwidth is not restrictive and 
 hence RWND >> CWND.
 
 RTT is assumed to be a property of the network, and can be decomposed into a fixed component (propagation delay) and a 
-variable component (queuing delay). It is used primarily to estimate the timeout (RTO) span after which an unacknowledged 
+variable component (queuing delay). It is used primarily to estimate the timeout (RTO) span after which an unacknowledged 
 packet is considered lost, which in turn is interpreted as a binary congestion signal. Although, in some cases (TCP Vegas, 
-FAST TCP e.g.), it is also used directly as  multi-bit congestion signal since queuing delays are usually due to congestion.
+FAST TCP e.g.), it is also used directly as  multi-bit congestion signal since queuing delays are usually due to congestion.
 
 CWND itself is determined or limited by various other parameters such as initial window (IW), slow-start threshold 
 (SSTHRESH). Initial window sets the initial size of the CWND, while SSTHRESH is the maximum value of CWND beyond which 
@@ -58,7 +58,7 @@ There are two congestion control phases in TCP: slow-start and congestion avoida
 the sending rate so that the algorithm reaches close to equilibrium value of available bandwidth as soon as possible. 
 Congestion avoidance, on the other hand, allows staying close to equilibrium without causing congestion.
 
-Slow-start works by doubling the CWND  for every packet acknowledged (hence once every RTT), which implies exponential 
+Slow-start works by doubling the CWND  for every packet acknowledged (hence once every RTT), which implies exponential 
 increase in CWND size (2, 4, 8, 16...). This is akin to binary search and allows the sender overshoot the equilibrium value 
 by a factor of at most 2 in log(N)\*RTT time, where N is the number of packets sent. The first slow-start ends when - 
 because of excessive sending rate, and hence congestion at the gateway/router - a packet is lost. At this point, the sender 

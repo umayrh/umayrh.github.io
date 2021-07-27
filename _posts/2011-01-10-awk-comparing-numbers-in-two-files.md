@@ -28,16 +28,16 @@ The following awk script can achieve this, while also skipping any keys not comm
 ```awk
 awk '
 BEGIN {
-   while (getline < "a.txt") {arr\[$1\] = $2}
+   while (getline < "a.txt") {arr\[$1\] = $2}
 } {
-   if (length(arr\[$1\])==0)
-      { print FILENAME":" $0 }
-   else arr2\[$1\]=$2
+   if (length(arr\[$1\])==0)
+      { print FILENAME":" $0 }
+   else arr2\[$1\]=$2
 }
 END {
 for (key in arr)
-   if (arr2\[key\]>0)
-      { print (arr2\[key\]-arr\[key\])\*100/arr2\[key\] }
+   if (arr2\[key\]>0)
+      { print (arr2\[key\]-arr\[key\])\*100/arr2\[key\] }
 }' b.txt
 ```
 
@@ -51,8 +51,8 @@ To find the number of columns in the last line of all files in a directory:
 #!/bin/bash
 
 for file in \*
-  do
-    awk -F"\\t" 'END {print FILENAME, NF}' $file
-  done
+  do
+    awk -F"\\t" 'END {print FILENAME, NF}' $file
+  done
 #
 ```

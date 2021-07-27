@@ -61,13 +61,14 @@ autopages:
   tags:
     layouts: 
       - 'tag.html'
-    title: 'Sketchy Polytope'
+    title: 'Sketchy Polytopes'
     permalink: '/tag/:tag'
     slugify:
       mode: raw
       cased: true
 
 # Build settings
+excerpt_separator: "\n\n"
 markdown: kramdown
 kramdown:
   auto_ids: true
