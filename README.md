@@ -23,15 +23,21 @@ Theme: barber-jekyll
 * [Support](#support)
 
 ### Installation
-Jekyll requires all dependencies to be saved in the ````Gemfile````. Run ````bundle install```` (Install [Bundler](http://bundler.io/) if it is not already) on your command line after downloading or cloning the theme. You can then run ````bundle exec jekyll serve```` or ````npm start```` to see your development site. Run ````bundle exec jekyll build```` or ````npm run build```` to build a production ready site for deployment.
+Jekyll requires all dependencies to be saved in the ````Gemfile````. 
+Run ````bundle install```` (Install [Bundler](http://bundler.io/) if it is not already) on your command line after downloading or 
+cloning the theme. You can then run ````bundle exec jekyll serve```` or ````npm start```` to see your development site. 
+Run ````bundle exec jekyll build```` or ````npm run build```` to build a production ready site for deployment.
+Run ````bundle check```` or ````bundle update```` to sync or update the lock file. 
 
 ### Update Settings
 Almost everything to personalize your site is in the ````_config.yml````. 
 
-You can change the URL the [contact form](#contact-form) is sent to, add Google Analytics, change the SEO settings, grow your website with additional authors, and much more.
+You can change the URL the [contact form](#contact-form) is sent to, add Google Analytics, change the SEO settings, 
+grow your website with additional authors, and much more.
 
 ### Create Posts
-All posts go upder the ````_posts```` directory. You can also have a ````_drafts```` directory with posts that will on your development page, but not in production.
+All posts go under the ````_posts```` directory. You can also have a ````_drafts```` directory with posts that will 
+on your development page, but not in production.
 
 ```
 ---

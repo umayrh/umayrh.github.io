@@ -7,6 +7,8 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve
 #
 # This will help ensure the proper Jekyll version is running.
+gem 'rexml'
+
 # Happy Jekylling!
 gem "jekyll", "~> 3.8.7"
 
@@ -20,3 +22,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "webrick", "~> 1.7"
+
+gem "jekyll-mentions", "~> 1.6"

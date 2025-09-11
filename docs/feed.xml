@@ -6,9 +6,59 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Jul 2021 00:56:21 -0700</pubDate>
-    <lastBuildDate>Tue, 27 Jul 2021 00:56:21 -0700</lastBuildDate>
+    <pubDate>Fri, 12 Sep 2025 01:18:19 +0500</pubDate>
+    <lastBuildDate>Fri, 12 Sep 2025 01:18:19 +0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Process and reality in individuation</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“Individuation may be thought of as temporary resolutions taking place in the heart 
+of a metastable system rich in potential.” (Simondon)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This post is collection of notes on Gilbert Simondon’ book, 
+&lt;a href=&quot;https://www.upress.umn.edu/book-division/books/individuation-in-light-of-notions-of-form-and&quot;&gt;Individuation in Light of Notions of Form and Information&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;form-and-matter&quot;&gt;Form and Matter&lt;/h2&gt;
+
+&lt;h2 id=&quot;form-and-energy&quot;&gt;Form and Energy&lt;/h2&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;S. Jeon et al. Reversible disorder-order transitions in atomic crystal nucleation. Science 371, 498–503 (2021) 
+&lt;a href=&quot;research.physics.berkeley.edu/zettl/pdf/Reversible%20disorder-order%20transitions%20in%20atomic%20crystal%20nucleation.pd&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;J. J. De Yoreo, P. Vakilkov. Principles of Crystal Nucleation and Growth. Reviews in Mineralogy and Geochemistry (2003) 54 (1): 57–93.
+&lt;a href=&quot;https://www.eps.mcgill.ca/~jeannep/eps/EPSC644/Principles%20Of%20Nucleation%20And%20Growth.pdf&quot;&gt;pdf&lt;/a&gt;&lt;br /&gt;
+3.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;notes&quot;&gt;Notes&lt;/h4&gt;
+&lt;h5 id=&quot;nucleation&quot;&gt;Nucleation&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;“In classic nucleation theory, a metastable disordered dense liquid or amorphous 
+solid cluster spontaneously and irreversibly transforms into a crystalline nucleus. 
+Jeon et al. observed the formation of gold crystals on a graphene substrate through 
+the reduction of a precursor using an electron beam. Rather than the classic view, 
+they instead observed a nucleation pathway that involves dynamic and reversible 
+fluctuations of developing nuclei between disordered and crystalline states.” [1]&lt;/li&gt;
+  &lt;li&gt;“…organisms are able to control the location and crystallographic orientation of 
+nucleation, the shape of the growing crystallites, and even the phase of the 
+resulting material.” [2]&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 23 Jul 2021 00:00:00 +0500</pubDate>
+        <link>http://localhost:4000/2021/07/23/individuation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/07/23/individuation/</guid>
+        
+        <category>Philosophy</category>
+        
+        <category>Individuation</category>
+        
+        
+      </item>
     
       <item>
         <title>The Species Problem</title>
@@ -231,7 +281,7 @@ the grounds of reason.&lt;/p&gt;
       &lt;li&gt;‘From this standpoint, the species concept, like teleology, should arguably be allowed to survive in science more as a regulative principle that enables the mind to establish a regular communication with the ambient environment, than as an epistemic principle that guides the search for nomological truth.’&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;A bird’s eye view: biological categorization and reasoning within and across cultures. &lt;a href=&quot;http://web.stanford.edu/~bailenso/papers/A_Bird's_Eye_View.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A bird’s eye view: biological categorization and reasoning within and across cultures. &lt;a href=&quot;http://web.stanford.edu/~bailenso/papers/A_Bird&apos;s_Eye_View.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h5 id=&quot;biological-entities&quot;&gt;Biological entities&lt;/h5&gt;
@@ -266,7 +316,7 @@ the grounds of reason.&lt;/p&gt;
   &lt;li&gt;Review of ‘Reductive Explanation in the Biological Sciences’ &lt;a href=&quot;https://ndpr.nd.edu/reviews/reductive-explanation-in-the-biological-sciences/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 23 Jul 2021 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 23 Jul 2021 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2021/07/23/the-species-problem/</link>
         <guid isPermaLink="true">http://localhost:4000/2021/07/23/the-species-problem/</guid>
         
@@ -478,7 +528,7 @@ self-avoiding.”&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref1&quot;&gt;&lt;/a&gt; The Lighter Side of Mathematics: Proceedings of the Eugene Strens Memorial Conference on Recreational Mathematics and Its History &lt;a href=&quot;www.ams.org/books/spec/011&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Sun, 14 Mar 2021 00:00:00 -0800</pubDate>
+        <pubDate>Sun, 14 Mar 2021 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2021/03/14/the-algorithmic-beauty-of-plants/</link>
         <guid isPermaLink="true">http://localhost:4000/2021/03/14/the-algorithmic-beauty-of-plants/</guid>
         
@@ -666,7 +716,7 @@ distinct object shapes&lt;/li&gt;
 &lt;/ol&gt;
 
 </description>
-        <pubDate>Fri, 05 Mar 2021 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 05 Mar 2021 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2021/03/05/part-site-analysis/</link>
         <guid isPermaLink="true">http://localhost:4000/2021/03/05/part-site-analysis/</guid>
         
@@ -1053,7 +1103,7 @@ which also indicate the problems that formality of The Code tries to circumvent:
  Shaohong Feng et al. Dense sampling of bird diversity increases power of comparative genomics, Nature (2020). DOI: 10.1038/s41586-020-2873-9. &lt;a href=&quot;https://phys.org/news/2021-02-dense-sampling-bird-diversity-power.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Sun, 17 Jan 2021 00:00:00 -0800</pubDate>
+        <pubDate>Sun, 17 Jan 2021 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2021/01/17/the-art-of-naming/</link>
         <guid isPermaLink="true">http://localhost:4000/2021/01/17/the-art-of-naming/</guid>
         
@@ -1234,7 +1284,7 @@ substructures with observational tools, and relating observations using architec
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sat, 11 Jan 2020 00:00:00 -0800</pubDate>
+        <pubDate>Sat, 11 Jan 2020 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2020/01/11/like-as-not/</link>
         <guid isPermaLink="true">http://localhost:4000/2020/01/11/like-as-not/</guid>
         
@@ -1257,7 +1307,7 @@ One senses a process and procedure of inheritance indifferent to the act of birt
 &lt;a href=&quot;https://www.simonsfoundation.org/science_lives_video/cathleen-morawetz/&quot;&gt;said&lt;/a&gt; Morawetz. And, perhaps, Hölderlin would have 
 responded: “By that mysterious yearning toward the chasm; / Chaotic deeps attract, and whole peoples too”&lt;/p&gt;
 </description>
-        <pubDate>Fri, 18 Aug 2017 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 18 Aug 2017 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2017/08/18/obituaries-cathleen-morawetz-1923-2017/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/18/obituaries-cathleen-morawetz-1923-2017/</guid>
         
@@ -1283,7 +1333,7 @@ Elsewhere, Derrida - writing about Deleuze (&lt;em&gt;I’ll Have to Wander All 
 
 &lt;p&gt;&lt;a href=&quot;https://www.ias.edu/ideas/dynamics-moduli-spaces-curves-i&quot;&gt;Dynamics of the Moduli Spaces of Curves&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 16 Jul 2017 00:00:00 -0700</pubDate>
+        <pubDate>Sun, 16 Jul 2017 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2017/07/16/obituaries-maryam-mirzakhani-1977-2017/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/16/obituaries-maryam-mirzakhani-1977-2017/</guid>
         
@@ -1454,7 +1504,7 @@ of a submanifold.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.maa.org/sites/default/files/pdf/awards/The%20Mathematics%20of%20Doodling.pdf&quot;&gt;Vakil04&lt;/a&gt; R. Vakil. &lt;em&gt;The mathematics of doodling&lt;/em&gt;. .&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 23 Dec 2016 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 23 Dec 2016 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2016/12/23/a-fearful-sphere-whose-center-is-everywhere/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/12/23/a-fearful-sphere-whose-center-is-everywhere/</guid>
         
@@ -1528,7 +1578,7 @@ and K &amp;lt;= N/2, then such a derangement always exists. Here’s a short pro
   &lt;li&gt;&lt;a href=&quot;http://www.dcs.warwick.ac.uk/~czumaj/PUBLICATIONS/CONFERENCES/Czumaj-STOC-2015-703-712.pdf&quot;&gt;Czumaj&lt;/a&gt; A. Czumaj. &lt;em&gt;Random permutations using __switching networks&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 10 Dec 2016 00:00:00 -0800</pubDate>
+        <pubDate>Sat, 10 Dec 2016 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2016/12/10/2-butterfly-derangement/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/12/10/2-butterfly-derangement/</guid>
         
@@ -1675,7 +1725,7 @@ This is where power-set enumeration is helpful.&lt;/p&gt;
  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Fri, 09 Dec 2016 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 09 Dec 2016 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2016/12/09/maximum-weighted-independent-set-connected-component/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/12/09/maximum-weighted-independent-set-connected-component/</guid>
         
@@ -1759,7 +1809,7 @@ to 0 using only 0s, including the null set; (3) implies a union of (1) and (2) -
 number of nodes with zero weight.&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/*  * For N singletons, each with weight w[i] &amp;gt;= 0, returns the sum of weights, and the number of ways to achieve
-* sum-weight, across singletons. For all non-zero components, there's only one way to achieve sum-weight.
+* sum-weight, across singletons. For all non-zero components, there&apos;s only one way to achieve sum-weight.
 */&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;singletons&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -1796,8 +1846,8 @@ can we combine this information to solve for the general graph? We face the same
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/*
  * For N components, each with weight w[i] &amp;gt;= 0, returns the sum of weights, and the number of ways to achieve
- * sum-weight, across components. For all non-zero components with ways = 1, there's only one way to achieve
- * sum-weight. For zeros, well, it's a little more complicated. E.g. given components with 0 max, and ways (a, b, * c), there're 2^3 combinations of combinations: a + b + c + (a * b) + (a * c) + (b * c) + (a * b * c) = (a + 1)(b * + 1)(c + 1) e.g. 1 + 2 + 3 + 1*2 + 2*3 + 1*3 + 1*2*3 + 1 (including null set)
+ * sum-weight, across components. For all non-zero components with ways = 1, there&apos;s only one way to achieve
+ * sum-weight. For zeros, well, it&apos;s a little more complicated. E.g. given components with 0 max, and ways (a, b, * c), there&apos;re 2^3 combinations of combinations: a + b + c + (a * b) + (a * c) + (b * c) + (a * b * c) = (a + 1)(b * + 1)(c + 1) e.g. 1 + 2 + 3 + 1*2 + 2*3 + 1*3 + 1*2*3 + 1 (including null set)
  */&lt;/span&gt;
  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;components&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
      &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -1834,7 +1884,7 @@ can we combine this information to solve for the general graph? We face the same
 &lt;p&gt;Once we’ve accounted for singletons and forest, we need to solve the independent set problem for each connected component. 
 This would the topic of the next post.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 06 Dec 2016 00:00:00 -0800</pubDate>
+        <pubDate>Tue, 06 Dec 2016 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2016/12/06/maximum-weighted-independent-set-singletons-and-forest/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/12/06/maximum-weighted-independent-set-singletons-and-forest/</guid>
         
@@ -1920,7 +1970,7 @@ See note at the end for another way to find $m$, the length of the prefix.&lt;/p
      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-     &lt;span class=&quot;n&quot;&gt;sb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;'.'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;sb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&apos;.&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;den&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
      &lt;span class=&quot;n&quot;&gt;rem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -1945,7 +1995,7 @@ second half-periods of the repeating part add up to 9…9 (Proven in W. G. Leavi
 &lt;a href=&quot;http://mathoverflow.net/questions/41736/how-do-you-calculate-prove-the-length-of-n-the-number-of-non-repeating-digits-p&quot;&gt;lemma&lt;/a&gt; 
 on the length of the prepend to the period (it is the number of times the denominator is divisible by either 2 or 5).&lt;/p&gt;
 </description>
-        <pubDate>Thu, 27 Oct 2016 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 27 Oct 2016 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2016/10/27/rational-numbers-in-decimal/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/10/27/rational-numbers-in-decimal/</guid>
         
@@ -2007,7 +2057,7 @@ The trick is to maintain a min-max and a max-min heap such that either heap has 
 
 &lt;p&gt;&lt;a href=&quot;http://www.akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/02/Atkinson86.pdf&quot;&gt;ASSS86&lt;/a&gt; M. D. Atkinson, J.-R. Sack, N. Santoro, and T. Strothotte. &lt;em&gt;Min-max Heaps and Generalized Priority Queues&lt;/em&gt;. Communications of the ACM, Vol. 29 No. 10, 1986.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 27 Oct 2016 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 27 Oct 2016 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2016/10/27/generalized-heaps/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/10/27/generalized-heaps/</guid>
         
@@ -2056,7 +2106,7 @@ Advanced Studies, The Hebrew University, June 30, 2008:&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://dido.econ.yale.edu/~hes/pubs.htm&quot;&gt;Publications&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 06 Dec 2015 00:00:00 -0800</pubDate>
+        <pubDate>Sun, 06 Dec 2015 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2015/12/06/obituaries-herbert-scarf-1930-2015/</link>
         <guid isPermaLink="true">http://localhost:4000/2015/12/06/obituaries-herbert-scarf-1930-2015/</guid>
         
@@ -2095,7 +2145,7 @@ using “no-regret strategies” (i.e. responses that &lt;em&gt;over time&lt;/em
 the number of data samples required to approximate the &lt;em&gt;rationalizable set&lt;/em&gt; “consisting of the set of values 
 and error parameters (v, ε) such that with value v the sequence of bid by the player would have at most ε regret.”&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Jul 2015 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 23 Jul 2015 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2015/07/23/a-terrible-summary-the-risks-of-reporting-on-research/</link>
         <guid isPermaLink="true">http://localhost:4000/2015/07/23/a-terrible-summary-the-risks-of-reporting-on-research/</guid>
         
@@ -2144,7 +2194,7 @@ specific path in the tree whose nodes provide the &lt;em&gt;optimal&lt;/em&gt; r
   &lt;li&gt;[2] D. Austin. Trees, Teeth, and Time: The mathematics of clock making. AMS Feature Column, December 2008.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Tue, 26 May 2015 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 26 May 2015 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2015/05/26/continued-fractions/</link>
         <guid isPermaLink="true">http://localhost:4000/2015/05/26/continued-fractions/</guid>
         
@@ -2200,7 +2250,7 @@ Maeda-Kanata extend RM to handle the case where output dimension is greater than
   &lt;li&gt;&lt;a href=&quot;http://jmlr.csail.mit.edu/proceedings/papers/v28/zhang13e.pdf&quot;&gt;Zhang13&lt;/a&gt; L. Zhang, T. Yang, R. Jin, and X. He. O(logT) Projections for Stochastic Optimization of Smooth and Strongly Convex Functions. Journal of Machine Learning Research, Vol. 28, 2013.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 28 Nov 2014 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 28 Nov 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/11/28/first-order-methods-for-stochastic-optimization/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/11/28/first-order-methods-for-stochastic-optimization/</guid>
         
@@ -2236,7 +2286,7 @@ of abstraction to the solution of concrete problems, and this is the part we wis
   &lt;/tbody&gt;
 &lt;/table&gt;
 </description>
-        <pubDate>Mon, 17 Nov 2014 00:00:00 -0800</pubDate>
+        <pubDate>Mon, 17 Nov 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/11/17/obituaries-alexander-grothendieck-1928-2014/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/11/17/obituaries-alexander-grothendieck-1928-2014/</guid>
         
@@ -2352,7 +2402,7 @@ based on the &lt;a href=&quot;http://grouplens.org/datasets/movielens/&quot;&gt;
 on &lt;a href=&quot;http://ggplot2.org&quot;&gt;ggplot2&lt;/a&gt; and &lt;a href=&quot;http://directlabels.r-forge.r-project.org&quot;&gt;directlabels&lt;/a&gt; for visualization.&lt;/p&gt;
 
 &lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# read the Movie Lens data from file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u1.base&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~/Desktop/mlearn/Rcode/ml-100k/u1.base&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'\t'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col.names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;userId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;itemId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;rating&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;timestamp&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colClasses&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u1.base&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~/Desktop/mlearn/Rcode/ml-100k/u1.base&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;\t&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col.names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;userId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;itemId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;rating&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;timestamp&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colClasses&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
  
 &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# get all unique users and items&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unq.users&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u1.base&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;userId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -2395,7 +2445,7 @@ on &lt;a href=&quot;http://ggplot2.org&quot;&gt;ggplot2&lt;/a&gt; and &lt;a href
  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# read.table does not work without &quot;latin1&quot; encoding and disabling quotes&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u.item.txt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readLines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~/Desktop/mlearn/Rcode/ml-100k/u.item&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;latin1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u.items&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u.item.txt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'|'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col.names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item.col.names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colClasses&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item.col.classes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;latin1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u.items&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u.item.txt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;|&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col.names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item.col.names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colClasses&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item.col.classes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;latin1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u.items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u.items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res.coef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decreasing&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
  
@@ -2595,7 +2645,7 @@ dispersion on its own is not reliable for model selection.&lt;/p&gt;
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 07 Oct 2014 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 07 Oct 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/10/07/nonnegative-matrix-factorization-1/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/10/07/nonnegative-matrix-factorization-1/</guid>
         
@@ -2623,7 +2673,7 @@ to economics.” In 1980, the three shared the John von Neumann Theory Prize of 
 
 &lt;p&gt;&lt;a href=&quot;http://sinews.siam.org/DetailsPage/tabid/607/ArticleID/212/Obituaries-Harold-Kuhn-1925-ndash-2014.aspx&quot;&gt;Obituaries: Harold Kuhn (1925–2014)&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 06 Oct 2014 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 06 Oct 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/10/06/obituaries-harold-kuhn-1925-2014/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/10/06/obituaries-harold-kuhn-1925-2014/</guid>
         
@@ -2648,7 +2698,7 @@ to economics.” In 1980, the three shared the John von Neumann Theory Prize of 
 
 &lt;iframe width=&quot;450&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZU_ATH9Vc6I&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
-        <pubDate>Thu, 21 Aug 2014 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 21 Aug 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/08/21/3-manifolds/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/08/21/3-manifolds/</guid>
         
@@ -2705,7 +2755,7 @@ Algorithmic Applications of Linear Algebra&lt;/em&gt; &lt;a href=&quot;http://ww
 
 &lt;p&gt;See also: &lt;a href=&quot;https://matthewarcus.wordpress.com/2012/12/22/complex-fibonacci/&quot;&gt;complex Fibonacci&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 08 Aug 2014 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 08 Aug 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/08/08/jiri-matousek-miniatures-fibonacci-numbers/</guid>
         
@@ -2730,7 +2780,7 @@ the next week from 1959, etc., continuing up through the year 2000.&lt;/p&gt;
 
 &lt;p&gt;http://journals.aps.org/prl/50years/milestones&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Aug 2014 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 01 Aug 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/08/01/physical-review-of-letters-past/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/08/01/physical-review-of-letters-past/</guid>
         
@@ -2817,8 +2867,8 @@ so we’ll skip them. Instead give an R implementation and results that compares
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ista&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fista&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
  
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;iterations&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'l'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'l'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;iterations&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;l&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;l&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;table&gt;
@@ -3020,7 +3070,7 @@ distribution (which is probably why it escapes the upper-bounds for first-order 
 
 &lt;p&gt;Main image from &lt;a href=&quot;https://lossfunctions.tumblr.com/image/126914340062&quot;&gt;lossfunctions.tumblr&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 24 Jul 2014 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 24 Jul 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/07/24/accelerated-first-order-methods-for-regularization/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/24/accelerated-first-order-methods-for-regularization/</guid>
         
@@ -3187,7 +3237,7 @@ Next post discusses techniques that utilize accelerated gradient descent to solv
 “A beautiful plot can be obtained by plotting $T_{n}(x)$ radially, increasing the radius for each value of $n$, and 
 filling in the areas between the curves (Trott 1999, pp. 10 and 84).”&lt;/p&gt;
 </description>
-        <pubDate>Mon, 21 Jul 2014 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 21 Jul 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/07/21/accelerating-first-order-methods/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/21/accelerating-first-order-methods/</guid>
         
@@ -3231,7 +3281,7 @@ of the function at a point $x_0$ are all values of $c$ such that:&lt;/p&gt;
 
 &lt;p&gt;Image from the Hal Daumé’s post, &lt;a href=&quot;https://nlpers.blogspot.com/2016/06/subgradient-descent-or-something.html&quot;&gt;Subgradient descent, or something…&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 17 Jul 2014 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 17 Jul 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/07/17/subgradient/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/17/subgradient/</guid>
         
@@ -3375,7 +3425,7 @@ will be the topic of our next post.&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#e[100:115] &amp;lt;- 30&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
  
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'l'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'blue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;signal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;time&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;l&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;blue&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;signal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;time&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
  
 &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## Proximal algorithm for l1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -3430,7 +3480,7 @@ Signal recovery using L1-Prox&lt;/p&gt;
 &lt;p&gt;The image comes from &lt;a href=&quot;https://regularize.wordpress.com/2012/05/21/problems-solved-rip-and-nsp-are-np-hard-homotopy-for-l1-has-exponential-complexity/&quot;&gt;regularize.wordpress&lt;/a&gt;, 
 and shows a 3d Mairal-Yu simplex, the equivalent of a Klee-Minty cube for the $L_1$ homotopy method.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 17 Jul 2014 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 17 Jul 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/07/17/first-order-methods-for-regularization/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/17/first-order-methods-for-regularization/</guid>
         
@@ -3528,7 +3578,7 @@ only if $f^{\ast}$ is $\frac{1}{\alpha}$-strongly smooth with respect to the dua
 
 &lt;p&gt;Image from Sebastian Pokutta’s post, &lt;a href=&quot;(http://www.pokutta.com/blog/research/2018/12/07/cheatsheet-smooth-idealized.html)&quot;&gt;Cheat Sheet: Smooth Convex Optimization&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 09 Jul 2014 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 09 Jul 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/07/09/strong-convexity/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/09/strong-convexity/</guid>
         
@@ -3583,7 +3633,7 @@ Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/geometric_proof.png&quot; alt=&quot;geometric_proof&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 08 Jul 2014 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 08 Jul 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/07/08/geometric-median-robust-estimation/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/08/geometric-median-robust-estimation/</guid>
         
@@ -3595,7 +3645,7 @@ Fermat-Weber &lt;a href=&quot;https://mgje.github.io/presentations/Budapest2014/
       </item>
     
       <item>
-        <title>EC'14 - some intriguing papers</title>
+        <title>EC&apos;14 - some intriguing papers</title>
         <description>&lt;h4 id=&quot;bandits-with-concave-rewards-and-convex-knapsacks&quot;&gt;Bandits with concave rewards and convex knapsacks.&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;http://arxiv.org/pdf/1402.5758v1.pdf&quot;&gt;Paper&lt;/a&gt; by Shipra Agrawal and Nikhil R. Devanur.
 Introduces and gives polynomial-time near-optimal algorithms for a general model for bandit exploration-exploitation. 
@@ -3645,7 +3695,7 @@ and shows that the new axiom allows a more compact representation for every mean
 
 &lt;p&gt;A complete list of papers is available &lt;a href=&quot;http://www.sigecom.org/ec14/accepted_papers.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 07 Jul 2014 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 07 Jul 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/07/07/ec14-some-intriguing-papers/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/07/07/ec14-some-intriguing-papers/</guid>
         
@@ -3723,7 +3773,7 @@ the CWND is reset to half of SSTHRESH.&lt;/p&gt;
 
 &lt;p&gt;[&lt;em&gt;to be concluded&lt;/em&gt;]&lt;/p&gt;
 </description>
-        <pubDate>Tue, 24 Jun 2014 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 24 Jun 2014 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2014/06/24/congestion-control-as-optimization/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/06/24/congestion-control-as-optimization/</guid>
         
@@ -3761,7 +3811,7 @@ has a couple of other more complicated but interesting solutions.&lt;/p&gt;
   &lt;li&gt;[2] W. Feller, An introduction to probability theory and its applications, vol. 1, 1957&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 26 Oct 2013 00:00:00 -0700</pubDate>
+        <pubDate>Sat, 26 Oct 2013 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2013/10/26/estimating-uniques-sampling-with-replacement/</link>
         <guid isPermaLink="true">http://localhost:4000/2013/10/26/estimating-uniques-sampling-with-replacement/</guid>
         
@@ -3780,24 +3830,24 @@ has a couple of other more complicated but interesting solutions.&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-4+8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;runif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;115&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'l'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;l&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Various packages in R support linear regression models, such as &lt;code class=&quot;highlighter-rouge&quot;&gt;stats&lt;/code&gt; (for least-squares) and &lt;code class=&quot;highlighter-rouge&quot;&gt;quantreg&lt;/code&gt; 
 (for quantile regression):&lt;/p&gt;
 
 &lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'green'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;green&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qr.solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
  
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rlm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'red'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;red&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qr.solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
  
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantreg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'darkred'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;darkred&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qr.solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fitted.values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -3819,7 +3869,7 @@ has a couple of other more complicated but interesting solutions.&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dvec&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;+2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solve.QP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dvec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Amat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;meq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bvec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bvec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'blue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;blue&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
  
 &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Ordinary Least Absolute Deviation regression&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -3836,7 +3886,7 @@ has a couple of other more complicated but interesting solutions.&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Rglpk_solve_LP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rhs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'green'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yhat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;green&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Regression using $L_1$, $L_2$ and $L_{\infty}$ norms 
@@ -3846,7 +3896,7 @@ has a couple of other more complicated but interesting solutions.&lt;/p&gt;
 
 &lt;p&gt;How do these implementation work? What are their limitations?&lt;/p&gt;
 </description>
-        <pubDate>Mon, 19 Nov 2012 00:00:00 -0800</pubDate>
+        <pubDate>Mon, 19 Nov 2012 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2012/11/19/linear-regression-in-r/</link>
         <guid isPermaLink="true">http://localhost:4000/2012/11/19/linear-regression-in-r/</guid>
         
@@ -3891,7 +3941,7 @@ problem easier:&lt;/p&gt;
     &lt;span class=&quot;nc&quot;&gt;StringBuffer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StringBuffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;substr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;substrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;'.'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&apos;.&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setLength&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
@@ -3977,7 +4027,7 @@ from point (0, 0) to (n, k) in a Cartesian plane that use either an up-step (1,1
   &lt;li&gt;[2] A &lt;a href=&quot;http://www.fq.math.ca/Scanned/40-1/woan.pdf&quot;&gt;Combinatorial Proof&lt;/a&gt; of a Recursive Relation of the Motzkin Sequence by Lattice Paths&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 24 May 2012 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 24 May 2012 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2012/05/24/ip-possibilities/</link>
         <guid isPermaLink="true">http://localhost:4000/2012/05/24/ip-possibilities/</guid>
         
@@ -4101,7 +4151,7 @@ impressions from any site.&lt;/p&gt;
   &lt;li&gt;[3] &lt;a href=&quot;http://www.aimms.com/aimms/download/manuals/aimms3om_integerprogrammingtricks.pdf&quot;&gt;Integer Programming Tricks&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 23 May 2012 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 23 May 2012 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2012/05/23/note-on-minimax-optimization/</link>
         <guid isPermaLink="true">http://localhost:4000/2012/05/23/note-on-minimax-optimization/</guid>
         
@@ -4279,7 +4329,7 @@ left sub-array, and the rest in the right. The following version requires O(lgN)
 
 &lt;p&gt;Image from &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/a/ae/Metal_movable_type.jpg&quot;&gt;Wikimedia&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 20 May 2012 00:00:00 -0700</pubDate>
+        <pubDate>Sun, 20 May 2012 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2012/05/20/sorting-primer/</link>
         <guid isPermaLink="true">http://localhost:4000/2012/05/20/sorting-primer/</guid>
         
@@ -4329,12 +4379,12 @@ OpenOpt SOCP example for the problem http://openopt.org/images/2/28/SOCP.png
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;openopt&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SOCP&lt;/span&gt;
  
 &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;C0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'-13 3 5; -12 12 -6'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;C0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;-13 3 5; -12 12 -6&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;d0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;q0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;s0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;
  
-&lt;span class=&quot;n&quot;&gt;C1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'-3 6 2; 1 9 2; -1 -19 3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;C1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;-3 6 2; 1 9 2; -1 -19 3&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;d1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;q1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;
@@ -4342,12 +4392,12 @@ OpenOpt SOCP example for the problem http://openopt.org/images/2/28/SOCP.png
 &lt;span class=&quot;c1&quot;&gt;# you could add lb &amp;lt;= x &amp;lt;= ub, Ax &amp;lt;= b, Aeq x = beq constraints
 # via p = SOCP(f,  ..., A=A, b=b, Aeq=Aeq, beq=beq,lb=lb, ub=ub)
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SOCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cvxopt_socp'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;cvxopt_socp&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
  
 &lt;span class=&quot;n&quot;&gt;x_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f_opt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ff&lt;/span&gt;
  
 &lt;span class=&quot;c1&quot;&gt;# f_opt: -38.346368    x_opt: [-5.01428121 -5.76680444 -8.52162517]
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' f_opt: %f    x_opt: %s'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos; f_opt: %f    x_opt: %s&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python socp.py
@@ -4373,7 +4423,7 @@ objFunValue: -38.346368
  f\_opt: -38.346368    x\_opt: \[-5.01469912 -5.76690749 -8.52177183\]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Wed, 21 Mar 2012 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 21 Mar 2012 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2012/03/21/convex-optimization-in-five-easy-steps/</link>
         <guid isPermaLink="true">http://localhost:4000/2012/03/21/convex-optimization-in-five-easy-steps/</guid>
         
@@ -4458,7 +4508,7 @@ This may be critical since non-stationary time series should &lt;em&gt;not&lt;/e
   &lt;li&gt;Compare models when data is uniformly sampled&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 15 Feb 2012 00:00:00 -0800</pubDate>
+        <pubDate>Wed, 15 Feb 2012 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2012/02/15/three-forecasting-techniques/</link>
         <guid isPermaLink="true">http://localhost:4000/2012/02/15/three-forecasting-techniques/</guid>
         
@@ -4477,7 +4527,7 @@ This may be critical since non-stationary time series should &lt;em&gt;not&lt;/e
   &lt;li&gt;Listing number of tcp connections to servers&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;netstat -a | grep mysql | sort +3 -4 | tr -s ' ' | cut -d' ' -f5 | cut -d: -f1 | uniq -c&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;netstat -a | grep mysql | sort +3 -4 | tr -s &apos; &apos; | cut -d&apos; &apos; -f5 | cut -d: -f1 | uniq -c&lt;/code&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Regex match IP address&lt;/li&gt;
@@ -4498,7 +4548,7 @@ This may be critical since non-stationary time series should &lt;em&gt;not&lt;/e
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat adproc-diag.log | grep &quot;:postprocess:&quot; | sed &quot;s/2011.\*INFO | //&quot; | grep &quot;:postprocess:SamplingHandler&quot; | awk -F: '{print $1,$4}' &amp;gt; postprocess.sampling.log&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat adproc-diag.log | grep &quot;:postprocess:&quot; | sed &quot;s/2011.\*INFO | //&quot; | grep &quot;:postprocess:SamplingHandler&quot; | awk -F: &apos;{print $1,$4}&apos; &amp;gt; postprocess.sampling.log&lt;/code&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Find all directories inside a directory&lt;/li&gt;
@@ -4510,13 +4560,13 @@ This may be critical since non-stationary time series should &lt;em&gt;not&lt;/e
   &lt;li&gt;Finding DB sizes&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT TABLE\_SCHEMA AS 'database', TABLE\_NAME AS 'tables', CONCAT(ROUND(((DATA\_LENGTH + INDEX\_LENGTH - DATA\_FREE) / 1024 / 1024),2),&quot; MB&quot;) AS Size FROM INFORMATION\_SCHEMA.TABLES where TABLE\_SCHEMA like '%bonus\_reporting%';&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT TABLE\_SCHEMA AS &apos;database&apos;, TABLE\_NAME AS &apos;tables&apos;, CONCAT(ROUND(((DATA\_LENGTH + INDEX\_LENGTH - DATA\_FREE) / 1024 / 1024),2),&quot; MB&quot;) AS Size FROM INFORMATION\_SCHEMA.TABLES where TABLE\_SCHEMA like &apos;%bonus\_reporting%&apos;;&lt;/code&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Calculate various percentiles given a file containing one numeric observation per line [1]:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat data.log | sort -n | awk 'BEGIN {count=0} {arr[count]=$1;count++;} END{p[0]=0.5;p[1]=0.75;p[2]=0.9;p[3]=0.95;p[4]=0.99; for(i=0;i&amp;lt;=4;i++){v=int((p[i]\*count)+0.5);print (p[i]\*100) &quot;th percentile: &quot; arr[v] &quot;\\n&quot;}}'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat data.log | sort -n | awk &apos;BEGIN {count=0} {arr[count]=$1;count++;} END{p[0]=0.5;p[1]=0.75;p[2]=0.9;p[3]=0.95;p[4]=0.99; for(i=0;i&amp;lt;=4;i++){v=int((p[i]\*count)+0.5);print (p[i]\*100) &quot;th percentile: &quot; arr[v] &quot;\\n&quot;}}&apos;&lt;/code&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Skip downloading existing files&lt;/li&gt;
@@ -4530,7 +4580,7 @@ This may be critical since non-stationary time series should &lt;em&gt;not&lt;/e
   &lt;li&gt;[1] http://www.novell.com/communities/node/8706/check-mysql-database-size-using-sql-query&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 15 Dec 2011 00:00:00 -0800</pubDate>
+        <pubDate>Thu, 15 Dec 2011 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2011/12/15/shell-scripts/</link>
         <guid isPermaLink="true">http://localhost:4000/2011/12/15/shell-scripts/</guid>
         
@@ -4585,7 +4635,7 @@ mexican-coke
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;c = [1 1 1 1 1 1 1 1 1 1 1 1];
 a = [802 421 143 -302 137 316 150 -611 -466 -42 -195 -295];
-b = [0]';
+b = [0]&apos;;
 lb = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 ub = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 ctype = &quot;S&quot;;
@@ -4604,7 +4654,7 @@ param.itlim = -1;
   &lt;li&gt;[2] http://mosaic.cnfolio.com/B324CW2010A105&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 17 Aug 2011 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 17 Aug 2011 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2011/08/17/problem-the-dropbox-diet/</link>
         <guid isPermaLink="true">http://localhost:4000/2011/08/17/problem-the-dropbox-diet/</guid>
         
@@ -4617,12 +4667,12 @@ param.itlim = -1;
 side. JDBC clients may need to pass “sessionVariables=maxAllowedPacket=…” during connection setup since the driver 
 may not support changing session properties once the session has been established.See also 
 &lt;a href=&quot;http://dev.mysql.com/doc/refman/5.0/en/packet-too-large.html&quot;&gt;this post&lt;/a&gt;. On server side, 
-&lt;code class=&quot;highlighter-rouge&quot;&gt;mysql --max_allowed_packet=32M&lt;/code&gt; to set the property and &lt;code class=&quot;highlighter-rouge&quot;&gt;show variables like 'max_allowed_packet&lt;/code&gt; to query it.&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;mysql --max_allowed_packet=32M&lt;/code&gt; to set the property and &lt;code class=&quot;highlighter-rouge&quot;&gt;show variables like &apos;max_allowed_packet&lt;/code&gt; to query it.&lt;/p&gt;
 
 &lt;p&gt;Note that max allowed packet property is distinct from the fetch size property, which limits the number of rows 
 fetched from the database.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 17 Aug 2011 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 17 Aug 2011 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2011/08/17/notes-on-database-and-sql/</link>
         <guid isPermaLink="true">http://localhost:4000/2011/08/17/notes-on-database-and-sql/</guid>
         
@@ -4687,14 +4737,14 @@ replicas (if any) of the file being compared with others.&lt;/li&gt;
     -- compare b1 with each block read from all other files (F2, F3...) in G1
     -- IFF for some file F_i, b1 is not equals to b_i, then 
          try inserting F_i based on b_i in all groups other than G1; 
-       otherwise create a new group (if it doesn't exist) G_j and add F_i to G_
+       otherwise create a new group (if it doesn&apos;t exist) G_j and add F_i to G_
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;The above algorithm, in the worst case, requires O(n^2) block compares.&lt;/p&gt;
 
 &lt;p&gt;The first and second passes might incur unnecessary overhead if it is known &lt;em&gt;a priori&lt;/em&gt; that almost all the files are 
 exact replicas of each other.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 22 Jul 2011 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 22 Jul 2011 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2011/07/22/fast-file-comparison/</link>
         <guid isPermaLink="true">http://localhost:4000/2011/07/22/fast-file-comparison/</guid>
         
@@ -4731,7 +4781,7 @@ ways to avoid this:&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;str = &quot;$str&quot; . &quot;\\n&quot;; my @array = split( /\\t/, $str); splice(@array, $#array, 1)&lt;/code&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 14 Jan 2011 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 14 Jan 2011 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2011/01/14/perl-split-tricks/</link>
         <guid isPermaLink="true">http://localhost:4000/2011/01/14/perl-split-tricks/</guid>
         
@@ -4757,7 +4807,7 @@ percentage difference between corresponding keys in the file?&lt;/p&gt;
 
 &lt;p&gt;The following awk script can achieve this, while also skipping any keys not common to both files:&lt;/p&gt;
 
-&lt;div class=&quot;language-awk highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;
+&lt;div class=&quot;language-awk highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&apos;&lt;/span&gt;
 &lt;span class=&quot;kr&quot;&gt;BEGIN&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;getline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;a.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -4769,7 +4819,7 @@ percentage difference between corresponding keys in the file?&lt;/p&gt;
 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;txt&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;txt&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To achieve the same for more than two files, we can modify the while loop in BEGIN to read the contents of all but 
@@ -4782,12 +4832,12 @@ arrays before processing the array’s contents.&lt;/p&gt;
 
 &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;file &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\*&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;do
-    &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&quot;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'END {print FILENAME, NF}'&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;
+    &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;t&quot;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;END {print FILENAME, NF}&apos;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Mon, 10 Jan 2011 00:00:00 -0800</pubDate>
+        <pubDate>Mon, 10 Jan 2011 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2011/01/10/awk-comparing-numbers-in-two-files/</link>
         <guid isPermaLink="true">http://localhost:4000/2011/01/10/awk-comparing-numbers-in-two-files/</guid>
         
@@ -4911,7 +4961,7 @@ the aggregated_table above, when created, include the new columns.&lt;/p&gt;
 ensuring that it is carried out within a transaction. More information on code and limitations available 
 &lt;a href=&quot;http://blog.sqlauthority.com/2010/03/04/sql-server-rollback-truncate-command-in-transaction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 26 Aug 2010 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 26 Aug 2010 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2010/08/26/notes-on-databases-mass-deletion-aggregation-and-migration/</link>
         <guid isPermaLink="true">http://localhost:4000/2010/08/26/notes-on-databases-mass-deletion-aggregation-and-migration/</guid>
         
@@ -5017,7 +5067,7 @@ used by &lt;a href=&quot;http://en.wikipedia.org/wiki/Lowest_common_ancestor&quo
   &lt;li&gt;[1] Some simple binary &lt;a href=&quot;http://cslibrary.stanford.edu/110/BinaryTrees.html&quot;&gt;tree problems&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 28 Jul 2010 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 28 Jul 2010 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2010/07/28/data-structure-problems-binary-trees/</link>
         <guid isPermaLink="true">http://localhost:4000/2010/07/28/data-structure-problems-binary-trees/</guid>
         
@@ -5064,7 +5114,7 @@ index - if current median is greater, find median of medians from pivot index to
   &lt;li&gt;&lt;a href=&quot;ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf&quot;&gt;William Pugh’s paper&lt;/a&gt; on skip lists&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Tue, 27 Jul 2010 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 27 Jul 2010 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2010/07/27/data-structure-problems-statistics/</link>
         <guid isPermaLink="true">http://localhost:4000/2010/07/27/data-structure-problems-statistics/</guid>
         
@@ -5085,7 +5135,7 @@ index - if current median is greater, find median of medians from pivot index to
   &lt;li&gt;On various priority queue functions: &lt;a href=&quot;http://www.utdallas.edu/~ravip/cs3345/slidesweb/node5.html&quot;&gt;read&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 24 Jul 2010 00:00:00 -0700</pubDate>
+        <pubDate>Sat, 24 Jul 2010 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2010/07/24/heaps/</link>
         <guid isPermaLink="true">http://localhost:4000/2010/07/24/heaps/</guid>
         
@@ -5196,7 +5246,7 @@ ie: 38, 40, 55, 89, 6, 13, 20, 23, 36.”&lt;/p&gt;
 
 &lt;h5 id=&quot;9-how-to-find-the-kth-node-from-last-in-a-singly-linked-list&quot;&gt;9 How to find the kth node from last in a singly-linked list?&lt;/h5&gt;
 </description>
-        <pubDate>Tue, 02 Feb 2010 00:00:00 -0800</pubDate>
+        <pubDate>Tue, 02 Feb 2010 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2010/02/02/linked-lists/</link>
         <guid isPermaLink="true">http://localhost:4000/2010/02/02/linked-lists/</guid>
         
