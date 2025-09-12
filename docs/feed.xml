@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Sep 2025 02:03:27 +0500</pubDate>
-    <lastBuildDate>Fri, 12 Sep 2025 02:03:27 +0500</lastBuildDate>
+    <pubDate>Fri, 12 Sep 2025 17:39:05 +0500</pubDate>
+    <lastBuildDate>Fri, 12 Sep 2025 17:39:05 +0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -18,11 +18,83 @@ of a metastable system rich in potential.” (Simondon)&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;This post is collection of notes on Gilbert Simondon’ book, 
-&lt;a href=&quot;https://www.upress.umn.edu/book-division/books/individuation-in-light-of-notions-of-form-and&quot;&gt;Individuation in Light of Notions of Form and Information&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&quot;https://www.upress.umn.edu/book-division/books/individuation-in-light-of-notions-of-form-and&quot;&gt;Individuation in Light of Notions of Form and Information&lt;/a&gt;. 
+Image courtesy of &lt;a href=&quot;https://fyfluiddynamics.com/2020/08/crystalline-critters/&quot;&gt;FYFD&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;form-and-matter&quot;&gt;Form and Matter&lt;/h2&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;h2 id=&quot;form-and-energy&quot;&gt;Form and Energy&lt;/h2&gt;
+&lt;p&gt;Philosophy often focuses on existence and essence while individual beings only serve as
+the apparent evidence of a different reality. Simondon, returning philosophy’s focus to the process of
+an individual’s formation, says that what is implicit here is the assumption that there is a “principle of
+individuation prior to individuation itself that is capable of explaining, producing, and guiding it.” Perhaps
+what makes his new focus unique is his refusal to “grant an ontological privilege to the constituted individual.”
+And so Simondon begins with two postulates:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Individuation has a principle&lt;/li&gt;
+  &lt;li&gt;Individuation explains the individual, and not vice versa.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By page 2, Simondon deems philosophy - atomism and hylomorphism, in particular - to have inadequately
+described individuation. By page 5, Simondon lays out what makes his thesis possible: “Individuation has not
+been able to be adequately thought and described because only a single form of equilibrium was known, namely stable 
+equilibrium; what was unknown was precisely metastable equilibrium.” It is as if Simondon is announcing a 
+new relationship of philosophy with natural sciences, physics and biology, in particular. And so Simondon folds
+into philosophy concepts from thermodynamics like:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;system&lt;/li&gt;
+  &lt;li&gt;potential energy&lt;/li&gt;
+  &lt;li&gt;phase&lt;/li&gt;
+  &lt;li&gt;equilibrium (stable, metastable)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And, at least, in the first half of the book, his examples focus on:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;crystallization&lt;/li&gt;
+  &lt;li&gt;boiling and condensation&lt;/li&gt;
+  &lt;li&gt;rain, clouds, and snow&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Though the phenomena also spans protein formation, semiconductor development, and alloy design. In other words,
+nucleation pervades nature as well as technology.&lt;/p&gt;
+
+&lt;p&gt;“If…we supposed that individuation doesn’t just produce the individual, we would not seek to pass quickly through
+the stage of individuation to arrive at this ultimate reality that the individual is…” (pg. 3)&lt;/p&gt;
+
+&lt;p&gt;The principle of individuation is:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Analytical: it is genesis - ontogenesis - in reverse,&lt;/li&gt;
+  &lt;li&gt;Explanatory: it accounts for an individual’s &lt;em&gt;haecceity&lt;/em&gt;: what makes an individual unique,&lt;/li&gt;
+  &lt;li&gt;Primordial, in its operation:
+    &lt;ul&gt;
+      &lt;li&gt;“The individual…a relative reality… does not fully exist by itself”&lt;/li&gt;
+      &lt;li&gt;“…individuation does not fully exhaust in a single stroke the potentials of pre-individual reality”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And so individuation can be redefined without reference to the individual: “a partial and relative resolution
+that manifests in a system which contains potentials and includes a certain incompatibility with respect to itself, an
+incompatibility that consists of forces of tension and the impossibility of an interaction between the extreme terms
+of the dimensions.” In other words, the essential aspect is not the coherence of the individual but the persistence of 
+potentials in a system.&lt;/p&gt;
+
+&lt;p&gt;This lead to a redefinition of ontogenesis - not in terms of the constituted individual - but as a relationship 
+of being and phase-shifting, a re-consideration of being, and a revaluation of the logic of being:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Pre-individual being is being in which no phase exists”&lt;/li&gt;
+  &lt;li&gt;“Individuation corresponds to the appearance of phases in the being that are the phases of the being.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;media&quot;&gt;Media&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Wenting Zhu, &lt;a href=&quot;https://vimeo.com/333319621&quot;&gt;Salt crystallization in the Arctic.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fyfluiddynamics.com/category/fyfd-video/&quot;&gt;FYFD Videos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gfm.aps.org/&quot;&gt;APS Gallery of Fluid Motion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gfm.aps.org/meetings/dfd-2023/649b3ad8199e4c137897831b&quot;&gt;The hydrodynamics of marbling art&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://benton.uconn.edu/clouds-a-collaboration-with-fluid-dynamics/&quot;&gt;Clouds: A Collaboration with Fluid Dynamics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sun-yue.com/art-animation/paper-marbling/&quot;&gt;Paper marbling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
 
@@ -30,8 +102,13 @@ of a metastable system rich in potential.” (Simondon)&lt;/p&gt;
   &lt;li&gt;S. Jeon et al. Reversible disorder-order transitions in atomic crystal nucleation. Science 371, 498–503 (2021) 
 &lt;a href=&quot;research.physics.berkeley.edu/zettl/pdf/Reversible%20disorder-order%20transitions%20in%20atomic%20crystal%20nucleation.pd&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;J. J. De Yoreo, P. Vakilkov. Principles of Crystal Nucleation and Growth. Reviews in Mineralogy and Geochemistry (2003) 54 (1): 57–93.
-&lt;a href=&quot;https://www.eps.mcgill.ca/~jeannep/eps/EPSC644/Principles%20Of%20Nucleation%20And%20Growth.pdf&quot;&gt;pdf&lt;/a&gt;&lt;br /&gt;
-3.&lt;/li&gt;
+&lt;a href=&quot;https://www.eps.mcgill.ca/~jeannep/eps/EPSC644/Principles%20Of%20Nucleation%20And%20Growth.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;W. H. Rodebush and J. V Clarke, Jr. Spontaneous Nucleation in Supersaturated Vapors. &lt;a href=&quot;https://www.pnas.org/doi/10.1073/pnas.44.6.536?url_ver=Z39.88-2003&amp;amp;rfr_id=ori%3Arid%3Acrossref.org&amp;amp;rfr_dat=cr_pub++0pubmed&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;V. I. Kalikmanov. Nucleation Theory. &lt;a href=&quot;https://link.springer.com/chapter/10.1007/978-90-481-3643-8_1&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;R. P. Sear. Nucleation: theory and applications to protein solutions and colloidal suspensions (2007). &lt;a href=&quot;http://personal.ph.surrey.ac.uk/~phs1rs/review.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;T. Shepherd. BYOE: Making Connections between Fluid Mechanics and Abstract Painting. &lt;a href=&quot;https://cornerstone.lib.mnsu.edu/cgi/viewcontent.cgi?article=1108&amp;amp;context=ie-fac-pubs&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;S. Perkowitz. Akiko Nakayama: the Japanese artist skilled in fluid mechanics. &lt;a href=&quot;https://physicsworld.com/a/akiko-nakayama-the-japanese-artist-skilled-in-fluid-mechanics/&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h4 id=&quot;notes&quot;&gt;Notes&lt;/h4&gt;
@@ -46,6 +123,14 @@ fluctuations of developing nuclei between disordered and crystalline states.” 
   &lt;li&gt;“…organisms are able to control the location and crystallographic orientation of 
 nucleation, the shape of the growing crystallites, and even the phase of the 
 resulting material.” [2]&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;conception&quot;&gt;Conception&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;“The maternal–fetal interface (MFI) has long been considered an evolutionarily unresolved frontier of 
+genetic conflict owing to the genetic distinctness of the two sides of the interface. This unresolved 
+conflict has resulted in a diverse biological landscape of solutions” &lt;a href=&quot;https://www.pnas.org/doi/10.1073/pnas.2323038122&quot;&gt;PNAS&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
