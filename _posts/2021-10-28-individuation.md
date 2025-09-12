@@ -65,8 +65,12 @@ potentials in a system.
 
 This lead to a redefinition of ontogenesis - not in terms of the constituted individual - but as a relationship 
 of being and phase-shifting, a re-consideration of being, and a revaluation of the logic of being:
+* "Becoming is a dimension of being, and corresponds to the being's capacity to phase shift"
 * "Pre-individual being is being in which no phase exists"
 * "Individuation corresponds to the appearance of phases in the being that are the phases of the being."
+* "we must consider being not as substance or matter or form but as a tense, supersaturated system above the level of unity"
+* "Unity, which is characteristic of the individual being, and identity, which authorizes the usage of the principle
+  of the excluded middle, do not apply to pre-individual being"
 
 
 #### Media
