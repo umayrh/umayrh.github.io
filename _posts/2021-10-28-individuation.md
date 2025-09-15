@@ -35,17 +35,16 @@ equilibrium; what was unknown was precisely metastable equilibrium." It is as if
 new relationship of philosophy with natural sciences, physics and biology, in particular. And so Simondon folds
 into philosophy concepts from thermodynamics like:
 * system
+* system state
 * potential energy
 * phase
+* order
+* entropy
 * equilibrium (stable, metastable)
 
-And, at least, in the first half of the book, his examples focus on:
-* crystallization
-* boiling and condensation
-* rain, clouds, and snow
-
-Though the phenomena also spans protein formation, semiconductor development, and alloy design. In other words,
-nucleation pervades nature as well as technology.
+Understood as "nucleation," individuation is exemplified in crystallization, in boiling and condensation,
+in rain, clouds, and snow; in thunder and lightening. Though the phenomena also spans protein formation, 
+semiconductor development, and alloy design. In other words, nucleation pervades nature as well as technology.
 
 "If...we supposed that individuation doesn't just produce the individual, we would not seek to pass quickly through
 the stage of individuation to arrive at this ultimate reality that the individual is..." (pg. 3)
@@ -71,6 +70,38 @@ of being and phase-shifting, a re-consideration of being, and a revaluation of t
 * "we must consider being not as substance or matter or form but as a tense, supersaturated system above the level of unity"
 * "Unity, which is characteristic of the individual being, and identity, which authorizes the usage of the principle
   of the excluded middle, do not apply to pre-individual being"
+
+The book is divided into two parts: physical individuation, and individuation in living being. 
+
+### Physical individuation:
+* "a case of the resolution of a metastable system on the basis of a system state, like yhat of supercooling or
+  supersaturation involved in the genesis of crystals."
+* that the pre-individual being is more than a unity may explain the present of duality in present physical
+  theories:
+  * "Because they are theories of identity, neither _mechanism_ nor _energeticism_ full account for reality. In 
+    addition to the theory of corpuscles, the theory of fields and the theory of the interaction between fields and 
+    corpuscles are still partially dualistic..."
+  * "we could see the convergence of these two new theories, that of quanta and that of wave mechanics... they
+    could be envisioned as _two ways to expressing the pre-individual_..." 
+* The genesis of crystals serves as a paradigm because:
+  * it "would allow us to grasp on the macrophysical scale a phenomenon that depends on system states which belong 
+    to the microphysical domain and which are molecular and not molar"
+  * "the veritable principle of individuation is mediation, which generally supposes an original duality of orders 
+    of magnitude and an initial absence of interactive communication between them and then a communication between
+    orders of magnitude and stabilization."
+
+#### Biological Individuation
+* "In the domain of the living...individuation no longer occurs in a strictly instantaneous, quantum, abrupt, and
+  definitive way, as in the physical domain, which leave in its wake a duality of the milieu and the individual..."
+* "the living being conserves within itself an ongoing activity of individuation; it is not merely a result of 
+  individuation, like the crystal or molecule, but a theatre of individuation."
+* There is a "regime of _internal resonance_ that requires ongoing communication and that maintains a metastability, 
+  which is a condition of life."
+* "the living being is also a being that results from an initial individuation and amplifies this individuation, 
+  which is something that is not done by the technical object..."
+* "In the living being, there is an individuation by the individual...the living being resolves problems, not just by
+  adapting, i.e. modifying its relation to the milieu...but by modifying itself, by inventing new internal 
+  structures...."
 
 
 #### Media
@@ -107,7 +138,11 @@ of being and phase-shifting, a re-consideration of being, and a revaluation of t
 17. X. Liu et al. Three-step nucleation of metal–organic framework nanocrystals (2021) [pdf](https://www.pnas.org/doi/10.1073/pnas.2008880118)
 18. I. Prigogine et al. Thermodynamics of cosmological matter creation (1988). [pdf](https://www.pnas.org/doi/abs/10.1073/pnas.85.20.7428)
 19. P. G. Vekilov. Nucleation (2010). [pdf](https://pubs.acs.org/doi/abs/10.1021/cg1011633)
-20. 
+20. T. Kovács, F. C. Meldrum and H. K. Christenson. Crystal Nucleation without Supersaturation (2012). [pdf](https://www.rsc.org/suppdata/fd/c2/c2fd20053h/c2fd20053h.pdf)
+21. J. L. Belof et al. An atomistic theory of nucleation: Self-organization via non-equilibrium work and fluctuations (2023). [pdf](https://www.sciencedirect.com/science/article/abs/pii/S002202482200522X?fr=RR-2&ref=pdf_download&rr=97e9d411fcbdc8f4)
+22. Y. B. Zel'dovich. Theory of new phase formation. [pdf]()
+23. J. P. Ostriker et al. Selected Works of Y. B. Zeldovich: Volume 1
+24. 
 
 
 #### Notes
@@ -145,6 +180,18 @@ of being and phase-shifting, a re-consideration of being, and a revaluation of t
   In this work, we combine ultralow-dose in situ liquid-phase and cryogenic transmission electron microscopy to show 
   that metal–organic frameworks (MOFs) nucleate through a different, nonclassical pathway with three distinct steps. 
   These steps are phase separation, condensation, and crystallization." [17]
+- ". According to the two-step mechanism, the crystalline nucleus appears inside pre-existing metastable clusters of 
+  size several hundred nanometers, which consist of dense liquid and are suspended in the solution. While initially
+  proposed for protein crystals, the applicability of this mechanism has been demonstrated for small
+  molecule organic materials, colloids, polymers, and biominerals" [19]
+- "...many nucleation processes do not conform to the classical model, which relies on a sufficient number of 
+  molecules coming together to form a nucleus that immediately adopts the structure of the new phase. In its
+  place, experiments and computer simulations have shown that crystal nucleation is mediated by denser fluid 
+  precursor phases (1-7) or clusters of molecules (8, 9) from which the final crystal forms." [20]
+- "Recently, progress in the development of rapid compression drivers [1–4] have enabled the investigation of
+  nucleation near the metastability limit, where solidification can occur on the nanosecond or
+  even picosecond timescale [5–7] — regimes where the critical cluster is exceedingly small and for which an 
+  atomistic extension of classical nucleation theory (CNT) is required." 
 
 
 ##### Self-organization
@@ -172,3 +219,12 @@ of being and phase-shifting, a re-consideration of being, and a revaluation of t
   In this way, the irreversible transformation of space-time into matter can be described as a phase separation 
   between matter and gravitation in which black holes play the role of “critical nuclei.”" [18]
 - 
+
+
+##### Cosmogeny
+- "the question of the properties and origin of the large-scale structure of the Universe, of the reasons for 
+  the appearance of the original density perturbations, of the law of their growth in the course of the 
+  cosmological expansion, of the peculiarities of compression of matter in the nonlinear stage of growth, and, finally, 
+  of observable manifestations of all these stages. The resulting picture is often called the theory of galaxy 
+  formation, although it would be more correct to call it the theory of formation of the large-scale structure of the 
+  Universe." [23]
