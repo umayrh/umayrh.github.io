@@ -19,20 +19,25 @@ Image courtesy of [FYFD](https://fyfluiddynamics.com/2020/08/crystalline-critter
 
 ## Introduction
 
-Philosophy often focuses on existence and essence while individual beings only serve as
-the apparent evidence of a different reality. Simondon, returning philosophy's focus to the process of
-an individual's formation, says that what is implicit here is the assumption that there is a "principle of
+Philosophy often focuses on existence and essence while individual beings only serve as the apparent evidence 
+of a different reality. Simondon, returning philosophy's focus to the process of an individual's formation, 
+says that what has been implicit here is the assumption that there is a "principle of
 individuation prior to individuation itself that is capable of explaining, producing, and guiding it." Perhaps
 what makes his new focus unique is his refusal to "grant an ontological privilege to the constituted individual."
 And so Simondon begins with two postulates:
 * Individuation has a principle
 * Individuation explains the individual, and not vice versa.
 
+This constitution of the individual is exemplified (as "nucleation") by crystallization; it is in boiling and condensation,
+in rain, clouds, and snow; in thunder and lightening. It spans protein formation, polymerization,  
+semiconductor development, and alloy design. In other words, nucleation pervades nature as well as technology.
+
 By page 2, Simondon deems philosophy - atomism and hylomorphism, in particular - to have inadequately
-described individuation. By page 5, Simondon lays out what makes his thesis possible: "Individuation has not
-been able to be adequately thought and described because only a single form of equilibrium was known, namely stable 
+described individuation, mostly because they seek to explain the operation through its outcome. By page 5, Simondon 
+lays out what makes his thesis possible: "Individuation has not been able to be adequately thought and described 
+because only a single form of equilibrium was known, namely stable 
 equilibrium; what was unknown was precisely metastable equilibrium." It is as if Simondon is announcing a 
-new relationship of philosophy with natural sciences, physics and biology, in particular. And so Simondon folds
+new relationship of philosophy with the natural sciences, with physics and biology, in particular; as he folds
 into philosophy concepts from thermodynamics like:
 * system
 * system state
@@ -41,10 +46,10 @@ into philosophy concepts from thermodynamics like:
 * order
 * entropy
 * equilibrium (stable, metastable)
-
-Understood as "nucleation," individuation is exemplified in crystallization, in boiling and condensation,
-in rain, clouds, and snow; in thunder and lightening. Though the phenomena also spans protein formation, 
-semiconductor development, and alloy design. In other words, nucleation pervades nature as well as technology.
+As Deleuze put it in his review of Simondon's thesis: "Few books, in any case, make it so insistently felt how much a
+philosopher can take his inspiration from what is contemporary in science and nevertheless rejoin the 
+great classical problems by transforming them, by renewing them. The new concepts established by Gilbert
+Simondon seem to be extremely important; their richness and originality shock and influence the reader." [26]
 
 "If...we supposed that individuation doesn't just produce the individual, we would not seek to pass quickly through
 the stage of individuation to arrive at this ultimate reality that the individual is..." (pg. 3)
@@ -56,14 +61,14 @@ The principle of individuation is:
   * "The individual...a relative reality... does not fully exist by itself"   
   * "...individuation does not fully exhaust in a single stroke the potentials of pre-individual reality" 
 
-And so individuation can be redefined without reference to the individual: "a partial and relative resolution
+And so individuation can be redefined without reference to the individual as "a partial and relative resolution
 that manifests in a system which contains potentials and includes a certain incompatibility with respect to itself, an
 incompatibility that consists of forces of tension and the impossibility of an interaction between the extreme terms
 of the dimensions." In other words, the essential aspect is not the coherence of the individual but the persistence of 
 potentials in a system.
 
-This lead to a redefinition of ontogenesis - not in terms of the constituted individual - but as a relationship 
-of being and phase-shifting, a re-consideration of being, and a revaluation of the logic of being:
+This lead to a redefinition of ontogenesis - not in terms of the constituted individual - as a relationship 
+of being and phase-shifting, a re-consideration of the nature of being, and a revaluation of the logic of being:
 * "Becoming is a dimension of being, and corresponds to the being's capacity to phase shift"
 * "Pre-individual being is being in which no phase exists"
 * "Individuation corresponds to the appearance of phases in the being that are the phases of the being."
@@ -71,7 +76,7 @@ of being and phase-shifting, a re-consideration of being, and a revaluation of t
 * "Unity, which is characteristic of the individual being, and identity, which authorizes the usage of the principle
   of the excluded middle, do not apply to pre-individual being"
 
-The book is divided into two parts: physical individuation, and individuation in living being. 
+Simondon considers to distinct types of individuation: physical individuation, and individuation in living being. 
 
 ### Physical individuation:
 * "a case of the resolution of a metastable system on the basis of a system state, like yhat of supercooling or
@@ -89,19 +94,33 @@ The book is divided into two parts: physical individuation, and individuation in
   * "the veritable principle of individuation is mediation, which generally supposes an original duality of orders 
     of magnitude and an initial absence of interactive communication between them and then a communication between
     orders of magnitude and stabilization."
+  * As P. Curie puts it: "It is dissymmetry what [sic] generates the occurrence of a phenomenon." [27]
+    * "When certain effects reveal a certain dissymmetry, this dissymmetry should be apparent 
+      in the causes which have given them birth." [24]
+
 
 #### Biological Individuation
 * "In the domain of the living...individuation no longer occurs in a strictly instantaneous, quantum, abrupt, and
   definitive way, as in the physical domain, which leave in its wake a duality of the milieu and the individual..."
 * "the living being conserves within itself an ongoing activity of individuation; it is not merely a result of 
   individuation, like the crystal or molecule, but a theatre of individuation."
-* There is a "regime of _internal resonance_ that requires ongoing communication and that maintains a metastability, 
-  which is a condition of life."
 * "the living being is also a being that results from an initial individuation and amplifies this individuation, 
   which is something that is not done by the technical object..."
 * "In the living being, there is an individuation by the individual...the living being resolves problems, not just by
   adapting, i.e. modifying its relation to the milieu...but by modifying itself, by inventing new internal 
-  structures...."
+  structures..."
+* There is a "regime of _internal resonance_ that requires ongoing communication and that maintains a metastability, 
+  which is a condition of life."
+  * "In the physical domain, internal resonance characterizes the limit of the individual in the midst of undergoing
+    the process of _individuating_..."
+    * "the physical individual has no veritable interiority..."
+    * "only the limit is constitutive, and what is topologically interior is genetically anterior..." 
+    * "the physical individual...includes a past that has radically passed, even when it is still in the process of growing."
+  * "in the living being, internal resonance becomes the criterion of the whole individual qua individual..."
+    * "the living being has a veritable interiority because individuation takes place from within..."
+    * "the interior is also constitutive..."
+    * "the living being is contemporaneous with itself in all of its elements... a system within a system..."
+* 
 
 
 #### Media
@@ -142,7 +161,11 @@ The book is divided into two parts: physical individuation, and individuation in
 21. J. L. Belof et al. An atomistic theory of nucleation: Self-organization via non-equilibrium work and fluctuations (2023). [pdf](https://www.sciencedirect.com/science/article/abs/pii/S002202482200522X?fr=RR-2&ref=pdf_download&rr=97e9d411fcbdc8f4)
 22. Y. B. Zel'dovich. Theory of new phase formation. [pdf]()
 23. J. P. Ostriker et al. Selected Works of Y. B. Zeldovich: Volume 1
-24. 
+24. M. Curie. Pierre Curie (1923). [pdf](https://www.gutenberg.org/files/69617/69617-h/69617-h.htm)
+25. Crystal Symmetries: Shubnikov Centennial Papers. [pdf](https://api.pageplace.de/preview/DT0400.9781483299105_A23889663/preview-9781483299105_A23889663.pdf)
+26. Giles Deleuze. Review of Simondon (1966). [pdf](https://plijournal.com/files/12_4_Deleuze.pdf)
+27. P. Curie (auth.), A. Ziółkowski (tr.). On Symmetry in Physical Phenomena, Symmetry of an Electric Field and a Magnetic Field (1894). [pdf](ttps://ojs.ejournals.eu/SHS/article/view/9558/7487)
+28. 
 
 
 #### Notes
@@ -192,6 +215,11 @@ The book is divided into two parts: physical individuation, and individuation in
   nucleation near the metastability limit, where solidification can occur on the nanosecond or
   even picosecond timescale [5–7] — regimes where the critical cluster is exceedingly small and for which an 
   atomistic extension of classical nucleation theory (CNT) is required." 
+- "Shubnikov visualized a crystal as a developing object with an inherent hierarchy of internal
+  structures and symmetries that are included in another hierarchy—that of a system of more general 
+  Shubnikov and his ideas in modern crystallography 
+  objects with regard to which the symmetries of a crystal are dissymmetries [9,10]" [25]
+- 
 
 
 ##### Self-organization
