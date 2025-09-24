@@ -6,12 +6,260 @@
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Sep 2025 23:06:11 +0500</pubDate>
-    <lastBuildDate>Sat, 13 Sep 2025 23:06:11 +0500</lastBuildDate>
+    <pubDate>Mon, 22 Sep 2025 20:23:26 +0500</pubDate>
+    <lastBuildDate>Mon, 22 Sep 2025 20:23:26 +0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
-        <title>Process and reality in individuation</title>
+        <title>Stoic Causality</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“&lt;em&gt;Amor fati&lt;/em&gt;, to want the event, has never been to resign oneself, still less to play the clown or the mountebank, 
+but to extract from our actions and passions that surface refulgence, to counter-effectuate the event, to accompany 
+that effect without body, that part which goes beyond the accomplishment, the immaculate part. A love of life which 
+can say yes to death.” (G. Deleuze. &lt;em&gt;Dialogues&lt;/em&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That Stoicism - in its trinitarian manifestation of physics, logic, ethics - aims to be systematic is well-known but
+how does physics and logic relate to the kind of Stoic ethics (&lt;em&gt;Amor fati&lt;/em&gt;) that Deleuze hints at? We look at Stoic 
+notion of causality as the common theme across the three through Deleuze’s interpretation (in &lt;em&gt;Logique du sens&lt;/em&gt;) 
+of Emile Bréhier’s work, &lt;em&gt;La théorie des incorporels dans l’ancien stoïcisme&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;What kinds of question invoke causality?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What makes the flesh to be cut by a scalpel?&lt;/li&gt;
+  &lt;li&gt;What makes a cone or a cylinder roll when pushed?&lt;/li&gt;
+  &lt;li&gt;What makes an individual assent to something?&lt;/li&gt;
+  &lt;li&gt;What causes a illness, and what can help manage it?&lt;/li&gt;
+  &lt;li&gt;Who’s responsible for a crime?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Why are such questions important? In all cases, they imply:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Agency: the ability or power to produce or sustain some effect&lt;/li&gt;
+  &lt;li&gt;Evaluation: the importance of the effects produced&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In many cases, they also demand:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Attribution: the identity of the cause&lt;/li&gt;
+  &lt;li&gt;Casuistry: a determination of the conditions under which causes produce effects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;physics&quot;&gt;Physics&lt;/h4&gt;
+
+&lt;p&gt;Causes, for the Stoics, are bodies or mixtures of bodies:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Bodies determine “states of affair,” physical qualities, tensions, actions, passions.&lt;/li&gt;
+  &lt;li&gt;Mixtures are in bodies, and in the depth of bodies: a body penetrates another and coexists with it in all of its parts, 
+like a drop of wine in the ocean, or fire in iron. One body withdraws from another, like liquid from a vase.
+Mixtures in general determine the quantitative and qualitative states of affairs: “&lt;/li&gt;
+  &lt;li&gt;“At the limit, there is a unity of al bodies in virtue of a primordial Fire into which they become absorbed and 
+from which they develop according to their respective tensions.”&lt;/li&gt;
+  &lt;li&gt;“But to the degree that there is a unity of bodies among themselves, to the degree that there is a unity of active and 
+passive principles, a cosmic present embraces the entire universe: only bodies exist in space, and only the present 
+exists in time.”&lt;/li&gt;
+  &lt;li&gt;Deleuze does not address the questions of the identity and unity of bodies or mixtures:
+    &lt;ul&gt;
+      &lt;li&gt;The text implies that bodies occupy space.&lt;/li&gt;
+      &lt;li&gt;“The Stoics describe bodies as whatever has ‘threefold extension (314) together with resistance 
+(τὸ τριχῇ διασταστὸν μετὰ ἀντιτυπίας),’ (315) and, they consider contact as crucial for bodies’ interaction. (316) 
+It is important that bodies present both characteristics, three-dimensionality (length, breadth, and depth) and 
+resistance, since on the one hand, void, which is not a body, is also extended, (317) and, on the other hand, because 
+three-dimensionality seems a necessary condition for something to have contact with other bodies, and present 
+resistance. However, resistance needs to be carefully differentiated from two similar concepts: impenetrability and 
+limitation.” [7]
+        &lt;ul&gt;
+          &lt;li&gt;From the point of view pf physics, the dimensional requirement may be relaxed: a body might be an n-dimensional
+entity with a (n-1)-dimensional surface. It is the surface that is necessary for contact.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;One reason to avoid the questions of identity and unity may be that bodies are not necessarily individuals (to whom
+questions of identity and unity apply) but also processes (“Unity, which is characteristic of the individual being, 
+and identity, which authorizes the usage of the principle of the excluded middle, do not apply to pre-individual 
+being…” G. Simondon)&lt;/li&gt;
+      &lt;li&gt;An open problem here might be the relationship between body and place: they seem to assume one another.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Effects, for the Stoics, are logical or dialectical attributes of bodies or mixtures:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;They are incorporeal: “They are neither agents nor patients, but results of actions and passions…not things or facts, but events.”&lt;/li&gt;
+  &lt;li&gt;“We can not say that they exist, but rather that they subsist or inhere (having this minimum of being which is 
+appropriate to that which is not a thing, a nonexisting entity).”&lt;/li&gt;
+  &lt;li&gt;“Incorporeal effects are never themselves causes in relation to each other; rather, they are only “quasi-causes 
+following laws which perhaps express in each case the relative unity or mixture of bodies on which they depend for 
+their real causes.”&lt;/li&gt;
+  &lt;li&gt;” They are not living presents, but infinitives: the unlimited Aion, the becoming which divides itself infinitely in 
+past and future and always eludes the present.”&lt;/li&gt;
+  &lt;li&gt;“The Stoics’ incorporeals include, at least in its orthodox list, time (χρόνος), place (τόπος), sayables (λεκτά), and void” [7]&lt;/li&gt;
+  &lt;li&gt;“Dialectics is precisely this science of incorporeal events as they are expressed in propositions, and of the 
+connections between events as they are expressed in relations between propositions.”&lt;/li&gt;
+  &lt;li&gt;“Events are like crystals, they become and grow only out of the edges, or on the edge.”&lt;/li&gt;
+  &lt;li&gt;“It is the characteristic of events to be expressed or expressible, uttered or utterable, in propositions which are 
+at least possible.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finally, “the Stoics hold the causal relation to be symmetrical. Bodies are causes to each other, Clement asserts. 
+  The knife is cause to the flesh and the flesh cause to the knife. The knife causes the predicate of the flesh 
+  (i.e., ‘being cut’), while the flesh causes the predicate of the knife (i.e., ‘cutting’). It thus turns out that 
+  Stoic causation is a tetradic relation. (9) It involves two bodies and two predicates, two causes and two effects.” [4]
+&lt;img src=&quot;/assets/images/square-of-causation.png&quot; alt=&quot;The Square of Causation&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;This tetradic relation is implied in Deleuze, at least for at least of one type of incorporeals, i.e. &lt;em&gt;events&lt;/em&gt;: 
+“The event, being itself impassive, allows the active and the passive to be interchanged more easily, since it is 
+neither the one nor the other, but rather their common result (to cut - to be cut). Concerning the cause and the effect, 
+events, &lt;em&gt;being always only effects&lt;/em&gt;, are better able to form among themselves functions of quasi-causes or relations 
+of quasi-causality which are always reversible (the wound and the scar).” [1, pg. 8]&lt;/li&gt;
+  &lt;li&gt;Many commentators, however, argue for a triadic relation e.g. “So when Clement reports that the scalpel is the cause to
+the flesh of being cut, and the flesh is the cause to the scalpel of cutting, the flesh is not the cause in an 
+active strict sense, but only insofar as it is in a fit disposition to be cut. This means that the Stoic causation in 
+Cement’s report is triadic, and not, as Totschnig (2013, 122–123) suggests, tetradic.” Though one might make the
+same argument of the knife: it also needs to be in a fit disposition to cut.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To summarize:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Source&lt;/td&gt;
+      &lt;td&gt;Something&lt;/td&gt;
+      &lt;td&gt;Category&lt;/td&gt;
+      &lt;td&gt;Function/Relation&lt;/td&gt;
+      &lt;td&gt;Mereology&lt;/td&gt;
+      &lt;td&gt;Typology&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bobzein&lt;/td&gt;
+      &lt;td&gt;Cause&lt;/td&gt;
+      &lt;td&gt;Corporeal&lt;/td&gt;
+      &lt;td&gt;Relative to the agent and patient&lt;/td&gt;
+      &lt;td&gt;interconnected by the ‘active principle’&lt;/td&gt;
+      &lt;td&gt;Perfect and principal causes (necessitate their effects); auxiliary and proximate causes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Deleuze&lt;/td&gt;
+      &lt;td&gt;Cause&lt;/td&gt;
+      &lt;td&gt;Corporeal&lt;/td&gt;
+      &lt;td&gt;Mixtures of bodies that determine qualities and properties (states of affairs, actions, passions)&lt;/td&gt;
+      &lt;td&gt;interconnected by the primordial Fire&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Deleuze&lt;/td&gt;
+      &lt;td&gt;Effect&lt;/td&gt;
+      &lt;td&gt;Incorporeal&lt;/td&gt;
+      &lt;td&gt;Results (logical and dialectical attributes) of mixtures&lt;/td&gt;
+      &lt;td&gt;Effects may relate to each other as quasi-causes&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;What’s quirky about this view of causality?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“This symmetry in the Stoic conception is most remarkable. It runs counter, it seems, to an essential element of 
+the idea of causation, namely, directionality.” [4]
+    &lt;ul&gt;
+      &lt;li&gt;“This is the simultaneity of a becoming whose characteristic is to elude the present.” [1, pg. 1]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;It acknowledges our presence as philosopher/observer without making the world about humans or our conception - since
+we, who reason with effects, cannot assume causal powers through some essential knowledge.&lt;/li&gt;
+  &lt;li&gt;“Effects” - proposition, claims - still have some modicum of being. They don’t exist like bodies: they are consigned
+to “subsistence”: powerless but not impermanent.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What are the implications of this view of causality?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It challenges philosophical Idealism, or essentialism, while preserving a kind of materialism:
+    &lt;ul&gt;
+      &lt;li&gt;“For if bodies with their states, qualities, and quantities, assume all the characteristics of substance and 
+cause, conversely, the characteristics of the Idea are relegated to the other side, that is to this impassive 
+extra-Being which is sterile, inefficacious, and on the surface of things: the ideational or the incorporeal can 
+no longer be anything other than an “effect.””&lt;/li&gt;
+      &lt;li&gt;“The Stoics certainly rejected Platonic forms and denied any causal efficacy and ontological priority to incorporeal
+things.” [9]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;It gives a novel view of determinism, or freedom:
+    &lt;ul&gt;
+      &lt;li&gt;“Thus freedom is preserved in two complementary manners: once in the interiority of destiny as a connection between 
+causes, and once more in the exteriority of events as a bond of effects. For this reason the Stoics can oppose 
+destiny and necessity.”&lt;/li&gt;
+      &lt;li&gt;This, Chrysippus, in turn refines by introducing modality (necessity vs sufficiency) into his logic:
+        &lt;ul&gt;
+          &lt;li&gt;“if everything takes place by fate, it does indeed follow that everything takes place from antecedent causes, 
+but not from principal and perfect but auxiliary and proximate causes. And if these causes themselves are not in 
+our power, it does not follow that desire also is not in our power. On the other hand if we were to say that all 
+things happen from perfect and principal causes, it would then follow that, as those causes are not in our power, 
+desire would not be in our power either.” [8]&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;logic&quot;&gt;Logic&lt;/h4&gt;
+
+&lt;p&gt;“Logic is divided into rhetoric and dialectic, and the latter into the study on language as sound and the study of
+language as what is said, the λεχτόν. The first part includes parts of speech, “solecism [wrong order of words]” and
+barbarism and poems and ambiguities and harmonious utterance and music” which, roughly, is a province of phonetics
+and syntax. The second part of dialectic is devoted to the meaning of language and include the study of presentations
+(φαντασίαι), lekta and “arguments and modes and syllogisms and fallacies,” and so this part is the domain of syntax
+(logical reasoning), semantics, and epistemology.” [11]&lt;/p&gt;
+
+&lt;p&gt;Even if the Stoic didn’t, one could similarly add writing as well as drawing as distinct branches of rhetoric and dialectic. 
+Writing, in its first part, would include phonetic writing systems and organization of the written word or words, foreign 
+scripts, ambiguities, and proper writing and typing, and calligraphy; the second part includes the use of symbolic logic,
+and the organization of introductions and treatises of logic. Drawing, in its first part, may include organization of
+lines, points, and fields; blots and illusions, representations as well as beautiful soup; the second part includes the
+use of venn diagrams, graphical logic, algebraic geometry, technical drawing, and architecture.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/stoic-lekta.png&quot; alt=&quot;Stoic Logic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What all the typology boils down to is sense, or meaning. How do we make sense of the world? This is perhaps why,
+for the Stoics,
+…&lt;/p&gt;
+
+&lt;h4 id=&quot;ethics&quot;&gt;Ethics&lt;/h4&gt;
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;G. Deleuze. Logic of Sense.&lt;/li&gt;
+  &lt;li&gt;E. Brehier. La Théorie Des Incorporels Dans L’ancien Stoïcisme (1908).&lt;/li&gt;
+  &lt;li&gt;S. Bobzien. Chrysippus’ Theory of Causes. &lt;a href=&quot;https://scispace.com/pdf/chrysippus-theory-of-causes-2fdig1oqra.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;W. Totschnig. Bodies and Their Effects: The Stoics on Causation and Incorporeals (2013). &lt;a href=&quot;https://philpapers.org/archive/TOTBAT.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;https://www.cellsignal.com/pathways/receptors-signaling-to-mapk-erk&lt;/li&gt;
+  &lt;li&gt;D. Laertius. Lives of Philosophers. &lt;a href=&quot;https://topostext.org/work/221&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;S. D. Vazquez Hernandez. How the Stoics Solve Plato’s Greatest Difficulty: Causality and Responsibility in Plato 
+  and the Stoics. &lt;a href=&quot;https://kclpure.kcl.ac.uk/portal/en/studentTheses/how-the-stoics-solve-platos-greatest-difficulty&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Cicero. De Fato. &lt;a href=&quot;https://www.informationphilosopher.com/solutions/philosophers/cicero/de_fato_english.html#IX&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;D. Vázquez. Theories of Causation in Ancient Stoicism. &lt;a href=&quot;https://library.oapen.org/bitstream/handle/20.500.12657/102688/9781003833666.pdf?sequence=4&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;S. Bobzien. Early Stoic Determinism. &lt;a href=&quot;https://www.jstor.org/stable/40904101&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A. Drozdek. Lekton: Stoic Logic and Ontology (2002). Acta Antiqua. &lt;a href=&quot;https://real.mtak.hu/46999/&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Selected bibliography on Ancient Stoic Ontology &lt;a href=&quot;https://www.ontology.co/biblio/stoic-ontology-biblio.htm#gsc.tab=0&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 17 Sep 2025 00:00:00 +0500</pubDate>
+        <link>http://localhost:4000/2025/09/17/causality/</link>
+        <guid isPermaLink="true">http://localhost:4000/2025/09/17/causality/</guid>
+        
+        <category>Philosophy</category>
+        
+        <category>Individuation</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Individuation</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;“Individuation may be thought of as temporary resolutions taking place in the heart 
 of a metastable system rich in potential.” (Simondon)&lt;/p&gt;
@@ -23,9 +271,9 @@ Image courtesy of &lt;a href=&quot;https://fyfluiddynamics.com/2020/08/crystalli
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;Philosophy often focuses on existence and essence while individual beings only serve as
-the apparent evidence of a different reality. Simondon, returning philosophy’s focus to the process of
-an individual’s formation, says that what is implicit here is the assumption that there is a “principle of
+&lt;p&gt;Philosophy often focuses on existence and essence while individual beings only serve as the apparent evidence 
+of a different reality. Simondon, returning philosophy’s focus to the process of an individual’s formation, 
+says that what has been implicit here is the assumption that there is a “principle of
 individuation prior to individuation itself that is capable of explaining, producing, and guiding it.” Perhaps
 what makes his new focus unique is his refusal to “grant an ontological privilege to the constituted individual.”
 And so Simondon begins with two postulates:&lt;/p&gt;
@@ -34,28 +282,30 @@ And so Simondon begins with two postulates:&lt;/p&gt;
   &lt;li&gt;Individuation explains the individual, and not vice versa.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;This constitution of the individual is exemplified (as “nucleation”) by crystallization; it is in boiling and condensation,
+in rain, clouds, and snow; in thunder and lightening. It spans protein formation, polymerization,&lt;br /&gt;
+semiconductor development, and alloy design. In other words, nucleation pervades nature as well as technology.&lt;/p&gt;
+
 &lt;p&gt;By page 2, Simondon deems philosophy - atomism and hylomorphism, in particular - to have inadequately
-described individuation. By page 5, Simondon lays out what makes his thesis possible: “Individuation has not
-been able to be adequately thought and described because only a single form of equilibrium was known, namely stable 
+described individuation, mostly because they seek to explain the operation through its outcome. By page 5, Simondon 
+lays out what makes his thesis possible: “Individuation has not been able to be adequately thought and described 
+because only a single form of equilibrium was known, namely stable 
 equilibrium; what was unknown was precisely metastable equilibrium.” It is as if Simondon is announcing a 
-new relationship of philosophy with natural sciences, physics and biology, in particular. And so Simondon folds
+new relationship of philosophy with the natural sciences, with physics and biology, in particular; as he folds
 into philosophy concepts from thermodynamics like:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;system&lt;/li&gt;
+  &lt;li&gt;system state&lt;/li&gt;
   &lt;li&gt;potential energy&lt;/li&gt;
   &lt;li&gt;phase&lt;/li&gt;
-  &lt;li&gt;equilibrium (stable, metastable)&lt;/li&gt;
+  &lt;li&gt;order&lt;/li&gt;
+  &lt;li&gt;entropy&lt;/li&gt;
+  &lt;li&gt;equilibrium (stable, metastable)
+As Deleuze put it in his review of Simondon’s thesis: “Few books, in any case, make it so insistently felt how much a
+philosopher can take his inspiration from what is contemporary in science and nevertheless rejoin the 
+great classical problems by transforming them, by renewing them. The new concepts established by Gilbert
+Simondon seem to be extremely important; their richness and originality shock and influence the reader.” [26]&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;And, at least, in the first half of the book, his examples focus on:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;crystallization&lt;/li&gt;
-  &lt;li&gt;boiling and condensation&lt;/li&gt;
-  &lt;li&gt;rain, clouds, and snow&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Though the phenomena also spans protein formation, semiconductor development, and alloy design. In other words,
-nucleation pervades nature as well as technology.&lt;/p&gt;
 
 &lt;p&gt;“If…we supposed that individuation doesn’t just produce the individual, we would not seek to pass quickly through
 the stage of individuation to arrive at this ultimate reality that the individual is…” (pg. 3)&lt;/p&gt;
@@ -72,14 +322,14 @@ the stage of individuation to arrive at this ultimate reality that the individua
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;And so individuation can be redefined without reference to the individual: “a partial and relative resolution
+&lt;p&gt;And so individuation can be redefined without reference to the individual as “a partial and relative resolution
 that manifests in a system which contains potentials and includes a certain incompatibility with respect to itself, an
 incompatibility that consists of forces of tension and the impossibility of an interaction between the extreme terms
 of the dimensions.” In other words, the essential aspect is not the coherence of the individual but the persistence of 
 potentials in a system.&lt;/p&gt;
 
-&lt;p&gt;This lead to a redefinition of ontogenesis - not in terms of the constituted individual - but as a relationship 
-of being and phase-shifting, a re-consideration of being, and a revaluation of the logic of being:&lt;/p&gt;
+&lt;p&gt;This lead to a redefinition of ontogenesis - not in terms of the constituted individual - as a relationship 
+of being and phase-shifting, a re-consideration of the nature of being, and a revaluation of the logic of being:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;“Becoming is a dimension of being, and corresponds to the being’s capacity to phase shift”&lt;/li&gt;
   &lt;li&gt;“Pre-individual being is being in which no phase exists”&lt;/li&gt;
@@ -87,6 +337,73 @@ of being and phase-shifting, a re-consideration of being, and a revaluation of t
   &lt;li&gt;“we must consider being not as substance or matter or form but as a tense, supersaturated system above the level of unity”&lt;/li&gt;
   &lt;li&gt;“Unity, which is characteristic of the individual being, and identity, which authorizes the usage of the principle
 of the excluded middle, do not apply to pre-individual being”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Simondon considers to distinct types of individuation: physical individuation, and individuation in living being.&lt;/p&gt;
+
+&lt;h3 id=&quot;physical-individuation&quot;&gt;Physical individuation:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;“a case of the resolution of a metastable system on the basis of a system state, like yhat of supercooling or
+supersaturation involved in the genesis of crystals.”&lt;/li&gt;
+  &lt;li&gt;that the pre-individual being is more than a unity may explain the present of duality in present physical
+theories:
+    &lt;ul&gt;
+      &lt;li&gt;“Because they are theories of identity, neither &lt;em&gt;mechanism&lt;/em&gt; nor &lt;em&gt;energeticism&lt;/em&gt; full account for reality. In 
+addition to the theory of corpuscles, the theory of fields and the theory of the interaction between fields and 
+corpuscles are still partially dualistic…”&lt;/li&gt;
+      &lt;li&gt;“we could see the convergence of these two new theories, that of quanta and that of wave mechanics… they
+could be envisioned as &lt;em&gt;two ways to expressing the pre-individual&lt;/em&gt;…”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The genesis of crystals serves as a paradigm because:
+    &lt;ul&gt;
+      &lt;li&gt;it “would allow us to grasp on the macrophysical scale a phenomenon that depends on system states which belong 
+to the microphysical domain and which are molecular and not molar”&lt;/li&gt;
+      &lt;li&gt;“the veritable principle of individuation is mediation, which generally supposes an original duality of orders 
+of magnitude and an initial absence of interactive communication between them and then a communication between
+orders of magnitude and stabilization.”&lt;/li&gt;
+      &lt;li&gt;As P. Curie puts it: “It is dissymmetry what [sic] generates the occurrence of a phenomenon.” [27]
+        &lt;ul&gt;
+          &lt;li&gt;“When certain effects reveal a certain dissymmetry, this dissymmetry should be apparent 
+in the causes which have given them birth.” [24]&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;biological-individuation&quot;&gt;Biological Individuation&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;“In the domain of the living…individuation no longer occurs in a strictly instantaneous, quantum, abrupt, and
+definitive way, as in the physical domain, which leave in its wake a duality of the milieu and the individual…”&lt;/li&gt;
+  &lt;li&gt;“the living being conserves within itself an ongoing activity of individuation; it is not merely a result of 
+individuation, like the crystal or molecule, but a theatre of individuation.”&lt;/li&gt;
+  &lt;li&gt;“the living being is also a being that results from an initial individuation and amplifies this individuation, 
+which is something that is not done by the technical object…”&lt;/li&gt;
+  &lt;li&gt;“In the living being, there is an individuation by the individual…the living being resolves problems, not just by
+adapting, i.e. modifying its relation to the milieu…but by modifying itself, by inventing new internal 
+structures…”&lt;/li&gt;
+  &lt;li&gt;There is a “regime of &lt;em&gt;internal resonance&lt;/em&gt; that requires ongoing communication and that maintains a metastability, 
+which is a condition of life.”
+    &lt;ul&gt;
+      &lt;li&gt;“In the physical domain, internal resonance characterizes the limit of the individual in the midst of undergoing
+the process of &lt;em&gt;individuating&lt;/em&gt;…”
+        &lt;ul&gt;
+          &lt;li&gt;“the physical individual has no veritable interiority…”&lt;/li&gt;
+          &lt;li&gt;“only the limit is constitutive, and what is topologically interior is genetically anterior…”&lt;/li&gt;
+          &lt;li&gt;“the physical individual…includes a past that has radically passed, even when it is still in the process of growing.”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;“in the living being, internal resonance becomes the criterion of the whole individual qua individual…”
+        &lt;ul&gt;
+          &lt;li&gt;“the living being has a veritable interiority because individuation takes place from within…”&lt;/li&gt;
+          &lt;li&gt;“the interior is also constitutive…”&lt;/li&gt;
+          &lt;li&gt;“the living being is contemporaneous with itself in all of its elements… a system within a system…”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;media&quot;&gt;Media&lt;/h4&gt;
@@ -125,6 +442,14 @@ of the excluded middle, do not apply to pre-individual being”&lt;/li&gt;
   &lt;li&gt;X. Liu et al. Three-step nucleation of metal–organic framework nanocrystals (2021) &lt;a href=&quot;https://www.pnas.org/doi/10.1073/pnas.2008880118&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;I. Prigogine et al. Thermodynamics of cosmological matter creation (1988). &lt;a href=&quot;https://www.pnas.org/doi/abs/10.1073/pnas.85.20.7428&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;P. G. Vekilov. Nucleation (2010). &lt;a href=&quot;https://pubs.acs.org/doi/abs/10.1021/cg1011633&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;T. Kovács, F. C. Meldrum and H. K. Christenson. Crystal Nucleation without Supersaturation (2012). &lt;a href=&quot;https://www.rsc.org/suppdata/fd/c2/c2fd20053h/c2fd20053h.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;J. L. Belof et al. An atomistic theory of nucleation: Self-organization via non-equilibrium work and fluctuations (2023). &lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S002202482200522X?fr=RR-2&amp;amp;ref=pdf_download&amp;amp;rr=97e9d411fcbdc8f4&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Y. B. Zel’dovich. Theory of new phase formation. &lt;a href=&quot;&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;J. P. Ostriker et al. Selected Works of Y. B. Zeldovich: Volume 1&lt;/li&gt;
+  &lt;li&gt;M. Curie. Pierre Curie (1923). &lt;a href=&quot;https://www.gutenberg.org/files/69617/69617-h/69617-h.htm&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Crystal Symmetries: Shubnikov Centennial Papers. &lt;a href=&quot;https://api.pageplace.de/preview/DT0400.9781483299105_A23889663/preview-9781483299105_A23889663.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Giles Deleuze. Review of Simondon (1966). &lt;a href=&quot;https://plijournal.com/files/12_4_Deleuze.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;P. Curie (auth.), A. Ziółkowski (tr.). On Symmetry in Physical Phenomena, Symmetry of an Electric Field and a Magnetic Field (1894). &lt;a href=&quot;ttps://ojs.ejournals.eu/SHS/article/view/9558/7487&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -164,6 +489,23 @@ depth (the Griffith length) leading to rapid crack propagation.” [16]&lt;/li&g
 In this work, we combine ultralow-dose in situ liquid-phase and cryogenic transmission electron microscopy to show 
 that metal–organic frameworks (MOFs) nucleate through a different, nonclassical pathway with three distinct steps. 
 These steps are phase separation, condensation, and crystallization.” [17]&lt;/li&gt;
+  &lt;li&gt;”. According to the two-step mechanism, the crystalline nucleus appears inside pre-existing metastable clusters of 
+size several hundred nanometers, which consist of dense liquid and are suspended in the solution. While initially
+proposed for protein crystals, the applicability of this mechanism has been demonstrated for small
+molecule organic materials, colloids, polymers, and biominerals” [19]&lt;/li&gt;
+  &lt;li&gt;“…many nucleation processes do not conform to the classical model, which relies on a sufficient number of 
+molecules coming together to form a nucleus that immediately adopts the structure of the new phase. In its
+place, experiments and computer simulations have shown that crystal nucleation is mediated by denser fluid 
+precursor phases (1-7) or clusters of molecules (8, 9) from which the final crystal forms.” [20]&lt;/li&gt;
+  &lt;li&gt;“Recently, progress in the development of rapid compression drivers [1–4] have enabled the investigation of
+nucleation near the metastability limit, where solidification can occur on the nanosecond or
+even picosecond timescale [5–7] — regimes where the critical cluster is exceedingly small and for which an 
+atomistic extension of classical nucleation theory (CNT) is required.”&lt;/li&gt;
+  &lt;li&gt;“Shubnikov visualized a crystal as a developing object with an inherent hierarchy of internal
+structures and symmetries that are included in another hierarchy—that of a system of more general 
+Shubnikov and his ideas in modern crystallography 
+objects with regard to which the symmetries of a crystal are dissymmetries [9,10]” [25]&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h5 id=&quot;self-organization&quot;&gt;Self-organization&lt;/h5&gt;
@@ -193,6 +535,16 @@ Hawking radiation process and, once formed, will decompose into “real” matte
 In this way, the irreversible transformation of space-time into matter can be described as a phase separation 
 between matter and gravitation in which black holes play the role of “critical nuclei.”” [18]&lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;cosmogeny&quot;&gt;Cosmogeny&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;“the question of the properties and origin of the large-scale structure of the Universe, of the reasons for 
+the appearance of the original density perturbations, of the law of their growth in the course of the 
+cosmological expansion, of the peculiarities of compression of matter in the nonlinear stage of growth, and, finally, 
+of observable manifestations of all these stages. The resulting picture is often called the theory of galaxy 
+formation, although it would be more correct to call it the theory of formation of the large-scale structure of the 
+Universe.” [23]&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 23 Jul 2021 00:00:00 +0500</pubDate>
@@ -481,8 +833,8 @@ the grounds of reason.&lt;/p&gt;
   &lt;p&gt;“The idea of form implicitly contains also the history of such a form.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Notes on Prusinkiewicz and Lindenmayer’s beautiful book, “The Algorithmic Beauty of Plans” (Springer-Verlag, 1990),
-which is also available &lt;a href=&quot;http://algorithmicbotany.org/papers/#abop&quot;&gt;online&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Notes on Prusinkiewicz and Lindenmayer’s beautiful book, “The Algorithmic Beauty of Plants” (Springer-Verlag, 1990),
+which is also available &lt;a href=&quot;http://algorithmicbotany.org/papers/#abop&quot;&gt;online&lt;/a&gt;. Image derived from [2].&lt;/p&gt;
 
 &lt;h2 id=&quot;1-graphical-modeling-using-l-systems&quot;&gt;1 Graphical modeling using L-systems&lt;/h2&gt;
 
@@ -672,6 +1024,7 @@ self-avoiding.”&lt;/li&gt;
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;a name=&quot;ref1&quot;&gt;&lt;/a&gt; The Lighter Side of Mathematics: Proceedings of the Eugene Strens Memorial Conference on Recreational Mathematics and Its History &lt;a href=&quot;www.ams.org/books/spec/011&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref2&quot;&gt;&lt;/a&gt; https://joaomagfreitas.link/on-lindenmayer-systems/&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 14 Mar 2021 00:00:00 +0500</pubDate>
@@ -691,14 +1044,13 @@ self-avoiding.”&lt;/li&gt;
     
       <item>
         <title>Part, Site, Analysis</title>
-        <description>&lt;p&gt;Notes on Casati and Varzi’s book, “Parts and places: the structures of spatial representation”
-(MIT Press).&lt;/p&gt;
+        <description>&lt;p&gt;Notes on Casati and Varzi’s book, “Parts and places: the structures of spatial representation” (MIT Press). 
+Image derived from [5] and [6].&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Leibniz’s contention against Newton: spatial entities - objects or events - are fundamentally
-prior to space.&lt;/li&gt;
+  &lt;li&gt;Leibniz’s contention against Newton: spatial entities - objects or events - are fundamentally prior to space.&lt;/li&gt;
   &lt;li&gt;Questions:
     &lt;ul&gt;
       &lt;li&gt;How relevant is the decomposition of objects into parts?&lt;/li&gt;
@@ -858,9 +1210,10 @@ distinct object shapes&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref2&quot;&gt;&lt;/a&gt; D. Koehler. The city as an element of architecture. &lt;a href=&quot;papers.cumincad.org/data/works/att/ecaade2017_109.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref3&quot;&gt;&lt;/a&gt; B. Clark. A calculus of individuals based on “connection”. Notre Dame J. Formal Logic 22(3): 204-218 (July 1981). &lt;a href=&quot;https://projecteuclid.org/journals/notre-dame-journal-of-formal-logic/volume-22/issue-3/A-calculus-of-individuals-based-on-connection/10.1305/ndjfl/1093883455.full&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref4&quot;&gt;&lt;/a&gt; Jones, N. (2021). Mereological Composition in Analytic and Buddhist Perspective. Journal of the American Philosophical Association, 1-22. doi:10.1017/apa.2020.41. &lt;a href=&quot;https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/mereological-composition-in-analytic-and-buddhist-perspective/B4B2637445AB6E1BB8D8135B6F51A7A9/share/cf7bdf61acba979aefce98e80f52347b90195a42&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a name=&quot;ref5&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref5&quot;&gt;&lt;/a&gt; https://www.reddit.com/r/gifs/comments/zksxc/rotating_menger_sponge_with_fisheye_effect_oc/&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref6&quot;&gt;&lt;/a&gt; https://blogs.mathworks.com/cleve/2021/12/06/the-menger-sponge-fractal/&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
 </description>
         <pubDate>Fri, 05 Mar 2021 00:00:00 +0500</pubDate>
         <link>http://localhost:4000/2021/03/05/part-site-analysis/</link>
@@ -1229,7 +1582,7 @@ which also indicate the problems that formality of The Code tries to circumvent:
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 &lt;ol&gt;
-  &lt;li&gt;&lt;a name=&quot;ref1&quot;&gt;&lt;/a&gt; P. F. Stevens. An Essay on Naming Nature: The Clash Between Instinct and Science. &lt;a href=&quot;arnoldia.arboretum.harvard.edu/pdf/articles/2010-67-4-an-essay-on-naming-nature-the-clash-between-instinct-and-science.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;ref1&quot;&gt;&lt;/a&gt; P. F. Stevens. An Essay on Naming Nature: The Clash Between Instinct and Science. &lt;a href=&quot;https://arnoldia.arboretum.harvard.edu/pdf/articles/2010-67-4-an-essay-on-naming-nature-the-clash-between-instinct-and-science.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref2&quot;&gt;&lt;/a&gt; Ivonne J. Garzón-Orduña. Systematic Biology, Volume 59, Issue 2, March 2010, Pages 242–243. &lt;a href=&quot;https://academic.oup.com/sysbio/article/59/2/242/1618948&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref3&quot;&gt;&lt;/a&gt; A. J. Drummond. Inferring phylogenies: an instant classic.  &lt;a href=&quot;https://www.nature.com/articles/6800575&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref4&quot;&gt;&lt;/a&gt; How a scientific spat over how to name species turned into a big plus for nature &lt;a href=&quot;https://theconversation.com/how-a-scientific-spat-over-how-to-name-species-turned-into-a-big-plus-for-nature-138887&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
@@ -1238,7 +1591,7 @@ which also indicate the problems that formality of The Code tries to circumvent:
   &lt;li&gt;&lt;a name=&quot;ref7&quot;&gt;&lt;/a&gt; Opinion: Standardizing gene product nomenclature — a call to action. &lt;a href=&quot;https://www.pnas.org/content/118/3/e2025207118?etoc=&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref8&quot;&gt;&lt;/a&gt; DNA barcoding and taxonomy: dark taxa and dark texts/ &lt;a href=&quot;https://royalsocietypublishing.org/doi/10.1098/rstb.2015.0334&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a name=&quot;ref9&quot;&gt;&lt;/a&gt; https://inquisitivebiologist.com/2018/08/24/book-review-the-art-of-naming/&lt;/li&gt;
-  &lt;li&gt;&lt;a name=&quot;ref10&quot;&gt;&lt;/a&gt; R. A. Richards. The Species Problem: A Philosophical Analysis
+  &lt;li&gt;&lt;a name=&quot;ref10&quot;&gt;&lt;/a&gt; R. A. Richards. The Species Problem: A Philosophical Analysis.
     &lt;ul&gt;
       &lt;li&gt;A. Hamilton. Notre Dame Philosophical Reviews. 2012.03.27. &lt;a href=&quot;https://ndpr.nd.edu/news/the-species-problem-a-philosophical-analysis/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;J. S. Wilkins. Systematic Biology, Volume 61, Issue 2, March 2012, Pages 362–363. &lt;a href=&quot;https://academic.oup.com/sysbio/article/61/2/362/1648669&quot;&gt;link&lt;/a&gt;&lt;/li&gt;

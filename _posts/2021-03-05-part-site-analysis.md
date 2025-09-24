@@ -3,20 +3,19 @@ layout: post
 title: "Part, Site, Analysis"
 date: "2021-03-05"
 description:
-image: /assets/images/part-site-analysis.png
+image: /assets/images/menger2-2.gif
 author: Umayr Hassan
 tags:
 - Mereology
 - Topology
 ---
-Notes on Casati and Varzi's book, "Parts and places: the structures of spatial representation"
-(MIT Press).
+Notes on Casati and Varzi's book, "Parts and places: the structures of spatial representation" (MIT Press). 
+Image derived from [5] and [6].
 
 
 ## Introduction 
 
-* Leibniz's contention against Newton: spatial entities - objects or events - are fundamentally
-prior to space.
+* Leibniz's contention against Newton: spatial entities - objects or events - are fundamentally prior to space.
 * Questions:
   * How relevant is the decomposition of objects into parts?
   * How do mereological notions interact with truly spatial concepts such as contact, containment,
@@ -119,5 +118,6 @@ regions can be applied _holus bolus_ to ordinary things and events alike."
 2. <a name="ref2"></a> D. Koehler. The city as an element of architecture. [link](papers.cumincad.org/data/works/att/ecaade2017_109.pdf)
 3. <a name="ref3"></a> B. Clark. A calculus of individuals based on "connection". Notre Dame J. Formal Logic 22(3): 204-218 (July 1981). [link](https://projecteuclid.org/journals/notre-dame-journal-of-formal-logic/volume-22/issue-3/A-calculus-of-individuals-based-on-connection/10.1305/ndjfl/1093883455.full)
 4. <a name="ref4"></a> Jones, N. (2021). Mereological Composition in Analytic and Buddhist Perspective. Journal of the American Philosophical Association, 1-22. doi:10.1017/apa.2020.41. [link](https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/mereological-composition-in-analytic-and-buddhist-perspective/B4B2637445AB6E1BB8D8135B6F51A7A9/share/cf7bdf61acba979aefce98e80f52347b90195a42)
-5. <a name="ref5"></a> 
-
+5. <a name="ref5"></a> https://www.reddit.com/r/gifs/comments/zksxc/rotating_menger_sponge_with_fisheye_effect_oc/
+6. <a name="ref6"></a> https://blogs.mathworks.com/cleve/2021/12/06/the-menger-sponge-fractal/
+7. 

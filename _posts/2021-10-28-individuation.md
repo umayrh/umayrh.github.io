@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Process and reality in individuation"
+title: "Individuation"
 date: "2021-07-23"
 description:
 image: /assets/images/crystallization.gif

@@ -3,7 +3,7 @@ layout: post
 title: "The Algorithmic Beauty of Plants"
 date: "2021-03-14"
 description:
-image: /assets/images/algo-beauty-plants.png
+image: /assets/images/lindenmayar-tree.gif
 author: Umayr Hassan
 tags:
 - Formal languages
@@ -15,8 +15,8 @@ tags:
 > "The idea of form implicitly contains also the history of such a form."
 
 
-Notes on Prusinkiewicz and Lindenmayer's beautiful book, "The Algorithmic Beauty of Plans" (Springer-Verlag, 1990),
-which is also available [online](http://algorithmicbotany.org/papers/#abop).
+Notes on Prusinkiewicz and Lindenmayer's beautiful book, "The Algorithmic Beauty of Plants" (Springer-Verlag, 1990),
+which is also available [online](http://algorithmicbotany.org/papers/#abop). Image derived from [2].
 
 ## 1 Graphical modeling using L-systems  
 
@@ -121,3 +121,4 @@ a set of _rewriting rules_ or _productions_. Examples are:
 
 ## References
 1. <a name="ref1"></a> The Lighter Side of Mathematics: Proceedings of the Eugene Strens Memorial Conference on Recreational Mathematics and Its History [link](www.ams.org/books/spec/011)
+2. <a name="ref2"></a> https://joaomagfreitas.link/on-lindenmayer-systems/

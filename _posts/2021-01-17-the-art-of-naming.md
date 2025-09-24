@@ -3,7 +3,7 @@ layout: post
 title: "On Naming"
 date: "2021-01-17"
 description:
-image: /assets/images/art-of-naming.jpg
+image: /assets/images/linnaeus.png
 author: Umayr Hassan
 tags:
 - Nomenclature
@@ -236,7 +236,7 @@ Euarthropoda.
   * People have names.
 
 ## References
-1. <a name="ref1"></a> P. F. Stevens. An Essay on Naming Nature: The Clash Between Instinct and Science. [link](arnoldia.arboretum.harvard.edu/pdf/articles/2010-67-4-an-essay-on-naming-nature-the-clash-between-instinct-and-science.pdf)
+1. <a name="ref1"></a> P. F. Stevens. An Essay on Naming Nature: The Clash Between Instinct and Science. [link](https://arnoldia.arboretum.harvard.edu/pdf/articles/2010-67-4-an-essay-on-naming-nature-the-clash-between-instinct-and-science.pdf)
 2. <a name="ref2"></a> Ivonne J. Garzón-Orduña. Systematic Biology, Volume 59, Issue 2, March 2010, Pages 242–243. [link](https://academic.oup.com/sysbio/article/59/2/242/1618948)
 3. <a name="ref3"></a> A. J. Drummond. Inferring phylogenies: an instant classic.  [link](https://www.nature.com/articles/6800575)
 4. <a name="ref4"></a> How a scientific spat over how to name species turned into a big plus for nature [link](https://theconversation.com/how-a-scientific-spat-over-how-to-name-species-turned-into-a-big-plus-for-nature-138887)
@@ -245,7 +245,7 @@ Euarthropoda.
 7. <a name="ref7"></a> Opinion: Standardizing gene product nomenclature — a call to action. [link](https://www.pnas.org/content/118/3/e2025207118?etoc=)
 8. <a name="ref8"></a> DNA barcoding and taxonomy: dark taxa and dark texts/ [link](https://royalsocietypublishing.org/doi/10.1098/rstb.2015.0334)
 9. <a name="ref9"></a> https://inquisitivebiologist.com/2018/08/24/book-review-the-art-of-naming/
-10. <a name="ref10"></a> R. A. Richards. The Species Problem: A Philosophical Analysis 
+10. <a name="ref10"></a> R. A. Richards. The Species Problem: A Philosophical Analysis.
   * A. Hamilton. Notre Dame Philosophical Reviews. 2012.03.27. [link](https://ndpr.nd.edu/news/the-species-problem-a-philosophical-analysis/)
   * J. S. Wilkins. Systematic Biology, Volume 61, Issue 2, March 2012, Pages 362–363. [link](https://academic.oup.com/sysbio/article/61/2/362/1648669)
 11. <a name="ref11"></a> P. Mckenzie. Falsehoods Programmers Believe About Names. June, 2010. [link](https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/)
