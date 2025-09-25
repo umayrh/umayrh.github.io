@@ -158,12 +158,19 @@ for the Stoics, logic is entryway to philosophy [13].
 
 "Frege describes the sense as being "between" the subjective idea and the denoted object; 
 this is parallel to Ammonius' description of the Lekton as a jJ.EfTOV between the thought (vo'TIJ.ta) and 
-the thing (TO 7rpo.'Yp,a).6"
+the thing (TO 7rpo.'Yp,a).6" [14]
 ...
 
 
 #### Ethics
-...
+
+"Stoic ethics is concerned with the event; it consists of wiling the event as such, that is, of willing that which 
+occurs insofar as it does occur. We cannot yet evaluate the import of these formulations. But in any case, how could 
+the event be grasped and willed without its being referred to the corporeal cause from which it results and, through 
+this cause, to the unity of causes as _Physics_?" [1, pg. 143]
+
+'"Everything was in order with the events of my life before I made them mine; to live them is to find myself tempted to 
+become their equal, as if they had to get from me only that which they have that is best and most perfect."' [1, pg. 148]
 
 
 #### References
@@ -181,4 +188,5 @@ the thing (TO 7rpo.'Yp,a).6"
 11. A. Drozdek. Lekton: Stoic Logic and Ontology (2002). Acta Antiqua. [pdf](https://real.mtak.hu/46999/)
 12. Selected bibliography on Ancient Stoic Ontology [pdf](https://www.ontology.co/biblio/stoic-ontology-biblio.htm#gsc.tab=0)
 13. K. Ierodiakonou. The Stoic division of philosophy (1993). [pdf](https://www.jstor.org/stable/4182427)
-14. 
+14. B. Mates. Stoic Logic. [pdf]()
+15. 
